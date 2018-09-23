@@ -1,8 +1,10 @@
 # Onesha Revamped
 
-> src/ folder contains vuejs for client side development
+- "src/" folder contains vuejs for client side development
 
-> server/ folder contains server side related logic
+- "server/" folder contains server side related logic
+
+- It won't be necessary to edit files in "public/" folder
 
 ## Project setup
 
@@ -17,6 +19,13 @@ npm install
 ```js
 // this will launch development server for vuejs
 npm run serve
+```
+
+### Starts backend server
+
+```js
+// this will launch development server for vuejs
+npm start
 ```
 
 ### Compiles and minifies for production
