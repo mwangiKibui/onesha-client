@@ -1,6 +1,6 @@
 
-import { Request, Response } from 'express'
-import { ParentRouter } from '../controllers/Router'
+import { Request, Response } from 'express';
+import { ParentRouter } from '../controllers/Router';
 
 /**
  *  Handle all requests
@@ -10,9 +10,9 @@ import { ParentRouter } from '../controllers/Router'
 class ViewRouter extends ParentRouter {
 
     public constructor() {
-        super()
-        this.routeHandler()
-        this.rejectHandler()
+        super();
+        this.routeHandler();
+        this.rejectHandler();
     }
 
     /**
@@ -24,8 +24,8 @@ class ViewRouter extends ParentRouter {
     protected routeHandler() {
         this.router.get('/', (req: Request, res: Response) => {
             // render home page
-            res.render('pages/index')
-        })
+            res.render('pages/index');
+        });
     }
 
     /**
@@ -37,24 +37,24 @@ class ViewRouter extends ParentRouter {
     protected rejectHandler() {
         this.router.get('*', (req: Request, res: Response) => {
             // res.status(404).render('.... 404 page .....')
-        })
+        });
 
         this.router.post('*', (req: Request, res: Response) => {
-            res.status(404).json({ error: 'unhandled post route' })
-        })
+            res.status(404).json({ error: 'unhandled post route' });
+        });
 
         this.router.put('*', (req: Request, res: Response) => {
-            res.status(404).json({ error: 'unhandled put route' })
-        })
+            res.status(404).json({ error: 'unhandled put route' });
+        });
 
         this.router.patch('*', (req: Request, res: Response) => {
-            res.status(404).json({ error: 'unhandled patch route' })
-        })
+            res.status(404).json({ error: 'unhandled patch route' });
+        });
 
         this.router.delete('*', (req: Request, res: Response) => {
-            res.status(404).json({ error: 'unhandled delete route' })
-        })
+            res.status(404).json({ error: 'unhandled delete route' });
+        });
     }
 }
 
-module.exports = new ViewRouter().router
+module.exports = new ViewRouter().router;

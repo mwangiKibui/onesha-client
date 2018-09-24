@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 
-import * as bodyParser from "body-parser";
-import * as express from "express";
-import { createServer, Server } from "http";
-import * as path from "path";
+import * as bodyParser from 'body-parser';
+import * as express from 'express';
+import { createServer, Server } from 'http';
+import * as path from 'path';
 
 /**
  * Server class, configs and route handler
@@ -66,12 +66,11 @@ export class OneshaServer {
    * @memberof AppServer
    */
   private configs() {
-    this.app.use(express.static(path.join(__dirname, "..", "..", "public")));
+    this.app.use(express.static(path.join(__dirname, '..', '..', 'public')));
     this.app.use(bodyParser.urlencoded({ extended: true }));
     this.app.use(bodyParser.json());
     // setting up the view engine
-    this.app.engine("html", require("ejs").renderFile);
-    this.app.set("view engine", "ejs");
+    this.app.engine('html', require('ejs').renderFile);
   }
 
   /**
@@ -81,7 +80,7 @@ export class OneshaServer {
    * @memberof AppServer
    */
   private routes() {
-    this.app.use("/", require("../routes/view-routes"));
+    this.app.use('/', require('../routes/view-routes'));
   }
 
   /**
@@ -93,14 +92,14 @@ export class OneshaServer {
    * @memberof AppServer
    */
   private normalizePort(port: string | number) {
-    if (typeof port === "function") {
-      throw new TypeError("Argument of type function can't used as port");
-    } else if (typeof port === "string") {
+    if (typeof port === 'function') {
+      throw new TypeError('Argument of type function can\'t used as port');
+    } else if (typeof port === 'string') {
       return Number.isNaN(parseInt(port)) ? process.exit(1) : parseInt(port);
-    } else if (typeof port === "undefined") {
-      throw new Error("Expected parameter port number but found none");
-    } else if (typeof port === "object") {
-      throw new TypeError("Argument of type object can't be used as port");
+    } else if (typeof port === 'undefined') {
+      throw new Error('Expected parameter port number but found none');
+    } else if (typeof port === 'object') {
+      throw new TypeError('Argument of type object can\'t be used as port');
     } else if (isNaN(port)) {
       return 4000;
     }

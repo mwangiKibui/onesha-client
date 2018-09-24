@@ -1,5 +1,5 @@
 
-import { Router } from 'express'
+import { Router } from 'express';
 
 /**
  *  Handle all requests
@@ -15,10 +15,10 @@ export abstract class ParentRouter {
      * @type {Router}
      * @memberof ParentRouter
      */
-    public router: Router
+    public router: Router;
 
     constructor() {
-        this.router = Router({ caseSensitive: true, strict: true })
+        this.router = Router({ caseSensitive: true, strict: true });
     }
 
     /**
@@ -27,7 +27,7 @@ export abstract class ParentRouter {
      * @protected
      * @memberof ParentRouter
      */
-    protected abstract routeHandler(): void
+    protected abstract routeHandler(): void;
 
     /**
      *  Reject unhandled routes
@@ -35,5 +35,5 @@ export abstract class ParentRouter {
      * @protected
      * @memberof ParentRouter
      */
-    protected abstract rejectHandler(): void
+    protected abstract rejectHandler(): void;
 }

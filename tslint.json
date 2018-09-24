@@ -9,13 +9,15 @@
     ]
   },
   "rules": {
+    "quotemark": [true, "single"],
     "indent": [true, "spaces", 2],
     "interface-name": false,
     "ordered-imports": false,
     "object-literal-sort-keys": false,
     "no-consecutive-blank-lines": false,
-    "trailing-comma": false,
     "no-console": false,
-    "radix": false
+    "radix": false,
+    "max-line-length": false,
+    "no-var-requires": false
   }
 }

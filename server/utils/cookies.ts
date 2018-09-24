@@ -7,19 +7,21 @@
  * @param {string} cookieName cookie name to retrieve
  * @returns {string | object}
  */
-export function extractCookie(cookieString: string | Array<string>, cookieName?: string): string | object {
+export function extractCookie(cookieString: string | string[], cookieName?: string): string | object {
     // @ts-ignore
-    let c = decodeURIComponent(cookieString),
-        d: string | Array<string>, e: object = {}
+    const c = decodeURIComponent(cookieString);
+    let d: string | string[];
+    const e: object = {};
 
-    if (c.indexOf(';') != -1) d = c.split(';')
-    else d = c
-    if (typeof d == 'string')
-        e[d.split('=')[0]] = d.split('=')[1]
-    else
-        d.map(p => e[p.split('=')[0]] = p.split('=')[1])
+    if (c.indexOf(';') !== -1) { d = c.split(';'); } else { d = c; }
+    if (typeof d === 'string') {
+        e[d.split('=')[0]] = d.split('=')[1];
+    } else {
+        d.map((p) => e[p.split('=')[0]] = p.split('=')[1]);
+    }
 
-    if (typeof cookieName != 'undefined')
-        return e[cookieName]
-    return e
+    if (typeof cookieName !== 'undefined') {
+        return e[cookieName];
+    }
+    return e;
 }
