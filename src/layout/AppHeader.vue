@@ -1,13 +1,13 @@
 <template>
     <header class="header-global">
         <base-nav class="navbar-main" transparent type="" effect="light" expand>
-            <a slot="brand" class="navbar-brand mr-lg-5" href="#/landing">
+            <a slot="brand" class="navbar-brand mr-lg-5" href="landing">
                 <img src="img/brand/white.png">
             </a>
 
             <div class="row" slot="content-header" slot-scope="{closeMenu}">
                 <div class="col-6 collapse-brand">
-                    <a href="#/landing">
+                    <a href="landing">
                         <img src="img/brand/blue.png">
                     </a>
                 </div>
@@ -23,7 +23,7 @@
                         <span class="nav-link-inner--text">CREATIVES</span>
                     </a>
                     <div class="dropdown-menu-inner">
-                        <a href="/register"
+                        <router-link to="register"
                            class="media d-flex align-items-center">
                             <div class="icon icon-shape bg-gradient-primary rounded-circle text-white">
                                 <i class="ni ni-spaceship"></i>
@@ -32,8 +32,8 @@
                                 <h6 class="heading text-primary mb-md-1">Getting started</h6>
                                 <p class="description d-none d-md-inline-block mb-0">Learn how to </p>
                             </div>
-                        </a>
-                        <a href="/login"
+                        </router-link>
+                        <router-link to="login"
                            class="media d-flex align-items-center">
                             <div class="icon icon-shape bg-gradient-warning rounded-circle text-white">
                                 <i class="ni ni-ui-04"></i>
@@ -42,7 +42,7 @@
                                 <h5 class="heading text-warning mb-md-1">Portfolio</h5>
                                 <p class="description d-none d-md-inline-block mb-0">Learn how to use Onesha to create your figital portfolio.</p>
                             </div>
-                        </a>
+                        </router-link>
                     </div>
                 </base-dropdown>
                 <base-dropdown tag="li" class="nav-item">

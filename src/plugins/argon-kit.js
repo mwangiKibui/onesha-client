@@ -10,5 +10,6 @@ export default {
     Vue.use(globalComponents);
     Vue.use(globalDirectives);
     Vue.use(VueLazyload);
-  }
+  },
+  name: "Argon",
 };

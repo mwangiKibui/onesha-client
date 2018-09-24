@@ -3,8 +3,8 @@
 
         <div class="position-relative">
             <!-- shape Hero -->
-            <section class="section-shaped my-0">
-                <div class="shape shape-style-1 shape-default shape-skew">
+            <section class="section-shaped my-0 mt--100">
+                <div class="shape shape-style-1 shape-primary shape-skew">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -17,7 +17,7 @@
                 </div>
                 <div class="container shape-container d-flex">
                     <div class="col px-0">
-                        <div class="row">
+                        <div class="row row-grid justify-content-between align-items-center">
                             <div class="col-lg-6">
                                 <h1 class="display-3  text-white">Get creative services here!
                                     <!-- <span style="font-size: 0.5em">Your creative tasks sorted</span> -->
@@ -38,20 +38,67 @@
                                         </div>
                                     </form><br>
                                     <!-- <base-button tag="a"
-                                                 href="https://demos.creative-tim.com/argon-design-system/docs/components/alerts.html"
-                                                 class="mb-3 mb-sm-0"
-                                                 type="info"
-                                                 icon="fa fa-code">
+                                                    href="https://demos.creative-tim.com/argon-design-system/docs/components/alerts.html"
+                                                    class="mb-3 mb-sm-0"
+                                                    type="info"
+                                                    icon="fa fa-code">
                                         Request Service 
                                     </base-button>
                                     <base-button tag="a"
-                                                 href="https://www.creative-tim.com/product/argon-design-system"
-                                                 class="mb-3 mb-sm-0"
-                                                 type="white"
-                                                 icon="ni ni-cloud-download-95">
+                                                    href="https://www.creative-tim.com/product/argon-design-system"
+                                                    class="mb-3 mb-sm-0"
+                                                    type="white"
+                                                    icon="ni ni-cloud-download-95">
                                         Learn More
                                     </base-button>  -->
                                     
+                                </div>
+                            </div>
+                            <div class="col-lg-5 mb-lg-auto">
+                                        <br><br>
+                                <div class="transform-perspective-right">
+                                    <card class="border-0" type="secondary" shadow
+                                        body-classes="px-lg-5 py-lg-5"
+                                        header-classes="pb-5 bg-white">
+                                        <!-- <template slot="header">
+                                            <div class="text-muted text-center mb-3">
+                                                <small>Sign in with</small>
+                                            </div>
+                                            <div class="btn-wrapper text-center">
+                                                <base-button type="neutral">
+                                                    <img slot="icon" src="img/icons/common/github.svg">
+                                                    Github
+                                                </base-button>
+
+                                                <base-button type="neutral">
+                                                    <img slot="icon" src="img/icons/common/google.svg">
+                                                    Google
+                                                </base-button>
+                                            </div>
+                                        </template> -->
+                                        <template>
+                                            <div class="text-center text-muted mb-4">
+                                                <small>Sign in to your Account</small>
+                                            </div>
+                                            <form role="form">
+                                                <base-input alternative
+                                                            placeholder="Email"
+                                                            addon-left-icon="ni ni-email-83">
+                                                </base-input>
+                                                <base-input alternative
+                                                            type="password"
+                                                            placeholder="Password"
+                                                            addon-left-icon="ni ni-lock-circle-open">
+                                                </base-input>
+                                                <base-checkbox>
+                                                    Remember me
+                                                </base-checkbox>
+                                                <div class="text-center">
+                                                    <base-button type="primary" class="my-4">Sign In</base-button>
+                                                </div>
+                                            </form>
+                                        </template>
+                                    </card>
                                 </div>
                             </div>
                         </div>
@@ -61,6 +108,7 @@
             <!-- 1st Hero Variation -->
         </div>
         <section class="section section-lg pt-lg-0 mt--200">
+            <!-- <categories></categories> -->
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-12">
@@ -510,8 +558,14 @@
 </template>
 
 <script>
+import Categories from "./components/Landing/Categories";
+import DefaultPage from "./components/Landing/DefaultPage";
+
 export default {
   name: "home",
-  components: {}
+  components: {
+      Categories,
+      DefaultPage
+  }
 };
 </script>
