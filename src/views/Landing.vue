@@ -23,21 +23,28 @@
                                     <!-- <span style="font-size: 0.5em">Your creative tasks sorted</span> -->
                                 </h1>
                                 <p class="lead  text-white">5,000 available creatives, bearing some of the latest design skills and technology with a 24 hour support system. Get your creative tasks sorted by the right person at the right price.</p>
+                                <p class="text-white">What would you like to do?</p>
                                 <div class="btn-wrapper">
-                                    <form method="" action="#">
+                                    <form method="" action="#" id="myIntentAction">
                                         <div class="col-md-12 col-lg-12 col-sm-5 row text-center">
-                                            <span class="col-md-4 text-white" style="padding-top: 10px; margin-left: 0px">I am looking</span>
-                                            <span class="col-md-8">
-                                            <select class="selectpicker select form-control" data-size="10" data-style="btn btn-info btn-round btn-block" title="Single Select">
-                                                <option selected>to request a service</option>
-                                                <option value="2">for someone to do my task</option>
-                                                <option value="3">to view portfolios</option>
-                                                <option value="4">to learn about Onesha</option>
+                                            <!-- <span class="col-md-4 text-white" style="padding-top: 10px; margin-left: 0px">I am looking</span> -->
+                                            <span class="col-md-12">
+                                            <select class="selectpicker select form-control form-control-md" v-model="selected"  data-style="btn btn-info btn-round btn-block" title="Single Select">
+                                                <option v-bind:value="{ number: 1 }" selected>Request a creative service</option>
+                                                <option v-bind:value="{ number: 2 }">Get someone to do my task</option>
+                                                <option v-bind:value="{ number: 3 }">I want to view portfolios</option>
+                                                <option v-bind:value="{ number: 4 }">I want to learn about Onesha</option>
                                             </select>
                                             </span>
                                         </div>
                                     </form><br>
-                                    <!-- <base-button tag="a"
+                                    <!-- <base-button v-on:click="pressed" class="mb-3 mb-sm-0"
+                                                    type="info"
+                                                    icon="fa fa-code">
+                                        Request Service 
+                                    </base-button> -->
+                                    <!-- 
+                                    <base-button tag="a"
                                                     href="https://demos.creative-tim.com/argon-design-system/docs/components/alerts.html"
                                                     class="mb-3 mb-sm-0"
                                                     type="info"
@@ -60,6 +67,9 @@
                                     <card class="border-0" type="secondary" shadow
                                         body-classes="px-lg-5 py-lg-5"
                                         header-classes="pb-5 bg-white">
+                                        <template slot="header">
+                                            <!-- <formAlert></formAlert> -->
+                                        </template>
                                         <!-- <template slot="header">
                                             <div class="text-muted text-center mb-3">
                                                 <small>Sign in with</small>
@@ -78,7 +88,7 @@
                                         </template> -->
                                         <template>
                                             <div class="text-center text-muted mb-4">
-                                                <small>Sign in to your Account</small>
+                                                <p>Sign in to your Account</p>
                                             </div>
                                             <form role="form">
                                                 <base-input alternative
@@ -102,13 +112,21 @@
                                 </div>
                             </div>
                         </div>
+                        
+                        <div class="">
+                            <p><br><br><br></p>
+                        </div>
+                        <transition name="component-fade" mode="out-in">
+                            <div id="actions">
+                                <categories></categories>
+                            </div>
+                        </transition>
                     </div>
                 </div>
             </section>
             <!-- 1st Hero Variation -->
         </div>
-        <section class="section section-lg pt-lg-0 mt--200">
-            <!-- <categories></categories> -->
+        <section class="section section-lg pt-lg-0 mt--200">    
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-12">
@@ -122,7 +140,7 @@
                                     <div>
                                         <badge type="primary" rounded>Design</badge>
                                         <badge type="primary" rounded>Social Media</badge>
-                                        <badge type="primary" rounded>Photography</badge>
+                                        <badge type="primary" rounded>Film</badge>
                                     </div>
                                     <base-button tag="a" href="#" type="primary" class="mt-4">
                                         START HERE
@@ -166,6 +184,7 @@
                 </div>
             </div>
         </section>
+        
         <section class="section section-lg">
             <div class="container">
                 <div class="row row-grid align-items-center">
@@ -559,13 +578,41 @@
 
 <script>
 import Categories from "./components/Landing/Categories";
-import DefaultPage from "./components/Landing/DefaultPage";
+import formAlert from "./components/Landing/DefaultPage";
+var show = true;
 
 export default {
-  name: "home",
-  components: {
-      Categories,
-      DefaultPage
-  }
+    name: "home",
+    components: {
+        Categories,
+        formAlert
+    },
+    data: {
+        selectedAnimationIn: '',
+        selectedAnimationOut: '',
+        show: true,
+        request: true,
+        get: true,
+        view: true,
+        learn: true,
+    },
+
+    methods: {
+        pressed: function() 
+        {   show = !show;
+            // var area = document.getElementById("actions");
+            // area.innerHTML = Categories;
+        },
+        enter: function(el)
+        {
+            el.classList.add('animated');
+            el.classList.add(this.selectedAnimationIn);
+        },
+        leave: function(area)
+        {
+            el.classList.add('animated');
+            el.classList.add(this.selectedAnimationOut);
+        }
+    }
 };
 </script>

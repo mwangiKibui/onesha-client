@@ -68,8 +68,9 @@
                 padding-top: 18rem;
                 padding-bottom: 19rem;
 
-                @media screen and (max-width: 400px) {
+                @media screen and (max-width: 500px) {
                     padding-top: 14rem;
+                    font: 1em sans-serif;
                 }
             }
 
