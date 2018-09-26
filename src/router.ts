@@ -2,11 +2,13 @@ import Vue from "vue";
 import Router from "vue-router";
 import AppHeader from "./layout/AppHeader.vue";
 import AppFooter from "./layout/AppFooter.vue";
+import About from "./views/About.vue";
 import Components from "./views/Components.vue";
 import Landing from "./views/Landing.vue";
 import Login from "./views/Login.vue";
 import Register from "./views/Register.vue";
 import Profile from "./views/Profile.vue";
+import Testing from "../testing/index.html";
 
 Vue.use(Router);
 
@@ -16,6 +18,24 @@ export default new Router({
   routes: [
     {
       path: "/",
+      name: "landing",
+      components: {
+        header: AppHeader,
+        default: Landing,
+        footer: AppFooter
+      }
+    },
+    {
+      path: "/about",
+      name: "about",
+      components: {
+        header: AppHeader,
+        default: About,
+        footer: AppFooter
+      }
+    },
+    {
+      path: "/creatives",
       name: "components",
       components: {
         header: AppHeader,
