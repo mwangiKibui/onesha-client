@@ -8,7 +8,6 @@ import Landing from "./views/Landing.vue";
 import Login from "./views/Login.vue";
 import Register from "./views/Register.vue";
 import Profile from "./views/Profile.vue";
-import Testing from "../testing/index.html";
 
 Vue.use(Router);
 
