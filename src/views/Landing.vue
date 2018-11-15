@@ -13,7 +13,7 @@
                         <div class="mt--300 d-lg-none"></div>
                         <div class="justify-content-between align-items-center">
                             <div class="col-lg-10">
-                                <h2 class="display-3 text-left text-white" style="display: inline-block"><span class="next" data-period="2000" data-type='[ "Get Creative", "Social Media", "Graphic Design", "Video Production", "Animation" ]'></span> services at your budget!
+                                <h2 class="display-3 text-left text-white" style="display: inline-block"><span class="next" data-period="2000" data-type='[ "Get Creative", "Social Media", "Graphic Design", "Video Production", "Animation" ]'>Get Creative</span> services at your budget!
                                     <!-- <span style="font-size: 0.5em">Your creative tasks sorted</span> -->
                                 </h2>
                                 <p class="justify-content-between text-white text-left pt-2">
@@ -68,32 +68,32 @@
         <section class="section section-lg pt-lg-0 mt-200 bg-default mb-5 ">    
             <div class="container">
                 <div class="row justify-content-center mt-200">
-                    <div class="col-sm-12 mt-2">
-                        <h4 class="lead text-white mt-4">We have worked with</h4>
+                    <div class="col-sm-12 mt-2 mt-5">
+                        <h2 class="text-white font-weight-light">We have worked with</h2>
                         <div class="row row-grid mt-5">
                             <div class="col-sm-2">
                                 <icon name="ni ni-settings" size="lg" gradient="white" shadow round color="primary"></icon>
-                                <h5 class="text-white mt-3">Client Name</h5>
+                                <p class="text-white mt-3">Client Name</p>
                             </div>
-                            <div class="col-xs-2">
+                            <div class="col-sm-2">
                                 <icon name="ni ni-ruler-pencil" size="lg" gradient="white" shadow round color="primary"></icon>
-                                <h5 class="text-white mt-3">Client Name</h5>
+                                <p class="text-white mt-3">Client Name</p>
                             </div>
-                            <div class="col-xs-2">
+                            <div class="col-sm-2">
                                 <icon name="ni ni-atom" size="lg" gradient="white" shadow round color="primary"></icon>
-                                <h5 class="text-white mt-3">Client Name</h5>
+                                <p class="text-white mt-3">Client Name</p>
                             </div>
-                            <div class="col-xs-2">
+                            <div class="col-sm-2">
                                 <icon name="ni ni-atom" size="lg" gradient="white" shadow round color="primary"></icon>
-                                <h5 class="text-white mt-3">Client Name</h5>
+                                <p class="text-white mt-3">Client Name</p>
                             </div>
-                            <div class="col-xs-2">
+                            <div class="col-sm-2">
                                 <icon name="ni ni-atom" size="lg" gradient="white" shadow round color="primary"></icon>
-                                <h5 class="text-white mt-3">Client Name</h5>
+                                <p class="text-white mt-3">Client Name</p>
                             </div>
-                            <div class="col-xs-2">
+                            <div class="col-sm-2">
                                 <icon name="ni ni-atom" size="lg" gradient="white" shadow round color="primary"></icon>
-                                <h5 class="text-white mt-3">Client Name</h5>
+                                <p class="text-white mt-3">Client Name</p>
                             </div>
                         </div>
                     </div>
@@ -105,33 +105,17 @@
                 <div class="row justify-content-center">
                     <div class="mb-5 mb-lg-0 col-md-12">
                         <h2 class="text-default font-weight-light">Our Process</h2>
-                        <p class="lead text-default mt-4">We bring you services from these categories.</p>
+                        <p class="lead text-default mt-4">We follow this process to ensure you quality.</p>
                         
                     </div>
                     <div class="col-lg-12">
                         <div class="row row-grid">
                             <div class="col-lg-4">
                                 <card class="border-0" hover shadow body-classes="py-5">
-                                    <icon name="ni ni-check-bold" type="primary" rounded class="mb-4">
-                                    </icon>
-                                    <h6 class="text-primary text-uppercase">Find Services</h6>
-                                    <p class="description mt-3">Onesha helps you find services offered by our creative professionals ranging from several categories.</p>
-                                    <div>
-                                        <badge type="primary" rounded>Design</badge>
-                                        <badge type="primary" rounded>Social Media</badge>
-                                        <badge type="primary" rounded>Film</badge>
-                                    </div>
-                                    <base-button tag="a" href="#" type="primary" class="mt-4">
-                                        START HERE
-                                    </base-button>
-                                </card>
-                            </div>
-                            <div class="col-lg-4">
-                                <card class="border-0" hover shadow body-classes="py-5">
                                     <icon name="ni ni-istanbul" type="success" rounded class="mb-4">
                                     </icon>
                                     <h6 class="text-success text-uppercase">Request a Service</h6>
-                                    <p class="description mt-3">Onesha helps you flesh out your request using easy to use job templates that make filling forms a breeze</p>
+                                    <p class="description mt-3">Onesha helps you flesh out your request using easy to use job templates that make filling forms a breeze.</p>
                                     <div>
                                         <badge type="success" rounded>business</badge>
                                         <badge type="success" rounded>vision</badge>
@@ -146,8 +130,24 @@
                                 <card class="border-0" hover shadow body-classes="py-5">
                                     <icon name="ni ni-planet" type="primary" rounded class="mb-4">
                                     </icon>
-                                    <h6 class="text-primary text-uppercase">View Creatives</h6>
-                                    <p class="description mt-3">Just want to look around? Feel free! Onesha has a ton of impressive portfolios from jobs done by our vetted creatives.</p>
+                                    <h6 class="text-primary text-uppercase">We Process your request</h6>
+                                    <p class="description mt-3">Onesha helps you find services offered by our creative professionals ranging from several categories. We pick the right one for you.</p>
+                                    <div>
+                                        <badge type="primary" rounded>Design</badge>
+                                        <badge type="primary" rounded>Social Media</badge>
+                                        <badge type="primary" rounded>Film</badge>
+                                    </div>
+                                    <base-button tag="a" href="#" type="primary" class="mt-4">
+                                        START HERE
+                                    </base-button>
+                                </card>
+                            </div>
+                            <div class="col-lg-4">
+                                <card class="border-0" hover shadow body-classes="py-5">
+                                    <icon name="ni ni-check-bold" type="primary" rounded class="mb-4">
+                                    </icon>
+                                    <h6 class="text-primary text-uppercase">Job Delivery</h6>
+                                    <p class="description mt-3">You want it urgently? No problem! Onesha has a ton of experience from jobs done by our vetted creatives. We get it done.</p>
                                     <div>
                                         <badge type="primary" rounded>marketing</badge>
                                         <badge type="primary" rounded>product</badge>
@@ -163,8 +163,88 @@
                 </div>
             </div>
         </section>
+        <section class="section section-lg pt-lg-0 mt-200 bg-gradient-default">    
+            <div class="container pt-lg">
+                <div class="row text-center justify-content-center">
+                    <div class="col-lg-10">
+                        <h2 class="display-3 text-white">Begin your request</h2>
+                        <p class="lead text-white">Your journey starts here. Choose a Category.</p>
+                    </div>
+                </div>
+                <div class="row row-grid mt-5">
+                    <div class="col-lg-4">
+                        <icon name="ni ni-settings" size="lg" gradient="white" shadow round color="primary"></icon>
+                        <h5 class="text-white mt-3">Social Media</h5>
+                        <p class="text-white mt-3">Some quick example text to build on the card title and make up the
+                            bulk of the card's content.</p><br>
+                        <a href="#request" data-toggle="scroll">
+                            <base-button class="btn btn-md btn-success btn-icon mb-3 mb-sm-0"
+                                        type="info"
+                                        icon="fa fa-cloud-download">
+                                Request A Service 
+                            </base-button> 
+                        </a>
+                    </div>
+                    <div class="col-lg-4">
+                        <icon name="ni ni-ruler-pencil" size="lg" gradient="white" shadow round color="primary"></icon>
+                        <h5 class="text-white mt-3">Graphic Design</h5>
+                        <p class="text-white mt-3">Some quick example text to build on the card title and make up the
+                            bulk of the card's content.</p><br>
+                        <a href="#request" data-toggle="scroll">
+                            <base-button class="btn btn-md btn-success btn-icon mb-3 mb-sm-0"
+                                        type="info"
+                                        icon="fa fa-cloud-download">
+                                Request A Service 
+                            </base-button> 
+                        </a>
+                    </div>
+                    <div class="col-lg-4">
+                        <icon name="ni ni-atom" size="lg" gradient="white" shadow round color="primary"></icon>
+                        <h5 class="text-white mt-3">Video and Motion Graphics</h5>
+                        <p class="text-white mt-3">Some quick example text to build on the card title and make up the
+                            bulk of the card's content.</p><br>
+                        <a href="#request" data-toggle="scroll">
+                            <base-button class="btn btn-md btn-success btn-icon mb-3 mb-sm-0"
+                                        type="info"
+                                        icon="fa fa-cloud-download">
+                                Request A Service 
+                            </base-button> 
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section-lg pt-lg-0 mt-200 section-contact-us">
+            <div class="container">
+                <div class="row justify-content-center ">
+                    <div class="col-lg-8">
+                        <card gradient="secondary" shadow body-classes="p-lg-5">
+                            <h4 class="mb-1">Want to work with us?</h4>
+                            <p class="mt-0">Your project is very important to us.</p>
+                            <base-input class="mt-5"
+                                        alternative
+                                        placeholder="Your name"
+                                        addon-left-icon="ni ni-user-run">
+                            </base-input>
+                            <base-input alternative
+                                        placeholder="Email address"
+                                        addon-left-icon="ni ni-email-83">
+                            </base-input>
+                            <base-input class="mb-4">
+                                    <textarea class="form-control form-control-alternative" name="name" rows="4"
+                                              cols="80" placeholder="What do you need done?..."></textarea>
+                            </base-input>
+                            <base-button type="default" round block size="lg">
+                                Send Message
+                            </base-button>
+                        </card>
+                    </div>
+                </div>
+            </div>
+        </section>
         
-        <section class="section section-lg mt--100">
+        
+        <section class="section section-lg mt--200">
             <div class="container">
                 <div class="row row-grid align-items-center">
                     <div class="col-md-6 order-md-2">
@@ -430,28 +510,26 @@
             <div class="container pt-lg pb-300">
                 <div class="row text-center justify-content-center">
                     <div class="col-lg-10">
-                        <h2 class="display-3 text-white">Build something</h2>
-                        <p class="lead text-white">According to the National Oceanic and Atmospheric Administration,
-                            Ted, Scambos, NSIDClead scentist, puts the potentially record low maximum sea ice extent
-                            tihs year down to low ice.</p>
+                        <h2 class="display-3 text-white">Begin your request</h2>
+                        <p class="lead text-white">Your journey starts here. Choose a Category.</p>
                     </div>
                 </div>
                 <div class="row row-grid mt-5">
                     <div class="col-lg-4">
                         <icon name="ni ni-settings" size="lg" gradient="white" shadow round color="primary"></icon>
-                        <h5 class="text-white mt-3">Building tools</h5>
+                        <h5 class="text-white mt-3">Social Media</h5>
                         <p class="text-white mt-3">Some quick example text to build on the card title and make up the
                             bulk of the card's content.</p>
                     </div>
                     <div class="col-lg-4">
                         <icon name="ni ni-ruler-pencil" size="lg" gradient="white" shadow round color="primary"></icon>
-                        <h5 class="text-white mt-3">Grow your market</h5>
+                        <h5 class="text-white mt-3">Graphic Design</h5>
                         <p class="text-white mt-3">Some quick example text to build on the card title and make up the
                             bulk of the card's content.</p>
                     </div>
                     <div class="col-lg-4">
                         <icon name="ni ni-atom" size="lg" gradient="white" shadow round color="primary"></icon>
-                        <h5 class="text-white mt-3">Launch time</h5>
+                        <h5 class="text-white mt-3">Video and Motion Graphics</h5>
                         <p class="text-white mt-3">Some quick example text to build on the card title and make up the
                             bulk of the card's content.</p>
                     </div>

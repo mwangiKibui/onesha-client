@@ -4,7 +4,7 @@
             <b-carousel id="carousel1"
                         controls
                         indicators>
-                <!-- Text slides with image -->
+                <!-- Text slides with image
                 <b-carousel-slide img-blank img-alt="" style="max-height: 400px; background: rgba(10,10,10,0.2)">
                     
                     <div class="row mt--100 py-0">
@@ -49,10 +49,21 @@
                             Request A Service 
                         </base-button> 
                     </a>
+                </b-carousel-slide>  -->
+                <b-carousel-slide img-src="img/theme/img-2-1200x1000.jpg" style="max-height: 400px">
+                    <h3>Social Media</h3>
+                    <p class="mt-4">A description of social media to show clients</p><br>
+                    <a href="#request" data-toggle="scroll">
+                        <base-button class="btn btn-md btn-success btn-icon mb-3 mb-sm-0"
+                                    type="info"
+                                    icon="fa fa-cloud-download">
+                            Request A Service 
+                        </base-button> 
+                    </a>
                 </b-carousel-slide>
                 <b-carousel-slide img-src="img/theme/img-2-1200x1000.jpg" style="max-height: 400px">
                     <h3>Video Services</h3>
-                    <p class="mt-4">A description of graphic design to show clients</p><br>
+                    <p class="mt-4">A description of video services to show clients</p><br>
                     <a href="#request" data-toggle="scroll">
                         <base-button class="btn btn-md btn-success btn-icon mb-3 mb-sm-0"
                                     type="info"
@@ -74,7 +85,7 @@
                 </b-carousel-slide>
                 <b-carousel-slide img-src="img/theme/img-2-1200x1000.jpg" style="max-height: 400px">
                     <h3>Motion Graphics</h3>
-                    <p class="mt-4">A description of graphic design to show clients</p><br>
+                    <p class="mt-4">A description of motion graphics to show clients</p><br>
                     <a href="#request" data-toggle="scroll">
                         <base-button class="btn btn-md btn-success btn-icon mb-3 mb-sm-0"
                                     type="info"
