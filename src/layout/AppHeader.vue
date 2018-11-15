@@ -17,51 +17,24 @@
             </div>
 
             <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
-                <base-dropdown class="nav-item" menu-classes="dropdown-menu-xl">
-                    <a slot="title" href="#" class="nav-link" data-toggle="dropdown" role="button">
-                        <i class="ni ni-ui-04 d-lg-none"></i>
-                        <span class="nav-link-inner--text">CREATIVES</span>
-                    </a>
-                    <div class="dropdown-menu-inner">
-                        <router-link to="register"
-                           class="media d-flex align-items-center">
-                            <div class="icon icon-shape bg-gradient-primary rounded-circle text-white">
-                                <i class="ni ni-spaceship"></i>
-                            </div>
-                            <div class="media-body ml-3">
-                                <h6 class="heading text-primary mb-md-1">Getting started</h6>
-                                <p class="description d-none d-md-inline-block mb-0">Learn how to </p>
-                            </div>
-                        </router-link>
-                        <router-link to="login"
-                           class="media d-flex align-items-center">
-                            <div class="icon icon-shape bg-gradient-warning rounded-circle text-white">
-                                <i class="ni ni-ui-04"></i>
-                            </div>
-                            <div class="media-body ml-3">
-                                <h5 class="heading text-warning mb-md-1">Portfolio</h5>
-                                <p class="description d-none d-md-inline-block mb-0">Learn how to use Onesha to create your figital portfolio.</p>
-                            </div>
-                        </router-link>
-                    </div>
-                </base-dropdown>
+                <li class="nav-item">
+                    <router-link to="process" class="nav-link">
+                        <i class="ni ni-collection d-lg-none"></i>
+                        <span class="nav-link-inner--text ">HOW IT WORKS</span>
+                    </router-link>
+                </li>
                 <base-dropdown tag="li" class="nav-item">
                     <a slot="title" href="#" class="nav-link" data-toggle="dropdown" role="button">
                         <i class="ni ni-collection d-lg-none"></i>
                         <span class="nav-link-inner--text">SERVICES</span>
                     </a>
-                    <router-link to="landing" class="dropdown-item">Landing</router-link>
-                    <router-link to="profile" class="dropdown-item">Profile</router-link>
-                    <router-link to="login" class="dropdown-item">Login</router-link>
+                    <router-link to="profile" class="dropdown-item">Social Media</router-link>
+                    <router-link to="profile" class="dropdown-item">Graphic Design</router-link>
+                    <router-link to="login" class="dropdown-item">Motion Graphics</router-link>
+                    <router-link to="login" class="dropdown-item">Video and Animation</router-link>
                 </base-dropdown>
             </ul>
             <ul class="navbar-nav align-items-lg-center ml-lg-auto">
-                <li class="nav-item">
-                    <router-link to="login" class="nav-link nav-link-icon">
-                        <i class="fa fa-user margin-r-5"></i>  
-                        <span class="nav-link-inner--text "> LOGIN</span>
-                    </router-link>
-                </li>
                 <li class="nav-item d-lg-none">
                     <router-link to="/register" class="nav-link nav-link-icon" style="text-align: left; border: 1px solid #eee; padding-left: 5px">
                         <i class="fa fa-user-plus margin-r-5"></i>  
@@ -82,9 +55,9 @@
     </header>
 </template>
 <script>
-import BaseNav from "@/components/BaseNav";
-import BaseDropdown from "@/components/BaseDropdown";
-import CloseButton from "@/components/CloseButton";
+import BaseNav from "@/components/Common/BaseNav";
+import BaseDropdown from "@/components/Common/BaseDropdown";
+import CloseButton from "@/components/Common/CloseButton";
 
 export default {
   components: {

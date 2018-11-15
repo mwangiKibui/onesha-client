@@ -1,134 +1,113 @@
 <template>
-    <div>
+    <section>
 
         <div class="position-relative">
             <!-- shape Hero -->
-            <section class="section-shaped my-0 mt--100">
-                <div class="shape shape-style-1 shape-primary shape-skew">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="container shape-container d-flex">
+            <!-- <div class="blurred-image"></div> -->
+            <section class="mt--300 d-lg-none"></section>
+            <section class="section home-content section-lg section-hero">
+                
+                <div class="container shape-container py-md">
                     <div class="col px-0">
-                        <div class="row row-grid justify-content-between align-items-center">
-                            <div class="col-lg-6">
-                                <h1 class="display-3  text-white">Get creative services here!
+                        <div class="my-1 py-4 d-sm-none"></div>
+                        <div class="mt--300 d-lg-none"></div>
+                        <div class="justify-content-between align-items-center">
+                            <div class="col-lg-10">
+                                <h2 class="display-3 text-left text-white" style="display: inline-block"><span class="next" data-period="2000" data-type='[ "Get Creative", "Social Media", "Graphic Design", "Video Production", "Animation" ]'></span> services at your budget!
                                     <!-- <span style="font-size: 0.5em">Your creative tasks sorted</span> -->
-                                </h1>
-                                <p class="lead  text-white">5,000 available creatives, bearing some of the latest design skills and technology with a 24 hour support system. Get your creative tasks sorted by the right person at the right price.</p>
-                                <p class="text-white">What would you like to do?</p>
-                                <div class="btn-wrapper">
-                                    <form method="" action="#" id="myIntentAction">
-                                        <div class="col-md-12 col-lg-12 col-sm-5 row text-center">
-                                            <!-- <span class="col-md-4 text-white" style="padding-top: 10px; margin-left: 0px">I am looking</span> -->
-                                            <span class="col-md-12">
-                                            <select class="selectpicker select form-control form-control-md" v-model="selected"  data-style="btn btn-info btn-round btn-block" title="Single Select">
-                                                <option v-bind:value="{ number: 1 }" selected>Request a creative service</option>
-                                                <option v-bind:value="{ number: 2 }">Get someone to do my task</option>
-                                                <option v-bind:value="{ number: 3 }">I want to view portfolios</option>
-                                                <option v-bind:value="{ number: 4 }">I want to learn about Onesha</option>
-                                            </select>
-                                            </span>
-                                        </div>
-                                    </form><br>
-                                    <!-- <base-button v-on:click="pressed" class="mb-3 mb-sm-0"
+                                </h2>
+                                <p class="justify-content-between text-white text-left pt-2">
+                                    <span class="lead">Get services from vetted creatives with quick delivery to fit your schedule.<br> Choose a category, fill a simple job template, get your task done!</span>
+                                    <span class="text-left">
+                                        <ul class="py-1 px-3" style="list-style: circle">
+                                            <li>Receive quality work, review upto 3 times</li>
+                                            <li>Save time taken to compare creative professionals</li>
+                                            <li>Get Project Management to reduce the hassle</li>
+                                        </ul>
+                                    </span>
+                                </p>
+                                
+                                <div class="btn-wrapper text-left">
+                                    <a href="#request" data-toggle="scroll">
+                                        <base-button class="btn btn-md btn-success btn-icon mb-3 mb-sm-0"
                                                     type="info"
-                                                    icon="fa fa-code">
-                                        Request Service 
-                                    </base-button> -->
-                                    <!-- 
-                                    <base-button tag="a"
-                                                    href="https://demos.creative-tim.com/argon-design-system/docs/components/alerts.html"
-                                                    class="mb-3 mb-sm-0"
-                                                    type="info"
-                                                    icon="fa fa-code">
-                                        Request Service 
-                                    </base-button>
-                                    <base-button tag="a"
-                                                    href="https://www.creative-tim.com/product/argon-design-system"
-                                                    class="mb-3 mb-sm-0"
-                                                    type="white"
-                                                    icon="ni ni-cloud-download-95">
-                                        Learn More
-                                    </base-button>  -->
-                                    
+                                                    icon="fa fa-cloud-download">
+                                            Request A Service 
+                                        </base-button> 
+                                    </a>
                                 </div>
                             </div>
-                            <div class="col-lg-5 mb-lg-auto">
-                                        <br><br>
-                                <div class="transform-perspective-right">
-                                    <card class="border-0" type="secondary" shadow
-                                        body-classes="px-lg-5 py-lg-5"
-                                        header-classes="pb-5 bg-white">
-                                        <template slot="header">
-                                            <!-- <formAlert></formAlert> -->
-                                        </template>
-                                        <!-- <template slot="header">
-                                            <div class="text-muted text-center mb-3">
-                                                <small>Sign in with</small>
-                                            </div>
-                                            <div class="btn-wrapper text-center">
-                                                <base-button type="neutral">
-                                                    <img slot="icon" src="img/icons/common/github.svg">
-                                                    Github
-                                                </base-button>
-
-                                                <base-button type="neutral">
-                                                    <img slot="icon" src="img/icons/common/google.svg">
-                                                    Google
-                                                </base-button>
-                                            </div>
-                                        </template> -->
-                                        <template>
-                                            <div class="text-center text-muted mb-4">
-                                                <p>Sign in to your Account</p>
-                                            </div>
-                                            <form role="form">
-                                                <base-input alternative
-                                                            placeholder="Email"
-                                                            addon-left-icon="ni ni-email-83">
-                                                </base-input>
-                                                <base-input alternative
-                                                            type="password"
-                                                            placeholder="Password"
-                                                            addon-left-icon="ni ni-lock-circle-open">
-                                                </base-input>
-                                                <base-checkbox>
-                                                    Remember me
-                                                </base-checkbox>
-                                                <div class="text-center">
-                                                    <base-button type="primary" class="my-4">Sign In</base-button>
-                                                </div>
-                                            </form>
-                                        </template>
-                                    </card>
-                                </div>
-                            </div>
+                            
                         </div>
                         
                         <div class="">
-                            <p><br><br><br></p>
+                            <p><br></p>
                         </div>
-                        <transition name="component-fade" mode="out-in">
-                            <div id="actions">
-                                <categories></categories>
-                            </div>
-                        </transition>
+                        
                     </div>
                 </div>
             </section>
             <!-- 1st Hero Variation -->
         </div>
-        <section class="section section-lg pt-lg-0 mt--200">    
+        <section class="section section-shaped my-0 mb-2 " style="background: white; color: black">
+            <div class="container">
+                <div class="justify-content-between align-items-center">
+                    <div class="mb-5 mb-lg-0 col-md-12">
+                        <h2 class="text-default font-weight-light">All Categories</h2>
+                        <p class="lead text-default mt-4">We bring you services from these categories.</p>
+                        
+                    </div>
+                    <transition name="component-fade" mode="out-in">
+                        <div id="actions" class="">
+                            <categories></categories>
+                        </div>
+                    </transition>  
+                </div>
+            </div>
+        </section>
+        <section class="section section-lg pt-lg-0 mt-200 bg-default mb-5 ">    
+            <div class="container">
+                <div class="row justify-content-center mt-200">
+                    <div class="col-sm-12 mt-2">
+                        <h4 class="lead text-white mt-4">We have worked with</h4>
+                        <div class="row row-grid mt-5">
+                            <div class="col-sm-2">
+                                <icon name="ni ni-settings" size="lg" gradient="white" shadow round color="primary"></icon>
+                                <h5 class="text-white mt-3">Client Name</h5>
+                            </div>
+                            <div class="col-xs-2">
+                                <icon name="ni ni-ruler-pencil" size="lg" gradient="white" shadow round color="primary"></icon>
+                                <h5 class="text-white mt-3">Client Name</h5>
+                            </div>
+                            <div class="col-xs-2">
+                                <icon name="ni ni-atom" size="lg" gradient="white" shadow round color="primary"></icon>
+                                <h5 class="text-white mt-3">Client Name</h5>
+                            </div>
+                            <div class="col-xs-2">
+                                <icon name="ni ni-atom" size="lg" gradient="white" shadow round color="primary"></icon>
+                                <h5 class="text-white mt-3">Client Name</h5>
+                            </div>
+                            <div class="col-xs-2">
+                                <icon name="ni ni-atom" size="lg" gradient="white" shadow round color="primary"></icon>
+                                <h5 class="text-white mt-3">Client Name</h5>
+                            </div>
+                            <div class="col-xs-2">
+                                <icon name="ni ni-atom" size="lg" gradient="white" shadow round color="primary"></icon>
+                                <h5 class="text-white mt-3">Client Name</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section-lg pt-lg-0 mt-200">    
             <div class="container">
                 <div class="row justify-content-center">
+                    <div class="mb-5 mb-lg-0 col-md-12">
+                        <h2 class="text-default font-weight-light">Our Process</h2>
+                        <p class="lead text-default mt-4">We bring you services from these categories.</p>
+                        
+                    </div>
                     <div class="col-lg-12">
                         <div class="row row-grid">
                             <div class="col-lg-4">
@@ -185,7 +164,7 @@
             </div>
         </section>
         
-        <section class="section section-lg">
+        <section class="section section-lg mt--100">
             <div class="container">
                 <div class="row row-grid align-items-center">
                     <div class="col-md-6 order-md-2">
@@ -573,7 +552,7 @@
             </div>
         </section>
 
-    </div>
+    </section>
 </template>
 
 <script>
@@ -587,7 +566,8 @@ export default {
         Categories,
         formAlert
     },
-    data: {
+    data() {
+    return {
         selectedAnimationIn: '',
         selectedAnimationOut: '',
         show: true,
@@ -595,6 +575,7 @@ export default {
         get: true,
         view: true,
         learn: true,
+        }
     },
 
     methods: {
@@ -615,4 +596,117 @@ export default {
         }
     }
 };
+var TxtType = function(els, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = els;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = this.txt;
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+                console.log('rotating');
+        var elements = document.getElementsByClassName('next');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".next { border-right: .05em solid rgb(102, 88, 61)}";
+        document.body.appendChild(css);
+    };
+
 </script>
+<style>
+    .display-3 span{
+    display: inline-flex !important;
+    }
+    .position-relative{
+        position: relative;
+        background-image:  none;     
+        background-image: url('/img/theme/home.jpg');
+        background-size: cover; 
+        background-position: right;
+        background-repeat: no-repeat;
+        height: 100vh !important;          
+    }
+    .home-content{
+        background-color: rgba(0, 0, 34, .7);
+        z-index: 9;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+    .next{
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .05em solid rgb(102, 88, 61); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    margin-right: 2px;
+    color:#22cdef;
+    letter-spacing: .02em; /*Adjust as needed*/
+    animation: 
+        /* typing 1.5s steps(40, end),
+        blink-caret .2s step-end infinite; */
+        typing 1.2s steps(44) 1s 1 normal both,
+        blink-caret 0.55s steps(50) infinite
+    }
+
+    @media screen and (max-width: 580px) {
+        .d-sm-none {
+            display: none;
+        }
+    }
+
+    /* The typing effect */
+    @keyframes typing {
+    from { width: 0 }  
+    }
+
+    /* The typewriter cursor effect */
+    @keyframes blink-caret {
+    from, to { border-color: transparent }
+    30% { border-color: orange; }
+    }
+</style>
+

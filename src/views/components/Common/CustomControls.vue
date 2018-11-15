@@ -173,8 +173,8 @@
     </section>
 </template>
 <script>
-import BaseNav from "@/components/BaseNav";
-import CloseButton from "@/components/CloseButton";
+import BaseNav from "@/components/Common/BaseNav";
+import CloseButton from "@/components/Common/CloseButton";
 
 export default {
   components: {

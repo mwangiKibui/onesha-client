@@ -17,7 +17,7 @@ export default new Router({
   routes: [
     {
       path: "/",
-      name: "landing",
+      name: "home",
       components: {
         header: AppHeader,
         default: Landing,
