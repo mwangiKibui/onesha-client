@@ -69,14 +69,14 @@
                   <h6>Motion Graphics Video</h6>
                   <ProgressSection :progressval="progressvalu"></ProgressSection>
                 </div>
-                
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and
-                    Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
-                    right at the coast of the Semantics, a large language ocean.</p>
-                <p>A small river named Duden flows by their place and supplies it with the necessary
-                    regelialia. It is a paradisematic country, in which roasted parts of sentences
-                    fly into your mouth.</p>
-
+                <div  :v-for="aUser in userData">
+                  <div :v-if="error" class="error">
+                    {{ error}}
+                  </div>
+                  <div :v-if="aUser">
+                    <p>{{ aUser.category }}</p>
+                  </div>                  
+                </div>
                 <template slot="footer">
                     <base-button type="primary" @click="moveToNext()">Proceed</base-button>
                     <base-button type="link" class="ml-auto" @click="modals.modal3 = false">Close
@@ -90,10 +90,12 @@
 <script>
 import Modal from "@/components/Common/Modal.vue";
 import ProgressSection from "./JobTemplate1.vue";
+import SampleData from "@/assets/sample-template-data.js";
 export default {
   components: {
     Modal,
-    ProgressSection
+    ProgressSection,
+    SampleData
   },
   data() {
     return {
@@ -103,17 +105,33 @@ export default {
         modal3: false
       },
       progressvalu: 0,
-      name: 'mee'
-    };
+      aUser:{},
+      userData: [],
+      error: null
+    }
+  },
+  created(){
+      this.getData()
   },
   methods: {
-    moveToNext: function(){
+    moveToNext: function(e){
       this.progressvalu += 10
-      alert('Hello ' + this.progressvalu + '!')
-      // console.log(progressvalu)
+    },
+    getData: function () {
+      var self = this;
+      var urlToData = "sample-template-data.json"
+      $.getJSON(urlToData, function(err, data){
+          console.log(data)
+            if (err) {
+                this.error = err.toString()
+            } else{
+                self.userData = data;
+                console.log(data)
+            }     
+      })
     }
   }
-};
+}
 </script>
 <style>
 </style>

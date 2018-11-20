@@ -11,6 +11,10 @@ import Profile from "./views/Profile.vue";
 
 Vue.use(Router);
 
+function fetchData() {
+  return {};
+}
+
 export default new Router({
   linkExactActiveClass: "active",
   mode: "history",
@@ -22,7 +26,8 @@ export default new Router({
         header: AppHeader,
         default: Landing,
         footer: AppFooter
-      }
+      },
+      props: fetchData
     },
     {
       path: "/about",

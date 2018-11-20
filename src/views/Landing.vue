@@ -678,7 +678,6 @@ var TxtType = function(els, toRotate, period) {
     };
 
     window.onload = function() {
-                console.log('rotating');
         var elements = document.getElementsByClassName('next');
         for (var i=0; i<elements.length; i++) {
             var toRotate = elements[i].getAttribute('data-type');
