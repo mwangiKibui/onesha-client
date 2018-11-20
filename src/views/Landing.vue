@@ -12,7 +12,7 @@
                         <div class="my-1 py-4 d-sm-none"></div>
                         <div class="mt--300 d-lg-none"></div>
                         <div class="justify-content-between align-items-center">
-                            <div class="col-lg-10">
+                            <div class="col-lg-11">
                                 <h2 class="display-3 text-left text-white" style="display: inline-block"><span class="next" data-period="2000" data-type='[ "Get Creative", "Social Media", "Graphic Design", "Video Production", "Animation" ]'>Get Creative</span> services at your budget!
                                     <!-- <span style="font-size: 0.5em">Your creative tasks sorted</span> -->
                                 </h2>
@@ -131,7 +131,7 @@
                                     <icon name="ni ni-planet" type="primary" rounded class="mb-4">
                                     </icon>
                                     <h6 class="text-primary text-uppercase">We Process your request</h6>
-                                    <p class="description mt-3">Onesha helps you find services offered by our creative professionals ranging from several categories. We pick the right one for you.</p>
+                                    <p class="description mt-3">Onesha helps you find services offered by our professionals in several categories. We pick the right one for you.</p>
                                     <div>
                                         <badge type="primary" rounded>Design</badge>
                                         <badge type="primary" rounded>Social Media</badge>
@@ -163,7 +163,7 @@
                 </div>
             </div>
         </section>
-        <section class="section section-lg pt-lg-0 mt-200 bg-gradient-default">    
+        <section class="section section-lg pt-lg-0 mt-200 bg-gradient-default" id="request">    
             <div class="container pt-lg">
                 <div class="row text-center justify-content-center">
                     <div class="col-lg-10">
@@ -171,47 +171,7 @@
                         <p class="lead text-white">Your journey starts here. Choose a Category.</p>
                     </div>
                 </div>
-                <div class="row row-grid mt-5">
-                    <div class="col-lg-4">
-                        <icon name="ni ni-settings" size="lg" gradient="white" shadow round color="primary"></icon>
-                        <h5 class="text-white mt-3">Social Media</h5>
-                        <p class="text-white mt-3">Some quick example text to build on the card title and make up the
-                            bulk of the card's content.</p><br>
-                        <a href="#request" data-toggle="scroll">
-                            <base-button class="btn btn-md btn-success btn-icon mb-3 mb-sm-0"
-                                        type="info"
-                                        icon="fa fa-cloud-download">
-                                Request A Service 
-                            </base-button> 
-                        </a>
-                    </div>
-                    <div class="col-lg-4">
-                        <icon name="ni ni-ruler-pencil" size="lg" gradient="white" shadow round color="primary"></icon>
-                        <h5 class="text-white mt-3">Graphic Design</h5>
-                        <p class="text-white mt-3">Some quick example text to build on the card title and make up the
-                            bulk of the card's content.</p><br>
-                        <a href="#request" data-toggle="scroll">
-                            <base-button class="btn btn-md btn-success btn-icon mb-3 mb-sm-0"
-                                        type="info"
-                                        icon="fa fa-cloud-download">
-                                Request A Service 
-                            </base-button> 
-                        </a>
-                    </div>
-                    <div class="col-lg-4">
-                        <icon name="ni ni-atom" size="lg" gradient="white" shadow round color="primary"></icon>
-                        <h5 class="text-white mt-3">Video and Motion Graphics</h5>
-                        <p class="text-white mt-3">Some quick example text to build on the card title and make up the
-                            bulk of the card's content.</p><br>
-                        <a href="#request" data-toggle="scroll">
-                            <base-button class="btn btn-md btn-success btn-icon mb-3 mb-sm-0"
-                                        type="info"
-                                        icon="fa fa-cloud-download">
-                                Request A Service 
-                            </base-button> 
-                        </a>
-                    </div>
-                </div>
+                <JobCategories></JobCategories>
             </div>
         </section>
         <section class="section section-lg pt-lg-0 mt-200 section-contact-us">
@@ -232,7 +192,7 @@
                             </base-input>
                             <base-input class="mb-4">
                                     <textarea class="form-control form-control-alternative" name="name" rows="4"
-                                              cols="80" placeholder="What do you need done?..."></textarea>
+                                            cols="80" placeholder="What do you need done?..."></textarea>
                             </base-input>
                             <base-button type="default" round block size="lg">
                                 Send Message
@@ -253,7 +213,7 @@
                     <div class="col-md-6 order-md-1">
                         <div class="pr-md-5">
                             <icon name="ni ni-settings-gear-65" class="mb-5" size="lg" type="success" shadow
-                                  rounded></icon>
+                                rounded></icon>
                             <h3>Awesome features</h3>
                             <p>The kit comes with three pre-built pages to help you get started faster. You can change
                                 the text and images and you're good to go.</p>
@@ -290,7 +250,7 @@
                             <img v-lazy="'img/theme/img-1-1200x1000.jpg'" class="card-img-top">
                             <blockquote class="card-blockquote">
                                 <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95"
-                                     class="svg-bg">
+                                    class="svg-bg">
                                     <polygon points="0,52 583,95 0,95" class="fill-default"></polygon>
                                     <polygon points="0,42 583,95 683,0 0,95" opacity=".2" class="fill-default"></polygon>
                                 </svg>
@@ -339,7 +299,7 @@
                         <div class="d-flex px-3">
                             <div>
                                 <icon name="ni ni-building" size="lg" class="bg-gradient-white" color="primary" shadow
-                                      rounded></icon>
+                                    rounded></icon>
                             </div>
                             <div class="pl-4">
                                 <h4 class="display-3 text-white">Modern Interface</h4>
@@ -351,7 +311,7 @@
                             <div class="d-flex px-3">
                                 <div>
                                     <icon name="ni ni-satisfied" gradient="success" color="white" shadow
-                                          rounded></icon>
+                                        rounded></icon>
                                 </div>
                                 <div class="pl-4">
                                     <h5 class="title text-success">Awesome Support</h5>
@@ -365,7 +325,7 @@
                             <div class="d-flex px-3">
                                 <div>
                                     <icon name="ni ni-active-40" gradient="info" color="white" shadow
-                                          rounded></icon>
+                                        rounded></icon>
                                 </div>
                                 <div class="pl-4">
                                     <h5 class="title text-info">Modular Components</h5>
@@ -392,8 +352,8 @@
                     <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
                         <div class="px-4">
                             <img v-lazy="'img/theme/team-1-800x800.jpg'"
-                                 class="rounded-circle img-center img-fluid shadow shadow-lg--hover"
-                                 style="width: 200px;">
+                                class="rounded-circle img-center img-fluid shadow shadow-lg--hover"
+                                style="width: 200px;">
                             <div class="pt-4 text-center">
                                 <h5 class="title">
                                     <span class="d-block mb-1">Ryan Tompson</span>
@@ -401,11 +361,11 @@
                                 </h5>
                                 <div class="mt-3">
                                     <base-button tag="a" href="#" type="info" icon="fa fa-twitter" rounded
-                                                 icon-only></base-button>
+                                                icon-only></base-button>
                                     <base-button tag="a" href="#" type="info" icon="fa fa-facebook" rounded
-                                                 icon-only></base-button>
+                                                icon-only></base-button>
                                     <base-button tag="a" href="#" type="info" icon="fa fa-dribbble" rounded
-                                                 icon-only></base-button>
+                                                icon-only></base-button>
                                 </div>
                             </div>
                         </div>
@@ -413,8 +373,8 @@
                     <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
                         <div class="px-4">
                             <img v-lazy="'img/theme/team-2-800x800.jpg'"
-                                 class="rounded-circle img-center img-fluid shadow shadow-lg--hover"
-                                 style="width: 200px;">
+                                class="rounded-circle img-center img-fluid shadow shadow-lg--hover"
+                                style="width: 200px;">
                             <div class="pt-4 text-center">
                                 <h5 class="title">
                                     <span class="d-block mb-1">Romina Hadid</span>
@@ -422,11 +382,11 @@
                                 </h5>
                                 <div class="mt-3">
                                     <base-button tag="a" href="#" type="primary" icon="fa fa-twitter" rounded
-                                                 icon-only></base-button>
+                                                icon-only></base-button>
                                     <base-button tag="a" href="#" type="primary" icon="fa fa-facebook" rounded
-                                                 icon-only></base-button>
+                                                icon-only></base-button>
                                     <base-button tag="a" href="#" type="primary" icon="fa fa-dribbble" rounded
-                                                 icon-only></base-button>
+                                                icon-only></base-button>
                                 </div>
                             </div>
                         </div>
@@ -434,8 +394,8 @@
                     <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
                         <div class="px-4">
                             <img v-lazy="'img/theme/team-3-800x800.jpg'"
-                                 class="rounded-circle img-center img-fluid shadow shadow-lg--hover"
-                                 style="width: 200px;">
+                                class="rounded-circle img-center img-fluid shadow shadow-lg--hover"
+                                style="width: 200px;">
                             <div class="pt-4 text-center">
                                 <h5 class="title">
                                     <span class="d-block mb-1">Alexander Smith</span>
@@ -443,11 +403,11 @@
                                 </h5>
                                 <div class="mt-3">
                                     <base-button tag="a" href="#" type="info" icon="fa fa-twitter" rounded
-                                                 icon-only></base-button>
+                                                icon-only></base-button>
                                     <base-button tag="a" href="#" type="info" icon="fa fa-facebook" rounded
-                                                 icon-only></base-button>
+                                                icon-only></base-button>
                                     <base-button tag="a" href="#" type="info" icon="fa fa-dribbble" rounded
-                                                 icon-only></base-button>
+                                                icon-only></base-button>
                                 </div>
                             </div>
                         </div>
@@ -455,8 +415,8 @@
                     <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
                         <div class="px-4">
                             <img v-lazy="'img/theme/team-4-800x800.jpg'"
-                                 class="rounded-circle img-center img-fluid shadow shadow-lg--hover"
-                                 style="width: 200px;">
+                                class="rounded-circle img-center img-fluid shadow shadow-lg--hover"
+                                style="width: 200px;">
                             <div class="pt-4 text-center">
                                 <h5 class="title">
                                     <span class="d-block mb-1">John Doe</span>
@@ -464,11 +424,11 @@
                                 </h5>
                                 <div class="mt-3">
                                     <base-button tag="a" href="#" type="success" icon="fa fa-twitter" rounded
-                                                 icon-only></base-button>
+                                                icon-only></base-button>
                                     <base-button tag="a" href="#" type="success" icon="fa fa-facebook" rounded
-                                                 icon-only></base-button>
+                                                icon-only></base-button>
                                     <base-button tag="a" href="#" type="success" icon="fa fa-dribbble" rounded
-                                                 icon-only></base-button>
+                                                icon-only></base-button>
                                 </div>
                             </div>
                         </div>
@@ -479,9 +439,9 @@
         <section class="section section-lg pt-0">
             <div class="container">
                 <card gradient="info"
-                      no-body
-                      shadow-size="lg"
-                      class="border-0">
+                    no-body
+                    shadow-size="lg"
+                    class="border-0">
                     <div class="p-5">
                         <div class="row align-items-center">
                             <div class="col-lg-8">
@@ -491,7 +451,7 @@
                             </div>
                             <div class="col-lg-3 ml-lg-auto">
                                 <base-button tag="a" href="https://www.creative-tim.com/product/vue-argon-design-system"
-                                             type="white" block size="lg">
+                                            type="white" block size="lg">
                                     Download Vue
                                 </base-button>
                             </div>
@@ -554,7 +514,7 @@
                             </base-input>
                             <base-input class="mb-4">
                                     <textarea class="form-control form-control-alternative" name="name" rows="4"
-                                              cols="80" placeholder="Type a message..."></textarea>
+                                            cols="80" placeholder="Type a message..."></textarea>
                             </base-input>
                             <base-button type="default" round block size="lg">
                                 Send Message
@@ -576,51 +536,51 @@
                             old Bootstrap project a new look!</p>
                         <div class="btn-wrapper">
                             <a href="https://www.creative-tim.com/product/vue-argon-design-system"
-                               class="btn btn-primary mb-3 mb-sm-0">Download Vue</a>
+                            class="btn btn-primary mb-3 mb-sm-0">Download Vue</a>
                         </div>
                         <div class="text-center">
                             <h4 class="display-4 mb-5 mt-5">Available on these technologies</h4>
                             <div class="row justify-content-center">
                                 <div class="col-lg-2 col-4">
                                     <a href="https://getbootstrap.com/" target="_blank" data-toggle="tooltip"
-                                       data-original-title="Bootstrap 4 - Most popular front-end component library">
+                                    data-original-title="Bootstrap 4 - Most popular front-end component library">
                                         <img v-lazy="'https://s3.amazonaws.com/creativetim_bucket/tim_static_images/presentation-page/bootstrap.jpg'"
-                                             class="img-fluid">
+                                            class="img-fluid">
                                     </a>
                                 </div>
                                 <div class="col-lg-2 col-4">
                                     <a href="https://www.sketchapp.com/" target="_blank" data-toggle="tooltip"
-                                       data-original-title="[Coming Soon] Sketch - Digital design toolkit">
+                                    data-original-title="[Coming Soon] Sketch - Digital design toolkit">
                                         <img v-lazy="'https://s3.amazonaws.com/creativetim_bucket/tim_static_images/presentation-page/sketch.jpg'"
-                                             class="img-fluid opacity-5">
+                                            class="img-fluid opacity-5">
                                     </a>
                                 </div>
                                 <div class="col-lg-2 col-4">
                                     <a href="https://www.adobe.com/products/photoshop.html" data-toggle="tooltip"
-                                       data-original-title="[Coming Soon] Adobe Photoshop - Software for digital images manipulation">
+                                    data-original-title="[Coming Soon] Adobe Photoshop - Software for digital images manipulation">
                                         <img v-lazy="'https://s3.amazonaws.com/creativetim_bucket/tim_static_images/presentation-page/ps.jpg'"
-                                             class="img-fluid  opacity-5">
+                                            class="img-fluid  opacity-5">
                                     </a>
                                 </div>
                                 <div class="col-lg-2 col-4">
                                     <a href="https://vuejs.org/" target="_blank" data-toggle="tooltip"
-                                       data-original-title="Vue.js - The progressive javascript framework">
+                                    data-original-title="Vue.js - The progressive javascript framework">
                                         <img v-lazy="'https://s3.amazonaws.com/creativetim_bucket/tim_static_images/presentation-page/vue.jpg'"
-                                             class="img-fluid">
+                                            class="img-fluid">
                                     </a>
                                 </div>
                                 <div class="col-lg-2 col-4">
                                     <a href="https://angularjs.org/" target="_blank" data-toggle="tooltip"
-                                       data-original-title="[Coming Soon] Angular - One framework. Mobile &amp; desktop">
+                                    data-original-title="[Coming Soon] Angular - One framework. Mobile &amp; desktop">
                                         <img v-lazy="'https://s3.amazonaws.com/creativetim_bucket/tim_static_images/presentation-page/angular.jpg'"
-                                             class="img-fluid opacity-5">
+                                            class="img-fluid opacity-5">
                                     </a>
                                 </div>
                                 <div class="col-lg-2 col-4">
                                     <a href="https://reactjs.org/" target="_blank" data-toggle="tooltip"
-                                       data-original-title="[Coming Soon] React - A JavaScript library for building user interfaces">
+                                    data-original-title="[Coming Soon] React - A JavaScript library for building user interfaces">
                                         <img v-lazy="'https://s3.amazonaws.com/creativetim_bucket/tim_static_images/presentation-page/react.jpg'"
-                                             class="img-fluid opacity-5">
+                                            class="img-fluid opacity-5">
                                     </a>
                                 </div>
                             </div>
@@ -629,20 +589,22 @@
                 </div>
             </div>
         </section>
-
     </section>
+        
 </template>
 
 <script>
 import Categories from "./components/Landing/Categories";
 import formAlert from "./components/Landing/DefaultPage";
+import JobCategories from "./components/JobTemplates/JobTemplate";
 var show = true;
 
 export default {
     name: "home",
     components: {
         Categories,
-        formAlert
+        formAlert,
+        JobCategories
     },
     data() {
     return {
@@ -766,7 +728,7 @@ var TxtType = function(els, toRotate, period) {
     animation: 
         /* typing 1.5s steps(40, end),
         blink-caret .2s step-end infinite; */
-        typing 1.2s steps(44) 1s 1 normal both,
+        typing 1s steps(40) 1s 1 normal both,
         blink-caret 0.55s steps(50) infinite
     }
 
