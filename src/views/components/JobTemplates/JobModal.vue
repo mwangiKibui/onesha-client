@@ -1,5 +1,5 @@
 <template>    
-    <div class="col-lg-12" v-show="this.modalstate">
+    <div class="col-lg-12 sectionDisplay" v-show="this.modalstate">
         <card type="secondary" shadow header-classes="bg-grey pb-5" body-classes="px-lg-5 py-lg-5" class="border-0">
             <template slot="header">
                 <h5 class="text-default mt-3">{{jobcategory.category}}</h5>
@@ -7,7 +7,7 @@
             </template>
             
         
-            <div class="text-left text-muted mb-4">
+            <div class="text-left text-muted mb-4 sectionDisplay">
                 <p>Jobs Types in {{jobcategory.category}}</p>
                 <ol>
                     <li v-for="jobtype in this.jobcategory.jobtypes">                    
@@ -28,7 +28,7 @@
                     </li> 
                 </ol>
             </div>
-            <base-button type="primary" @click.prevent="moveToNext()" :class="align-items-right">Proceed</base-button>
+            <base-button type="primary" @click.prevent="moveToNext()" class="align-items-right">Proceed</base-button>
             <template slot="footer">
                 <base-progress type="primary" :value="progressvalue" v-model="progressvalue"  :striped=false :animated=true></base-progress>
             </template>
@@ -44,7 +44,8 @@ export default {
   },
   data() {
       return {
-          progressvalue: 10
+          progressvalue: 10,
+          error: null
       }
   },
   methods: {
@@ -53,7 +54,11 @@ export default {
             this.progressvalue += 10
         }
     }
-  }
+  },
+  mounted: function (){  
+    var el = this.$el.getElementsByClassName("sectionDisplay")[0];
+    el.scrollIntoView();
+    }
 };
 console.log();
 </script>

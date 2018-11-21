@@ -13,8 +13,8 @@
                 </base-button>             
             </div>
         </div><br>
-        <div class="row">
-            <jobmodal  :jobcategory="jobcategory" :modalstate="modalstater" :row="rownum"></jobmodal>
+        <div class="row sectionDisplay" ref='sectionDisplay'>
+            <jobmodal :jobcategory="jobcategory" :modalstate="modalstater" :row="rownum"></jobmodal>
         </div>
     </div>
 </template>
@@ -51,7 +51,6 @@ export default {
       })
     },
     popup: function(category, index) {
-        // alert(index+' is here')
         this.modalstater = true
         this.jobcategory = category
     }
