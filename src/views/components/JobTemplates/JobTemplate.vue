@@ -1,134 +1,54 @@
 <template>
     <!-- Modals -->
     <div class="row row-grid mt-5">
-        <div class="col-lg-4">
-            <icon name="ni ni-settings" size="lg" gradient="white" shadow round color="primary"></icon>
-            <h5 class="text-white mt-3">Social Media</h5>
-            <p class="text-white mt-3">Some quick example text to build on the card title and make up the
-                bulk of the card's content.</p><br>
+        <div class="col-lg-4"  v-for="(category, index) in categories">
+            <icon :name="category.avatar.path" size="lg" gradient="white" shadow round color="primary"></icon>
+            <h5 class="text-white mt-3">{{category.category}}</h5>
+            <p class="text-white mt-3">{{category.description}}</p><br>
             <base-button class="btn btn-md btn-success btn-icon mb-3 mb-sm-0"
                         type="info"
-                        icon="fa fa-cloud-download" @click="modals.modal1 = true">
+                        icon="fa fa-cloud-download" @click="modalstater = true">
                 Request A Service 
             </base-button> 
-            <modal :show.sync="modals.modal1">
-                <h6 slot="header" class="modal-title" id="modal-title-default">Social Media</h6>
-
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and
-                    Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
-                    right at the coast of the Semantics, a large language ocean.</p>
-                <p>A small river named Duden flows by their place and supplies it with the necessary
-                    regelialia. It is a paradisematic country, in which roasted parts of sentences
-                    fly into your mouth.</p>
-
-                <template slot="footer">
-                    <base-button type="primary">Save changes</base-button>
-                    <base-button type="link" class="ml-auto" @click="modals.modal1 = false">Close
-                    </base-button>
-                </template>
-            </modal>
         </div>
-        <div class="col-lg-4">
-            <icon name="ni ni-ruler-pencil" size="lg" gradient="white" shadow round color="primary"></icon>
-            <h5 class="text-white mt-3">Graphic Design</h5>
-            <p class="text-white mt-3">Some quick example text to build on the card title and make up the
-                bulk of the card's content.</p><br>
-            <base-button class="btn btn-md btn-success btn-icon mb-3 mb-sm-0"
-                        type="info"
-                        icon="fa fa-cloud-download" @click="modals.modal2 = true">
-                Request A Service 
-            </base-button>
-            <modal :show.sync="modals.modal2">
-                <h6 slot="header" class="modal-title" id="modal-title-default">Graphic Design</h6>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and
-                    Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
-                    right at the coast of the Semantics, a large language ocean.</p>
-                <p>A small river named Duden flows by their place and supplies it with the necessary
-                    regelialia. It is a paradisematic country, in which roasted parts of sentences
-                    fly into your mouth.</p>
-
-                <template slot="footer">
-                    <base-button type="primary">Save changes</base-button>
-                    <base-button type="link" class="ml-auto" @click="modals.modal2 = false">Close
-                    </base-button>
-                </template>
-            </modal>
-        </div>
-        <div class="col-lg-4">
-            <icon name="ni ni-atom" size="lg" gradient="white" shadow round color="primary"></icon>
-            <h5 class="text-white mt-3">Video and Motion Graphics</h5>
-            <p class="text-white mt-3">Some quick example text to build on the card title and make up the
-                bulk of the card's content.</p><br>
-            <base-button class="btn btn-md btn-success btn-icon mb-3 mb-sm-0"
-                        type="info"
-                        icon="fa fa-cloud-download" @click="modals.modal3 = true">
-                Request A Service 
-            </base-button> 
-            <modal :show.sync="modals.modal3">
-                <div slot="header" class="modal-title" id="modal-title-default" style="width: 100%">
-                  <h6>Motion Graphics Video</h6>
-                  <ProgressSection :progressval="progressvalu"></ProgressSection>
-                </div>
-                <div  :v-for="aUser in userData">
-                  <div :v-if="error" class="error">
-                    {{ error}}
-                  </div>
-                  <div :v-if="aUser">
-                    <p>{{ aUser.category }}</p>
-                  </div>                  
-                </div>
-                <template slot="footer">
-                    <base-button type="primary" @click="moveToNext()">Proceed</base-button>
-                    <base-button type="link" class="ml-auto" @click="modals.modal3 = false">Close
-                    </base-button>
-                </template>
-                
-            </modal>
-        </div>
+        <jobmodal :jobcategory="category" :modalstate="modalstater"></jobmodal>
     </div>
 </template>
 <script>
-import Modal from "@/components/Common/Modal.vue";
-import ProgressSection from "./JobTemplate1.vue";
+import jobmodal from "./JobTemplate1.vue";
 import SampleData from "@/assets/sample-template-data.js";
 export default {
   components: {
-    Modal,
-    ProgressSection,
-    SampleData
+    jobmodal
   },
   data() {
     return {
-      modals: {
-        modal1: false,
-        modal2: false,
-        modal3: false
-      },
-      progressvalu: 0,
-      aUser:{},
-      userData: [],
-      error: null
+      categories: SampleData,
+      error: null,
+      modalstater: 0,
+      jobcategory: [],
     }
   },
-  created(){
-      this.getData()
+  mounted(){
+      this.logDetails()
   },
   methods: {
-    moveToNext: function(e){
-      this.progressvalu += 10
-    },
     getData: function () {
       var self = this;
-      var urlToData = "sample-template-data.json"
+      var urlToData = "sample-template-data.json";
       $.getJSON(urlToData, function(err, data){
-          console.log(data)
+          
             if (err) {
                 this.error = err.toString()
             } else{
-                self.userData = data;
+                self.categories = data;
                 console.log(data)
             }     
       })
+    },
+    popup: function(index) {
+        this.index.modalstater = true
+        console.log(this.modalstater)
     }
   }
 }
