@@ -1,23 +1,29 @@
 <template>    
-    <modal :show.sync="this.modalstate">
-        {{this.jobcategory}}
+    <modal :show.sync="modalstatus" :v-if="modalstatus">
+        
         <div slot="header" class="modal-title" id="modal-title-default" style="width: 100%">
-            <!-- <h6>{{ this.jobCategory.category }}</h6> -->
+            <h6>{{ jobCategory.category }}</h6>
             <ProgressSection :progressval="progressvalue"></ProgressSection>
         </div>
         
-        <!-- <div  v-for="jobtypes in this.jobCategory.jobtypes">                    
+        <div  v-for="jobtype in jobCategory.jobtypes">                    
             <div :v-if="error" class="error">
             {{ error}}
             </div>
             <div :v-if="jobtypes">
-                <p>{{ jobtypes }}</p>
+                <p>{{ jobtypes.title }}</p>
+                <small>{{ jobtypes.description }}</small>
+                <ul>
+                    <li v-for="job in jobtype.jobs">
+                        <router-link class="btn btn-sm" href="" tag="a">job.title</router-link>
+                    </li>
+                </ul>
             </div>                  
-        </div> -->
+        </div> 
 
         <template slot="footer">
             <base-button type="primary" @click="moveToNext()">Proceed</base-button>
-            <base-button type="link" class="ml-auto" @click="this.modalstate = false">Close
+            <base-button type="link" class="ml-auto" @click="close">Close
             </base-button>
         </template>
         
@@ -34,11 +40,14 @@ export default {
     Modal
   },
   mounted() {
-      this.logDetails()
   },
   data() {
     return {
-        progressvalue: 0
+        progressvalue: 0,
+        jobCategory : this.jobcategory,
+        show: false,
+        modalstatus: this.modalstate,
+        error: null
       }
   },
   methods: {
@@ -47,9 +56,12 @@ export default {
             this.progressvalue += 10
         }
     },
-    logDetails: function(){
-        console.log(this.modalstate)
+    close: function() {
+        this.show = false
     }
+  },
+  created() {
+      console.log(this.modalstatus)
   }
 };
 </script>

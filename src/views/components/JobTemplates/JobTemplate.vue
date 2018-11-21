@@ -1,21 +1,25 @@
 <template>
     <!-- Modals -->
-    <div class="row row-grid mt-5">
-        <div class="col-lg-4"  v-for="(category, index) in categories">
-            <icon :name="category.avatar.path" size="lg" gradient="white" shadow round color="primary"></icon>
-            <h5 class="text-white mt-3">{{category.category}}</h5>
-            <p class="text-white mt-3">{{category.description}}</p><br>
-            <base-button class="btn btn-md btn-success btn-icon mb-3 mb-sm-0"
-                        type="info"
-                        icon="fa fa-cloud-download" @click="modalstater = true">
-                Request A Service 
-            </base-button> 
+    <div>
+        <div class="row row-grid mt-5">
+            <div class="col-lg-4"  v-for="(category, index) in categories">
+                <icon :name="category.avatar.path" size="lg" gradient="white" shadow round color="primary"></icon>
+                <h5 class="text-white mt-3">{{category.category}}</h5>
+                <p class="text-white mt-3">{{category.description}}</p><br>
+                <base-button class="btn btn-md btn-success btn-icon mb-3 mb-sm-0"
+                            type="info"
+                            icon="fa fa-cloud-download" @click.prevent="popup(category,index)">
+                    Request A Service 
+                </base-button>             
+            </div>
+        </div><br>
+        <div class="row">
+            <jobmodal  :jobcategory="jobcategory" :modalstate="modalstater" :row="rownum"></jobmodal>
         </div>
-        <jobmodal :jobcategory="category" :modalstate="modalstater"></jobmodal>
     </div>
 </template>
 <script>
-import jobmodal from "./JobTemplate1.vue";
+import jobmodal from "./JobModal.vue";
 import SampleData from "@/assets/sample-template-data.js";
 export default {
   components: {
@@ -25,12 +29,12 @@ export default {
     return {
       categories: SampleData,
       error: null,
-      modalstater: 0,
+      modalstater: false,
       jobcategory: [],
+      rownum: 0
     }
   },
   mounted(){
-      this.logDetails()
   },
   methods: {
     getData: function () {
@@ -46,9 +50,10 @@ export default {
             }     
       })
     },
-    popup: function(index) {
-        this.index.modalstater = true
-        console.log(this.modalstater)
+    popup: function(category, index) {
+        // alert(index+' is here')
+        this.modalstater = true
+        this.jobcategory = category
     }
   }
 }

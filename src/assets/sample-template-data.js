@@ -83,17 +83,17 @@ const template = [
         },
         jobtypes: [
             {
-                title: 'Social media audit',
-                slug: 'social-media-audit',
-                description: 'Description of what social media audit is ...',
+                title: 'Business Profile',
+                slug: 'business-profile',
+                description: 'Description of what business profile is ...',
                 jobs: [
                     {
-                        title: 'Facebook audit',
-                        slug: 'facebook-audit',
-                        description: 'Get audit for your facebook to understand ...',
+                        title: 'Insurance Company',
+                        slug: 'insurance-profile',
+                        description: 'Get profile for your business to attract ...',
                         template: [
                             {
-                                title: 'How often do you post on facebook?',
+                                title: 'How often do you update your profile?',
                                 feedback: 'single-select',
                                 options: [
                                     {
@@ -117,12 +117,12 @@ const template = [
                         ],
                     },
                     {
-                        title: 'Twitter handle management',
-                        slug: 'twitter-handle-management',
-                        description: 'We will manage your Twitter handle ...',
+                        title: 'Startup Profile',
+                        slug: 'startup-profile',
+                        description: 'We will manage your Startup profile ...',
                         template: [
                             {
-                                title: 'How often do you post on twitter?',
+                                title: 'How often do you update your profile?',
                                 feedback: 'single-select',
                                 options: [
                                     {
@@ -147,6 +147,38 @@ const template = [
                     },
                 ],
             },
+            {
+                title: 'Logo Design',
+                slug: 'business-logo',
+                description: 'Description of what logo design is ...',
+                jobs: [
+                    {
+                        title: 'Wavy Logo',
+                        slug: 'logo-1',
+                        description: 'Get a logo for your business to attract ...',
+                        template: []
+                    }
+                ]
+            },
+            {
+                title: 'Poster Design',
+                slug: 'poster-design',
+                description: 'Description of what poster design is ...',
+                jobs: [
+                    {
+                        title: 'Web Poster',
+                        slug: 'logo-1',
+                        description: 'Get a poster for your business to attract ...',
+                        template: []
+                    },
+                    {
+                        title: 'Print Poster',
+                        slug: 'logo-1',
+                        description: 'Get a poster for your business to attract ...',
+                        template: []
+                    }
+                ]
+            }
         ]
     },
     {
