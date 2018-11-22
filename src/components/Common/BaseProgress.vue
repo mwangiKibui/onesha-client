@@ -39,6 +39,7 @@ export default {
     },
     label: {
       type: String,
+      default: '',
       description: "Progress label (shown on the left above progress)"
     },
     height: {

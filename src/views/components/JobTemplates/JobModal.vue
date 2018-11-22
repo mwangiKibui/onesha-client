@@ -1,66 +1,87 @@
 <template>    
-    <div class="col-lg-12 sectionDisplay" v-show="this.modalstate">
-        <card type="secondary" shadow header-classes="bg-grey pb-5" body-classes="px-lg-5 py-lg-5" class="border-0">
-            <template slot="header">
-                <h5 class="text-default mt-3">{{jobcategory.category}}</h5>
-                <p class="text-default mt-3">{{jobcategory.description}}</p>
-            </template>
-            
+    <!-- <modal :show.sync="this.modalstate" :v-if="this.modalstate">
         
-            <div class="text-left text-muted mb-4 sectionDisplay">
-                <p>Jobs Types in {{jobcategory.category}}</p>
-                <ol>
-                    <li v-for="jobtype in this.jobcategory.jobtypes">                    
-                        <div :v-if="error" class="error">
-                            {{ error}}
-                        </div>
-                        <div :v-if="jobtype">
-                            <p><img src="@/assets/logo.png" style="height: 30px"/>
-                            &nbsp;&nbsp; {{ jobtype.title }}<br>
-                            <small>{{ jobtype.description }}</small>
-                            <div class="row row-grid">
-                                <p v-for="job in jobtype.jobs" class="col-md-4">
-                                    <a class="btn btn-sm btn-primary btn-block text-white" @click="moveToNext()">{{job.title}}</a>
-                                    <!-- <router-link class="btn btn-sm" href="" tag="a">{{job.title}}</router-link> -->
-                                </p>
-                            </div></p>
-                        </div>                 
-                    </li> 
-                </ol>
+        <div slot="header" class="modal-title" id="modal-title-default" style="width: 100%">
+            <h6>{{ jobCategory.category }}</h6>
+            <ProgressSection :progressval="progressvalue"></ProgressSection>
+        </div>
+        
+        <div  v-for="jobtype in jobCategory.jobtypes">                    
+            <div :v-if="error" class="error">
+            {{ error}}
             </div>
-            <base-button type="primary" @click.prevent="moveToNext()" class="align-items-right">Proceed</base-button>
-            <template slot="footer">
-                <base-progress type="primary" :value="progressvalue" v-model="progressvalue"  :striped=false :animated=true></base-progress>
-            </template>
-        </card>
+            <div :v-if="jobtypes">
+                <p>{{ jobtypes.title }}</p>
+                <small>{{ jobtypes.description }}</small>
+                <ul>
+                    <li v-for="job in jobtype.jobs">
+                        <router-link class="btn btn-sm" href="" tag="a">job.title</router-link>
+                    </li>
+                </ul>
+            </div>                  
+        </div> 
+
+        <template slot="footer">
+            <base-button type="primary" @click="moveToNextState()">Proceed</base-button>
+            <base-button type="link" class="ml-auto" @click="close">Close
+            </base-button>
+        </template>
+        
+    </modal> -->
+    <div class="modal" :class="{ 'is-active': toshow }">
+      <div class="modal-background"></div>
+        <div class="modal-content">
+          <div class="box">
+            <div class="content">
+              <h1 class="title">{{jobCategory}}</h1>
+            </div>
+          </div>
+        </div>
+        <button @click.prevent="active = false" class="modal-close is-large" aria-label="close"></button>
     </div>
 </template>
 <script>
+// import Modal from "@/components/Common/Modal.vue";
 import ProgressSection from "./JobProgress.vue";
+import Vue from 'vue';
+window.Event = new Vue();
 export default {
-  props: ['row','jobcategory','modalstate'],
+//   props: ['modalstate',
+//     'jobtypedetails'
+//   ],
   components: {
-    ProgressSection
+    ProgressSection,
+    // Modal
   },
   data() {
-      return {
-          progressvalue: 10,
-          error: null
+    return {
+        progressvalue: 0,
+        jobCategory : [],
+        toshow: true,
+        modalstatus: false,
+        error: null
       }
   },
   methods: {
-    moveToNext: function(e){
+    moveToNextState: function(e){
         if(this.progressvalue < 100){
             this.progressvalue += 10
         }
+    },
+    close: function() {
+        this.toshow = false
+    },
+    show() {
+        this.toshow = true;
     }
   },
-  mounted: function (){  
-    var el = this.$el.getElementsByClassName("sectionDisplay")[0];
-    el.scrollIntoView();
-    }
+  created() {
+    Event.$on('toggleModal', (row) => {
+      this.jobCategory = row;
+      this.show();
+    });
+  }
 };
-console.log();
 </script>
 <style>
 </style>

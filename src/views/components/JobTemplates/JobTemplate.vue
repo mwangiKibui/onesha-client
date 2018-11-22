@@ -14,15 +14,18 @@
             </div>
         </div><br>
         <div class="row sectionDisplay" ref='sectionDisplay'>
-            <jobmodal :jobcategory="jobcategory" :modalstate="modalstater" :row="rownum"></jobmodal>
+            <jobmodal ></jobmodal> 
+            <jobtypetemplate :jobcategory="jobcategory" :modalstate="modalstater"></jobtypetemplate>
         </div>
     </div>
 </template>
 <script>
-import jobmodal from "./JobModal.vue";
+import jobtypetemplate from "./JobTypes.vue";
 import SampleData from "@/assets/sample-template-data.js";
+import jobmodal from "./JobModal.vue";
 export default {
   components: {
+    jobtypetemplate,
     jobmodal
   },
   data() {
@@ -30,12 +33,13 @@ export default {
       categories: SampleData,
       error: null,
       modalstater: false,
-      jobcategory: [],
-      rownum: 0
+      jobcategory: []
     }
   },
-  mounted(){
-  },
+  mounted: function (){  
+    var el = this.$el.getElementsByClassName("sectionDisplay")[0];
+    el.scrollIntoView();
+    },
   methods: {
     getData: function () {
       var self = this;
@@ -53,6 +57,8 @@ export default {
     popup: function(category, index) {
         this.modalstater = true
         this.jobcategory = category
+        var el = this.$el.getElementsByClassName("sectionDisplay")[0];
+        el.scrollIntoView();
     }
   }
 }

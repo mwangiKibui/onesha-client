@@ -75,7 +75,7 @@ const template = [
         ],
     },
     {
-        category: 'Graphics design',
+        category: 'Graphic design',
         slug: 'grpahic-design',
         description: 'Graphic Design enables you to reach your clients online ... bla bla bla ...',
         avatar: {
