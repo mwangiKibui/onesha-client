@@ -14,7 +14,7 @@
             </div>
         </div><br>
         <div class="row sectionDisplay" ref='sectionDisplay'>
-            <jobmodal ></jobmodal> 
+            <!-- <jobmodal ></jobmodal>  -->
             <jobtypetemplate :jobcategory="jobcategory" :modalstate="modalstater"></jobtypetemplate>
         </div>
     </div>
@@ -53,6 +53,9 @@ export default {
                 console.log(data)
             }     
       })
+    },
+    render: function (createElement) {
+      return createElement(jobtypetemplate)
     },
     popup: function(category, index) {
         this.modalstater = true

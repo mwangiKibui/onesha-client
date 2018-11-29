@@ -8,7 +8,7 @@
         
             <tr>
                 <td v-text="row.name"></td>
-                <td v-text="row.description"></td>
+                <td><jobmodal :modalstate="true" :jobcategory="row"></jobmodal></td>
                 <td><a @click.prevent="toggleModal(row)" href="#">Open Job</a></td>
             </tr>
             <!-- <base-button type="primary" @click.prevent="moveToNext()" class="align-items-right">Proceed</base-button> -->
@@ -19,13 +19,12 @@
     
 </template>
 <script>
-import Vue from 'vue';
-window.Event = new Vue();
+import Modal from "./JobModal.vue";
 import ProgressSection from "./JobProgress.vue";
 export default {
   props: ['row'],
   components: {
-    ProgressSection
+    'jobmodal': Modal
   },
   data() {
       return {
@@ -41,7 +40,7 @@ export default {
     },
     toggleModal(row) {
         console.log('clicked')
-      Event.$emit('toggleModal', row);
+      //Event.$emit('toggleModal', row);
     }
   },
   mounted: function (){  

@@ -28,27 +28,25 @@
         </template>
         
     </modal> -->
-    <div class="modal" :class="{ 'is-active': toshow }">
-      <div class="modal-background"></div>
-        <div class="modal-content">
-          <div class="box">
-            <div class="content">
-              <h1 class="title">{{jobCategory}}</h1>
-            </div>
-          </div>
-        </div>
-        <button @click.prevent="active = false" class="modal-close is-large" aria-label="close"></button>
+    <div class="" :class="{ 'is-active': toshow }">
+              <p class="text">{{jobCategory.jobtypes[0].name}}
+                 <ul>
+                    <li v-for="job in jobCategory.jobtypes">
+                        <a v-for="temp in job.temps">{{temp.query}}</a>
+                    </li>
+                </ul>
+
+
+              </p>
     </div>
 </template>
 <script>
 // import Modal from "@/components/Common/Modal.vue";
 import ProgressSection from "./JobProgress.vue";
-import Vue from 'vue';
-window.Event = new Vue();
+//import Vue from 'vue';
+//window.Event = new Vue();
 export default {
-//   props: ['modalstate',
-//     'jobtypedetails'
-//   ],
+  props: ['modalstate','jobcategory'],
   components: {
     ProgressSection,
     // Modal
@@ -56,9 +54,9 @@ export default {
   data() {
     return {
         progressvalue: 0,
-        jobCategory : [],
-        toshow: true,
-        modalstatus: false,
+        jobCategory : this.jobcategory,
+        toshow: this.modalstate,
+        modalstatus: this.modalstate,
         error: null
       }
   },
@@ -75,12 +73,13 @@ export default {
         this.toshow = true;
     }
   },
-  created() {
-    Event.$on('toggleModal', (row) => {
+    render: function (createElement) {
+      return createElement(jobtypetemplate)
+    
       this.jobCategory = row;
       this.show();
-    });
-  }
+    }
+  
 };
 </script>
 <style>
