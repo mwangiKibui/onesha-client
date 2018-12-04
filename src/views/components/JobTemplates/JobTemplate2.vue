@@ -6,11 +6,11 @@
                 <p class="text-default mt-3">description</p>
             </template> -->
         
-            <tr>
-                <td v-text="row.name"></td>
-                <td v-text="row.description"></td>
-                <td><a @click.prevent="toggleModal(row)" href="#">Open Job</a></td>
-            </tr>
+            <div>
+                <p v-for="detail in jobDetails">{{ detail.title }}
+                    <jobmodal :modalstate="true" :jobcategory="detail"></jobmodal>
+                </p>
+            </div>
             <!-- <base-button type="primary" @click.prevent="moveToNext()" class="align-items-right">Proceed</base-button> -->
             <!-- <template slot="footer">
                 <base-progress type="primary" :value="progressvalue" v-model="progressvalue" label="Completion" :striped=true :animated=true></base-progress>
@@ -19,18 +19,18 @@
     
 </template>
 <script>
-import Vue from 'vue';
-window.Event = new Vue();
+import Modal from "./JobModal.vue";
 import ProgressSection from "./JobProgress.vue";
 export default {
   props: ['row'],
   components: {
-    ProgressSection
+    'jobmodal': Modal
   },
   data() {
       return {
           progressvalue: 0,
-          error: null
+          error: null,
+          jobDetails: this.row
       }
   },
   methods: {
@@ -41,7 +41,7 @@ export default {
     },
     toggleModal(row) {
         console.log('clicked')
-      Event.$emit('toggleModal', row);
+      //Event.$emit('toggleModal', row);
     }
   },
   mounted: function (){  

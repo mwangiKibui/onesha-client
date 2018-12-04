@@ -21,34 +21,32 @@
             </div>                  
         </div> 
 
-        <template slot="footer">
+        <querylate slot="footer">
             <base-button type="primary" @click="moveToNextState()">Proceed</base-button>
             <base-button type="link" class="ml-auto" @click="close">Close
             </base-button>
-        </template>
+        </querylate>
         
     </modal> -->
-    <div class="modal" :class="{ 'is-active': toshow }">
-      <div class="modal-background"></div>
-        <div class="modal-content">
-          <div class="box">
-            <div class="content">
-              <h1 class="title">{{jobCategory}}</h1>
-            </div>
-          </div>
-        </div>
-        <button @click.prevent="active = false" class="modal-close is-large" aria-label="close"></button>
+    <div class="" :class="{ 'is-active': toshow }">
+              <p class="text" v-for="jobs in jobDetail">{{jobs.description}}
+                 <ul>
+                    <li v-for="job in jobs.template">{{job}}
+                        <a v-for="query in job">{{query.title}} <br>{{query.options}}</a>
+                    </li>
+                </ul>
+
+
+              </p>
     </div>
 </template>
 <script>
 // import Modal from "@/components/Common/Modal.vue";
 import ProgressSection from "./JobProgress.vue";
-import Vue from 'vue';
-window.Event = new Vue();
+//import Vue from 'vue';
+//window.Event = new Vue();
 export default {
-//   props: ['modalstate',
-//     'jobtypedetails'
-//   ],
+  props: ['modalstate','jobcategory'],
   components: {
     ProgressSection,
     // Modal
@@ -56,9 +54,9 @@ export default {
   data() {
     return {
         progressvalue: 0,
-        jobCategory : [],
-        toshow: true,
-        modalstatus: false,
+        jobDetail : this.jobcategory,
+        toshow: this.modalstate,
+        modalstatus: this.modalstate,
         error: null
       }
   },
@@ -75,12 +73,13 @@ export default {
         this.toshow = true;
     }
   },
-  created() {
-    Event.$on('toggleModal', (row) => {
-      this.jobCategory = row;
+    render: function (createElement) {
+      return createElement(jobtypetemplate)
+    
+      this.jobcategory = row;
       this.show();
-    });
-  }
+    }
+  
 };
 </script>
 <style>

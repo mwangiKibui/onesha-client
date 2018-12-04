@@ -174,37 +174,9 @@
                 <JobCategories></JobCategories>
             </div>
         </section>
-        <section class="section section-lg pt-lg-2 mt-400 section-contact-us">
-            <div class="container">
-                <div class="row justify-content-center ">
-                    <div class="col-lg-8">
-                        <card gradient="secondary" shadow body-classes="p-lg-5">
-                            <h4 class="mb-1">Want to work with us?</h4>
-                            <p class="mt-0">Your project is very important to us.</p>
-                            <base-input class="mt-5"
-                                        alternative
-                                        placeholder="Your name"
-                                        addon-left-icon="ni ni-user-run">
-                            </base-input>
-                            <base-input alternative
-                                        placeholder="Email address"
-                                        addon-left-icon="ni ni-email-83">
-                            </base-input>
-                            <base-input class="mb-4">
-                                    <textarea class="form-control form-control-alternative" name="name" rows="4"
-                                            cols="80" placeholder="What do you need done?..."></textarea>
-                            </base-input>
-                            <base-button type="default" round block size="lg">
-                                Send Message
-                            </base-button>
-                        </card>
-                    </div>
-                </div>
-            </div>
-        </section>
         
         
-        <section class="section bg-secondary">
+        <section class="section bg-secondary mb-200">
             <div class="container">
                 <div class="row row-grid align-items-center">
                     <div class="col-md-6">
@@ -237,6 +209,35 @@
                             <a href="#" class="font-weight-bold text-info mt-5">A beautiful UI Kit for impactful
                                 websites</a>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section section-lg pt-lg-4 mt-300 section-contact-us">
+            <div class="container">
+                <div class="row justify-content-center ">
+                    <div class="col-lg-8">
+                        <card gradient="secondary" shadow body-classes="p-lg-5">
+                            <h4 class="mb-1">Want to work with us?</h4>
+                            <p class="mt-0">Your project is very important to us.</p>
+                            <base-input class="mt-5"
+                                        alternative
+                                        placeholder="Your name"
+                                        addon-left-icon="ni ni-user-run">
+                            </base-input>
+                            <base-input alternative
+                                        placeholder="Email address"
+                                        addon-left-icon="ni ni-email-83">
+                            </base-input>
+                            <base-input class="mb-4">
+                                    <textarea class="form-control form-control-alternative" name="name" rows="4"
+                                            cols="80" placeholder="What do you need done?..."></textarea>
+                            </base-input>
+                            <base-button type="default" round block size="lg">
+                                Send Message
+                            </base-button>
+                        </card>
                     </div>
                 </div>
             </div>

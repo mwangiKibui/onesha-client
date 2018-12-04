@@ -36,9 +36,12 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr><td>1</td><td>This type</td><td><a @click.prevent="toggleModal(jobcategory)" href="#">Open</a></td></tr>
-                        <company-modal></company-modal>
-                        <jobsection v-for="job in alljobs" :key="job.slug" :comp="job"></jobsection>
+                        <tr v-for="(job, index) in alljobs.jobtypes" :key="index" :row="job">
+                            <td>{{ job.title }}</td>
+                            <td><jobsection :row="job.jobs"></jobsection></td>
+                            <td><a @click.prevent="toggleModal(row)" href="#">Open Job</a></td>
+                        </tr>
+                        
                     </tbody>
                     
                 </table>
@@ -47,95 +50,23 @@
             <template slot="footer">
                 <base-progress type="primary" :value="progressvalue" v-model="progressvalue" label="Completion" :striped=true :animated=true></base-progress>
             </template>
-        </card>
-        </div>    
+        </card>   
     </div>
 </template>
 <script>
 import ProgressSection from "./JobProgress.vue";
-import Vue from 'vue';
-window.Event = new Vue();
-import jobsection from "./JobTemplate2.vue";
-const jobs = [
-            { id: 1, name: 'Company 1', jobtypes: [{ id: 1, name: 'Type Alpha',temps: [{ id: 1, query: 'Who is Type Alpha'}]}]},
-            { id: 2, name: 'Company 2', jobtypes: [{ id: 1, name: 'Type Beta',temps: [{ id: 1, query: 'Who is Type Beta'}]}]},
-            { id: 3, name: 'Company 3', jobtypes: [{ id: 1, name: 'Type Charlie',temps: [{ id: 1, query: 'Who is Type Charlie'}]}]},
-            { id: 4, name: 'Company 4', jobtypes: [{ id: 1, name: 'Type Delta',temps: [{ id: 1, query: 'Who is Type Delta'}]}]},
-            ];
-const Jobsection = {
-    template: `<tr>
-      <td>Jobtypes in {{comp.name}}</td
-      <td>
-        <ol>
-            <department v-for="jobtype in this.comp.jobtypes" :key="jobtype.id" :jobrow="jobtype">
-        </department>  
-         </ol>
-          
-      </td>
-      <td>Next page</td>
-    </tr>`,
-    props: ['comp'],
-    mounted() {
-        console.log('here')
-    }
-}
-const JobDescription = {
-    template: `<li>
-      <p> {{ jobrow.name }} - 
-      <a @click.prevent="toggleModal(jobrow)" href="#">Open Job</a></p>
-    </li>`,
-    props: ['jobrow'],
-    methods: {
-        toggleModal(jobrow) {
-        Event.$emit('toggleModal', jobrow);
-        }
-    }
-}
-const Modal = {
-  template: `
-    <div class="section" :class="{ 'is-active': toshow }">
-      <div class="modal-background"></div>
-        <div class="modal-content">
-          <div class="box">
-            <div class="content">
-              <h1 class="title">{{jobCategory}} here it is</h1>
-            </div>
-          </div>
-        </div>
-        <button @click.prevent="toshow = false" class="modal-close is-large" aria-label="close"></button>
-    </div>
-  `,
-  data() {
-    return {
-      toshow: true,
-      jobCategory: [],
-    }
-  },
-  methods: {
-    show() {
-      this.toshow = true;
-    }
-  },
-  created() {
-    Event.$on('toggleModal', (row) => {
-      this.jobCategory = row.temps;
-      this.show();
-    });
-  }
-};
-
-Vue.component('jobsection', Jobsection);
-Vue.component('department', JobDescription);
-Vue.component('company-modal', Modal);
+import jobsection2 from "./JobTemplate2.vue";
+import Modal from "./JobModal.vue";
+// import Vue from 'vue';
+// window.Event = new Vue();
 
 
 export default {
   props: ['jobcategory','modalstate'],
   components: {
     ProgressSection,
-    'jobsection': Jobsection,
-    'department': JobDescription,
-    'company-modal': Modal
+    'jobsection': jobsection2,
+    'jobmodal': Modal
   },
   data() {
       return {
@@ -143,12 +74,7 @@ export default {
           error: null,
           modalstatus: false,
           jobdetails: [],
-          alljobs: [
-            { id: 1, name: 'Company 1', jobtypes: [{ id: 1, name: 'Type Alpha',temps: [{ id: 1, query: 'Who is Type Alpha'}]}]},
-            { id: 2, name: 'Company 2', jobtypes: [{ id: 1, name: 'Type Beta',temps: [{ id: 1, query: 'Who is Type Beta'}]}]},
-            { id: 3, name: 'Company 3', jobtypes: [{ id: 1, name: 'Type Charlie',temps: [{ id: 1, query: 'Who is Type Charlie'}]}]},
-            { id: 4, name: 'Company 4', jobtypes: [{ id: 1, name: 'Type Delta',temps: [{ id: 1, query: 'Who is Type Delta'}]}]},
-            ]
+          alljobs: this.jobcategory
       }
   },
   methods: {
@@ -160,7 +86,8 @@ export default {
     },
     toggleModal(row) {
         console.log('clicked')
-        Event.$emit('toggleModal', row);
+        this.modalstatus = true
+        // Event.$emit('toggleModal', row);
     }
   },
   mounted: function (){  
