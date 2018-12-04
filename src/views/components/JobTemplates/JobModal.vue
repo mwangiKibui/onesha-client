@@ -28,17 +28,16 @@
         </querylate>
         
     </modal> -->
-    <div class="" :class="{ 'is-active': toshow }">
-              <p class="text" v-for="jobs in jobDetail">{{jobs.description}}
-                 <ul>
-                    <li v-for="job in jobs.template">{{job}}
-                        <a v-for="query in job">{{query.title}} <br>{{query.options}}</a>
-                    </li>
-                </ul>
-
-
-              </p>
-    </div>
+    <span class="text-default" >
+        <ul>
+            <li v-for="job in jobDetails">
+                <a >{{job.title}}</a> <br>
+                <ol>
+                    <li v-for="option in job.options"><small>{{option.option}}</small> </li>
+                </ol>
+            </li>
+        </ul>
+    </span>
 </template>
 <script>
 // import Modal from "@/components/Common/Modal.vue";
@@ -54,7 +53,7 @@ export default {
   data() {
     return {
         progressvalue: 0,
-        jobDetail : this.jobcategory,
+        jobDetails : this.jobcategory,
         toshow: this.modalstate,
         modalstatus: this.modalstate,
         error: null

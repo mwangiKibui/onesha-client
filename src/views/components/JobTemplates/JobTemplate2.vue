@@ -7,9 +7,14 @@
             </template> -->
         
             <div>
-                <p v-for="detail in jobDetails">{{ detail.title }}
-                    <jobmodal :modalstate="true" :jobcategory="detail"></jobmodal>
+                
+                <p v-for="detail in jobDetail.jobs"><strong class="text-info">{{ detail.title }}</strong> <br>
+                    <small><i>{{ detail.description }}</i></small><br>
+                    <!-- {{detail.template}} -->
+                    <!-- <jobmodal :modalstate="true" :jobcategory="detail.template"></jobmodal> -->
                 </p>
+                    
+               
             </div>
             <!-- <base-button type="primary" @click.prevent="moveToNext()" class="align-items-right">Proceed</base-button> -->
             <!-- <template slot="footer">
@@ -22,7 +27,7 @@
 import Modal from "./JobModal.vue";
 import ProgressSection from "./JobProgress.vue";
 export default {
-  props: ['row'],
+  props: ['row','itemid'],
   components: {
     'jobmodal': Modal
   },
@@ -30,7 +35,7 @@ export default {
       return {
           progressvalue: 0,
           error: null,
-          jobDetails: this.row
+          jobDetail: this.row
       }
   },
   methods: {

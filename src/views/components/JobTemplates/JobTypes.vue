@@ -36,10 +36,10 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr v-for="(job, index) in alljobs.jobtypes" :key="index" :row="job">
+                        <tr v-for="(job, index) in jobcategory.jobtypes" :key="index" :row="job">
                             <td>{{ job.title }}</td>
-                            <td><jobsection :row="job.jobs"></jobsection></td>
-                            <td><a @click.prevent="toggleModal(row)" href="#">Open Job</a></td>
+                            <td><jobsection :row="job" :itemid="index"></jobsection></td>
+                            <td><a @click.prevent="toggleModal(job)" href="#">Open Job</a></td>
                         </tr>
                         
                     </tbody>
@@ -87,7 +87,7 @@ export default {
     toggleModal(row) {
         console.log('clicked')
         this.modalstatus = true
-        // Event.$emit('toggleModal', row);
+        this.$emit('toggleModal', row);
     }
   },
   mounted: function (){  

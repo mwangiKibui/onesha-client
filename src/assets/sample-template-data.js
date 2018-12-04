@@ -195,9 +195,9 @@ const template = [
                 description: 'Description of what explainer is ...',
                 jobs: [
                     {
-                        title: 'Facebook audit',
-                        slug: 'facebook-audit',
-                        description: 'Get audit for your facebook to understand ...',
+                        title: 'Facebook video',
+                        slug: 'facebook-video',
+                        description: 'Get video for your facebook audience to understand ...',
                         template: [
                             {
                                 title: 'How often do you post on facebook?',
@@ -224,8 +224,8 @@ const template = [
                         ],
                     },
                     {
-                        title: 'Twitter handle management',
-                        slug: 'twitter-handle-management',
+                        title: 'Twitter video ',
+                        slug: 'twitter-video',
                         description: 'We will manage your Twitter handle ...',
                         template: [
                             {
@@ -260,8 +260,8 @@ const template = [
                 description: 'Description of what intro video is ...',
                 jobs: [
                     {
-                        title: 'Facebook audit',
-                        slug: 'facebook-audit',
+                        title: 'Facebook page video',
+                        slug: 'facebook-page',
                         description: 'Get audit for your facebook to understand ...',
                         template: [
                             {
@@ -289,9 +289,9 @@ const template = [
                         ],
                     },
                     {
-                        title: 'Twitter handle management',
-                        slug: 'twitter-handle-management',
-                        description: 'We will manage your Twitter handle ...',
+                        title: 'Twitter page video',
+                        slug: 'twitter-page',
+                        description: 'We will manage your Twitter video ...',
                         template: [
                             {
                                 title: 'How often do you post on twitter?',
