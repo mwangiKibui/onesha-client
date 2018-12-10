@@ -88,36 +88,7 @@ const template = [
                 description: 'Description of what business profile is ...',
                 jobs: [
                     {
-                        title: 'Insurance Company',
-                        slug: 'insurance-profile',
-                        description: 'Get profile for your business to attract ...',
-                        template: [
-                            {
-                                title: 'How often do you update your profile?',
-                                feedback: 'single-select',
-                                options: [
-                                    {
-                                        option: 'I post daily.',
-                                    },
-                                    {
-                                        option: 'I post after every two days.',
-                                    },
-                                    {
-                                        option: 'I post weekly',
-                                    },
-                                    {
-                                        option: 'I post once in a while',
-                                    },
-                                ],
-                            },
-                            {
-                                title: 'What would you say about your current audience?',
-                                feedback: 'prompt', // would require a text entry field on the UI
-                            },
-                        ],
-                    },
-                    {
-                        title: 'Startup Profile',
+                        title: 'Business Profile',
                         slug: 'startup-profile',
                         description: 'We will manage your Startup profile ...',
                         template: [
@@ -153,7 +124,7 @@ const template = [
                 description: 'Description of what logo design is ...',
                 jobs: [
                     {
-                        title: 'Wavy Logo',
+                        title: 'Business Logo',
                         slug: 'logo-1',
                         description: 'Get a logo for your business to attract ...',
                         template: []

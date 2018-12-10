@@ -176,7 +176,7 @@
         </section>
         
         
-        <section class="section bg-secondary mb-200">
+        <section class="section bg-secondary mb-100">
             <div class="container">
                 <div class="row row-grid align-items-center">
                     <div class="col-md-6">
@@ -214,7 +214,7 @@
             </div>
         </section>
         
-        <section class="section section-lg pt-lg-4 mt-300 section-contact-us">
+        <section class="section section-sm pt-lg-4 mt-400 section-contact-us">
             <div class="container">
                 <div class="row justify-content-center ">
                     <div class="col-lg-8">

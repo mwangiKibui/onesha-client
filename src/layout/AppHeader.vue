@@ -18,7 +18,7 @@
 
             <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
                 <li class="nav-item">
-                    <router-link to="process" class="nav-link">
+                    <router-link to="/process" class="nav-link" replace>
                         <i class="ni ni-collection d-lg-none"></i>
                         <span class="nav-link-inner--text ">HOW IT WORKS</span>
                     </router-link>
@@ -28,10 +28,9 @@
                         <i class="ni ni-collection d-lg-none"></i>
                         <span class="nav-link-inner--text">SERVICES</span>
                     </a>
-                    <router-link to="profile" class="dropdown-item">Social Media</router-link>
-                    <router-link to="profile" class="dropdown-item">Graphic Design</router-link>
-                    <router-link to="login" class="dropdown-item">Motion Graphics</router-link>
-                    <router-link to="login" class="dropdown-item">Video and Animation</router-link>
+                    <router-link to="/category/social-media" class="dropdown-item">Social Media</router-link>
+                    <router-link to="/category/graphic-design" class="dropdown-item">Graphic Design</router-link>
+                    <router-link to="/category/motion-graphics" class="dropdown-item">Motion Graphics</router-link>
                 </base-dropdown>
             </ul>
             <ul class="navbar-nav align-items-lg-center ml-lg-auto">

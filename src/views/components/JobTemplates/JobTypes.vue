@@ -1,33 +1,31 @@
 <template>
-    <div class="col-lg-12 sectionDisplay" v-show="this.modalstate">
+    <div class=" col-lg-offset-3 sectionDisplay" id="jobDisplay" v-show="this.modalstate">
         
-        <card type="secondary" shadow header-classes="bg-grey pb-1" body-classes="px-lg-5 py-lg-5" class="border-0">
-            <template slot="header" class="text-center">
-                <h5 class="text-default mt-3">{{jobcategory.category}}</h5>
-                <p class="text-default mt-3">{{jobcategory.description}}</p>
-            </template>
+        <card type="secondary" shadow header-classes="bg-grey pb-1" body-classes="px-lg-5 py-lg-5" class="border-0" id="defShow">
+            
         
             <div class="text-left text-muted sectionDisplay" id="sectionDisplay">
                 <p>Jobs Types in {{jobcategory.category}}</p>
-                <!-- <ol>
-                    <li v-for="jobtype in this.jobcategory.jobtypes">                    
-                        <div :v-if="error" class="error">
-                            {{ error}}
-                        </div>
-                        <div :v-if="jobtype">
-                            <p><img src="@/assets/logo.png" style="height: 30px"/>
-                            &nbsp;&nbsp; {{ jobtype.title }}<br>
-                            <small>{{ jobtype.description }}</small>
-                            <div class="row row-grid">
-                                <p v-for="job in jobtype.jobs" class="col-md-4">
-                                    <a class="btn btn-sm btn-primary btn-block text-white" @click="moveToNext(job,job.slug)">{{job.title}}</a>
-                                </p>
-                            </div></p>
-                        </div> 
-                        <jobmodal :id="jobtype.slug" :jobtypedetails="jobdetails" :modalstate="modalstatus"></jobmodal>                 
-                    </li> 
-                </ol> -->
-                <table class="table table-striped">
+                <div class="row row-grid mt-5" v-for="(detail, index) in jobcategory.jobtypes">
+                            <div class="col-sm-6" v-for="job in detail.jobs">
+                                <router-link tag="a" :to="{ path: '/job/'+job.slug }" append>
+                                    <icon :v-if="jobcategory.slug === 'social-media'" name="ni ni-settings" size="lg" gradient="white" shadow round color="primary"></icon>
+                                    <!-- /<icon :v-else="jobcategory.slug === 'graphic-design'" name="ni ni-ruler-pencil" size="lg" gradient="white" shadow round color="primary"></icon> -->
+                                    <!-- <icon :v-else="jobcategory.slug === 'motion-graphics'" name="ni ni-atom" size="lg" gradient="white" shadow round color="primary"></icon> -->
+                                    <p class="text-primary mt-3">{{ job.title }}</p>
+                                </router-link>
+                            </div>
+                    <!-- <li  >
+                            <p>
+                                <strong class="text-info">
+                                    <router-link tag="a" :to="{ path: '/job/'+job.slug }" append>{{ job.title }}
+                                    </router-link></strong> <br>
+                                <small><i>{{ job.template }}</i></small>
+                                <jobsection :modalstate="true" :jobcategory="job.template"></jobsection> 
+                            </p>
+                    </li> -->
+                </div>
+                <!-- <table class="table table-striped">
                     <thead>
                         <tr>
                         <th>Name</th>
@@ -36,45 +34,41 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr v-for="(job, index) in jobcategory.jobtypes" :key="index" :row="job">
-                            <td>{{ job.title }}</td>
-                            <td><jobsection :row="job" :itemid="index"></jobsection></td>
-                            <td><a @click.prevent="toggleModal(job)" href="#">Open Job</a></td>
-                        </tr>
                         
                     </tbody>
-                    
-                </table>
+                </table> -->
             </div>               
             <!-- <base-button type="primary" @click.prevent="moveToNext()" class="align-items-right">Proceed</base-button> -->
             <template slot="footer">
                 <base-progress type="primary" :value="progressvalue" v-model="progressvalue" label="Completion" :striped=true :animated=true></base-progress>
             </template>
-        </card>   
+        </card>  
+        
+        <card :v-if="showModal"  v-for="(query, index) in allQueries">
+            <jobmodal :key="index" :jobtype="query"/>
+        </card>
     </div>
 </template>
 <script>
 import ProgressSection from "./JobProgress.vue";
-import jobsection2 from "./JobTemplate2.vue";
-import Modal from "./JobModal.vue";
-// import Vue from 'vue';
-// window.Event = new Vue();
-
+import jobsection2 from "./JobTypes2.vue";
+import jobmodal from "./JobModal.vue";
 
 export default {
   props: ['jobcategory','modalstate'],
   components: {
     ProgressSection,
     'jobsection': jobsection2,
-    'jobmodal': Modal
+    'jobmodal' : jobmodal
   },
   data() {
       return {
           progressvalue: 0,
           error: null,
-          modalstatus: false,
+          showModal: false,
+          modalstatus: this.modalstate ,
           jobdetails: [],
-          alljobs: this.jobcategory
+          allQueries: []
       }
   },
   methods: {
@@ -84,15 +78,20 @@ export default {
             this.progressvalue += 10
         }
     },
-    toggleModal(row) {
+    toggleModal: function (ev,row) {
         console.log('clicked')
-        this.modalstatus = true
-        this.$emit('toggleModal', row);
+        console.log(row)
+        this.showModal = true
+        this.allQueries = row
+        $("#jobDisplay").html(jobmodal)
     }
   },
   mounted: function (){  
-    var el = this.$el.getElementsByClassName("sectionDisplay")[0];
-    el.scrollIntoView();
+    let el = this.$el.getElementsByClassName("sectionDisplay")[0]
+    el.scrollIntoView()
+    this.showModal = false
+    this.jobdetails = this.jobcategory.jobtypes
+    this.modalstatus = true
   }
 };
 console.log();

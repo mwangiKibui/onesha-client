@@ -13,7 +13,7 @@
                 </base-button>             
             </div>
         </div><br>
-        <div class="row sectionDisplay" ref='sectionDisplay'>
+        <div class="col-md-6 col-md-offset-3 sectionDisplay" ref='sectionDisplay'>
             <!-- <jobmodal ></jobmodal>  -->
             <jobtypetemplate :jobcategory="jobcategory" :modalstate="modalstater"></jobtypetemplate>
         </div>
@@ -22,23 +22,22 @@
 <script>
 import jobtypetemplate from "./JobTypes.vue";
 import SampleData from "@/assets/sample-template-data.js";
-import jobmodal from "./JobModal.vue";
 export default {
   components: {
-    jobtypetemplate,
-    jobmodal
+    jobtypetemplate
   },
   data() {
     return {
       categories: SampleData,
       error: null,
       modalstater: false,
+      showModal: false,
       jobcategory: []
     }
   },
   mounted: function (){  
     var el = this.$el.getElementsByClassName("sectionDisplay")[0];
-    el.scrollIntoView();
+    el.scrollIntoView()
     },
   methods: {
     getData: function () {
@@ -49,8 +48,7 @@ export default {
             if (err) {
                 this.error = err.toString()
             } else{
-                self.categories = data;
-                console.log(data)
+                self.categories = data
             }     
       })
     },
@@ -60,7 +58,7 @@ export default {
     popup: function(category, index) {
         this.modalstater = true
         this.jobcategory = category
-        var el = this.$el.getElementsByClassName("sectionDisplay")[0];
+        let el = this.$el.getElementsByClassName("sectionDisplay")[0]
         el.scrollIntoView();
     }
   }

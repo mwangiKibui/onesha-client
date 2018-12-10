@@ -8,6 +8,9 @@ import Landing from "./views/Landing.vue";
 import Login from "./views/Login.vue";
 import Register from "./views/Register.vue";
 import Profile from "./views/Profile.vue";
+import Category from "./views/components/Categories/Category.vue";
+import JobType from "./views/components/Categories/JobType.vue";
+import JobPage from "./views/components/Categories/JobPage.vue";
 
 Vue.use(Router);
 
@@ -48,8 +51,8 @@ export default new Router({
       }
     },
     {
-      path: "/landing",
-      name: "landing",
+      path: "/process",
+      name: "process",
       components: {
         header: AppHeader,
         default: Landing,
@@ -82,6 +85,57 @@ export default new Router({
         default: Profile,
         footer: AppFooter
       }
+    },
+    {
+      path: "/jobtype/:item",
+      name: "Job Type",
+      components: {
+        header: AppHeader,
+        default: JobType,
+        footer: AppFooter
+      }
+    },
+    { path: "/job/:id",
+      name: "Job Title",
+      components: {
+        header: AppHeader,
+        default: JobPage,
+        footer: AppFooter
+      }
+    },
+    { path: "/category/:id",
+      name: "Category Title",
+      components: {
+        header: AppHeader,
+        default: Category,
+        footer: AppFooter
+      },
+      children: [
+        {
+          path: "social-media",
+          components: {
+            header: AppHeader,
+            default: Category,
+            footer: AppFooter
+          }
+        },
+        {
+          path: "graphic-design",
+          components: {
+            header: AppHeader,
+            default: Category,
+            footer: AppFooter
+          }
+        },
+        {
+          path: "motion-graphics",
+          components: {
+            header: AppHeader,
+            default: Category,
+            footer: AppFooter
+          }
+        }
+      ]
     }
   ],
   scrollBehavior: (to) => {

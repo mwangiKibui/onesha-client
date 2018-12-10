@@ -1,59 +1,47 @@
 <template>    
-    <!-- <modal :show.sync="this.modalstate" :v-if="this.modalstate">
+    <div :show.sync="this.modalstate" :v-if="this.modalstate">
         
         <div slot="header" class="modal-title" id="modal-title-default" style="width: 100%">
-            <h6>{{ jobCategory.category }}</h6>
+            <h6>{{ jobtype.title }}</h6>
             <ProgressSection :progressval="progressvalue"></ProgressSection>
         </div>
         
-        <div  v-for="jobtype in jobCategory.jobtypes">                    
+        <div v-for="jobquery in jobQueries">                    
             <div :v-if="error" class="error">
-            {{ error}}
+                {{ error}}
             </div>
-            <div :v-if="jobtypes">
-                <p>{{ jobtypes.title }}</p>
-                <small>{{ jobtypes.description }}</small>
+            <div :v-if="jobquery">
+                <p>{{ jobquery.title }}</p>
                 <ul>
-                    <li v-for="job in jobtype.jobs">
-                        <router-link class="btn btn-sm" href="" tag="a">job.title</router-link>
+                    <li v-for="queryoption in jobquery.options">
+                        <small>{{queryoption.option}}</small> 
                     </li>
                 </ul>
             </div>                  
         </div> 
 
-        <querylate slot="footer">
+        <template slot="footer">
             <base-button type="primary" @click="moveToNextState()">Proceed</base-button>
             <base-button type="link" class="ml-auto" @click="close">Close
             </base-button>
-        </querylate>
+        </template>
         
-    </modal> -->
-    <span class="text-default" >
-        <ul>
-            <li v-for="job in jobDetails">
-                <a >{{job.title}}</a> <br>
-                <ol>
-                    <li v-for="option in job.options"><small>{{option.option}}</small> </li>
-                </ol>
-            </li>
-        </ul>
-    </span>
+    </div>
 </template>
 <script>
-// import Modal from "@/components/Common/Modal.vue";
+import Modal from "@/components/Common/Modal.vue";
 import ProgressSection from "./JobProgress.vue";
-//import Vue from 'vue';
-//window.Event = new Vue();
+
 export default {
-  props: ['modalstate','jobcategory'],
+  props: ['modalstate','jobtype'],
   components: {
     ProgressSection,
-    // Modal
+    Modal
   },
   data() {
     return {
         progressvalue: 0,
-        jobDetails : this.jobcategory,
+        jobQueries : this.jobtype.template,
         toshow: this.modalstate,
         modalstatus: this.modalstate,
         error: null
@@ -69,14 +57,14 @@ export default {
         this.toshow = false
     },
     show() {
-        this.toshow = true;
+        this.toshow = true
     }
   },
     render: function (createElement) {
-      return createElement(jobtypetemplate)
+      return createElement(jobquerytemplate)
     
-      this.jobcategory = row;
-      this.show();
+      this.jobDetails = this.jobtype.template
+      this.show()
     }
   
 };
