@@ -41,39 +41,7 @@
                                 <small>Job Title form</small>
                             </h4>
                         </template>
-                        <template>
-                            <div class="text-center text-muted mb-4">
-                                <small>Fill in your requirements</small>
-                            </div>
-                            <form role="form">
-                                <div class="text-right text-muted mb-1">
-                                    <base-input alternative
-                                                class="mb-3"
-                                                placeholder="Name"
-                                                addon-left-icon="ni ni-hat-3">
-                                    </base-input>
-                                    <base-input alternative
-                                                class="mb-3"
-                                                placeholder="Email"
-                                                addon-left-icon="ni ni-email-83">
-                                    </base-input>
-                                    <base-input alternative
-                                                type="text"
-                                                placeholder="Location"
-                                                addon-left-icon="ni ni-map-marker">
-                                    </base-input>
-                                    <div class="text-muted font-italic text-left">
-                                        <small>password strength:
-                                            <span class="text-success font-weight-700">strong</span>
-                                        </small>
-                                    </div>
-                                    <base-button type="primary" class="my-4">Next</base-button>
-                                </div>
-                                <div class="text-center d-none">
-                                    <base-button type="primary" class="my-4">Submit Request</base-button>
-                                </div>
-                            </form>
-                        </template>
+                        <job-form></job-form>
                     </card>
                 </div>
             </div>
@@ -83,11 +51,13 @@
 <script>
 import BCarousel from "bootstrap-vue/es/components/carousel/carousel";
 import BCarouselSlide from "bootstrap-vue/es/components/carousel/carousel-slide";
+import JobForm from "./JobForm.vue"
 
 export default {
   components: {
     BCarousel,
-    BCarouselSlide
+    BCarouselSlide,
+    JobForm
   },
   watch: {
     '$route' (to, from) {

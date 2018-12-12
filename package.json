@@ -29,6 +29,7 @@
         "vue-lazyload": "^1.2.6",
         "vue-router": "^3.0.1",
         "vue2-transitions": "^0.2.3",
+        "vuetify": "^1.3.12",
         "vuex": "^3.0.1"
     },
     "devDependencies": {

@@ -13,12 +13,13 @@
                         <div class="mt--300 d-lg-none"></div>
                         <div class="justify-content-between align-items-center">
                             <div class="col-lg-11">
-                                <h2 class="display-3 text-left text-white" style="display: inline-block"><span class="next" data-period="2000" data-type='[ "Get Creative", "Social Media", "Graphic Design", "Video Production", "Animation" ]'>Get Creative</span> services at your budget!
+                                <h2 class="display-3 text-left text-white" style="display: inline-block">Grow your business with African creatives
                                     <!-- <span style="font-size: 0.5em">Your creative tasks sorted</span> -->
                                 </h2>
-                                <p class="justify-content-between text-white text-left pt-2">
-                                    <span class="lead">Get services from vetted creatives with quick delivery to fit your schedule.<br> Choose a category, fill a simple job template, get your task done!</span>
-                                    <span class="text-left">
+                                <p class="justify-content-between big-show text-white text-left pt-2">
+                                    <span class="lead"><span class="next" data-period="2000" data-type='[ "Get Creative", "Social Media", "Graphic Design", "Video Production", "Animation" ]'>Get Creative</span> services at your budget and with your schedule!</span><br>
+                                    <span class="lead "> Choose a category, fill a simple job template, get your task done!</span>
+                                    <span class="text-left ">
                                         <ul class="py-1 px-3" style="list-style: circle">
                                             <li>Receive quality work, review upto 3 times</li>
                                             <li>Save time taken to compare creative professionals</li>
@@ -30,7 +31,7 @@
                                 <div class="btn-wrapper text-left">
                                     <a href="#request" data-toggle="scroll">
                                         <base-button class="btn btn-md btn-success btn-icon mb-3 mb-sm-0"
-                                                    type="info"
+                                                    type="default"
                                                     icon="fa fa-cloud-download">
                                             Request A Service 
                                         </base-button> 
@@ -100,7 +101,8 @@
                 </div>
             </div>
         </section>
-        <section class="section section-lg pt-lg-0 mt-200">    
+        <section></section>
+        <section class="section section-lg pt-lg-0 mt-200" id="process">    
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="mb-5 mb-lg-0 col-md-12">
@@ -110,50 +112,50 @@
                     </div>
                     <div class="col-lg-12">
                         <div class="row row-grid">
-                            <div class="col-lg-4">
+                            <div class="col-lg-3">
                                 <card class="border-0" hover shadow body-classes="py-5">
                                     <icon name="ni ni-istanbul" type="success" rounded class="mb-4">
                                     </icon>
                                     <h6 class="text-success text-uppercase">Request a Service</h6>
                                     <p class="description mt-3">Onesha helps you flesh out your request using easy to use job templates that make filling forms a breeze.</p>
-                                    <div>
-                                        <badge type="success" rounded>business</badge>
-                                        <badge type="success" rounded>vision</badge>
-                                        <badge type="success" rounded>success</badge>
-                                    </div>
-                                    <base-button tag="a" href="#" type="success" class="mt-4">
+                                   
+                                    <base-button tag="a"  href="#request" data-toggle="scroll" type="success" class="mt-4">
                                         BEGIN REQUEST
                                     </base-button>
                                 </card>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-3">
                                 <card class="border-0" hover shadow body-classes="py-5">
                                     <icon name="ni ni-planet" type="primary" rounded class="mb-4">
                                     </icon>
-                                    <h6 class="text-primary text-uppercase">We Process your request</h6>
-                                    <p class="description mt-3">Onesha helps you find services offered by our professionals in several categories. We pick the right one for you.</p>
-                                    <div>
-                                        <badge type="primary" rounded>Design</badge>
-                                        <badge type="primary" rounded>Social Media</badge>
-                                        <badge type="primary" rounded>Film</badge>
-                                    </div>
-                                    <base-button tag="a" href="#" type="primary" class="mt-4">
+                                    <h6 class="text-primary text-uppercase">Processing</h6>
+                                    <p class="description mt-3">Onesha processes your request into a job brief that we present to vetted creatives for quotation. You then approve the quote.</p>
+                                   
+                                    <base-button tag="a"  href="#request" data-toggle="scroll" type="primary" class="mt-4">
                                         START HERE
                                     </base-button>
                                 </card>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-3">
+                                <card class="border-0" hover shadow body-classes="py-5">
+                                    <icon name="ni ni-check-bold" type="primary" rounded class="mb-4">
+                                    </icon>
+                                    <h6 class="text-primary text-uppercase">Job Execution</h6>
+                                    <p class="description mt-3">The selected creative starts working on your job according to the brief. Onesha sends you samples for your approval after which you make a deposit for further refinement.</p>
+                                   
+                                    <base-button tag="a"  href="#request" data-toggle="scroll" type="primary" class="mt-4">
+                                        VIEW MORE
+                                    </base-button>
+                                </card>
+                            </div>
+                            <div class="col-lg-3">
                                 <card class="border-0" hover shadow body-classes="py-5">
                                     <icon name="ni ni-check-bold" type="primary" rounded class="mb-4">
                                     </icon>
                                     <h6 class="text-primary text-uppercase">Job Delivery</h6>
-                                    <p class="description mt-3">You want it urgently? No problem! Onesha has a ton of experience from jobs done by our vetted creatives. We get it done.</p>
-                                    <div>
-                                        <badge type="primary" rounded>marketing</badge>
-                                        <badge type="primary" rounded>product</badge>
-                                        <badge type="primary" rounded>launch</badge>
-                                    </div>
-                                    <base-button tag="a" href="#" type="primary" class="mt-4">
+                                    <p class="description mt-3">You receive the final samples and complete the payment upon being satisfied with the result. You can choose your mode of delivery.</p>
+                                   
+                                    <base-button tag="a"  href="#request" data-toggle="scroll" type="primary" class="mt-4">
                                         VIEW MORE
                                     </base-button>
                                 </card>
@@ -250,7 +252,7 @@
 <script>
 import Categories from "./components/Landing/Categories";
 import formAlert from "./components/Landing/DefaultPage";
-import JobCategories from "./components/JobTemplates/JobTemplate";
+import JobCategories from "./components/JobTemplates/JobCategory";
 var show = true;
 
 export default {
@@ -349,9 +351,9 @@ var TxtType = function(els, toRotate, period) {
 
 </script>
 <style>
-    .display-3 span{
+    /* .big-show span{
     display: inline-flex !important;
-    }
+    } */
     .position-relative{
         position: relative;
         background-image:  none;     
@@ -385,9 +387,14 @@ var TxtType = function(els, toRotate, period) {
         blink-caret 0.55s steps(50) infinite
     }
 
-    @media screen and (max-width: 580px) {
+    @media screen and (max-width: 579px) {
         .d-sm-none {
             display: none;
+        }
+    }
+    @media screen and (min-width: 579px) {
+        .d-sm-none {
+            display: block;
         }
     }
 

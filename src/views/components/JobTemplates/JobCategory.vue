@@ -11,11 +11,13 @@
                             icon="fa fa-cloud-download" @click.prevent="popup(category,index)">
                     Request A Service 
                 </base-button>             
+            </div><br>
+            <div class="col-md-2"></div>
+            <div class="col-md-10 sectionDisplay mt-4" ref='sectionDisplay'>
+                <!-- <jobmodal ></jobmodal>  -->
+                <jobtypetemplate :jobcategory="jobcategory" :modalstate="modalstater"></jobtypetemplate>
             </div>
-        </div><br>
-        <div class="col-md-6 col-md-offset-3 sectionDisplay" ref='sectionDisplay'>
-            <!-- <jobmodal ></jobmodal>  -->
-            <jobtypetemplate :jobcategory="jobcategory" :modalstate="modalstater"></jobtypetemplate>
+        
         </div>
     </div>
 </template>

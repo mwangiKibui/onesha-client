@@ -42,8 +42,8 @@ const template = [
                         ],
                     },
                     {
-                        title: 'Twitter handle management',
-                        slug: 'twitter-handle-management',
+                        title: 'Twitter audit',
+                        slug: 'twitter-audit',
                         description: 'We will manage your Twitter handle ...',
                         template: [
                             {
@@ -72,6 +72,136 @@ const template = [
                     },
                 ],
             },
+            {
+                title: 'Account Management',
+                slug: 'account-management',
+                description: 'Description of what account management is ...',
+                jobs: [
+                    {
+                        title: 'Twitter handle management',
+                        slug: 'twitter-handle-management',
+                        description: 'We will manage your Twitter handle ...',
+                        template: [
+                            {
+                                title: 'How often do you post on twitter?',
+                                feedback: 'single-select',
+                                options: [
+                                    {
+                                        option: 'I post daily.',
+                                    },
+                                    {
+                                        option: 'I post after every two days.',
+                                    },
+                                    {
+                                        option: 'I post weekly',
+                                    },
+                                    {
+                                        option: 'I post once in a while',
+                                    },
+                                ],
+                            },
+                            {
+                                title: 'What would you say about your current audience?',
+                                feedback: 'prompt', // would require a text entry field on the UI
+                            },
+                        ],
+                    },
+                    {
+                        title: 'Facebook page management',
+                        slug: 'facebook-page-management',
+                        description: 'We will manage your Facebook page ...',
+                        template: [
+                            {
+                                title: 'How often do you post on Facebook?',
+                                feedback: 'single-select',
+                                options: [
+                                    {
+                                        option: 'I post daily.',
+                                    },
+                                    {
+                                        option: 'I post after every two days.',
+                                    },
+                                    {
+                                        option: 'I post weekly',
+                                    },
+                                    {
+                                        option: 'I post once in a while',
+                                    },
+                                ],
+                            },
+                            {
+                                title: 'What would you say about your current audience?',
+                                feedback: 'prompt', // would require a text entry field on the UI
+                            },
+                        ],
+                    },
+                ]
+            },
+            {
+                title: 'Content Plan',
+                slug: 'content-plan',
+                description: 'Description of what content plan is ...',
+                jobs: [
+                    {
+                        title: 'Twitter content plan',
+                        slug: 'twitter-content-plan',
+                        description: 'We will manage your Twitter handle ...',
+                        template: [
+                            {
+                                title: 'How often do you post on twitter?',
+                                feedback: 'single-select',
+                                options: [
+                                    {
+                                        option: 'I post daily.',
+                                    },
+                                    {
+                                        option: 'I post after every two days.',
+                                    },
+                                    {
+                                        option: 'I post weekly',
+                                    },
+                                    {
+                                        option: 'I post once in a while',
+                                    },
+                                ],
+                            },
+                            {
+                                title: 'What would you say about your current audience?',
+                                feedback: 'prompt', // would require a text entry field on the UI
+                            },
+                        ],
+                    },
+                    {
+                        title: 'Facebook content plan',
+                        slug: 'facebook-content',
+                        description: 'We will create your Facebook content ...',
+                        template: [
+                            {
+                                title: 'How often do you post on Facebook?',
+                                feedback: 'single-select',
+                                options: [
+                                    {
+                                        option: 'I post daily.',
+                                    },
+                                    {
+                                        option: 'I post after every two days.',
+                                    },
+                                    {
+                                        option: 'I post weekly',
+                                    },
+                                    {
+                                        option: 'I post once in a while',
+                                    },
+                                ],
+                            },
+                            {
+                                title: 'What would you say about your current audience?',
+                                feedback: 'prompt', // would require a text entry field on the UI
+                            },
+                        ],
+                    },
+                ]
+            }
         ],
     },
     {
@@ -153,7 +283,7 @@ const template = [
         ]
     },
     {
-        category: 'Motion Graphics',
+        category: 'Animated Videos',
         slug: 'motion-graphics',
         description: 'Motion Graphics is the next big thing in advertising ... bla bla bla ...',
         avatar: {
@@ -166,8 +296,8 @@ const template = [
                 description: 'Description of what explainer is ...',
                 jobs: [
                     {
-                        title: 'Facebook video',
-                        slug: 'facebook-video',
+                        title: 'Group video',
+                        slug: 'group-video',
                         description: 'Get video for your facebook audience to understand ...',
                         template: [
                             {
@@ -195,9 +325,9 @@ const template = [
                         ],
                     },
                     {
-                        title: 'Twitter video ',
-                        slug: 'twitter-video',
-                        description: 'We will manage your Twitter handle ...',
+                        title: 'Product video ',
+                        slug: 'product-video',
+                        description: 'We will create your product video ...',
                         template: [
                             {
                                 title: 'How often do you post on twitter?',
@@ -263,6 +393,71 @@ const template = [
                         title: 'Twitter page video',
                         slug: 'twitter-page',
                         description: 'We will manage your Twitter video ...',
+                        template: [
+                            {
+                                title: 'How often do you post on twitter?',
+                                feedback: 'single-select',
+                                options: [
+                                    {
+                                        option: 'I post daily.',
+                                    },
+                                    {
+                                        option: 'I post after every two days.',
+                                    },
+                                    {
+                                        option: 'I post weekly',
+                                    },
+                                    {
+                                        option: 'I post once in a while',
+                                    },
+                                ],
+                            },
+                            {
+                                title: 'What would you say about your current audience?',
+                                feedback: 'prompt', // would require a text entry field on the UI
+                            },
+                        ],
+                    },
+                ],
+            },
+            {
+                title: 'Promo Video',
+                slug: 'promo-video',
+                description: 'Description of what intro video is ...',
+                jobs: [
+                    {
+                        title: 'Facebook promo video',
+                        slug: 'facebook-promo',
+                        description: 'Get a video for your facebook to understand ...',
+                        template: [
+                            {
+                                title: 'How often do you post on facebook?',
+                                feedback: 'single-select',
+                                options: [
+                                    {
+                                        option: 'I post daily.',
+                                    },
+                                    {
+                                        option: 'I post after every two days.',
+                                    },
+                                    {
+                                        option: 'I post weekly',
+                                    },
+                                    {
+                                        option: 'I post once in a while',
+                                    },
+                                ],
+                            },
+                            {
+                                title: 'What would you say about your current audience?',
+                                feedback: 'prompt', // would require a text entry field on the UI
+                            },
+                        ],
+                    },
+                    {
+                        title: 'Twitter promo video',
+                        slug: 'twitter-promo',
+                        description: 'We will create your Twitter video ...',
                         template: [
                             {
                                 title: 'How often do you post on twitter?',

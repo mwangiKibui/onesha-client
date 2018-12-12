@@ -1,20 +1,27 @@
 <template>
-    <div class=" col-lg-offset-3 sectionDisplay" id="jobDisplay" v-show="this.modalstate">
+    <div class=" sectionDisplay" id="jobDisplay" v-show="this.modalstate">
         
         <card type="secondary" shadow header-classes="bg-grey pb-1" body-classes="px-lg-5 py-lg-5" class="border-0" id="defShow">
             
         
             <div class="text-left text-muted sectionDisplay" id="sectionDisplay">
-                <p>Jobs Types in {{jobcategory.category}}</p>
-                <div class="row row-grid mt-5" v-for="(detail, index) in jobcategory.jobtypes">
-                            <div class="col-sm-6" v-for="job in detail.jobs">
+                <p>Services in {{ jobcategory.category}}
+                    <span class="pull-right text-right">
+                        &times;
+                    </span>
+
+                </p>
+                <div class="row row-grid mt-5 text-left">
+                        <div class="col-md-4  mb-4" v-for="(detail, index) in jobcategory.jobtypes">
+                            <span v-for="job in detail.jobs">
                                 <router-link tag="a" :to="{ path: '/job/'+job.slug }" append>
                                     <icon :v-if="jobcategory.slug === 'social-media'" name="ni ni-settings" size="lg" gradient="white" shadow round color="primary"></icon>
                                     <!-- /<icon :v-else="jobcategory.slug === 'graphic-design'" name="ni ni-ruler-pencil" size="lg" gradient="white" shadow round color="primary"></icon> -->
                                     <!-- <icon :v-else="jobcategory.slug === 'motion-graphics'" name="ni ni-atom" size="lg" gradient="white" shadow round color="primary"></icon> -->
                                     <p class="text-primary mt-3">{{ job.title }}</p>
                                 </router-link>
-                            </div>
+                            </span>
+                        </div>
                     <!-- <li  >
                             <p>
                                 <strong class="text-info">
@@ -39,9 +46,9 @@
                 </table> -->
             </div>               
             <!-- <base-button type="primary" @click.prevent="moveToNext()" class="align-items-right">Proceed</base-button> -->
-            <template slot="footer">
+            <!-- <template slot="footer">
                 <base-progress type="primary" :value="progressvalue" v-model="progressvalue" label="Completion" :striped=true :animated=true></base-progress>
-            </template>
+            </template> -->
         </card>  
         
         <card :v-if="showModal"  v-for="(query, index) in allQueries">

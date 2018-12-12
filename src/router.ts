@@ -42,7 +42,7 @@ export default new Router({
       }
     },
     {
-      path: "/creatives",
+      path: "/projects",
       name: "components",
       components: {
         header: AppHeader,

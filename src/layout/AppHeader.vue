@@ -1,13 +1,13 @@
 <template>
     <header class="header-global">
         <base-nav class="navbar-main" transparent type="" effect="light" expand>
-            <a slot="brand" class="navbar-brand mr-lg-5" href="landing">
-                <img src="img/brand/white.png">
+            <a slot="brand" class="navbar-brand mr-lg-1" href="/">
+                <img src="img/brand/blue.png">
             </a>
 
             <div class="row" slot="content-header" slot-scope="{closeMenu}">
                 <div class="col-6 collapse-brand">
-                    <a href="landing">
+                    <a href="/">
                         <img src="img/brand/blue.png">
                     </a>
                 </div>
@@ -18,7 +18,7 @@
 
             <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
                 <li class="nav-item">
-                    <router-link to="/process" class="nav-link" replace>
+                    <router-link to="/process#process" class="nav-link" replace>
                         <i class="ni ni-collection d-lg-none"></i>
                         <span class="nav-link-inner--text ">HOW IT WORKS</span>
                     </router-link>
@@ -32,6 +32,12 @@
                     <router-link to="/category/graphic-design" class="dropdown-item">Graphic Design</router-link>
                     <router-link to="/category/motion-graphics" class="dropdown-item">Motion Graphics</router-link>
                 </base-dropdown>
+                <li class="nav-item">
+                    <router-link to="/projects" class="nav-link" replace>
+                        <i class="ni ni-collection d-lg-none"></i>
+                        <span class="nav-link-inner--text ">OUR PORTFOLIO</span>
+                    </router-link>
+                </li>
             </ul>
             <ul class="navbar-nav align-items-lg-center ml-lg-auto">
                 <li class="nav-item d-lg-none">
