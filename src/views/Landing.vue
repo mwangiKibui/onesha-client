@@ -117,7 +117,7 @@
                                     <icon name="ni ni-istanbul" type="success" rounded class="mb-4">
                                     </icon>
                                     <h6 class="text-success text-uppercase">Request a Service</h6>
-                                    <p class="description mt-3">Onesha helps you flesh out your request using easy to use job templates that make filling forms a breeze.</p>
+                                    <p class="description mt-3">Onesha helps you flesh out your request using easy to use job templates that make filling forms a simple process.</p>
                                    
                                     <base-button tag="a"  href="#request" data-toggle="scroll" type="success" class="mt-4">
                                         BEGIN REQUEST
@@ -128,24 +128,24 @@
                                 <card class="border-0" hover shadow body-classes="py-5">
                                     <icon name="ni ni-planet" type="primary" rounded class="mb-4">
                                     </icon>
-                                    <h6 class="text-primary text-uppercase">Processing</h6>
-                                    <p class="description mt-3">Onesha processes your request into a job brief that we present to vetted creatives for quotation. You then approve the quote.</p>
-                                   
-                                    <base-button tag="a"  href="#request" data-toggle="scroll" type="primary" class="mt-4">
+                                    <h6 class="text-primary text-uppercase">Brief Processing</h6>
+                                    <p class="description mt-3">Onesha processes your request into a job brief that we present to vetted creatives for quotation.<br><br> You then approve the quote.</p>
+                                    <br>
+                                    <!-- <base-button tag="a"  href="#request" data-toggle="scroll" type="primary" class="mt-4">
                                         START HERE
-                                    </base-button>
+                                    </base-button> -->
                                 </card>
                             </div>
                             <div class="col-lg-3">
                                 <card class="border-0" hover shadow body-classes="py-5">
-                                    <icon name="ni ni-check-bold" type="primary" rounded class="mb-4">
+                                    <icon name="ni ni-settings" type="primary" rounded class="mb-4">
                                     </icon>
                                     <h6 class="text-primary text-uppercase">Job Execution</h6>
-                                    <p class="description mt-3">The selected creative starts working on your job according to the brief. Onesha sends you samples for your approval after which you make a deposit for further refinement.</p>
-                                   
-                                    <base-button tag="a"  href="#request" data-toggle="scroll" type="primary" class="mt-4">
+                                    <p class="description mt-3">We start working on your job according to the brief. We send you samples for your approval.<br><br> You will then make a deposit to continue.</p>
+                                    <br>
+                                    <!-- <base-button tag="a"  href="#request" data-toggle="scroll" type="primary" class="mt-4">
                                         VIEW MORE
-                                    </base-button>
+                                    </base-button> -->
                                 </card>
                             </div>
                             <div class="col-lg-3">
@@ -153,11 +153,11 @@
                                     <icon name="ni ni-check-bold" type="primary" rounded class="mb-4">
                                     </icon>
                                     <h6 class="text-primary text-uppercase">Job Delivery</h6>
-                                    <p class="description mt-3">You receive the final samples and complete the payment upon being satisfied with the result. You can choose your mode of delivery.</p>
-                                   
-                                    <base-button tag="a"  href="#request" data-toggle="scroll" type="primary" class="mt-4">
+                                    <p class="description mt-3">You receive the final samples and complete the payment upon being satisfied with the result.<br><br> You can choose your mode of delivery.</p>
+                                    <br>
+                                    <!-- <base-button tag="a"  href="#request" data-toggle="scroll" type="primary" class="mt-4">
                                         VIEW MORE
-                                    </base-button>
+                                    </base-button> -->
                                 </card>
                             </div>
                         </div>
