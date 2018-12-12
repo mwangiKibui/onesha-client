@@ -5,9 +5,12 @@ import "../assets/vendor/jquery/jquery.min.js";
 import globalComponents from "./globalComponents";
 import globalDirectives from "./globalDirectives";
 import VueLazyload from "vue-lazyload";
+import Vuetify from 'vuetify';
+import 'vuetify/dist/vuetify.min.css';
 
 export default {
   install(Vue) {
+    Vue.use(Vuetify);
     Vue.use(globalComponents);
     Vue.use(globalDirectives);
     Vue.use(VueLazyload);

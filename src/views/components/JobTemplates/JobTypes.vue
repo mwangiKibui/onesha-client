@@ -12,8 +12,8 @@
 
                 </p>
                 <div class="row row-grid mt-5 text-left">
-                        <div class="col-md-4  mb-4" v-for="(detail, index) in jobcategory.jobtypes">
-                            <span v-for="job in detail.jobs">
+                        <div class="col-md-3  mb-4" v-for="(detail, index) in jobcategory.jobtypes">
+                            <span v-for="job in detail.jobs" class="py-5 ">
                                 <router-link tag="a" :to="{ path: '/job/'+job.slug }" append>
                                     <icon :v-if="jobcategory.slug === 'social-media'" name="ni ni-settings" size="lg" gradient="white" shadow round color="primary"></icon>
                                     <!-- /<icon :v-else="jobcategory.slug === 'graphic-design'" name="ni ni-ruler-pencil" size="lg" gradient="white" shadow round color="primary"></icon> -->

@@ -1,5 +1,5 @@
 <template>
-    <form role="form">        
+    <!-- <form role="form">        
         <div class="text-center text-muted mb-4">
             <small>Fill in your requirements</small>
         </div>
@@ -32,10 +32,10 @@
             </template>
             <base-button type="primary" class="my-4">Submit Request</base-button>
         </div>
-    </form> 
+    </form>  -->
 
-     <!-- <v-content>
-
+    <!-- <v-app> -->
+      <v-content data-app="v-content">
 				<v-container>
           <v-stepper v-model="step" vertical>
             <v-stepper-header>
@@ -51,7 +51,7 @@
                  <v-text-field label="Name" v-model="registration.name" required></v-text-field>
                  <v-text-field label="Email" v-model="registration.email" required></v-text-field>
                                     
-                <v-btn color="primary" @click.native="step = 2">Continue</v-btn>
+                <base-button type="primary" class="my-4" @click.native="step = 2">Next</base-button>
               </v-stepper-content>
               <v-stepper-content step="2">
                   
@@ -60,7 +60,7 @@
                   <v-text-field label="State" v-model="registration.state" required></v-text-field>
 
                 <v-btn flat @click.native="step = 1">Previous</v-btn>
-                <v-btn color="primary" @click.native="step = 3">Continue</v-btn>
+                <base-button type="primary" class="my-4" @click.native="step = 3">Next</base-button>
                 
               </v-stepper-content>
               <v-stepper-content step="3">
@@ -69,21 +69,42 @@
                               v-model="registration.numtickets" required></v-text-field>
                 <v-select label="Shirt Size" v-model="registration.shirtsize" 
                           :items="sizes" required></v-select>
+                <div class="form-group focused">
+                  <div class="input-group input-group-alternative">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="ni ni-building"></i></span>
+                    </div>
+                    <select class="select form-control" aria-placeholder="Select Ind" name="industry" required="">
+                      <option disabled="" selected="">Select Industry</option>
+                      <option value="fashion">Fashion</option>
+                      <option value="media">Media</option>
+                      <option value="ict">ICT</option>
+                      <option value="business services">Business Services</option>
+                      <option value="accounting">Accounting</option>
+                      <option value="manufacturing">Manufacturing</option>
+                      <option value="transport">Transport</option>
+                      <option value="real estate">Real Estate</option>
+                      <option value="other">Other</option>
+                    </select>
+                    <!-- <input class="form-control" placeholder="Industry" type="text"> -->
+                  </div>
+                </div>
                 
                 <v-btn flat @click.native="step = 2">Previous</v-btn>
-                <v-btn color="primary" @click.prevent="submit">Save</v-btn>
+                <base-button type="primary" class="my-4" @click.prevent="submit">Save</base-button>
                 
               </v-stepper-content>
             </v-stepper-items>
           </v-stepper>         
               
         </v-container>    
-    
-    </v-content> -->
+      </v-content>
+    <!-- </v-app>  -->
 </template>
 <script src="https://unpkg.com/vuetify/dist/vuetify.min.js" type="text/javascript"></script>
 <script>
 import ProgressSection from "../JobTemplates/JobProgress";
+
 export default {
     data: () => ({
       step:1,

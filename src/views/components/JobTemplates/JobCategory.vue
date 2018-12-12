@@ -13,7 +13,7 @@
                 </base-button>             
             </div><br>
             <div class="col-md-2"></div>
-            <div class="col-md-10 sectionDisplay mt-4" ref='sectionDisplay'>
+            <div class="col-md-12 sectionDisplay mt-4" ref='sectionDisplay'>
                 <!-- <jobmodal ></jobmodal>  -->
                 <jobtypetemplate :jobcategory="jobcategory" :modalstate="modalstater"></jobtypetemplate>
             </div>
