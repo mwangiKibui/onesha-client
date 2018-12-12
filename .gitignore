@@ -1,8 +1,13 @@
 .DS_Store
 node_modules
+<<<<<<< HEAD
 
 server
 src
+=======
+public
+dist
+>>>>>>> oneshaclient
 
 # local env files
 .env.local
