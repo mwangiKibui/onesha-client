@@ -173,7 +173,7 @@
                         <p class="lead text-white">Your journey starts here. Choose a Category.</p>
                     </div>
                 </div>
-                <JobCategories></JobCategories>
+                <JobCategories :categories="categories"></JobCategories>
             </div>
         </section>
         
@@ -253,103 +253,118 @@
 import Categories from "./components/Landing/Categories";
 import formAlert from "./components/Landing/DefaultPage";
 import JobCategories from "./components/JobTemplates/JobCategory";
-var show = true;
+import Axios from "axios";
+
+let show = true;
 
 export default {
-    name: "home",
-    components: {
-        Categories,
-        formAlert,
-        JobCategories
-    },
-    data() {
+  name: 'home',
+  components: {
+    Categories,
+    formAlert,
+    JobCategories
+  },
+  data() {
     return {
-        selectedAnimationIn: '',
-        selectedAnimationOut: '',
-        show: true,
-        request: true,
-        get: true,
-        view: true,
-        learn: true,
-        }
+      selectedAnimationIn: "",
+      selectedAnimationOut: "",
+      show: true,
+      request: true,
+      get: true,
+      view: true,
+      learn: true,
+      categories: null
+    };
+  },
+
+  methods: {
+    pressed: function() {
+      show = !show;
+      // let area = document.getElementById("actions");
+      // area.innerHTML = Categories;
     },
-
-    methods: {
-        pressed: function() 
-        {   show = !show;
-            // var area = document.getElementById("actions");
-            // area.innerHTML = Categories;
-        },
-        enter: function(el)
-        {
-            el.classList.add('animated');
-            el.classList.add(this.selectedAnimationIn);
-        },
-        leave: function(area)
-        {
-            el.classList.add('animated');
-            el.classList.add(this.selectedAnimationOut);
-        }
+    enter: function(el) {
+      el.classList.add('animated');
+      el.classList.add(this.selectedAnimationIn);
+    },
+    leave: function(area) {
+      el.classList.add('animated');
+      el.classList.add(this.selectedAnimationOut);
+    },
+    /**
+     * Load available categories from server
+     */
+    async loadCategories() {
+      try {
+        return await Axios.get('/api/data/categories').then(res => res.data);
+      } catch (err) {
+        console.error(err);
+      }
     }
+  },
+  async mounted() {
+    this.categories = await this.loadCategories();
+  }
 };
+
 var TxtType = function(els, toRotate, period) {
-        this.toRotate = toRotate;
-        this.el = els;
-        this.loopNum = 0;
-        this.period = parseInt(period, 10) || 2000;
-        this.txt = '';
-        this.tick();
-        this.isDeleting = false;
-    };
+  this.toRotate = toRotate;
+  this.el = els;
+  this.loopNum = 0;
+  this.period = parseInt(period, 10) || 2000;
+  this.txt = '';
+  this.tick();
+  this.isDeleting = false;
+};
 
-    TxtType.prototype.tick = function() {
-        var i = this.loopNum % this.toRotate.length;
-        var fullTxt = this.toRotate[i];
+TxtType.prototype.tick = function() {
+  let i = this.loopNum % this.toRotate.length;
+  let fullTxt = this.toRotate[i];
 
-        if (this.isDeleting) {
-        this.txt = fullTxt.substring(0, this.txt.length - 1);
-        } else {
-        this.txt = fullTxt.substring(0, this.txt.length + 1);
-        }
+  if (this.isDeleting) {
+    this.txt = fullTxt.substring(0, this.txt.length - 1);
+  } else {
+    this.txt = fullTxt.substring(0, this.txt.length + 1);
+  }
 
-        this.el.innerHTML = this.txt;
+  this.el.innerHTML = this.txt;
 
-        var that = this;
-        var delta = 200 - Math.random() * 100;
+  let that = this;
+  let delta = 200 - Math.random() * 100;
 
-        if (this.isDeleting) { delta /= 2; }
+  if (this.isDeleting) {
+    delta /= 2;
+  }
 
-        if (!this.isDeleting && this.txt === fullTxt) {
-        delta = this.period;
-        this.isDeleting = true;
-        } else if (this.isDeleting && this.txt === '') {
-        this.isDeleting = false;
-        this.loopNum++;
-        delta = 500;
-        }
+  if (!this.isDeleting && this.txt === fullTxt) {
+    delta = this.period;
+    this.isDeleting = true;
+  } else if (this.isDeleting && this.txt === '') {
+    this.isDeleting = false;
+    this.loopNum++;
+    delta = 500;
+  }
 
-        setTimeout(function() {
-        that.tick();
-        }, delta);
-    };
+  setTimeout(() =>{
+    that.tick();
+  }, delta);
+};
 
-    window.onload = function() {
-        var elements = document.getElementsByClassName('next');
-        for (var i=0; i<elements.length; i++) {
-            var toRotate = elements[i].getAttribute('data-type');
-            var period = elements[i].getAttribute('data-period');
-            if (toRotate) {
-              new TxtType(elements[i], JSON.parse(toRotate), period);
-            }
-        }
-        // INJECT CSS
-        var css = document.createElement("style");
-        css.type = "text/css";
-        css.innerHTML = ".next { border-right: .05em solid rgb(102, 88, 61)}";
-        document.body.appendChild(css);
-    };
-
-</script>
+window.onload = function() {
+  let elements = document.getElementsByClassName('next');
+  for (let i = 0; i < elements.length; i++) {
+    var toRotate = elements[i].getAttribute('data-type');
+    var period = elements[i].getAttribute('data-period');
+    if (toRotate) {
+      new TxtType(elements[i], JSON.parse(toRotate), period);
+    }
+  }
+  // INJECT CSS
+  const css = document.createElement('style');
+  css.type = 'text/css';
+  css.innerHTML = '.next { border-right: .05em solid rgb(102, 88, 61)}';
+  document.body.appendChild(css);
+};</script>
 <style>
     /* .big-show span{
     display: inline-flex !important;
