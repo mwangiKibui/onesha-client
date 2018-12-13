@@ -2,13 +2,13 @@
     <header class="header-global">
         <base-nav class="navbar-main" transparent type="" effect="light" expand>
             <a slot="brand" class="navbar-brand mr-lg-1" href="/">
-                <img src="img/brand/blue.png">
+                <img src="/assets/img/brand/white.png">
             </a>
 
             <div class="row" slot="content-header" slot-scope="{closeMenu}">
                 <div class="col-6 collapse-brand">
                     <a href="/">
-                        <img src="img/brand/blue.png">
+                        <img src="/assets/img/brand/blue.png">
                     </a>
                 </div>
                 <div class="col-6 collapse-close">

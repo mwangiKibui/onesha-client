@@ -104,7 +104,8 @@
 <script src="https://unpkg.com/vuetify/dist/vuetify.min.js" type="text/javascript"></script>
 <script>
 import ProgressSection from "../JobTemplates/JobProgress";
-
+import 'vuetify/dist/vuetify.min.css';
+import 'material-design-icons-iconfont/dist/material-design-icons.css'
 export default {
     data: () => ({
       step:1,
