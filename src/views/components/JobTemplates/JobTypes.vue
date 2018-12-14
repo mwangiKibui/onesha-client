@@ -1,60 +1,29 @@
 <template>
-    <div class=" sectionDisplay" id="jobDisplay" v-show="this.modalstate">
-        
-        <card type="secondary" shadow header-classes="bg-grey pb-1" body-classes="px-lg-5 py-lg-5" class="border-0" id="defShow">
-            
-        
-            <div class="text-left text-muted sectionDisplay" id="sectionDisplay">
-                <p>Services in {{ jobcategory.category}}
-                    <span class="pull-right text-right">
-                        &times;
-                    </span>
-
-                </p>
-                <div class="row row-grid mt-5 text-left">
-                        <div class="col-md-3  mb-4" v-for="(detail, index) in jobcategory.jobtypes">
-                            <span v-for="job in detail.jobs" class="py-5 ">
-                                <router-link tag="a" :to="{ path: '/job/'+job.slug }" append>
-                                    <icon :v-if="jobcategory.slug === 'social-media'" name="ni ni-settings" size="lg" gradient="white" shadow round color="primary"></icon>
-                                    <!-- /<icon :v-else="jobcategory.slug === 'graphic-design'" name="ni ni-ruler-pencil" size="lg" gradient="white" shadow round color="primary"></icon> -->
-                                    <!-- <icon :v-else="jobcategory.slug === 'motion-graphics'" name="ni ni-atom" size="lg" gradient="white" shadow round color="primary"></icon> -->
-                                    <p class="text-primary mt-3">{{ job.title }}</p>
-                                </router-link>
-                            </span>
-                        </div>
-                    <!-- <li  >
-                            <p>
-                                <strong class="text-info">
-                                    <router-link tag="a" :to="{ path: '/job/'+job.slug }" append>{{ job.title }}
-                                    </router-link></strong> <br>
-                                <small><i>{{ job.template }}</i></small>
-                                <jobsection :modalstate="true" :jobcategory="job.template"></jobsection> 
-                            </p>
-                    </li> -->
-                </div>
-                <!-- <table class="table table-striped">
-                    <thead>
-                        <tr>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Modal</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        
-                    </tbody>
-                </table> -->
-            </div>               
-            <!-- <base-button type="primary" @click.prevent="moveToNext()" class="align-items-right">Proceed</base-button> -->
-            <!-- <template slot="footer">
-                <base-progress type="primary" :value="progressvalue" v-model="progressvalue" label="Completion" :striped=true :animated=true></base-progress>
-            </template> -->
-        </card>  
-        
-        <card :v-if="showModal"  v-for="(query, index) in allQueries">
-            <jobmodal :key="index" :jobtype="query"/>
-        </card>
+  <div class="sectionDisplay" id="jobDisplay" v-show="this.modalstate">
+    <!-- <card type="secondary" class="border-0" id="defShow"> -->
+    <div class="text-left text-muted sectionDisplay" id="sectionDisplay">
+      <div
+        class="mt-5 text-left"
+        style="display: grid; grid-template-columns: repeat(4, 25%); grid-gap: 18px;"
+      >
+        <div class="mb-4 card shadow-sm" v-for="(job, index) in jobtypes" :key="index">
+          <!-- <span v-for="job in job.title" class="py-5" :key="job.slug"> -->
+          <router-link tag="a" :to="{ path: '/job/'+job.slug }" append>
+            <div class="d-flex flex-column align-items-center">
+              <icon name="ni ni-settings" size="lg" gradient="white" shadow round color="primary"></icon>
+              <span class="ml-2">{{ job.title }}</span>
+            </div>
+            <p class="text-primary mt-3">{{ job.description }}</p>
+          </router-link>
+          <!-- </span> -->
+        </div>
+      </div>
     </div>
+    <!-- </card> -->
+    <!-- <card :v-if="showModal" v-for="(query, index) in allQueries" :key="index">
+      <jobmodal :key="index" :jobtype="query"/>
+    </card>-->
+  </div>
 </template>
 <script>
 import ProgressSection from "./JobProgress.vue";
@@ -62,46 +31,39 @@ import jobsection2 from "./JobTypes2.vue";
 import jobmodal from "./JobModal.vue";
 
 export default {
-  props: ['jobcategory','modalstate'],
+  props: {
+    jobtypes: Array,
+    modalstate: Boolean
+  },
   components: {
     ProgressSection,
-    'jobsection': jobsection2,
-    'jobmodal' : jobmodal
+    jobsection: jobsection2,
+    jobmodal: jobmodal
   },
   data() {
-      return {
-          progressvalue: 0,
-          error: null,
-          showModal: false,
-          modalstatus: this.modalstate ,
-          jobdetails: [],
-          allQueries: []
-      }
+    return {
+      progressvalue: 0,
+      error: null,
+      showModal: false,
+      modalstatus: this.modalstate,
+      jobdetails: [],
+      allQueries: []
+    };
   },
   methods: {
-    moveToNext: function(job, id){
-        this.jobdetails = job
-        if(this.progressvalue < 100){
-            this.progressvalue += 10
-        }
+    moveToNext: function(job, id) {
+      this.jobdetails = job;
+      if (this.progressvalue < 100) {
+        this.progressvalue += 10;
+      }
     },
-    toggleModal: function (ev,row) {
-        console.log('clicked')
-        console.log(row)
-        this.showModal = true
-        this.allQueries = row
-        $("#jobDisplay").html(jobmodal)
+    toggleModal: function(ev, row) {
+      this.showModal = true;
+      this.allQueries = row;
+      $("#jobDisplay").html(jobmodal);
     }
-  },
-  mounted: function (){  
-    let el = this.$el.getElementsByClassName("sectionDisplay")[0]
-    el.scrollIntoView()
-    this.showModal = false
-    this.jobdetails = this.jobcategory.jobtypes
-    this.modalstatus = true
   }
 };
-console.log();
 </script>
 <style>
 </style>
