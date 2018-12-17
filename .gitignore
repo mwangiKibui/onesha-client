@@ -1,13 +1,6 @@
 .DS_Store
 node_modules
-<<<<<<< HEAD
-
-server
-src
-=======
 public
-dist
->>>>>>> oneshaclient
 
 # local env files
 .env.local
@@ -25,5 +18,3 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw*
-
-onesha_co_ke.sql
