@@ -184,7 +184,6 @@ export default {
         this.templateIndex -= 1;
         this.template = this.templatedata[this.templateIndex];
       }
-      console.log(this.template, this.templatedata, this.templateIndex);
     },
     /**
      * Loads next template question given the current index
@@ -198,7 +197,6 @@ export default {
         this.templateIndex += 1;
         this.template = this.templatedata[this.templateIndex];
       }
-      console.log(this.template, this.templatedata, this.templateIndex);
     }
   },
   mounted() {
