@@ -9,29 +9,33 @@
                 
                 <div class="container shape-container py-md">
                     <div class="col px-0">
-                        <div class="my-1 py-4 d-sm-none"></div>
+                        <div class="my-1 py-4 d-sm-nones"></div>
                         <div class="mt--300 d-lg-none"></div>
                         <div class="justify-content-between align-items-center">
                             <div class="col-lg-11">
-                                <h2 class="display-3 text-left text-white" style="display: inline-block">Grow your business with African creatives
+                                <h2 class="display-2 text-center text-white" style="display: block; float: center">Grow your business with African creatives 
                                     <!-- <span style="font-size: 0.5em">Your creative tasks sorted</span> -->
                                 </h2>
-                                <p class="justify-content-between big-show text-white text-left pt-2">
-                                    <span class="lead"><span class="next" data-period="2000" data-type='[ "Get Creative", "Social Media", "Graphic Design", "Video Production", "Animation" ]'>Get Creative</span> services at your budget and with your schedule!</span><br>
-                                    <span class="lead "> Choose a category, fill a simple job template, get your task done!</span>
-                                    <span class="text-left ">
-                                        <ul class="py-1 px-3" style="list-style: circle">
+                                <p class="justify-content-between big-show text-white text-center pt-2">
+                                    <span class="lead">Get <span class="next text-info" data-period="2000" data-type='[ " Creative", "Social Media", "Graphic Design", "Video Production", "Animation" ]'> Creative</span> services <span class="d-lg-nones"><br></span>at your budget and with your schedule!</span><br>
+                                    <span class="lead d-sm-nones"> Choose a category, fill a simple job template, get your task done!</span>
+                                    <!-- <span class="d-lg-nones">Choose a category, fill a simple job template, get your task done!</span> -->
+                                </p>
+                                <div class="row justify-content-between big-show text-white text-center">   
+                                    <span class="lead text-center d-sm-nones col-md-3" style="color: rgba(0,0,0,0)">.</span>
+                                    <span class="lead text-center d-sm-nones col-md-9">
+                                        <ul class="px-3 text-left" style="list-style: tick">
                                             <li>Receive quality work, review upto 3 times</li>
                                             <li>Save time taken to compare creative professionals</li>
                                             <li>Get Project Management to reduce the hassle</li>
                                         </ul>
                                     </span>
-                                </p>
+                                </div>
                                 
-                                <div class="btn-wrapper text-left">
+                                <div class="btn-wrapper text-center"><br>
                                     <a href="#request" data-toggle="scroll">
-                                        <base-button class="btn btn-md btn-success btn-icon mb-3 mb-sm-0"
-                                                    type="default"
+                                        <base-button class="btn btn-lg btn-info btn-icon mb-3 mb-sm-0"
+                                                    type="success"
                                                     icon="fa fa-cloud-download">
                                             Request A Service 
                                         </base-button> 
@@ -129,7 +133,7 @@
                                     <icon name="ni ni-planet" type="primary" rounded class="mb-4">
                                     </icon>
                                     <h6 class="text-primary text-uppercase">Brief Processing</h6>
-                                    <p class="description mt-3">Onesha processes your request into a job brief that we present to vetted creatives for quotation.<br><br> You then approve the quote.</p>
+                                    <p class="description mt-3">Onesha processes your request into a job brief that we present to vetted creatives for quotation.<br><br> You view the selected quotations then approve the quote.</p>
                                     <br>
                                     <!-- <base-button tag="a"  href="#request" data-toggle="scroll" type="primary" class="mt-4">
                                         START HERE
@@ -183,7 +187,7 @@
                 <div class="row row-grid align-items-center">
                     <div class="col-md-6">
                         <div class="card bg-default shadow border-0">
-                            <img v-lazy="'img/theme/img-1-1200x1000.jpg'" class="card-img-top">
+                            <img v-lazy="'assets/img/theme/img-1-1200x1000.jpg'" class="card-img-top">
                             <blockquote class="card-blockquote">
                                 <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95"
                                     class="svg-bg">
@@ -372,7 +376,7 @@ window.onload = function() {
     .position-relative{
         position: relative;
         background-image:  none;     
-        background-image: url('/img/theme/home.jpg');
+        background-image: url('/assets/img/social-audit.jpg');
         background-size: cover; 
         background-position: right;
         background-repeat: no-repeat;
@@ -393,7 +397,6 @@ window.onload = function() {
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     margin-right: 2px;
-    color:#22cdef;
     letter-spacing: .02em; /*Adjust as needed*/
     animation: 
         /* typing 1.5s steps(40, end),
@@ -403,13 +406,17 @@ window.onload = function() {
     }
 
     @media screen and (max-width: 579px) {
-        .d-sm-none {
-            display: none;
+        .d-sm-nones {
+            display: none !important;
         }
     }
+
     @media screen and (min-width: 579px) {
-        .d-sm-none {
-            display: block;
+        .d-sm-nones {
+            display: block !important;
+        }
+        .d-lg-nones {
+            display: none !important;
         }
     }
 

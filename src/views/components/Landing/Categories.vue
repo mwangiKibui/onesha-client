@@ -4,11 +4,11 @@
             <b-carousel id="carousel1"
                         controls
                         indicators>
-                <!-- Text slides with image
-                <b-carousel-slide img-blank img-alt="" style="max-height: 400px; background: rgba(10,10,10,0.2)">
+                <!-- Text slides with image -->
+                <b-carousel-slide img-blank img-alt="" style="max-height: 400px; background: rgba(220,220,250,0.6)">
                     
                     <div class="row mt--100 py-0">
-                        <div class="col-sm-5 order-md-1" style="width: 100%; height: 300px; background: url('img/theme/img-2-1200x1000.jpg'); background-size:cover">
+                        <div class="col-sm-5 order-md-1" style="width: 100%; height: 300px; background: url('assets/img/theme/img-2-1200x1000.jpg'); background-size:cover">
                         </div>
                         <div class="col-sm-7 order-md-2">
                             <h3 style="color: #00f">Social Media</h3>
@@ -39,7 +39,7 @@
                         </div>
                     </div>
                 </b-carousel-slide>
-                <b-carousel-slide img-src="img/theme/img-2-1200x1000.jpg" style="max-height: 400px">
+                <b-carousel-slide img-src="assets/img/theme/img-2-1200x1000.jpg" style="max-height: 400px">
                     <h3>Social Media</h3>
                     <p class="mt-4">A description of graphic design to show clients</p><br>
                     <a href="#request" data-toggle="scroll">
@@ -49,8 +49,8 @@
                             Request A Service 
                         </base-button> 
                     </a>
-                </b-carousel-slide>  -->
-                <b-carousel-slide img-src="img/theme/img-2-1200x1000.jpg" style="max-height: 400px">
+                </b-carousel-slide>  
+                <b-carousel-slide img-src="assets/img/theme/img-2-1200x1000.jpg" style="max-height: 400px">
                     <h3>Social Media</h3>
                     <p class="mt-4">A description of social media to show clients</p><br>
                     <a href="#request" data-toggle="scroll">
@@ -61,7 +61,7 @@
                         </base-button> 
                     </a>
                 </b-carousel-slide>
-                <b-carousel-slide img-src="img/theme/img-2-1200x1000.jpg" style="max-height: 400px">
+                <b-carousel-slide img-src="assets/img/theme/img-2-1200x1000.jpg" style="max-height: 400px">
                     <h3>Video Services</h3>
                     <p class="mt-4">A description of video services to show clients</p><br>
                     <a href="#request" data-toggle="scroll">
@@ -72,7 +72,7 @@
                         </base-button> 
                     </a>
                 </b-carousel-slide>
-                <b-carousel-slide img-src="img/theme/img-2-1200x1000.jpg" style="max-height: 400px">
+                <b-carousel-slide img-src="assets/img/theme/img-2-1200x1000.jpg" style="max-height: 400px">
                     <h3>Graphic Design</h3>
                     <p class="mt-4">A description of graphic design to show clients</p><br>
                     <a href="#request" data-toggle="scroll">
@@ -83,7 +83,7 @@
                         </base-button> 
                     </a>
                 </b-carousel-slide>
-                <b-carousel-slide img-src="img/theme/img-2-1200x1000.jpg" style="max-height: 400px">
+                <b-carousel-slide img-src="assets/img/theme/img-2-1200x1000.jpg" style="max-height: 400px">
                     <h3>Motion Graphics</h3>
                     <p class="mt-4">A description of motion graphics to show clients</p><br>
                     <a href="#request" data-toggle="scroll">
@@ -111,9 +111,9 @@ export default {
 </script>
 <style>
     .carousel-caption {
-        background: rgba(20, 20, 20, 0.6)
+        background: white;
     }
     .carousel-caption h3 {
-        color: #fff;
+        color: #33e;             ;
     }
 </style>
