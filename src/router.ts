@@ -14,11 +14,6 @@ import JobType from './views/components/Categories/JobType.vue';
 import JobPage from './views/components/Categories/JobPage.vue';
 
 Vue.use(Router);
-
-function fetchData() {
-    return {};
-}
-
 export default new Router({
     linkExactActiveClass: 'active',
     mode: 'history',
@@ -31,7 +26,6 @@ export default new Router({
                 default: Landing,
                 footer: AppFooter,
             },
-            props: fetchData,
         },
         {
             path: '/about',
@@ -88,6 +82,16 @@ export default new Router({
             },
         },
         {
+            path: '/categories/:slug',
+            name: 'Category view',
+            components: {
+                header: AppHeader,
+                default: Category,
+                footer: AppFooter,
+            },
+            props: { default: true, header: false, footer: false },
+        },
+        {
             path: '/jobtype/:item',
             name: 'Job Type',
             components: {
@@ -105,41 +109,6 @@ export default new Router({
                 footer: AppFooter,
             },
         },
-        // {
-        //     path: '/category/:id',
-        //     name: 'Category Title',
-        //     components: {
-        //         header: AppHeader,
-        //         default: Category,
-        //         footer: AppFooter,
-        //     },
-        //     children: [
-        //         {
-        //             path: 'social-media',
-        //             components: {
-        //                 header: AppHeader,
-        //                 default: Category,
-        //                 footer: AppFooter,
-        //             },
-        //         },
-        //         {
-        //             path: 'graphic-design',
-        //             components: {
-        //                 header: AppHeader,
-        //                 default: Category,
-        //                 footer: AppFooter,
-        //             },
-        //         },
-        //         {
-        //             path: 'motion-graphics',
-        //             components: {
-        //                 header: AppHeader,
-        //                 default: Category,
-        //                 footer: AppFooter,
-        //             },
-        //         },
-        //     ],
-        // },
     ],
     scrollBehavior: to => {
         if (to.hash) {

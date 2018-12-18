@@ -4,7 +4,13 @@
     <div class="py-3">
       <div v-if="template.feedback == 'single-select'">
         <div :name="template._id" v-for="(option, index) in template.options" :key="index">
-          <input type="radio" :id="index" :name="template._id" :value="index">
+          <input
+            type="radio"
+            v-model="filledintemplate"
+            :id="index"
+            :name="template._id"
+            :value="index"
+          >
           <label :for="index" class="mx-4">{{ option.option }}</label>
         </div>
       </div>
@@ -17,8 +23,13 @@ export default {
   props: {
     template: null
   },
-  mounted() {
-    console.log("Template mounted");
+  data() {
+    return {
+      filledintemplate: null
+    };
+  },
+  methods: {
+    pushTemplateData() {}
   }
 };
 </script>

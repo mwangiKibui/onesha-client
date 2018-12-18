@@ -174,14 +174,13 @@
                 <div class="row text-center justify-content-center">
                     <div class="col-lg-10">
                         <h2 class="display-3 text-white">Begin your request</h2>
-                        <p class="lead text-white">Your journey starts here. Choose a Category.</p>
+                        <p class="lead text-white">Revamp your existing business profile, or get a new one. See how all these happens.</p>
                     </div>
                 </div>
                 <JobCategories :categories="categories"></JobCategories>
             </div>
         </section>
-        
-        
+
         <section class="section bg-secondary mb-100">
             <div class="container">
                 <div class="row row-grid align-items-center">
@@ -277,7 +276,8 @@ export default {
       get: true,
       view: true,
       learn: true,
-      categories: null
+      categories: null,
+      businessprofiles: null
     };
   },
 
@@ -302,12 +302,20 @@ export default {
       try {
         return await Axios.get('/api/data/categories').then(res => res.data);
       } catch (err) {
-        console.error(err);
+        // console.error(err);
       }
+    },
+    async loadBusinessProfiles(){
+        try{
+            return await Axios.get('/api/data/business-profiles').then(res => res.data)
+        }catch(err){
+            // console.log(err)
+        }
     }
   },
   async mounted() {
     this.categories = await this.loadCategories();
+    this.businessprofiles = await this.loadBusinessProfiles();
   }
 };
 
