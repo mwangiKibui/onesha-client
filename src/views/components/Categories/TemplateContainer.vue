@@ -15,8 +15,7 @@
 <script>
 export default {
   props: {
-    template: null,
-    jobslug: null
+    template: null
   },
   mounted() {
     console.log("Template mounted");

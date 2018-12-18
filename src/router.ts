@@ -105,41 +105,41 @@ export default new Router({
                 footer: AppFooter,
             },
         },
-        {
-            path: '/category/:id',
-            name: 'Category Title',
-            components: {
-                header: AppHeader,
-                default: Category,
-                footer: AppFooter,
-            },
-            children: [
-                {
-                    path: 'social-media',
-                    components: {
-                        header: AppHeader,
-                        default: Category,
-                        footer: AppFooter,
-                    },
-                },
-                {
-                    path: 'graphic-design',
-                    components: {
-                        header: AppHeader,
-                        default: Category,
-                        footer: AppFooter,
-                    },
-                },
-                {
-                    path: 'motion-graphics',
-                    components: {
-                        header: AppHeader,
-                        default: Category,
-                        footer: AppFooter,
-                    },
-                },
-            ],
-        },
+        // {
+        //     path: '/category/:id',
+        //     name: 'Category Title',
+        //     components: {
+        //         header: AppHeader,
+        //         default: Category,
+        //         footer: AppFooter,
+        //     },
+        //     children: [
+        //         {
+        //             path: 'social-media',
+        //             components: {
+        //                 header: AppHeader,
+        //                 default: Category,
+        //                 footer: AppFooter,
+        //             },
+        //         },
+        //         {
+        //             path: 'graphic-design',
+        //             components: {
+        //                 header: AppHeader,
+        //                 default: Category,
+        //                 footer: AppFooter,
+        //             },
+        //         },
+        //         {
+        //             path: 'motion-graphics',
+        //             components: {
+        //                 header: AppHeader,
+        //                 default: Category,
+        //                 footer: AppFooter,
+        //             },
+        //         },
+        //     ],
+        // },
     ],
     scrollBehavior: to => {
         if (to.hash) {
