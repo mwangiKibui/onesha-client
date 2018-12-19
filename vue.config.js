@@ -1,10 +1,11 @@
 const path = require('path');
-
+// https://oneshaapp.herokuapp.com
 module.exports = {
     devServer: {
         proxy: {
-            '/api': {
-                target: 'http://127.0.0.1:5000',
+            '/api/*': {
+                target: 'https://oneshaapp.herokuapp.com',
+                secure: false,
             },
         },
     },

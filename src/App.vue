@@ -2,19 +2,19 @@
   <div id="app">
     <router-view name="header"></router-view>
     <main>
-      <fade-transition origin="center" mode="out-in" :duration="250">
+      <SlideYDownTransition>
         <router-view/>
-      </fade-transition>
+      </SlideYDownTransition>
     </main>
     <router-view name="footer"></router-view>
   </div>
 </template>
 <script>
-import { FadeTransition } from "vue2-transitions";
+import { SlideYDownTransition } from "vue2-transitions";
 
 export default {
   components: {
-    FadeTransition
+    SlideYDownTransition
   }
 };
 </script>

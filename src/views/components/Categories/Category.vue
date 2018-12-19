@@ -36,9 +36,7 @@
                       <div class="jobtype-container d-flex flex-column card bg-transparent">
                         <div class="jobtype-header">
                           <!-- image or jobtype illustration -->
-                          <img
-                            src="https://microlancer.lancerassets.com/v2/services/0c/d19ac0975f11e78f1667b0aa27baba/large_Envato_cover_explainer_videos_promo.jpg"
-                          >
+                          <img :src="'/api/file/'+jobtype.avatar.file">
                         </div>
                         <div class="jobtype-title">{{ jobtype.title }}</div>
                       </div>
@@ -63,6 +61,9 @@
                   id="templateModalTitle"
                 >You are {{ Number(templatedata.length) - templateIndex }} steps away to place your order.</h5>
               </template>
+
+              <base-progress type="success" :value="progress" label="Task completed"></base-progress>
+
               <div>A quick walkthrough for {{ jobtype.title }}</div>
               <div v-if="template" class="templateModal">
                 <div class="my-5">
@@ -122,6 +123,7 @@
 import Modal from "../Common/Modal";
 import BaseRadio from "../Common/BaseRadio";
 import TemplateContainer from "./TemplateContainer";
+import BaseProgress from "../Common/BaseProgress";
 import Axios from "axios";
 
 export default {
@@ -207,6 +209,11 @@ export default {
             },
             { option: "My wife told me it's right. I never question her." }
           ]
+        },
+        {
+          _id: "5we5fd6y7dwhrubsdfs2",
+          title: "Provide us with your phone number and email address",
+          feedback: "prompt"
         }
       ];
 
@@ -218,7 +225,6 @@ export default {
      *
      */
     loadPreviousTemplate(index) {
-      this.populateTemplateFeedback();
       if (this.templateIndex === 0) {
         this.templateIndex = 0;
         this.template = this.templatedata[this.templateIndex];
@@ -226,13 +232,13 @@ export default {
         this.templateIndex -= 1;
         this.template = this.templatedata[this.templateIndex];
       }
+      this.populateTemplateFeedback();
     },
     /**
      * Loads next template question given the current index
      *
      */
     loadNextTemplate(index) {
-      this.populateTemplateFeedback();
       if (this.templateIndex == this.templatedata.length - 1) {
         this.templateIndex = this.templatedata.length - 1;
         this.template = this.templatedata[this.templateIndex];
@@ -240,11 +246,12 @@ export default {
         this.templateIndex += 1;
         this.template = this.templatedata[this.templateIndex];
       }
+      this.populateTemplateFeedback();
     },
     /**
      * Will populate template entry from selected options.
      */
-    populateTemplateFeedback() {
+    populateTemplateFeedback(end) {
       var elem = this.$el.querySelector(".templateModal");
       var title = elem.querySelector(".title").innerText;
       var inputs = Array.from(elem.querySelectorAll("input"));
@@ -259,12 +266,18 @@ export default {
             self.filledindata[title] = label;
         }
       });
+
+      var index = end
+        ? 1
+        : Number(this.templateIndex) / Number(this.templatedata.length);
+
+      this.progress = Math.ceil(index * 100);
     },
     /**
      * Submit template after client fills in
      */
     submitFilledInTemplate() {
-      this.populateTemplateFeedback();
+      this.populateTemplateFeedback(true);
       console.log(this.filledindata);
     }
   }
