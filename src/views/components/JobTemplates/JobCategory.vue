@@ -70,16 +70,9 @@ export default {
      *
      * @param {string} categorySlug - slug of the category clicked.
      */
-    async requestCategoryJobTypes(categorySlug) {
+    requestCategoryJobTypes(categorySlug) {
       // show progress indicator here
-      const jobTypes = await Axios.get(
-        "/api/data/jobtype/" + categorySlug
-      ).then(res => {
-        // hide progress indicator here
-        return res.data;
-      });
-
-      this.jobtypes = jobTypes;
+     Axios.get("/api/data/jobtype/" + categorySlug).then(res => this.jobtypes = res.data);
       this.modalstater = true;
     }
   }

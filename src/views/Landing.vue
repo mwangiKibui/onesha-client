@@ -277,7 +277,7 @@ export default {
       view: true,
       learn: true,
       categories: null,
-      businessprofiles: null
+      businessprofiles: null,
     };
   },
 
@@ -298,9 +298,9 @@ export default {
     /**
      * Load available categories from server
      */
-    async loadCategories() {
+    loadCategories() {
       try {
-        return await Axios.get('/api/data/categories').then(res => res.data);
+        Axios.get('/api/data/categories').then(res => this.categories = res.data);
       } catch (err) {
         // console.error(err);
       }
@@ -314,8 +314,7 @@ export default {
     }
   },
   async mounted() {
-    this.categories = await this.loadCategories();
-    this.businessprofiles = await this.loadBusinessProfiles();
+    this.loadCategories();
   }
 };
 

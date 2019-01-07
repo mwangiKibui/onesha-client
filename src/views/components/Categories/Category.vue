@@ -57,15 +57,28 @@
             <modal :show.sync="templateModal">
               <template slot="header">
                 <h5
+                  v-if="templatedata.length"
                   class="modal-title"
                   id="templateModalTitle"
                 >You are {{ Number(templatedata.length) - templateIndex }} steps away to place your order.</h5>
               </template>
+              <template slot="header">
+                <h5
+                  v-if="!templatedata.length"
+                  class="modal-title"
+                  id="templateModalTitle"
+                >No template found.</h5>
+              </template>
 
-              <base-progress type="success" :value="progress" label="Task completed"></base-progress>
+              <base-progress
+                v-if="templatedata.length"
+                type="success"
+                :value="progress"
+                label="Task completed"
+              ></base-progress>
 
-              <div>A quick walkthrough for {{ jobtype.title }}</div>
-              <div v-if="template" class="templateModal">
+              <div v-if="templatedata.length">A quick walkthrough for {{ jobtype.title }}</div>
+              <div v-if="templatedata.length" class="templateModal">
                 <div class="my-5">
                   <div class="title">{{ template.title }}</div>
                   <div v-if="template.feedback == 'single-select'">
@@ -93,6 +106,9 @@
                   </div>
                 </div>
               </div>
+
+              <!-- no template defined -->
+              <div v-if="!templatedata.length">No template found for specified job type.</div>
               <template slot="footer">
                 <button
                   class="btn btn-default"
@@ -147,15 +163,19 @@ export default {
       filledindata: {}
     };
   },
-  async mounted() {
-    await this.fetchCategoryJobTypes();
+  /**
+   * On template mount, execute defined action below.
+   *
+   * Fetch all defined job types, grouped with their categories from database, and populate returned data as categories.
+   */
+  mounted() {
+    this.fetchCategoryJobTypes();
   },
   methods: {
-    async fetchCategoryJobTypes() {
-      const jobtypes = await Axios.get(
-        "/api/data/jobtype-grouped/" + this.slug
-      ).then(res => res.data);
-      this.category = jobtypes;
+    fetchCategoryJobTypes() {
+      Axios.get("/api/data/jobtype-grouped/" + this.slug).then(
+        res => (this.category = res.data)
+      );
     },
     /**
      * Load templates from database for specified job type.
@@ -168,11 +188,14 @@ export default {
       );
       this.templateModal = true;
       this.jobtype = jobtype;
+      this.progress = 0;
+
       // do async loading of job templates
       const jobTemplate = await Axios.get(
         "/api/data/templates/" + this.jobtype.slug
       ).then(res => res.data);
 
+      /*
       this.templatedata = [
         {
           _id: "5we5fd6y7hrubhs2",
@@ -216,7 +239,8 @@ export default {
           feedback: "prompt"
         }
       ];
-
+      */
+      this.templatedata = jobTemplate.length ? jobTemplate[0].templates : [];
       this.templateIndex = 0;
       this.template = this.templatedata[0];
     },
@@ -250,6 +274,9 @@ export default {
     },
     /**
      * Will populate template entry from selected options.
+     *
+     * Called for every next or previous button click when filling in job templates.
+     * Previously set object keys values are reset to the new selected option.
      */
     populateTemplateFeedback(end) {
       var elem = this.$el.querySelector(".templateModal");
@@ -274,11 +301,12 @@ export default {
       this.progress = Math.ceil(index * 100);
     },
     /**
-     * Submit template after client fills in
+     * Submit template after client fills in.
+     *
+     * Created object will be sent after sanitization to remove unwanted characters.
      */
     submitFilledInTemplate() {
       this.populateTemplateFeedback(true);
-      console.log(this.filledindata);
     }
   }
 };
