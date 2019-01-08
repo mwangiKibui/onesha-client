@@ -1,19 +1,19 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import AppHeader from './layout/AppHeader.vue';
-import AppFooter from './layout/AppFooter.vue';
-import About from './views/About.vue';
-import Components from './views/Components.vue';
-import Portfolio from './views/Portfolio.vue';
-import Landing from './views/Landing.vue';
-import Login from './views/Login.vue';
-import Register from './views/Register.vue';
-import Profile from './views/Profile.vue';
-import Category from './views/components/Categories/Category.vue';
-import JobType from './views/components/Categories/JobType.vue';
-import JobPage from './views/components/Categories/JobPage.vue';
+import AppFooter from '@/layout/AppFooter.vue';
+import AppHeader from '@/layout/AppHeader.vue';
+import About from '@/views/About.vue';
+import Category from '@/views/components/Categories/Category.vue';
+import JobPage from '@/views/components/Categories/JobPage.vue';
+import JobType from '@/views/components/Categories/JobType.vue';
+import Landing from '@/views/Landing.vue';
+import Login from '@/views/Login.vue';
+import Portfolio from '@/views/Portfolio.vue';
+import Profile from '@/views/Profile.vue';
+import Register from '@/views/Register.vue';
 
 Vue.use(Router);
+
 export default new Router({
     linkExactActiveClass: 'active',
     mode: 'history',

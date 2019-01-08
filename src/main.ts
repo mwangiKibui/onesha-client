@@ -1,11 +1,15 @@
-import Vue from "vue";
-import App from "./App.vue";
-import router from "./router";
-import Argon from "./plugins/argon-kit";
+import Vue from 'vue';
+import App from '@/App.vue';
+import Argon from '@/plugins/argon-kit';
+import router from '@/router';
+import InitProgress from '@/progressbar';
 
 Vue.config.productionTip = false;
 Vue.use(Argon);
+
+InitProgress(router);
+
 new Vue({
-  router,
-  render: (h) => h(App)
-}).$mount("#app");
+    router,
+    render: h => h(App),
+}).$mount('#app');

@@ -168,9 +168,11 @@ export default {
    *
    * Fetch all defined job types, grouped with their categories from database, and populate returned data as categories.
    */
-  mounted() {
-    this.fetchCategoryJobTypes();
-  },
+  beforeRouteEnter(to, from, next) {
+   next(vm => {
+    vm.fetchCategoryJobTypes();
+    // next();
+   })},
   methods: {
     fetchCategoryJobTypes() {
       Axios.get("/api/data/jobtype-grouped/" + this.slug).then(

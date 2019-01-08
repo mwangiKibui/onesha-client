@@ -313,9 +313,12 @@ export default {
         }
     }
   },
-  async mounted() {
-    this.loadCategories();
-  }
+  beforeRouteEnter(to, from, next) {
+   next(vm => {
+    vm.loadCategories();
+    next();
+   });
+ }
 };
 
 var TxtType = function(els, toRotate, period) {
