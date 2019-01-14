@@ -9,50 +9,43 @@
 
         <div class="container shape-container py-md">
           <div class="col px-0">
-            <div class="my-1 py-4 d-sm-nones"></div>
-            <div class="mt--300 d-lg-none"></div>
+            <div class="my-0 py-1 d-sm-nones"></div>
+            <div class="mt--300 d-lg-nones"></div>
             <div class="justify-content-between align-items-center">
               <div class="col-lg-11">
                 <h2
-                  class="display-2 text-center text-white"
-                  style="display: block; float: center"
+                  class="display-3 text-left text-white"
+                  style="display: inline-block; float: center"
                 >Grow your business with African creatives
                   <!-- <span style="font-size: 0.5em">Your creative tasks sorted</span> -->
                 </h2>
-                <p class="justify-content-between big-show text-white text-center pt-2">
-                  <span class="lead">Get <span
-                      class="next text-info"
+                <p class="justify-content-between text-white text-left pt-2">
+                  <span class="lead"><span
+                      class="next"
                       data-period="2000"
-                      data-type='[ " Creative", "Social Media", "Graphic Design", "Video Production", "Animation" ]'
-                    > Creative</span> services <span class="d-lg-nones"><br></span>at your budget and with your schedule!</span><br>
-                  <span class="lead d-sm-nones"> Choose a category, fill a simple job template, get your task done!</span>
-                  <!-- <span class="d-lg-nones">Choose a category, fill a simple job template, get your task done!</span> -->
-                </p>
-                <div class="row justify-content-between big-show text-white text-center">
-                  <span
-                    class="lead text-center d-sm-nones col-md-3"
-                    style="color: rgba(0,0,0,0)"
-                  >.</span>
-                  <span class="lead text-center d-sm-nones col-md-9">
+                      data-type='[ "Get Creative", "Social Media", "Graphic Design", "Video Production", "Animation" ]'
+                    >Get Creative</span> <span class="d-lg-nones"><br></span>services at your budget!
+                    <span class=" d-sm-nones">Get services from vetted creatives with quick delivery to fit your schedule.<br> Choose a category, fill a simple job template, get your task done!</span></span>
+                  <span class="text-left d-sm-nones">
                     <ul
-                      class="px-3 text-left"
-                      style="list-style: tick"
+                      class="py-1 px-3"
+                      style="list-style: circle"
                     >
                       <li>Receive quality work, review upto 3 times</li>
                       <li>Save time taken to compare creative professionals</li>
                       <li>Get Project Management to reduce the hassle</li>
                     </ul>
                   </span>
-                </div>
+                </p>
 
-                <div class="btn-wrapper text-center"><br>
+                <div class="btn-wrapper text-left">
                   <a
                     href="#request"
                     data-toggle="scroll"
                   >
                     <base-button
-                      class="btn btn-lg btn-info btn-icon mb-3 mb-sm-0"
-                      type="success"
+                      class="btn btn-md btn-success btn-icon mb-3 mb-sm-0"
+                      type="info"
                       icon="fa fa-cloud-download"
                     >
                       Request A Service
@@ -295,7 +288,7 @@
         <div class="row text-center justify-content-center">
           <div class="col-lg-10">
             <h2 class="display-3 text-white">Begin your request</h2>
-            <p class="lead text-white">Revamp your existing business profile, or get a new one. See how all these happens.</p>
+            <p class="lead text-white">Your journey starts here. Revamp your existing business profile, or get a new one.</p>
           </div>
         </div>
         <JobCategories :categories="categories"></JobCategories>
@@ -416,7 +409,7 @@
 </template>
 
 <script>
-import Categories from "./components/Landing/Categories";
+import Categories from "./components/Categories/AllCategories";
 import formAlert from "./components/Landing/DefaultPage";
 import JobCategories from "./components/JobTemplates/JobCategory";
 import Axios from "axios";
@@ -447,7 +440,7 @@ export default {
   methods: {
     pressed: function() {
       show = !show;
-      // let area = document.getElementById("actions");
+      // var area = document.getElementById("actions");
       // area.innerHTML = Categories;
     },
     enter: function(el) {
@@ -463,11 +456,18 @@ export default {
      */
     loadCategories() {
       try {
-        Axios.get("/api/data/categories").then(
-          res => (this.categories = res.data)
-        );
+        //display loader
+        console.log("now fetching jobtypes");
+        var progressloader = document.getElementsByClassName("progressloader");
+        progressloader.innerHTML = "<h3>Fetching data</h3>";
+        Axios.get("/api/data/categories").then(res => {
+          //hide loader
+          console.log("displaying jobtypes");
+          progressloader.innerHTML = "";
+          return (this.categories = res.data);
+        });
       } catch (err) {
-        // console.error(err);
+        console.log(err);
       }
     },
     async loadBusinessProfiles() {
@@ -499,8 +499,8 @@ var TxtType = function(els, toRotate, period) {
 };
 
 TxtType.prototype.tick = function() {
-  let i = this.loopNum % this.toRotate.length;
-  let fullTxt = this.toRotate[i];
+  var i = this.loopNum % this.toRotate.length;
+  var fullTxt = this.toRotate[i];
 
   if (this.isDeleting) {
     this.txt = fullTxt.substring(0, this.txt.length - 1);
@@ -510,8 +510,8 @@ TxtType.prototype.tick = function() {
 
   this.el.innerHTML = this.txt;
 
-  let that = this;
-  let delta = 200 - Math.random() * 100;
+  var that = this;
+  var delta = 200 - Math.random() * 100;
 
   if (this.isDeleting) {
     delta /= 2;
@@ -526,14 +526,14 @@ TxtType.prototype.tick = function() {
     delta = 500;
   }
 
-  setTimeout(() => {
+  setTimeout(function() {
     that.tick();
   }, delta);
 };
 
 window.onload = function() {
-  let elements = document.getElementsByClassName("next");
-  for (let i = 0; i < elements.length; i++) {
+  var elements = document.getElementsByClassName("next");
+  for (var i = 0; i < elements.length; i++) {
     var toRotate = elements[i].getAttribute("data-type");
     var period = elements[i].getAttribute("data-period");
     if (toRotate) {
@@ -541,16 +541,16 @@ window.onload = function() {
     }
   }
   // INJECT CSS
-  const css = document.createElement("style");
+  var css = document.createElement("style");
   css.type = "text/css";
   css.innerHTML = ".next { border-right: .05em solid rgb(102, 88, 61)}";
   document.body.appendChild(css);
 };
 </script>
 <style>
-/* .big-show span{
-    display: inline-flex !important;
-    } */
+.display-3 span {
+  display: inline-flex !important;
+}
 .position-relative {
   position: relative;
   background-image: none;
@@ -575,6 +575,7 @@ window.onload = function() {
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   margin-right: 2px;
+  color: #22cdef;
   letter-spacing: 0.02em; /*Adjust as needed*/
   animation: 
         /* typing 1.5s steps(40, end),
