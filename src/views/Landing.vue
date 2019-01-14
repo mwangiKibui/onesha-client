@@ -9,33 +9,29 @@
                 
                 <div class="container shape-container py-md">
                     <div class="col px-0">
-                        <div class="my-1 py-4 d-sm-nones"></div>
-                        <div class="mt--300 d-lg-none"></div>
+                        <div class="my-0 py-1 d-sm-nones"></div>
+                        <div class="mt--300 d-lg-nones"></div>
                         <div class="justify-content-between align-items-center">
                             <div class="col-lg-11">
-                                <h2 class="display-2 text-center text-white" style="display: block; float: center">Grow your business with African creatives 
+                                <h2 class="display-3 text-left text-white" style="display: inline-block; float: center">Grow your business with African creatives
                                     <!-- <span style="font-size: 0.5em">Your creative tasks sorted</span> -->
                                 </h2>
-                                <p class="justify-content-between big-show text-white text-center pt-2">
-                                    <span class="lead">Get <span class="next text-info" data-period="2000" data-type='[ " Creative", "Social Media", "Graphic Design", "Video Production", "Animation" ]'> Creative</span> services <span class="d-lg-nones"><br></span>at your budget and with your schedule!</span><br>
-                                    <span class="lead d-sm-nones"> Choose a category, fill a simple job template, get your task done!</span>
-                                    <!-- <span class="d-lg-nones">Choose a category, fill a simple job template, get your task done!</span> -->
-                                </p>
-                                <div class="row justify-content-between big-show text-white text-center">   
-                                    <span class="lead text-center d-sm-nones col-md-3" style="color: rgba(0,0,0,0)">.</span>
-                                    <span class="lead text-center d-sm-nones col-md-9">
-                                        <ul class="px-3 text-left" style="list-style: tick">
+                                <p class="justify-content-between text-white text-left pt-2">
+                                    <span class="lead"><span class="next" data-period="2000" data-type='[ "Get Creative", "Social Media", "Graphic Design", "Video Production", "Animation" ]'>Get Creative</span> <span class="d-lg-nones"><br></span>services at your budget!                                   
+                                    <span class=" d-sm-nones">Get services from vetted creatives with quick delivery to fit your schedule.<br> Choose a category, fill a simple job template, get your task done!</span></span>
+                                    <span class="text-left d-sm-nones">
+                                        <ul class="py-1 px-3" style="list-style: circle">
                                             <li>Receive quality work, review upto 3 times</li>
                                             <li>Save time taken to compare creative professionals</li>
                                             <li>Get Project Management to reduce the hassle</li>
                                         </ul>
                                     </span>
-                                </div>
+                                </p>
                                 
-                                <div class="btn-wrapper text-center"><br>
+                                <div class="btn-wrapper text-left">
                                     <a href="#request" data-toggle="scroll">
-                                        <base-button class="btn btn-lg btn-info btn-icon mb-3 mb-sm-0"
-                                                    type="success"
+                                        <base-button class="btn btn-md btn-success btn-icon mb-3 mb-sm-0"
+                                                    type="info"
                                                     icon="fa fa-cloud-download">
                                             Request A Service 
                                         </base-button> 
@@ -105,8 +101,7 @@
                 </div>
             </div>
         </section>
-        <section></section>
-        <section class="section section-lg pt-lg-0 mt-200" id="process">    
+        <section class="section section-lg pt-lg-0 mt-200">    
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="mb-5 mb-lg-0 col-md-12">
@@ -133,7 +128,7 @@
                                     <icon name="ni ni-planet" type="primary" rounded class="mb-4">
                                     </icon>
                                     <h6 class="text-primary text-uppercase">Brief Processing</h6>
-                                    <p class="description mt-3">Onesha processes your request into a job brief that we present to vetted creatives for quotation.<br><br> You view the selected quotations then approve the quote.</p>
+                                    <p class="description mt-3">Onesha processes your request into a job brief that we present to vetted creatives for quotation.<br><br> You then selected a quotation to approve.</p>
                                     <br>
                                     <!-- <base-button tag="a"  href="#request" data-toggle="scroll" type="primary" class="mt-4">
                                         START HERE
@@ -174,19 +169,20 @@
                 <div class="row text-center justify-content-center">
                     <div class="col-lg-10">
                         <h2 class="display-3 text-white">Begin your request</h2>
-                        <p class="lead text-white">Revamp your existing business profile, or get a new one. See how all these happens.</p>
+                        <p class="lead text-white">Your journey starts here. Revamp your existing business profile, or get a new one.</p>
                     </div>
                 </div>
                 <JobCategories :categories="categories"></JobCategories>
             </div>
         </section>
-
-        <section class="section bg-secondary mb-100">
+        
+        
+        <section class="section bg-secondary mb-200">
             <div class="container">
                 <div class="row row-grid align-items-center">
                     <div class="col-md-6">
                         <div class="card bg-default shadow border-0">
-                            <img v-lazy="'assets/img/theme/img-1-1200x1000.jpg'" class="card-img-top">
+                            <img v-lazy="'img/theme/img-1-1200x1000.jpg'" class="card-img-top">
                             <blockquote class="card-blockquote">
                                 <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95"
                                     class="svg-bg">
@@ -219,7 +215,7 @@
             </div>
         </section>
         
-        <section class="section section-sm pt-lg-4 mt-400 section-contact-us">
+        <section class="section section-lg pt-lg-4 mt-300 section-contact-us">
             <div class="container">
                 <div class="row justify-content-center ">
                     <div class="col-lg-8">
@@ -253,7 +249,7 @@
 </template>
 
 <script>
-import Categories from "./components/Landing/Categories";
+import Categories from "./components/Categories/AllCategories";
 import formAlert from "./components/Landing/DefaultPage";
 import JobCategories from "./components/JobTemplates/JobCategory";
 import Axios from "axios";
@@ -261,59 +257,70 @@ import Axios from "axios";
 let show = true;
 
 export default {
-  name: 'home',
-  components: {
-    Categories,
-    formAlert,
-    JobCategories
-  },
-  data() {
+    name: "home",
+    components: {
+        Categories,
+        formAlert,
+        JobCategories
+    },
+    data() {
     return {
-      selectedAnimationIn: "",
-      selectedAnimationOut: "",
-      show: true,
-      request: true,
-      get: true,
-      view: true,
-      learn: true,
-      categories: null,
-      businessprofiles: null,
-    };
-  },
-
-  methods: {
-    pressed: function() {
-      show = !show;
-      // let area = document.getElementById("actions");
-      // area.innerHTML = Categories;
-    },
-    enter: function(el) {
-      el.classList.add('animated');
-      el.classList.add(this.selectedAnimationIn);
-    },
-    leave: function(area) {
-      el.classList.add('animated');
-      el.classList.add(this.selectedAnimationOut);
-    },
-    /**
-     * Load available categories from server
-     */
-    loadCategories() {
-      try {
-        Axios.get('/api/data/categories').then(res => this.categories = res.data);
-      } catch (err) {
-        // console.error(err);
-      }
-    },
-    async loadBusinessProfiles(){
-        try{
-            return await Axios.get('/api/data/business-profiles').then(res => res.data)
-        }catch(err){
-            // console.log(err)
+        selectedAnimationIn: '',
+        selectedAnimationOut: '',
+        show: true,
+        request: true,
+        get: true,
+        view: true,
+        learn: true,
+        categories: null,
+        businessprofiles: null,
         }
-    }
-  },
-  beforeRouteEnter(to, from, next) {
+    },
+
+    methods: {
+        pressed: function() 
+        {   show = !show;
+            // var area = document.getElementById("actions");
+            // area.innerHTML = Categories;
+        },
+        enter: function(el)
+        {
+            el.classList.add('animated');
+            el.classList.add(this.selectedAnimationIn);
+        },
+        leave: function(area)
+        {
+            el.classList.add('animated');
+            el.classList.add(this.selectedAnimationOut);
+        },
+        /**
+         * Load available categories from server
+         */
+        loadCategories() {
+        try {
+            //display loader
+            console.log("now fetching jobtypes");
+            var progressloader = document.getElementsByClassName('progressloader');
+            progressloader.innerHTML = "<h3>Fetching data</h3>";
+            Axios.get('/api/data/categories').then(res => {
+                //hide loader
+                console.log("displaying jobtypes");
+                progressloader.innerHTML = "";
+                return this.categories = res.data;
+            });
+        } catch (err) {
+            console.log(err);
+        }
+        },
+        async loadBusinessProfiles(){
+            try{
+                return await Axios.get('/api/data/business-profiles').then(res => res.data)
+            }catch(err){
+                // console.log(err)
+            }
+        }
+    },
+    beforeRouteEnter(to, from, next) {
    next(vm => {
     vm.loadCategories();
     next();
@@ -322,67 +329,67 @@ export default {
 };
 
 var TxtType = function(els, toRotate, period) {
-  this.toRotate = toRotate;
-  this.el = els;
-  this.loopNum = 0;
-  this.period = parseInt(period, 10) || 2000;
-  this.txt = '';
-  this.tick();
-  this.isDeleting = false;
-};
+        this.toRotate = toRotate;
+        this.el = els;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
 
-TxtType.prototype.tick = function() {
-  let i = this.loopNum % this.toRotate.length;
-  let fullTxt = this.toRotate[i];
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
 
-  if (this.isDeleting) {
-    this.txt = fullTxt.substring(0, this.txt.length - 1);
-  } else {
-    this.txt = fullTxt.substring(0, this.txt.length + 1);
-  }
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
 
-  this.el.innerHTML = this.txt;
+        this.el.innerHTML = this.txt;
 
-  let that = this;
-  let delta = 200 - Math.random() * 100;
+        var that = this;
+        var delta = 200 - Math.random() * 100;
 
-  if (this.isDeleting) {
-    delta /= 2;
-  }
+        if (this.isDeleting) { delta /= 2; }
 
-  if (!this.isDeleting && this.txt === fullTxt) {
-    delta = this.period;
-    this.isDeleting = true;
-  } else if (this.isDeleting && this.txt === '') {
-    this.isDeleting = false;
-    this.loopNum++;
-    delta = 500;
-  }
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
 
-  setTimeout(() =>{
-    that.tick();
-  }, delta);
-};
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
 
-window.onload = function() {
-  let elements = document.getElementsByClassName('next');
-  for (let i = 0; i < elements.length; i++) {
-    var toRotate = elements[i].getAttribute('data-type');
-    var period = elements[i].getAttribute('data-period');
-    if (toRotate) {
-      new TxtType(elements[i], JSON.parse(toRotate), period);
-    }
-  }
-  // INJECT CSS
-  const css = document.createElement('style');
-  css.type = 'text/css';
-  css.innerHTML = '.next { border-right: .05em solid rgb(102, 88, 61)}';
-  document.body.appendChild(css);
-};</script>
+    window.onload = function() {
+        var elements = document.getElementsByClassName('next');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".next { border-right: .05em solid rgb(102, 88, 61)}";
+        document.body.appendChild(css);
+    };
+
+</script>
 <style>
-    /* .big-show span{
+    .display-3 span{
     display: inline-flex !important;
-    } */
+    }
     .position-relative{
         position: relative;
         background-image:  none;     
@@ -407,6 +414,7 @@ window.onload = function() {
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     margin-right: 2px;
+    color:#22cdef;
     letter-spacing: .02em; /*Adjust as needed*/
     animation: 
         /* typing 1.5s steps(40, end),

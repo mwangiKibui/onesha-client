@@ -1,6 +1,7 @@
 <template>
   <!-- Modals -->
   <div>
+    <span class="progressloader"></span>
     <div class="row mt-5 justify-content-center" style="text-align: center;">
       <div class="col-lg-4 col-sm-6" v-for="(category, index) in categories" :key="index">
         <router-link :to="`/categories/${category.slug}`" class="m-2">
