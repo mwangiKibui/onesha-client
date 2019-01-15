@@ -11,9 +11,9 @@
                         <div class="col-sm-5 order-md-1" style="width: 100%; height: 300px; background: url('assets/img/theme/img-2-1200x1000.jpg'); background-size:cover">
                         </div>
                         <div class="col-sm-7 order-md-2">
-                            <h3 style="color: #00f">Social Media</h3>
+                            <h3 style="color: #00f">New Design Only</h3>
                             <div class="pr-lg-5 text-default px-2">
-                                <p>The kit comes with three pre-built pages.<br><br>
+                                <p>Get your profile done using pre-built design pages.<br><br>
                                 <ul class="list-unstyled text-left">
                                     <li class="py-1">
                                         <div class="d-flex align-items-center">
@@ -45,9 +45,9 @@
                         <div class="col-sm-5 order-md-1" style="width: 100%; height: 300px; background: url('assets/img/theme/img-2-1200x1000.jpg'); background-size:cover">
                         </div>
                         <div class="col-sm-7 order-md-2">
-                            <h3 style="color: #00f">Graphic Design</h3>
+                            <h3 style="color: #00f">New Design plus structure</h3>
                             <div class="pr-lg-5 text-default px-2">
-                                <p>The kit comes with three pre-built pages.<br><br>
+                                <p>Get your profile designed with new content and structure.<br><br>
                                 <ul class="list-unstyled text-left">
                                     <li class="py-1">
                                         <div class="d-flex align-items-center">
@@ -79,9 +79,9 @@
                         <div class="col-sm-5 order-md-1" style="width: 100%; height: 300px; background: url('assets/img/theme/img-2-1200x1000.jpg'); background-size:cover">
                         </div>
                         <div class="col-sm-7 order-md-2">
-                            <h3 style="color: #00f">Motion Graphics</h3>
+                            <h3 style="color: #00f">Redesign existing profile</h3>
                             <div class="pr-lg-5 text-default px-2">
-                                <p>The kit comes with three pre-built pages.<br><br>
+                                <p>Get your profile designed with content provided.<br><br>
                                 <ul class="list-unstyled text-left">
                                     <li class="py-1">
                                         <div class="d-flex align-items-center">

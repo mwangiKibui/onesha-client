@@ -28,19 +28,19 @@
             <i class="ni ni-collection d-lg-none"></i>
             <span class="nav-link-inner--text">SERVICES</span>
           </a>
-          <router-link to="/category/social-media" class="dropdown-item">Social Media</router-link>
-          <router-link to="/category/graphic-design" class="dropdown-item">Graphic Design</router-link>
-          <router-link to="/category/motion-graphics" class="dropdown-item">Motion Graphics</router-link>
+          <router-link to="/category/social-media" class="dropdown-item">New Design Only</router-link>
+          <router-link to="/category/graphic-design" class="dropdown-item">New Design plus structure</router-link>
+          <router-link to="/category/motion-graphics" class="dropdown-item">Redesign of existing</router-link>
         </base-dropdown>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <router-link to="/projects" class="nav-link" replace>
             <i class="ni ni-collection d-lg-none"></i>
             <span class="nav-link-inner--text">OUR PORTFOLIO</span>
           </router-link>
-        </li>
+        </li> -->
       </ul>
       <ul class="navbar-nav align-items-lg-center ml-lg-auto">
-        <li class="nav-item d-lg-none">
+        <!-- <li class="nav-item d-lg-none">
           <router-link
             to="/register"
             class="nav-link nav-link-icon"
@@ -59,7 +59,7 @@
             </span>
             <span class="nav-link-inner--text">Become a Creative</span>
           </router-link>
-        </li>
+        </li> -->
       </ul>
     </base-nav>
   </header>

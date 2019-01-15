@@ -5,16 +5,8 @@
     <div class="row mt-5 justify-content-center" style="text-align: center;">
       <div class="col-lg-4 col-sm-6" v-for="(category, index) in categories" :key="index">
         <router-link :to="`/categories/${category.slug}`" class="m-2">
-          <div class="category">
-            <icon
-              :name="category.avatar.file"
-              gradient="white"
-              size="lg"
-              shadow
-              round
-              color="primary"
-            ></icon>
-            <h5 class="text-white mt-3">{{category.title}}</h5>
+          <div class="category p-3">
+            <h5 class="text-white mt-3">{{category.title}}</h5><br>
             <p class="text-white mt-3">{{category.description}}</p>
             <br>
             <!-- <base-button

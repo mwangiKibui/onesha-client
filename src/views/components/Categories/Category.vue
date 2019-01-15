@@ -8,9 +8,9 @@
       <span></span>
       <span></span>
     </div>
-    <div class="container-fluid py-0">
+    <div class="container py-0 pb-lg ">
       <div class="row">
-        <div class="col-lg-12 mb-5 mb-lg-0">
+        <div class="mb-5 mb-lg-0">
           <section v-if="category.length">
             <div class="col-lg-7">
               <h1 class="text-white font-weight-light">{{ category[0].title }}</h1>
@@ -20,12 +20,13 @@
             <!-- display job types -->
             <section class="col-12">
               <div class="row">
-                <div class="col-lg-3">
+                <div class="col-lg-12">
                   <div v-for="(jobtype, index) in category[0].jobtypes" :key="index">
                     <li>{{ jobtype.title }}</li>
                   </div>
-                </div>
-                <div class="col-lg-9">
+                </div><br>
+                <span style="color: rgba (0,0,0,0) !important;">.</span><hr>
+                <div class="col-md-12 mb-2">
                   <div class="row justify-content-center">
                     <div
                       v-for="(jobtype, index) in category[0].jobtypes"

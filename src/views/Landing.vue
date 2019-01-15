@@ -54,8 +54,8 @@
             <div class="container">
                 <div class="justify-content-between align-items-center">
                     <div class="mb-5 mb-lg-0 col-md-12">
-                        <h2 class="text-default font-weight-light">All Categories</h2>
-                        <p class="lead text-default mt-4">We bring you services from these categories.</p>
+                        <h2 class="text-default font-weight-light">All Services</h2>
+                        <p class="lead text-default mt-4">We bring you services from the following.</p>
                         
                     </div>
                     <transition name="component-fade" mode="out-in">
@@ -72,29 +72,29 @@
                     <div class="col-sm-12 mt-2 mt-5">
                         <h2 class="text-white font-weight-light">We have worked with</h2>
                         <div class="row row-grid mt-5">
-                            <div class="col-sm-2">
-                                <icon name="ni ni-settings" size="lg" gradient="white" shadow round color="primary"></icon>
-                                <p class="text-white mt-3">Client Name</p>
+                            <div class="col-sm-2" >
+                                <icon style="background: url('assets/img/clients/pangea.jpg'); background-size: contain; width: 80px; height: 80px  " ></icon>
+                                <p class="text-white mt-3">Pangea Accelerator</p>
                             </div>
-                            <div class="col-sm-2">
-                                <icon name="ni ni-ruler-pencil" size="lg" gradient="white" shadow round color="primary"></icon>
-                                <p class="text-white mt-3">Client Name</p>
+                            <div class="col-sm-2" >
+                                <icon style="background: url('assets/img/clients/eo.jpg'); background-size: contain; width: 80px; height: 80px  " ></icon>
+                                <p class="text-white mt-3">EO Kenya</p>
                             </div>
-                            <div class="col-sm-2">
-                                <icon name="ni ni-atom" size="lg" gradient="white" shadow round color="primary"></icon>
-                                <p class="text-white mt-3">Client Name</p>
+                            <div class="col-sm-2" >
+                                <icon style="background: url('assets/img/clients/weston.jpg'); background-size: contain; width: 80px; height: 80px  " ></icon>
+                                <p class="text-white mt-3">Weston Hotel</p>
                             </div>
-                            <div class="col-sm-2">
-                                <icon name="ni ni-atom" size="lg" gradient="white" shadow round color="primary"></icon>
-                                <p class="text-white mt-3">Client Name</p>
+                            <div class="col-sm-2" >
+                                <icon style="background: url('assets/img/clients/bdo.jpg'); background-size: contain; width: 80px; height: 80px  " ></icon>
+                                <p class="text-white mt-3">BDO Kenya</p>
                             </div>
-                            <div class="col-sm-2">
-                                <icon name="ni ni-atom" size="lg" gradient="white" shadow round color="primary"></icon>
-                                <p class="text-white mt-3">Client Name</p>
+                            <div class="col-sm-2" >
+                                <icon style="background: url('assets/img/clients/uber.jpg'); background-size: contain; width: 80px; height: 80px  " ></icon>
+                                <p class="text-white mt-3">Uber Kenya</p>
                             </div>
-                            <div class="col-sm-2">
-                                <icon name="ni ni-atom" size="lg" gradient="white" shadow round color="primary"></icon>
-                                <p class="text-white mt-3">Client Name</p>
+                            <div class="col-sm-2" >
+                                <icon style="background: url('assets/img/clients/flexpay.jpg') no-repeat; background-size: contain; width: 80px; height: 80px  " ></icon>
+                                <p class="text-white mt-3">Flexpay Limited</p>
                             </div>
                         </div>
                     </div>
@@ -177,40 +177,10 @@
         </section>
         
         
-        <section class="section bg-secondary mb-200">
+        <section class="section bg-secondary">
             <div class="container">
                 <div class="row row-grid align-items-center">
-                    <div class="col-md-6">
-                        <div class="card bg-default shadow border-0">
-                            <img v-lazy="'img/theme/img-1-1200x1000.jpg'" class="card-img-top">
-                            <blockquote class="card-blockquote">
-                                <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95"
-                                    class="svg-bg">
-                                    <polygon points="0,52 583,95 0,95" class="fill-default"></polygon>
-                                    <polygon points="0,42 583,95 683,0 0,95" opacity=".2" class="fill-default"></polygon>
-                                </svg>
-                                <h4 class="display-3 font-weight-bold text-white">Design Flow</h4>
-                                <p class="lead text-italic text-white">The Arctic Ocean freezes every winter and much of
-                                    the sea-ice then thaws every summer, and that process will continue whatever
-                                    happens.</p>
-                            </blockquote>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="pl-md-5">
-                            <icon name="ni ni-settings" class="mb-5" size="lg" type="info" shadow rounded></icon>
-
-                            <h3>Our Creatives</h3>
-                            <p class="lead">Don't let your uses guess by attaching tooltips and popoves to any element.
-                                Just make sure you enable them first via JavaScript.</p>
-                            <p>The kit comes with three pre-built pages to help you get started faster. You can change
-                                the text and images and you're good to go.</p>
-                            <p>The kit comes with three pre-built pages to help you get started faster. You can change
-                                the text and images and you're good to go.</p>
-                            <a href="#" class="font-weight-bold text-info mt-5">A beautiful UI Kit for impactful
-                                websites</a>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </section>
