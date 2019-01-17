@@ -113,21 +113,22 @@
   
 </template>
 <script>
-import BCarousel from "bootstrap-vue/es/components/carousel/carousel";
-import BCarouselSlide from "bootstrap-vue/es/components/carousel/carousel-slide";
+	import BCarousel from "bootstrap-vue/es/components/carousel/carousel";
+	import BCarouselSlide from "bootstrap-vue/es/components/carousel/carousel-slide";
 
-export default {
-  components: {
-    BCarousel,
-    BCarouselSlide
-  }
-};
+	export default {
+		components: {
+			BCarousel,
+			BCarouselSlide
+		}
+	};
 </script>
+
 <style>
-.carousel-caption {
-  background: white;
-}
-.carousel-caption h3 {
-  color: #33e;
-}
+	.carousel-caption {
+		background: white;
+	}
+	.carousel-caption h3 {
+		color: #33e;
+	}
 </style>
