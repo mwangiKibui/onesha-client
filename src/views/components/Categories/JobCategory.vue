@@ -1,5 +1,5 @@
 <template>
-  <section class="section section-lg section-shaped overflow-hidden my-0">
+	<section class="section section-lg section-shaped overflow-hidden my-0">
 		<div class="shape shape-style-3 shape-default shape-skew">
 			<span></span>
 			<span></span>
@@ -116,7 +116,7 @@
 										<input
 										 type="text"
 										 name="clientName"
-										 v-model="filledindata['client']"
+										 v-model="filledindata['clientName']"
 										 class="form-control"
 										 placeholder="Your name"
 										>
@@ -130,7 +130,7 @@
 										<input
 										 type="email"
 										 name="clientEmail"
-										 v-model="filledindata['client']"
+										 v-model="filledindata['clientEmail']"
 										 class="form-control"
 										 placeholder="Your email address, e.g. someone@example.com"
 										>
@@ -144,7 +144,7 @@
 										<input
 										 type="tel"
 										 name="clientPhone"
-										 v-model="filledindata['client']"
+										 v-model="filledindata['clientPhone']"
 										 class="form-control"
 										 placeholder="+254 7 ....."
 										>
@@ -223,7 +223,13 @@
 				templatedata: {},
 				template: {},
 				progress: 0,
-				filledindata: {},
+				filledindata: {
+					client: {
+						name: "",
+						phone: "",
+						email: ""
+					}
+				},
 				clientInfo: false
 			};
 		},
@@ -334,10 +340,10 @@
 				console.log(this.filledindata);
 			}
 		}
-  };
+	};
 </script>
 <style>
-  .jobtype-container {
+	.jobtype-container {
 		height: 180px;
 		cursor: pointer;
 		transition: 0.9s cubic-bezier(0.175, 0.885, 0.32, 1.275);
