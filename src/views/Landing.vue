@@ -67,14 +67,90 @@
         <section
             class="section section-shaped my-0 mb-2 "
             style="background: white; color: black"
-        >
+        >   <div class="container pb-100">
+              <div class="row text-center justify-content-center">
+                <div class="col-lg-10">
+                  <h2 class="display-3 text-default">Business Profiles That Sell</h2>
+                  <p class="lead text-default">According to the experts, a business profile can shape the decision of a potential client. We offer the following servicess.</p>
+                </div>
+              </div>
+              <div class="row row-grid mt-5">
+                <div class="col-lg-4">
+                  <div class="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
+                    <i class="ni ni-atom text-primary"></i>
+                  </div>
+                  <h5 class="text-default mt-3">Brand New Design</h5>
+                  <p class="text-default mt-3">The interaction with other people by sharing information and receiving information from them.</p>
+                </div>
+                <div class="col-lg-4">
+                  <div class="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
+                    <i class="ni ni-ruler-pencil text-primary"></i>
+                  </div>
+                  <h5 class="text-default mt-3">Redesign Existing Content</h5>
+                  <p class="text-default mt-3">The instrument of communication, such as the internet or traditional media: TV, radio and newspapers.</p>
+                </div>
+                <div class="col-lg-4">
+                  <div class="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
+                    <i class="ni ni-satisfied text-primary"></i>
+                  </div>
+                  <h5 class="text-default mt-3">Content Strategy plus Design</h5>
+                  <p class="text-default mt-3">The information or message being shared or delivered to the intended audience and its formats</p>
+                </div>
+              </div>
+                
+            </div>
             <div class="container">
-                <div class="justify-content-between align-items-center">
-                    <div class="mb-5 mb-lg-0 col-md-12">
-                        <h2 class="text-default font-weight-light">All Services</h2>
-                        <p class="lead text-default mt-4">We bring you services from the following.</p>
-
-                    </div>
+              <div class="row row-grid align-items-center">
+                <div class="col-md-6 order-md-2">
+                  <img src="https://socialmedia.onesha.co.ke/assets/img/theme/promo-1.png" class="img-fluid floating">
+                </div>
+                <div class="col-md-6 order-md-1">
+                  <div class="pr-md-5">
+                    
+                    <h3>What does a busines profile contain?</h3>
+                    <p>It is important to understand which components make up the large body we call social media. These are the key things that make up a well defined social media strategy.</p>
+                    <ul class="list-unstyled mt-5">
+                      <li class="py-2">
+                        <div class="d-flex align-items-center">
+                          <div>
+                            <div class="badge badge-circle badge-success mr-3">
+                              <i class="ni ni-settings-gear-65"></i>
+                            </div>
+                          </div>
+                          <div>
+                            <h6 class="mb-0">Carefully crafted communication</h6>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="py-2">
+                        <div class="d-flex align-items-center">
+                          <div>
+                            <div class="badge badge-circle badge-success mr-3">
+                              <i class="ni ni-html5"></i>
+                            </div>
+                          </div>
+                          <div>
+                            <h6 class="mb-0">Amazing content that excites and informs</h6>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="py-2">
+                        <div class="d-flex align-items-center">
+                          <div>
+                            <div class="badge badge-circle badge-success mr-3">
+                              <i class="ni ni-satisfied"></i>
+                            </div>
+                          </div>
+                          <div>
+                            <h6 class="mb-0">Friendly customer support for queries</h6>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="justify-content-between align-items-center">
                     <transition
                         name="component-fade"
                         mode="out-in"
@@ -83,6 +159,10 @@
                             id="actions"
                             class=""
                         >
+                            <br>
+                            <h3>What can we offer?</h3>
+                            <p>It is important to understand which components make up the large body we call social media. These are the key things that make up a well defined social media strategy.</p>
+                  
                             <categories></categories>
                         </div>
                     </transition>
@@ -331,12 +411,12 @@
 
         </section>
         <section
-            class="section section-lg pt-lg-0 mt-200 bg-gradient-info mb-5 "
+            class="section section-lg pt-lg-0 mt-200 bg-gradient-info mb-0 "
             id="clients"
         >
             <div class="container">
                 <div class="row justify-content-center mt-200">
-                    <div class="col-sm-12 mt-2 mt-5">
+                    <div class="col-sm-12  mt-5">
                         <h2 class="text-white font-weight-light">We have worked with</h2>
                         <div class="row row-grid mt-5">
                             <div class="col-sm-2">
