@@ -32,7 +32,7 @@
   <!-- </v-app>  -->
 </template>
 <script>
-import ProgressSection from "../JobTemplates/JobProgress";
+import ProgressSection from "./JobProgress";
 import TemplateContainer from "./TemplateContainer.vue";
 import Axios from "axios";
 

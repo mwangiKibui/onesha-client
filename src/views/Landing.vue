@@ -62,168 +62,96 @@
 
           </div>
         </div>
-<<<<<<< HEAD
-        <section class="section section-shaped my-0 mb-2 " style="background: white; color: black">
-            <div class="container">
-                <div class="justify-content-between align-items-center">
-                    <div class="mb-5 mb-lg-0 col-md-12">
-                        <h2 class="text-default font-weight-light">All Services</h2>
-                        <p class="lead text-default mt-4">We bring you services from the following.</p>
-                        
-                    </div>
-                    <transition name="component-fade" mode="out-in">
-                        <div id="actions" class="">
-                            <categories></categories>
-                        </div>
-                    </transition>  
-                </div>
-            </div>
-        </section>
-        <section class="section section-lg pt-lg-0 mt-200 bg-default mb-5 ">    
-            <div class="container">
-                <div class="row justify-content-center mt-200">
-                    <div class="col-sm-12 mt-2 mt-5">
-                        <h2 class="text-white font-weight-light">We have worked with</h2>
-                        <div class="row row-grid mt-5">
-                            <div class="col-sm-2" >
-                                <icon style="background: url('assets/img/clients/pangea.jpg'); background-size: contain; width: 80px; height: 80px  " ></icon>
-                                <p class="text-white mt-3">Pangea Accelerator</p>
-                            </div>
-                            <div class="col-sm-2" >
-                                <icon style="background: url('assets/img/clients/eo.jpg'); background-size: contain; width: 80px; height: 80px  " ></icon>
-                                <p class="text-white mt-3">EO Kenya</p>
-                            </div>
-                            <div class="col-sm-2" >
-                                <icon style="background: url('assets/img/clients/weston.jpg'); background-size: contain; width: 80px; height: 80px  " ></icon>
-                                <p class="text-white mt-3">Weston Hotel</p>
-                            </div>
-                            <div class="col-sm-2" >
-                                <icon style="background: url('assets/img/clients/bdo.jpg'); background-size: contain; width: 80px; height: 80px  " ></icon>
-                                <p class="text-white mt-3">BDO Kenya</p>
-                            </div>
-                            <div class="col-sm-2" >
-                                <icon style="background: url('assets/img/clients/uber.jpg'); background-size: contain; width: 80px; height: 80px  " ></icon>
-                                <p class="text-white mt-3">Uber Kenya</p>
-                            </div>
-                            <div class="col-sm-2" >
-                                <icon style="background: url('assets/img/clients/flexpay.jpg') no-repeat; background-size: contain; width: 80px; height: 80px  " ></icon>
-                                <p class="text-white mt-3">Flexpay Limited</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-=======
       </section>
-      <!-- 1st Hero Variation -->
     </div>
-    <section
-      class="section section-shaped my-0 mb-2 "
-      style="background: white; color: black"
-    >
-      <div class="container">
-        <div class="justify-content-between align-items-center">
-          <div class="mb-5 mb-lg-0 col-md-12">
-            <h2 class="text-default font-weight-light">All Categories</h2>
-            <p class="lead text-default mt-4">We bring you services from these categories.</p>
-
-          </div>
-          <transition
-            name="component-fade"
-            mode="out-in"
-          >
-            <div
-              id="actions"
-              class=""
-            >
-              <categories></categories>
+    <section class="section section-shaped my-0 mb-2 " style="background: white; color: black">
+        <div class="container">
+            <div class="justify-content-between align-items-center">
+                <div class="mb-5 mb-lg-0 col-md-12">
+                    <h2 class="text-default font-weight-light">All Services</h2>
+                    <p class="lead text-default mt-4">We bring you services from the following.</p>
+                    
+                </div>
+                <transition name="component-fade" mode="out-in">
+                    <div id="actions" class="">
+                        <categories></categories>
+                    </div>
+                </transition>  
             </div>
-          </transition>
         </div>
-      </div>
     </section>
-    <section class="section section-lg pt-lg-0 mt-200 bg-default mb-5 ">
-      <div class="container">
-        <div class="row justify-content-center mt-200">
-          <div class="col-sm-12 mt-2 mt-5">
-            <h2 class="text-white font-weight-light">We have worked with</h2>
-            <div class="row row-grid mt-5">
-              <div class="col-sm-2">
-                <icon
-                  name="ni ni-settings"
-                  size="lg"
-                  gradient="white"
-                  shadow
-                  round
-                  color="primary"
-                ></icon>
-                <p class="text-white mt-3">Client Name</p>
-              </div>
-              <div class="col-sm-2">
-                <icon
-                  name="ni ni-ruler-pencil"
-                  size="lg"
-                  gradient="white"
-                  shadow
-                  round
-                  color="primary"
-                ></icon>
-                <p class="text-white mt-3">Client Name</p>
-              </div>
-              <div class="col-sm-2">
-                <icon
-                  name="ni ni-atom"
-                  size="lg"
-                  gradient="white"
-                  shadow
-                  round
-                  color="primary"
-                ></icon>
-                <p class="text-white mt-3">Client Name</p>
-              </div>
-              <div class="col-sm-2">
-                <icon
-                  name="ni ni-atom"
-                  size="lg"
-                  gradient="white"
-                  shadow
-                  round
-                  color="primary"
-                ></icon>
-                <p class="text-white mt-3">Client Name</p>
-              </div>
-              <div class="col-sm-2">
-                <icon
-                  name="ni ni-atom"
-                  size="lg"
-                  gradient="white"
-                  shadow
-                  round
-                  color="primary"
-                ></icon>
-                <p class="text-white mt-3">Client Name</p>
-              </div>
-              <div class="col-sm-2">
-                <icon
-                  name="ni ni-atom"
-                  size="lg"
-                  gradient="white"
-                  shadow
-                  round
-                  color="primary"
-                ></icon>
-                <p class="text-white mt-3">Client Name</p>
-              </div>
->>>>>>> 43a7ca851d619052626eab8aa4f87a5c9e42bc8a
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+   
+      
     <section></section>
-    <section
-      class="section section-lg pt-lg-0 mt-200"
-      id="process"
-    >
+    
+    <section class="section section-lg pt-lg-2 mt-200 bg-gradient-default" id="request">    
+        <div class="container pt-lg">
+            <div class="row text-center justify-content-center">
+                <div class="col-lg-10">
+                    <h2 class="display-3 text-white">Begin your request</h2>
+                    <p class="lead text-white">Your journey starts here. Revamp your existing business profile, or get a new one.</p>
+                </div>
+            </div>
+            <JobCategories :categories="categories"></JobCategories>
+        </div>
+    </section>
+    <section class="section section-lg pt-lg-2  mt-100 section-contact-us">
+      <div class="container pt-lg">  
+        <div class="pb-lg-4">
+          <h4 class="mb-1 text-center">Want to work with us?</h4>
+        </div>
+        <div class="row justify-content-center pb-lg-4">
+          <div class="col-lg-8">
+            <card
+              gradient="secondary"
+              shadow
+              body-classes="p-lg-5"
+            >
+              
+              <p class="mt-0">Your project is very important to us. Describe what you want done.</p>
+              <base-input
+                class="mt-5"
+                alternative
+                placeholder="Your name"
+                addon-left-icon="ni ni-user-run"
+              >
+              </base-input>
+              <base-input
+                alternative
+                placeholder="Email address"
+                addon-left-icon="ni ni-email-83"
+              >
+              </base-input>
+              <base-input
+                alternative
+                placeholder="Location"
+                addon-left-icon="ni ni-pin-3"
+              >
+              </base-input>
+              <base-input class="mb-4">
+                <textarea
+                  class="form-control form-control-alternative"
+                  name="name"
+                  rows="4"
+                  cols="80"
+                  placeholder="What do you need done?..."
+                ></textarea>
+              </base-input>
+              <base-button
+                type="default"
+                round
+                block
+                size="lg"
+              >
+                Send Request
+              </base-button>
+            </card>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section class="section section-sm bg-secondary mt-200" id="process">
       <div class="container">
         <div class="row justify-content-center">
           <div class="mb-5 mb-lg-0 col-md-12">
@@ -328,154 +256,85 @@
                 </card>
               </div>
             </div>
-<<<<<<< HEAD
-        </section>
-        <section class="section section-lg pt-lg-0 mt-200 bg-gradient-default" id="request">    
-            <div class="container pt-lg">
-                <div class="row text-center justify-content-center">
-                    <div class="col-lg-10">
-                        <h2 class="display-3 text-white">Begin your request</h2>
-                        <p class="lead text-white">Your journey starts here. Revamp your existing business profile, or get a new one.</p>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    
+    <section class="section section-lg bg-secondary" id="creatives">
+        <div class="container">
+            <div class="row row-grid align-items-center">
+                <hr>
+            </div>
+            <div class="row">
+              <div class="col-md-8 pl-md-5">
+                <icon
+                  name="ni ni-settings"
+                  class="mb-5"
+                  size="lg"
+                  type="info"
+                  shadow
+                  rounded
+                ></icon>
+
+                <h3>Our Creatives</h3>
+                <p class="lead">Don't let your users guess by attaching tooltips and popoves to any element.
+                  Just make sure you enable them first via JavaScript.</p>
+                <p>The kit comes with three pre-built pages to help you get started faster. You can change
+                  the text and images and you're good to go.</p>
+                <p>The kit comes with three pre-built pages to help you get started faster. You can change
+                  the text and images and you're good to go.</p>
+                <a
+                  href="#"
+                  class="font-weight-bold text-info mt-5"
+                >A beautiful UI Kit for impactful
+                  websites</a>
+              </div>
+              <div class="col-md-4 order-lg-2 ml-lg-auto">
+                <div class="position-relative pl-md-5">
+                  <img src="https://socialmedia.onesha.co.ke/assets/img/ill/ill-2.svg" class="img-center img-fluid">
+                </div>
+              </div>
+            </div>
+        </div>
+    
+        
+    </section>
+    <section class="section section-lg pt-lg-0 mt-200 bg-default mb-5 " id="clients">    
+        <div class="container">
+            <div class="row justify-content-center mt-200">
+                <div class="col-sm-12 mt-2 mt-5">
+                    <h2 class="text-white font-weight-light">We have worked with</h2>
+                    <div class="row row-grid mt-5">
+                        <div class="col-sm-2" >
+                            <icon style="background: url('assets/img/clients/pangea.jpg'); background-size: contain; width: 80px; height: 80px  " ></icon>
+                            <p class="text-white mt-3">Pangea Accelerator</p>
+                        </div>
+                        <div class="col-sm-2" >
+                            <icon style="background: url('assets/img/clients/eo.jpg'); background-size: contain; width: 80px; height: 80px  " ></icon>
+                            <p class="text-white mt-3">EO Kenya</p>
+                        </div>
+                        <div class="col-sm-2" >
+                            <icon style="background: url('assets/img/clients/weston.jpg'); background-size: contain; width: 80px; height: 80px  " ></icon>
+                            <p class="text-white mt-3">Weston Hotel</p>
+                        </div>
+                        <div class="col-sm-2" >
+                            <icon style="background: url('assets/img/clients/bdo.jpg'); background-size: contain; width: 80px; height: 80px  " ></icon>
+                            <p class="text-white mt-3">BDO Kenya</p>
+                        </div>
+                        <div class="col-sm-2" >
+                            <icon style="background: url('assets/img/clients/uber.jpg'); background-size: contain; width: 80px; height: 80px  " ></icon>
+                            <p class="text-white mt-3">Uber Kenya</p>
+                        </div>
+                        <div class="col-sm-2" >
+                            <icon style="background: url('assets/img/clients/flexpay.jpg') no-repeat; background-size: contain; width: 80px; height: 80px  " ></icon>
+                            <p class="text-white mt-3">Flexpay Limited</p>
+                        </div>
                     </div>
                 </div>
-                <JobCategories :categories="categories"></JobCategories>
             </div>
-        </section>
-        
-        
-        <section class="section bg-secondary">
-            <div class="container">
-                <div class="row row-grid align-items-center">
-                    
-                </div>
-=======
-          </div>
         </div>
-      </div>
-    </section>
-    <section
-      class="section section-lg pt-lg-0 mt-200 bg-gradient-default"
-      id="request"
-    >
-      <div class="container pt-lg">
-        <div class="row text-center justify-content-center">
-          <div class="col-lg-10">
-            <h2 class="display-3 text-white">Begin your request</h2>
-            <p class="lead text-white">Your journey starts here. Revamp your existing business profile, or get a new one.</p>
-          </div>
-        </div>
-        <JobCategories :categories="categories"></JobCategories>
-      </div>
-    </section>
-
-    <section class="section bg-secondary mb-100">
-      <div class="container">
-        <div class="row row-grid align-items-center">
-          <div class="col-md-6">
-            <div class="card bg-default shadow border-0">
-              <img
-                v-lazy="'assets/img/theme/img-1-1200x1000.jpg'"
-                class="card-img-top"
-              >
-              <blockquote class="card-blockquote">
-                <svg
-                  preserveAspectRatio="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 583 95"
-                  class="svg-bg"
-                >
-                  <polygon
-                    points="0,52 583,95 0,95"
-                    class="fill-default"
-                  ></polygon>
-                  <polygon
-                    points="0,42 583,95 683,0 0,95"
-                    opacity=".2"
-                    class="fill-default"
-                  ></polygon>
-                </svg>
-                <h4 class="display-3 font-weight-bold text-white">Design Flow</h4>
-                <p class="lead text-italic text-white">The Arctic Ocean freezes every winter and much of
-                  the sea-ice then thaws every summer, and that process will continue whatever
-                  happens.</p>
-              </blockquote>
->>>>>>> 43a7ca851d619052626eab8aa4f87a5c9e42bc8a
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="pl-md-5">
-              <icon
-                name="ni ni-settings"
-                class="mb-5"
-                size="lg"
-                type="info"
-                shadow
-                rounded
-              ></icon>
-
-              <h3>Our Creatives</h3>
-              <p class="lead">Don't let your uses guess by attaching tooltips and popoves to any element.
-                Just make sure you enable them first via JavaScript.</p>
-              <p>The kit comes with three pre-built pages to help you get started faster. You can change
-                the text and images and you're good to go.</p>
-              <p>The kit comes with three pre-built pages to help you get started faster. You can change
-                the text and images and you're good to go.</p>
-              <a
-                href="#"
-                class="font-weight-bold text-info mt-5"
-              >A beautiful UI Kit for impactful
-                websites</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-sm pt-lg-4 mt-400 section-contact-us">
-      <div class="container">
-        <div class="row justify-content-center ">
-          <div class="col-lg-8">
-            <card
-              gradient="secondary"
-              shadow
-              body-classes="p-lg-5"
-            >
-              <h4 class="mb-1">Want to work with us?</h4>
-              <p class="mt-0">Your project is very important to us.</p>
-              <base-input
-                class="mt-5"
-                alternative
-                placeholder="Your name"
-                addon-left-icon="ni ni-user-run"
-              >
-              </base-input>
-              <base-input
-                alternative
-                placeholder="Email address"
-                addon-left-icon="ni ni-email-83"
-              >
-              </base-input>
-              <base-input class="mb-4">
-                <textarea
-                  class="form-control form-control-alternative"
-                  name="name"
-                  rows="4"
-                  cols="80"
-                  placeholder="What do you need done?..."
-                ></textarea>
-              </base-input>
-              <base-button
-                type="default"
-                round
-                block
-                size="lg"
-              >
-                Send Message
-              </base-button>
-            </card>
-          </div>
-        </div>
-      </div>
     </section>
 
   </section>
@@ -484,8 +343,8 @@
 
 <script>
 import Categories from "./components/Categories/AllCategories";
+import JobCategories from "./components/Categories/Category";
 import formAlert from "./components/Landing/DefaultPage";
-import JobCategories from "./components/JobTemplates/JobCategory";
 import Axios from "axios";
 
 let show = true;

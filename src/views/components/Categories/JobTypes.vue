@@ -10,10 +10,9 @@
           <!-- <span v-for="job in job.title" class="py-5" :key="job.slug"> -->
           <router-link tag="a" :to="{ path: '/job/'+job.slug }" append>
             <div class="d-flex flex-column align-items-center">
-              <icon name="ni ni-settings" size="lg" gradient="white" shadow round color="primary"></icon>
               <span class="ml-2">{{ job.title }}</span>
             </div>
-            <p class="text-primary mt-3">{{ job.description }}</p>
+            <p class="text-primary mt-3">{{ job.description }} fre</p>
           </router-link>
           <!-- </span> -->
         </div>
@@ -26,19 +25,11 @@
   </div>
 </template>
 <script>
-import ProgressSection from "./JobProgress.vue";
-import jobsection2 from "./JobTypes2.vue";
-import jobmodal from "./JobModal.vue";
 
 export default {
   props: {
     jobtypes: Array,
     modalstate: Boolean
-  },
-  components: {
-    ProgressSection,
-    jobsection: jobsection2,
-    jobmodal: jobmodal
   },
   data() {
     return {

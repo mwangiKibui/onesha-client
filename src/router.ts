@@ -4,8 +4,8 @@ import AppFooter from '@/layout/AppFooter.vue';
 import AppHeader from '@/layout/AppHeader.vue';
 import About from '@/views/About.vue';
 import Category from '@/views/components/Categories/Category.vue';
-import JobPage from '@/views/components/Categories/JobPage.vue';
-import JobType from '@/views/components/Categories/JobType.vue';
+import JobCategory from '@/views/components/Categories/JobCategory.vue';
+import JobPage from '@/views/components/JobTemplates/JobPage.vue';
 import Landing from '@/views/Landing.vue';
 import Login from '@/views/Login.vue';
 import Portfolio from '@/views/Portfolio.vue';
@@ -86,28 +86,20 @@ export default new Router({
             name: 'Category view',
             components: {
                 header: AppHeader,
-                default: Category,
+                default: JobCategory,
                 footer: AppFooter,
             },
             props: { default: true, header: false, footer: false },
         },
         {
-            path: '/jobtype/:item',
-            name: 'Job Type',
-            components: {
-                header: AppHeader,
-                default: JobType,
-                footer: AppFooter,
-            },
-        },
-        {
-            path: '/job/:id',
+            path: '/job/:slug',
             name: 'Job Title',
             components: {
                 header: AppHeader,
                 default: JobPage,
                 footer: AppFooter,
             },
+            props: { default: true, header: false, footer: false },
         },
     ],
     scrollBehavior: to => {
