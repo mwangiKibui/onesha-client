@@ -3,12 +3,8 @@ import Router from 'vue-router';
 import AppFooter from '@/layout/AppFooter.vue';
 import AppHeader from '@/layout/AppHeader.vue';
 import About from '@/views/About.vue';
-import Category from '@/views/components/Categories/Category.vue';
-<<<<<<< HEAD
 import JobCategory from '@/views/components/Categories/JobCategory.vue';
 import JobPage from '@/views/components/JobTemplates/JobPage.vue';
-=======
->>>>>>> 168fe95bbc1bc767a55b7b93a9a6dee4f8b3a6ca
 import Landing from '@/views/Landing.vue';
 import Login from '@/views/Login.vue';
 import Portfolio from '@/views/Portfolio.vue';
@@ -94,7 +90,6 @@ export default new Router({
             },
             props: { default: true, header: false, footer: false },
         },
-<<<<<<< HEAD
         {
             path: '/job/:slug',
             name: 'Job Title',
@@ -105,8 +100,6 @@ export default new Router({
             },
             props: { default: true, header: false, footer: false },
         },
-=======
->>>>>>> 168fe95bbc1bc767a55b7b93a9a6dee4f8b3a6ca
     ],
     scrollBehavior: to => {
         if (to.hash) {
