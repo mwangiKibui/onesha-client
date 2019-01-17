@@ -48,67 +48,106 @@
 								</div>
 							</div>
 						</section>
-					</section>
-					<section v-if="!category.length">
-						<!-- display a some what 404 page to notify when no job types found for the category provided -->
-						<!-- display a centered section -->
-						<div>No job types for this category at the moment.</div>
-					</section>
+						<modal
+						 :show.sync="templateModal"
+						 v-if="jobtype != null"
+						>
+							<div v-if="clientInfo == false">
+								<template slot="header">
+									<h5
+									 v-if="templatedata.length"
+									 class="modal-title"
+									 id="templateModalTitle"
+									>You are {{ Number(templatedata.length) - templateIndex }} steps away to place your order.</h5>
+									<h5
+									 v-if="!templatedata.length"
+									 class="modal-title"
+									 id="templateModalTitle"
+									>No template found.</h5>
+								</template>
 
-					<!-- job template modal -->
-					<section v-if="jobtype != null">
-						<modal :show.sync="templateModal">
-							<template slot="header">
-								<h5
+								<base-progress
 								 v-if="templatedata.length"
-								 class="modal-title"
-								 id="templateModalTitle"
-								>You are {{ Number(templatedata.length) - templateIndex }} steps away to place your order.</h5>
-							</template>
-							<template slot="header">
-								<h5
-								 v-if="!templatedata.length"
-								 class="modal-title"
-								 id="templateModalTitle"
-								>No template found.</h5>
-							</template>
+								 type="success"
+								 :value="progress"
+								 label="Task completed"
+								></base-progress>
 
-							<base-progress
-							 v-if="templatedata.length"
-							 type="success"
-							 :value="progress"
-							 label="Task completed"
-							></base-progress>
-
-							<div v-if="templatedata.length">A quick walkthrough for {{ jobtype.title }}</div>
-							<div
-							 v-if="templatedata.length"
-							 class="templateModal"
-							>
-								<div class="my-5">
-									<div class="title">{{ template.title }}</div>
-									<div v-if="template.feedback == 'single-select'">
-										<div
-										 :name="template._id"
-										 v-for="(option, index) in template.options"
-										 :key="index"
-										>
-											<base-radio
-											 class="mb-3"
-											 :id="index"
+								<div v-if="templatedata.length">A quick walkthrough for {{ jobtype.title }}</div>
+								<div
+								 v-if="templatedata.length"
+								 class="templateModal"
+								>
+									<div class="my-5">
+										<div class="title">{{ template.title }}</div>
+										<div v-if="template.feedback == 'single-select'">
+											<div
+											 :name="template._id"
+											 v-for="(option, index) in template.options"
+											 :key="index"
+											>
+												<base-radio
+												 class="mb-3"
+												 :id="index"
+												 v-model="filledindata[template.title]"
+												 :name="index"
+												 :value="option.option"
+												>{{ option.option }}</base-radio>
+											</div>
+										</div>
+										<div v-if="template.feedback == 'prompt'">
+											<textarea
+											 :name="template._id"
 											 v-model="filledindata[template.title]"
-											 :name="index"
-											 :value="option.option"
-											>{{ option.option }}</base-radio>
+											 rows="2"
+											 class="form-control"
+											></textarea>
 										</div>
 									</div>
-									<div v-if="template.feedback == 'prompt'">
-										<textarea
-										 :name="template._id"
-										 v-model="filledindata[template.title]"
-										 rows="2"
+								</div>
+							</div>
+							<div v-if="clientInfo != false">
+								<h4 class="modal-title">You are almost there, just a few more details about you.</h4>
+								<div class="form-group">
+									<div class="input-group input-group-alternative mb-4">
+										<div class="input-group-prepend">
+											<span class="input-group-text"><i class="ni ni-box-2"></i></span>
+										</div>
+										<input
+										 type="text"
+										 name="clientName"
+										 v-model="filledindata['client']"
 										 class="form-control"
-										></textarea>
+										 placeholder="Your name"
+										>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="input-group input-group-alternative mb-4">
+										<div class="input-group-prepend">
+											<span class="input-group-text"><i class="ni ni-email-83"></i></span>
+										</div>
+										<input
+										 type="email"
+										 name="clientEmail"
+										 v-model="filledindata['client']"
+										 class="form-control"
+										 placeholder="Your email address, e.g. someone@example.com"
+										>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="input-group input-group-alternative mb-4">
+										<div class="input-group-prepend">
+											<span class="input-group-text"><i class="fa fa-phone"></i></span>
+										</div>
+										<input
+										 type="tel"
+										 name="clientPhone"
+										 v-model="filledindata['client']"
+										 class="form-control"
+										 placeholder="+254 7 ....."
+										>
 									</div>
 								</div>
 							</div>
@@ -116,24 +155,42 @@
 							<!-- no template defined -->
 							<div v-if="!templatedata.length">No template found for specified job type.</div>
 							<template slot="footer">
-								<button
-								 class="btn btn-default"
-								 v-if="templateIndex >= 1"
-								 @click="loadPreviousTemplate(templateIndex)"
-								>Previous</button>
-								<button
-								 class="btn btn-dark"
-								 v-if="templateIndex !== templatedata.length - 1"
-								 @click="loadNextTemplate(templateIndex)"
-								>Next</button>
-								<button
-								 class="btn btn-success"
-								 v-if="templateIndex === templatedata.length - 1"
-								 @click="submitFilledInTemplate"
-								>Submit template</button>
+								<div v-if="clientInfo == false">
+									<button
+									 class="btn btn-default"
+									 v-if="templateIndex >= 1"
+									 @click="loadPreviousTemplate(templateIndex)"
+									>Previous</button>
+									<button
+									 class="btn btn-dark"
+									 v-if="templateIndex !== templatedata.length - 1"
+									 @click="loadNextTemplate(templateIndex)"
+									>Next</button>
+									<button
+									 class="btn btn-success"
+									 v-if="templateIndex === templatedata.length - 1"
+									 @click="requestClientDetails"
+									>Continue</button>
+								</div>
+								<div v-if="clientInfo != false">
+									<button
+									 class="btn btn-success"
+									 @click="submitClientInformation"
+									>Submit</button>
+								</div>
 							</template>
 						</modal>
 					</section>
+					<section
+					 v-if="!category.length"
+					 class="d-flex justify-content-center align-items-center"
+					>
+						<RotateSquare5 style="width: 300px; height: 300px;"></RotateSquare5>
+
+					</section>
+
+					<!-- job template modal -->
+
 				</div>
 				<!-- <div class="col-lg-6 mb-lg-auto"></div> -->
 			</div>
@@ -142,15 +199,17 @@
 	</section>
 </template>
 <script>
-	import Modal from "../Common/Modal";
-	import BaseRadio from "../Common/BaseRadio";
-	import BaseProgress from "../Common/BaseProgress";
+	import Modal from "@/views/components/Common/Modal.vue";
+	import BaseRadio from "@/views/components/Common/BaseRadio.vue";
+	import BaseProgress from "@/views/components/Common/BaseProgress.vue";
 	import Axios from "axios";
+	import { RotateSquare5 } from "vue-loading-spinner";
 
 	export default {
 		components: {
 			Modal,
-			BaseRadio
+			BaseRadio,
+			RotateSquare5
 		},
 		props: {
 			slug: String
@@ -164,7 +223,8 @@
 				templatedata: {},
 				template: {},
 				progress: 0,
-				filledindata: {}
+				filledindata: {},
+				clientInfo: false
 			};
 		},
 		/**
@@ -172,11 +232,8 @@
 		 *
 		 * Fetch all defined job types, grouped with their categories from database, and populate returned data as categories.
 		 */
-		beforeRouteEnter(to, from, next) {
-			next(
-				vm => vm.fetchCategoryJobTypes()
-				// next();
-			);
+		created() {
+			this.fetchCategoryJobTypes();
 		},
 		methods: {
 			fetchCategoryJobTypes() {
@@ -193,12 +250,14 @@
 				Object.keys(this.filledindata).forEach(
 					entry => delete this.filledindata[entry]
 				);
+				this.clientInfo = false;
 				this.templateModal = true;
 				this.jobtype = jobtype;
 				this.progress = 0;
+				this.templatedata = [];
 				// do async loading of job templates
 				const jobTemplate = await Axios.get(
-					"/api/data/templates/" + this.jobtype.slug
+					"/api/data/templates/" + jobtype.slug
 				).then(res => res.data);
 				this.templatedata = jobTemplate.length
 					? jobTemplate[0].templates
@@ -267,8 +326,12 @@
 			 *
 			 * Created object will be sent after sanitization to remove unwanted characters.
 			 */
-			submitFilledInTemplate() {
+			requestClientDetails() {
+				this.clientInfo = true;
 				this.populateTemplateFeedback(true);
+			},
+			submitClientInformation() {
+				console.log(this.filledindata);
 			}
 		}
 	};

@@ -64,7 +64,8 @@
 				jobQueries: this.jobtype.template,
 				toshow: this.modalstate,
 				modalstatus: this.modalstate,
-				error: null
+				error: null,
+				jobDetails: null
 			};
 		},
 		methods: {
@@ -81,10 +82,9 @@
 			}
 		},
 		render: function(createElement) {
-			return createElement(jobquerytemplate);
-
 			this.jobDetails = this.jobtype.template;
 			this.show();
+			return createElement(jobquerytemplate);
 		}
 	};
 </script>
