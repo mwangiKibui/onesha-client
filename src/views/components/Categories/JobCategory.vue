@@ -25,7 +25,12 @@
                                         v-for="(jobtype, index) in category[0].jobtypes"
                                         :key="index"
                                     >
-                                        <li>{{ jobtype.title }}</li>
+                                        <li>{{ jobtype.title }} -
+                                            <router-link
+                                                :to="`/job/` + jobtype.slug"
+                                                class="m-2"
+                                            >View Job</router-link>
+                                        </li>
                                     </div>
                                 </div><br>
                                 <span style="color: rgba (0,0,0,0) !important;">.</span>
