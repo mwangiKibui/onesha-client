@@ -3,7 +3,6 @@ import Router from 'vue-router';
 import AppFooter from '@/layout/AppFooter.vue';
 import AppHeader from '@/layout/AppHeader.vue';
 import About from '@/views/About.vue';
-import Category from '@/views/components/Categories/Category.vue';
 import JobCategory from '@/views/components/Categories/JobCategory.vue';
 import JobPage from '@/views/components/JobTemplates/JobPage.vue';
 import Landing from '@/views/Landing.vue';
