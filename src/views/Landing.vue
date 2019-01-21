@@ -535,8 +535,8 @@
 		color: #22cdef;
 		letter-spacing: 0.02em; /*Adjust as needed*/
 		animation: 
-					        /* typing 1.5s steps(40, end),
-					        blink-caret .2s step-end infinite; */ typing
+						        /* typing 1.5s steps(40, end),
+						        blink-caret .2s step-end infinite; */ typing
 				1s steps(40) 1s 1 normal both,
 			blink-caret 0.55s steps(50) infinite;
 	}
