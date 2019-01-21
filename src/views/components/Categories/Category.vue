@@ -77,37 +77,37 @@ export default {
             usertypes: [
                 {
                     avatar: {
-                        file: "assets/img/bg.jpg"
+                        file: "/assets/img/bg.jpg"
                     },
                     title: "Photographer"
                 },
                 {
                     avatar: {
-                        file: "assets/img/bg2.jpg"
+                        file: "/assets/img/bg2.jpg"
                     },
                     title: "Marketer"
                 },
                 {
                     avatar: {
-                        file: "assets/img/bg3.jpg"
+                        file: "/assets/img/bg3.jpg"
                     },
                     title: "Fashion Designer"
                 },
                 {
                     avatar: {
-                        file: "assets/img/bg.jpg"
+                        file: "/assets/img/bg.jpg"
                     },
                     title: "Photographer"
                 },
                 {
                     avatar: {
-                        file: "assets/img/bg2.jpg"
+                        file: "/assets/img/bg2.jpg"
                     },
                     title: "Marketer"
                 },
                 {
                     avatar: {
-                        file: "assets/img/bg3.jpg"
+                        file: "/assets/img/bg3.jpg"
                     },
                     title: "Fashion Designer"
                 }
