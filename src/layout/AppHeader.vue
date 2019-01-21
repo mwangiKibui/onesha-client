@@ -28,9 +28,9 @@
             <i class="ni ni-collection d-lg-none"></i>
             <span class="nav-link-inner--text">SERVICES</span>
           </a>
-          <router-link to="/category/social-media" class="dropdown-item">New Design Only</router-link>
-          <router-link to="/category/graphic-design" class="dropdown-item">New Design plus structure</router-link>
-          <router-link to="/category/motion-graphics" class="dropdown-item">Redesign of existing</router-link>
+          <router-link to="/categories/business-profiles" class="dropdown-item">New Design Only</router-link>
+          <router-link to="/categories/business-profiles" class="dropdown-item">New Design plus structure</router-link>
+          <router-link to="/categories/business-profiles" class="dropdown-item">Redesign of existing</router-link>
         </base-dropdown>
         <!-- <li class="nav-item">
           <router-link to="/projects" class="nav-link" replace>

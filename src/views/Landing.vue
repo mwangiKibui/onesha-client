@@ -458,7 +458,7 @@
                             <img
                                 src="https://socialmedia.onesha.co.ke/assets/img/ill/ill-2.svg"
                                 class="img-center img-fluid"
-                            >
+                            />
                             <br><hr><br>
                             <p>Get a professional looking business profile that will enable you get introductions, meetings and close sales even faster. Delivered when you want it.</p>
                             <a
