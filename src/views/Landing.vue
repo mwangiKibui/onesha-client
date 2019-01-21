@@ -391,7 +391,7 @@
 							</div>
 						</div>
 						<div class="card shadow shadow-lg--hover mt-2">
-							<div class="card-body">
+							<div class="card-body crd">
 								<div class="d-flex px-3">
 									<div>
 										<div class="icon icon-shape bg-gradient-success rounded-circle text-white">
@@ -405,8 +405,8 @@
 									</div>
 								</div>
 							</div>
-							<div class="card-body">
-								<div class="d-flex px-3">
+							<div class="card-body crd">
+								<div class="d-flex px-3 mt-0">
 									<div>
 										<div class="icon icon-shape bg-gradient-success rounded-circle text-white">
 											<i class="ni ni-satisfied"></i>
@@ -414,12 +414,12 @@
 									</div>
 									<div class="pl-4">
 										<h5 class="title text-success">Request changes before accepting</h5>
-										<p>Receive quality work, review upto 3 times. We ensure you get the qualiyty you are looking for.</p>
+										<p>Receive quality work, review upto 3 times. We ensure you get the quality you are looking for.</p>
 
 									</div>
 								</div>
 							</div>
-							<div class="card-body">
+							<div class="card-body crd">
 								<div class="d-flex px-3">
 									<div>
 										<div class="icon icon-shape bg-gradient-success rounded-circle text-white">
@@ -428,12 +428,12 @@
 									</div>
 									<div class="pl-4">
 										<h5 class="title text-success">We control the process</h5>
-										<p>Save time taken to compare creative professionals as we choose the right one for the job. Get Project Management to reduce the hassle</p>
+										<p>Save time taken to compare creative professionals as we choose the right one for the job. We also do project management to reduce the hassle.</p>
 
 									</div>
 								</div>
 							</div>
-							<div class="card-body">
+							<div class="card-body crd">
 								<div class="d-flex px-3">
 									<div>
 										<div class="icon icon-shape bg-gradient-success rounded-circle text-white">
@@ -442,11 +442,8 @@
 									</div>
 									<div class="pl-4">
 										<h5 class="title text-success">Customer Satisfaction is key</h5>
-										<p>Get a professional looking business profile that will enable you get introductions, meetings and close sales even faster. We can guarantee you this..</p>
-										<a
-										 href="#request"
-										 class="btn btn-success"
-										>REQUEST NOW</a>
+										<p>We can guarantee you will get a professional looking business profile that will fit your requirements and help you reach your objectives.</p>
+
 									</div>
 								</div>
 							</div>
@@ -459,6 +456,13 @@
 							 src="https://socialmedia.onesha.co.ke/assets/img/ill/ill-2.svg"
 							 class="img-center img-fluid"
 							>
+							<br>
+							<hr><br>
+							<p>Get a professional looking business profile that will enable you get introductions, meetings and close sales even faster. Delivered when you want it.</p>
+							<a
+							 href="#request"
+							 class="btn btn-success"
+							>REQUEST NOW</a>
 						</div>
 					</div>
 				</div>
@@ -476,8 +480,8 @@
 						<div class="row row-grid mt-5">
 							<div class="col-sm-2">
 								<img
-								 class="img-fluid img-back"
 								 style="background: url('/assets/img/clients/pangea.jpg') "
+								 class="img-back"
 								/>
 								<p class="text-white mt-3">Pangea Accelerator</p>
 							</div>
@@ -485,26 +489,26 @@
 								<img
 								 src="/assets/img/icons/eo.jpg"
 								 class="rounded-square img-back img-fluid"
-								>
+								/>
 								<p class="text-white mt-3">EO Kenya</p>
 							</div>
 							<div class="col-sm-2">
 								<img
-								 class="img-fluid rounded-square img-back"
+								 class="img-back"
 								 style="background: url('/assets/img/clients/weston.jpg');"
 								/>
 								<p class="text-white mt-3">Weston Hotel</p>
 							</div>
 							<div class="col-sm-2">
 								<img
-								 class="img-fluid img-back"
-								 style="background: url('/assets/img/clients/bdo.jpg'); "
+								 class="img-back"
+								 style="background: url('/assets/img/clients/bdo.jpg');"
 								/>
 								<p class="text-white mt-3">BDO Kenya</p>
 							</div>
 							<div class="col-sm-2">
 								<img
-								 class="img-fluid img-back"
+								 class="img-back"
 								 style="background: url('/assets/img/clients/uber.jpg');"
 								/>
 								<p class="text-white mt-3">Uber Kenya</p>
@@ -704,11 +708,16 @@
 			blink-caret 0.55s steps(50) infinite;
 	}
 	.img-back {
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: contain;
+		background-repeat: no-repeat !important;
+		background-position: center !important;
+		background-size: contain !important;
+		border-color: transparent;
 		width: 120px;
 		height: 80px;
+	}
+	.crd {
+		padding: 0.8rem !important;
+		padding-top: 200px;
 	}
 
 	@media screen and (max-width: 579px) {
