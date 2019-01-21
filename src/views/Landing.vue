@@ -330,27 +330,27 @@
 						<h2 class="text-white font-weight-light">We have worked with</h2>
 						<div class="row row-grid mt-5">
 							<div class="col-sm-2">
-								<icon style="background: url('assets/img/clients/pangea.jpg'); background-size: contain; width: 80px; height: 80px  "></icon>
+								<icon style="background: url('/assets/img/clients/pangea.jpg'); background-size: contain; width: 80px; height: 80px  "></icon>
 								<p class="text-white mt-3">Pangea Accelerator</p>
 							</div>
 							<div class="col-sm-2">
-								<icon style="background: url('assets/img/clients/eo.jpg'); background-size: contain; width: 80px; height: 80px  "></icon>
+								<icon style="background: url('/assets/img/clients/eo.jpg'); background-size: contain; width: 80px; height: 80px  "></icon>
 								<p class="text-white mt-3">EO Kenya</p>
 							</div>
 							<div class="col-sm-2">
-								<icon style="background: url('assets/img/clients/weston.jpg'); background-size: contain; width: 80px; height: 80px  "></icon>
+								<icon style="background: url('/assets/img/clients/weston.jpg'); background-size: contain; width: 80px; height: 80px  "></icon>
 								<p class="text-white mt-3">Weston Hotel</p>
 							</div>
 							<div class="col-sm-2">
-								<icon style="background: url('assets/img/clients/bdo.jpg'); background-size: contain; width: 80px; height: 80px  "></icon>
+								<icon style="background: url('/assets/img/clients/bdo.jpg'); background-size: contain; width: 80px; height: 80px  "></icon>
 								<p class="text-white mt-3">BDO Kenya</p>
 							</div>
 							<div class="col-sm-2">
-								<icon style="background: url('assets/img/clients/uber.jpg'); background-size: contain; width: 80px; height: 80px  "></icon>
+								<icon style="background: url('/assets/img/clients/uber.jpg'); background-size: contain; width: 80px; height: 80px  "></icon>
 								<p class="text-white mt-3">Uber Kenya</p>
 							</div>
 							<div class="col-sm-2">
-								<icon style="background: url('assets/img/clients/flexpay.jpg') no-repeat; background-size: contain; width: 80px; height: 80px  "></icon>
+								<icon style="background: url('/assets/img/clients/flexpay.jpg') no-repeat; background-size: contain; width: 80px; height: 80px  "></icon>
 								<p class="text-white mt-3">Flexpay Limited</p>
 							</div>
 						</div>
@@ -535,8 +535,8 @@
 		color: #22cdef;
 		letter-spacing: 0.02em; /*Adjust as needed*/
 		animation: 
-				        /* typing 1.5s steps(40, end),
-				        blink-caret .2s step-end infinite; */ typing
+					        /* typing 1.5s steps(40, end),
+					        blink-caret .2s step-end infinite; */ typing
 				1s steps(40) 1s 1 normal both,
 			blink-caret 0.55s steps(50) infinite;
 	}
