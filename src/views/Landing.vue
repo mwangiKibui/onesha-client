@@ -20,20 +20,20 @@
 									<!-- <span style="font-size: 0.5em">Your creative tasks sorted</span> -->
 								</h2>
 								<p class="justify-content-between text-white text-left pt-2">
-									<span class="lead"><span
+									<span class="lead">Get <span
 										 class="next"
 										 data-period="2000"
-										 data-type='[ "Get Creative", "Social Media", "Graphic Design", "Video Production", "Animation" ]'
-										>Get Creative</span> <span class="d-lg-nones"><br></span>services at your budget!
-										<span class=" d-sm-nones">Get services from vetted creatives with quick delivery to fit your schedule.<br> Choose a category, fill a simple job template, get your task done!</span></span>
+										 data-type='[ "a brand new profile", "a redesign of your profile", "a new content structure" ]'
+										>your Business Profile</span> <span class="d-lg-nones"><br></span>done at your budget!
+										<span class=" d-sm-nones">Get a professional looking business profile that will enable you get introductions, meetings and close sales even faster.</span></span>
 									<span class="text-left d-sm-nones">
 										<ul
 										 class="py-1 px-3"
-										 style="list-style: circle"
+										 style="list-style: tick"
 										>
-											<li>Receive quality work, review upto 3 times</li>
-											<li>Save time taken to compare creative professionals</li>
-											<li>Get Project Management to reduce the hassle</li>
+											<li>Get quicker connections</li>
+											<li>Increase your conversion rate for clients</li>
+											<li>Showcase the capability of your business</li>
 										</ul>
 									</span>
 								</p>
@@ -68,21 +68,114 @@
 		 class="section section-shaped my-0 mb-2 "
 		 style="background: white; color: black"
 		>
-			<div class="container">
-				<div class="justify-content-between align-items-center">
-					<div class="mb-5 mb-lg-0 col-md-12">
-						<h2 class="text-default font-weight-light">All Services</h2>
-						<p class="lead text-default mt-4">We bring you services from the following.</p>
-
+			<div class="container pb-100">
+				<div class="row text-center justify-content-center">
+					<div class="col-lg-10">
+						<h2 class="display-3 text-default">Business Profiles That Sell</h2>
+						<p class="lead text-default">According to the experts, a business profile can shape the decision of a potential client. Here is what a proper business profile can do for you.</p>
 					</div>
+				</div>
+				<div class="row row-grid mt-5">
+					<div class="col-lg-4">
+						<div class="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
+							<i class="ni ni-atom text-primary"></i>
+						</div>
+						<h5 class="text-default mt-3">Build Your Pipeline Faster</h5>
+						<p class="text-default mt-3">The interaction with your profile can convince potential clients looking for your services and lead to more referrals.</p>
+					</div>
+					<div class="col-lg-4">
+						<div class="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
+							<i class="ni ni-ruler-pencil text-primary"></i>
+						</div>
+						<h5 class="text-default mt-3">Establish Credibility</h5>
+						<p class="text-default mt-3">The information about your team, services, mission and vision will help you bulld a credible background for your business.</p>
+					</div>
+					<div class="col-lg-4">
+						<div class="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
+							<i class="ni ni-satisfied text-primary"></i>
+						</div>
+						<h5 class="text-default mt-3">Increase sales productivity</h5>
+						<p class="text-default mt-3">Let your portfolio of previous work give you an edge over competitors to close that deal. Client testimonials also get you more leads.</p>
+					</div>
+				</div>
+
+			</div>
+			<div class="container">
+				<div class="row row-grid align-items-center">
+					<div class="col-md-6 order-md-2">
+						<img
+						 src="https://socialmedia.onesha.co.ke/assets/img/theme/promo-1.png"
+						 class="img-fluid floating"
+						>
+					</div>
+					<div class="col-md-6 order-md-1">
+						<div class="pr-md-5">
+
+							<h3>Who needs a business profile?</h3>
+							<p>Your business profile is a key component in your marketing strategy. It will help you:</p>
+							<ul class="list-unstyled mt-2">
+								<li class="py-2">
+									<div class="d-flex align-items-center">
+										<div>
+											<div class="badge badge-circle badge-success mr-3">
+												<i class="ni ni-settings-gear-65"></i>
+											</div>
+										</div>
+										<div>
+											<h6 class="mb-0">Carefully crafted communication</h6>
+										</div>
+									</div>
+								</li>
+								<li class="py-2">
+									<div class="d-flex align-items-center">
+										<div>
+											<div class="badge badge-circle badge-success mr-3">
+												<i class="ni ni-html5"></i>
+											</div>
+										</div>
+										<div>
+											<h6 class="mb-0">Amazing content that excites and informs</h6>
+										</div>
+									</div>
+								</li>
+								<li class="py-2">
+									<div class="d-flex align-items-center">
+										<div>
+											<div class="badge badge-circle badge-success mr-3">
+												<i class="ni ni-satisfied"></i>
+											</div>
+										</div>
+										<div>
+											<h6 class="mb-0">Friendly customer support for queries</h6>
+										</div>
+									</div>
+								</li>
+								<li class="py-2">
+									<div class="d-flex align-items-center">
+										<div>
+											<div class="badge badge-circle badge-success mr-3">
+												<i class="ni ni-satisfied"></i>
+											</div>
+										</div>
+										<div>
+											<h6 class="mb-0">Friendly customer support for queries</h6>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="justify-content-between align-items-center">
 					<transition
 					 name="component-fade"
 					 mode="out-in"
 					>
-						<div
-						 id="actions"
-						 class=""
-						>
+						<div>
+							<br>
+							<h3>What can we offer?</h3>
+							<p>We give you a quick online service that simplifies the process of looking for a place to get your business profile made. Get high quality services from our vetted creatives with quick delivery to fit your schedule. Choose a category, fill a simple job template, get your task done!</p>
+
 							<categories></categories>
 						</div>
 					</transition>
@@ -93,7 +186,7 @@
 		<section></section>
 
 		<section
-		 class="section section-lg pt-lg-2 mt-200 bg-gradient-default"
+		 class="section section-lg pt-lg-2 mt-200 bg-gradient-info"
 		 id="request"
 		>
 			<div class="container pt-lg">
@@ -106,7 +199,7 @@
 				<JobCategories :categories="categories"></JobCategories>
 			</div>
 		</section>
-		<section class="section section-lg pt-lg-2  mt-100 section-contact-us">
+		<section class="section section-lg pt-lg-2 mt-100 section-contact-us">
 			<div class="container pt-lg">
 				<div class="pb-lg-4">
 					<h4 class="mb-1 text-center">Want to work with us?</h4>
@@ -163,14 +256,14 @@
 
 		</section>
 		<section
-		 class="section section-sm bg-secondary mt-200"
+		 class="section section-sm bg-secondary mt-200  bg-gradient-info"
 		 id="process"
 		>
 			<div class="container">
-				<div class="row justify-content-center">
-					<div class="mb-5 mb-lg-0 col-md-12">
-						<h2 class="text-default font-weight-light">Our Process</h2>
-						<p class="lead text-default mt-4">We follow this process to ensure you quality.</p>
+				<div class="row justify-content-center text-center">
+					<div class="mt-5 mb-lg-3 col-md-12">
+						<h2 class="text-white ">Our Process</h2>
+						<p class="lead text-white mt-4">We follow this process to ensure you quality.</p>
 
 					</div>
 					<div class="col-lg-12">
@@ -218,7 +311,7 @@
 									>
 									</icon>
 									<h6 class="text-primary text-uppercase">Brief Processing</h6>
-									<p class="description mt-3">Onesha processes your request into a job brief that we present to vetted creatives for quotation.<br><br> You view the selected quotations then approve the quote.</p>
+									<p class="description mt-3">Onesha processes your request into a job brief that we present to vetted creatives for quotation.<br><br> You then selected and approve the quote.</p>
 									<br>
 									<!-- <base-button tag="a"  href="#request" data-toggle="scroll" type="primary" class="mt-4">
                                         START HERE
@@ -285,31 +378,83 @@
 					<hr>
 				</div>
 				<div class="row">
-					<div class="col-md-8 pl-md-5">
-						<icon
-						 name="ni ni-settings"
-						 class="mb-5"
-						 size="lg"
-						 type="info"
-						 shadow
-						 rounded
-						></icon>
+					<div class="col-lg-7 order-lg-1">
+						<div class="d-flex px-3">
+							<div>
+								<div class="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
+									<i class="ni ni-building text-primary"></i>
+								</div>
+							</div>
+							<div class="pl-4">
+								<h4 class="display-3">Why Choose Us?</h4>
+								<p class="s">Here is why we are your best choice for this service: </p>
+							</div>
+						</div>
+						<div class="card shadow shadow-lg--hover mt-2">
+							<div class="card-body">
+								<div class="d-flex px-3">
+									<div>
+										<div class="icon icon-shape bg-gradient-success rounded-circle text-white">
+											<i class="ni ni-satisfied"></i>
+										</div>
+									</div>
+									<div class="pl-4">
+										<h5 class="title text-success">Wide pool of Talent</h5>
+										<p>With our wide pool of high quality, experienced creatives, we assure you of a satisfactory service that will meet and exceed your expectations.</p>
 
-						<h3>Our Creatives</h3>
-						<p class="lead">Don't let your users guess by attaching tooltips and popoves to any element.
-							Just make sure you enable them first via JavaScript.</p>
-						<p>The kit comes with three pre-built pages to help you get started faster. You can change
-							the text and images and you're good to go.</p>
-						<p>The kit comes with three pre-built pages to help you get started faster. You can change
-							the text and images and you're good to go.</p>
-						<a
-						 href="#"
-						 class="font-weight-bold text-info mt-5"
-						>A beautiful UI Kit for impactful
-							websites</a>
+									</div>
+								</div>
+							</div>
+							<div class="card-body">
+								<div class="d-flex px-3">
+									<div>
+										<div class="icon icon-shape bg-gradient-success rounded-circle text-white">
+											<i class="ni ni-satisfied"></i>
+										</div>
+									</div>
+									<div class="pl-4">
+										<h5 class="title text-success">Request changes before accepting</h5>
+										<p>Receive quality work, review upto 3 times. We ensure you get the qualiyty you are looking for.</p>
+
+									</div>
+								</div>
+							</div>
+							<div class="card-body">
+								<div class="d-flex px-3">
+									<div>
+										<div class="icon icon-shape bg-gradient-success rounded-circle text-white">
+											<i class="ni ni-satisfied"></i>
+										</div>
+									</div>
+									<div class="pl-4">
+										<h5 class="title text-success">We control the process</h5>
+										<p>Save time taken to compare creative professionals as we choose the right one for the job. Get Project Management to reduce the hassle</p>
+
+									</div>
+								</div>
+							</div>
+							<div class="card-body">
+								<div class="d-flex px-3">
+									<div>
+										<div class="icon icon-shape bg-gradient-success rounded-circle text-white">
+											<i class="ni ni-satisfied"></i>
+										</div>
+									</div>
+									<div class="pl-4">
+										<h5 class="title text-success">Customer Satisfaction is key</h5>
+										<p>Get a professional looking business profile that will enable you get introductions, meetings and close sales even faster. We can guarantee you this..</p>
+										<a
+										 href="#request"
+										 class="btn btn-success"
+										>REQUEST NOW</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
 					</div>
 					<div class="col-md-4 order-lg-2 ml-lg-auto">
-						<div class="position-relative pl-md-5">
+						<div class="mt-2 pl-md-5 pt-5">
 							<img
 							 src="https://socialmedia.onesha.co.ke/assets/img/ill/ill-2.svg"
 							 class="img-center img-fluid"
@@ -321,36 +466,54 @@
 
 		</section>
 		<section
-		 class="section section-lg pt-lg-0 mt-200 bg-default mb-5 "
+		 class="section section-lg pt-lg-0 mt-200 bg-gradient-info mb-0 "
 		 id="clients"
 		>
 			<div class="container">
 				<div class="row justify-content-center mt-200">
-					<div class="col-sm-12 mt-2 mt-5">
+					<div class="col-sm-12  mt-5">
 						<h2 class="text-white font-weight-light">We have worked with</h2>
 						<div class="row row-grid mt-5">
 							<div class="col-sm-2">
-								<icon style="background: url('/assets/img/clients/pangea.jpg'); background-size: contain; width: 80px; height: 80px  "></icon>
+								<img
+								 class="img-fluid img-back"
+								 style="background: url('/assets/img/clients/pangea.jpg') "
+								/>
 								<p class="text-white mt-3">Pangea Accelerator</p>
 							</div>
 							<div class="col-sm-2">
-								<icon style="background: url('/assets/img/clients/eo.jpg'); background-size: contain; width: 80px; height: 80px  "></icon>
+								<img
+								 src="/assets/img/icons/eo.jpg"
+								 class="rounded-square img-back img-fluid"
+								>
 								<p class="text-white mt-3">EO Kenya</p>
 							</div>
 							<div class="col-sm-2">
-								<icon style="background: url('/assets/img/clients/weston.jpg'); background-size: contain; width: 80px; height: 80px  "></icon>
+								<img
+								 class="img-fluid rounded-square img-back"
+								 style="background: url('/assets/img/clients/weston.jpg');"
+								/>
 								<p class="text-white mt-3">Weston Hotel</p>
 							</div>
 							<div class="col-sm-2">
-								<icon style="background: url('/assets/img/clients/bdo.jpg'); background-size: contain; width: 80px; height: 80px  "></icon>
+								<img
+								 class="img-fluid img-back"
+								 style="background: url('/assets/img/clients/bdo.jpg'); "
+								/>
 								<p class="text-white mt-3">BDO Kenya</p>
 							</div>
 							<div class="col-sm-2">
-								<icon style="background: url('/assets/img/clients/uber.jpg'); background-size: contain; width: 80px; height: 80px  "></icon>
+								<img
+								 class="img-fluid img-back"
+								 style="background: url('/assets/img/clients/uber.jpg');"
+								/>
 								<p class="text-white mt-3">Uber Kenya</p>
 							</div>
 							<div class="col-sm-2">
-								<icon style="background: url('/assets/img/clients/flexpay.jpg') no-repeat; background-size: contain; width: 80px; height: 80px  "></icon>
+								<img
+								 class="img-fluid img-back"
+								 style="background: url('/assets/img/clients/flexpay.jpg') "
+								/>
 								<p class="text-white mt-3">Flexpay Limited</p>
 							</div>
 						</div>
@@ -535,10 +698,17 @@
 		color: #22cdef;
 		letter-spacing: 0.02em; /*Adjust as needed*/
 		animation: 
-						        /* typing 1.5s steps(40, end),
-						        blink-caret .2s step-end infinite; */ typing
+			        /* typing 1.5s steps(40, end),
+			        blink-caret .2s step-end infinite; */ typing
 				1s steps(40) 1s 1 normal both,
 			blink-caret 0.55s steps(50) infinite;
+	}
+	.img-back {
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		width: 120px;
+		height: 80px;
 	}
 
 	@media screen and (max-width: 579px) {
