@@ -102,17 +102,18 @@
             </div>
             <div class="container">
                 <div class="row row-grid align-items-center">
-                    <div class="col-md-6 order-md-2">
+                    <div class="col-md-4 order-md-2">
                         <img
                             src="https://socialmedia.onesha.co.ke/assets/img/theme/promo-1.png"
                             class="img-fluid floating"
                         >
                     </div>
-                    <div class="col-md-6 order-md-1">
+                    <div class="col-md-8 order-md-1">
                         <div class="pr-md-5">
 
                             <h3>Who needs a business profile?</h3>
-                            <p>Your business profile is a key component in your marketing strategy. It will help you:</p>
+                            <p>Your company profile is a professional introduction and aims to inform people (primarily prospective buyers and stakeholders) about your products, 
+                                services, and current status. Your business profile is a key component in your marketing strategy.</p>
                             <ul class="list-unstyled mt-2">
                                 <li class="py-2">
                                     <div class="d-flex align-items-center">
@@ -122,7 +123,7 @@
                                             </div>
                                         </div>
                                         <div>
-                                            <h6 class="mb-0">Carefully crafted communication</h6>
+                                            <h6 class="mb-0">Photographers and designers ready to show their portfolio</h6>
                                         </div>
                                     </div>
                                 </li>
@@ -134,7 +135,7 @@
                                             </div>
                                         </div>
                                         <div>
-                                            <h6 class="mb-0">Amazing content that excites and informs</h6>
+                                            <h6 class="mb-0">A tech startup pitching their solutions</h6>
                                         </div>
                                     </div>
                                 </li>
@@ -146,7 +147,7 @@
                                             </div>
                                         </div>
                                         <div>
-                                            <h6 class="mb-0">Friendly customer support for queries</h6>
+                                            <h6 class="mb-0">A business organization looking to apply for a tender</h6>
                                         </div>
                                     </div>
                                 </li>
@@ -158,7 +159,7 @@
                                             </div>
                                         </div>
                                         <div>
-                                            <h6 class="mb-0">Friendly customer support for queries</h6>
+                                            <h6 class="mb-0">Suppliers looking to deliver their goods to new customers</h6>
                                         </div>
                                     </div>
                                 </li>
@@ -174,7 +175,9 @@
                         <div>
                             <br>
                             <h3>What can we offer?</h3>
-                            <p>We give you a quick online service that simplifies the process of looking for a place to get your business profile made. Get high quality services from our vetted creatives with quick delivery to fit your schedule. Choose a category, fill a simple job template, get your task done!</p>
+                            <p>We give you a professional looking business profile that will enable you get introductions, 
+                                meetings and close sales even faster. Our quick online service simplifies the process of looking for a place to get your business profile made. 
+                                Get high quality services from our vetted creatives with quick delivery to fit your schedule. <br><br>Simply choose a category, fill a simple job template, get your task done!</p>
 
                             <categories></categories>
                         </div>

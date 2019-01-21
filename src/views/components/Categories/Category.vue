@@ -3,7 +3,7 @@
     <div>
 
         <div class="mt-5 text-center justify-content-center">
-            <p class="text-white">Select your occupation</p>
+            <p class="text-white">Select your field</p>
         </div>
 
         <div
@@ -79,37 +79,37 @@ export default {
                     avatar: {
                         file: "/assets/img/bg.jpg"
                     },
-                    title: "Photographer"
+                    title: "Photography and Design"
                 },
                 {
                     avatar: {
                         file: "/assets/img/bg2.jpg"
                     },
-                    title: "Marketer"
+                    title: "Tech and Software"
                 },
                 {
                     avatar: {
                         file: "/assets/img/bg3.jpg"
                     },
-                    title: "Fashion Designer"
+                    title: "Professional Consultant"
                 },
                 {
                     avatar: {
                         file: "/assets/img/bg.jpg"
                     },
-                    title: "Photographer"
+                    title: "Sales and Marketing"
                 },
                 {
                     avatar: {
                         file: "/assets/img/bg2.jpg"
                     },
-                    title: "Marketer"
+                    title: "Finance and Accounting"
                 },
                 {
                     avatar: {
                         file: "/assets/img/bg3.jpg"
                     },
-                    title: "Fashion Designer"
+                    title: "Other"
                 }
             ]
         };
