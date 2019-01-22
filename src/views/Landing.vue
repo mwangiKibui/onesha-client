@@ -88,7 +88,7 @@
                             <i class="ni ni-ruler-pencil text-primary"></i>
                         </div>
                         <h5 class="text-default mt-3">Establish Credibility</h5>
-                        <p class="text-default mt-3">The information about your team, services, mission and vision will help you bulld a credible background for your business.</p>
+                        <p class="text-default mt-3">The information about your team, services, mission and vision will help you build a credible background for your business.</p>
                     </div>
                     <div class="col-lg-4">
                         <div class="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">

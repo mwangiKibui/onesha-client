@@ -91,7 +91,7 @@ export default {
                     avatar: {
                         file: "/assets/img/bg3.jpg"
                     },
-                    title: "Professional Consultant"
+                    title: "Professional Consultancy"
                 },
                 {
                     avatar: {
