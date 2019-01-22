@@ -63,81 +63,81 @@
 	</div>
 </template>``
 <script>
-	import Axios from "axios";
-	export default {
-		props: {
-			categories: Array
-		},
-		data() {
-			return {
-				error: null,
-				modalstater: false,
-				showModal: false,
-				jobtypes: null,
-				usertypes: [
-					{
-						avatar: {
-							file: "/assets/img/bg.jpg"
-						},
-						title: "Photography and Design"
-					},
-					{
-						avatar: {
-							file: "/assets/img/bg2.jpg"
-						},
-						title: "Tech and Software"
-					},
-					{
-						avatar: {
-							file: "/assets/img/bg3.jpg"
-						},
-						title: "Professional Consultant"
-					},
-					{
-						avatar: {
-							file: "/assets/img/bg.jpg"
-						},
-						title: "Sales and Marketing"
-					},
-					{
-						avatar: {
-							file: "/assets/img/bg2.jpg"
-						},
-						title: "Finance and Accounting"
-					},
-					{
-						avatar: {
-							file: "/assets/img/bg3.jpg"
-						},
-						title: "Other"
-					}
-				]
-			};
-		},
-		methods: {
-			render: function(createElement) {
-				return createElement(CategoryJobTypes);
-			},
-			popup: function(category, index) {
-				this.modalstater = true;
-				this.jobcategory = category;
-				let el = this.$el.getElementsByClassName("sectionDisplay")[0];
-				// el.scrollIntoView();
-			},
-			/**
-			 * Retrieve job types for the passed category
-			 *
-			 * @param {string} categorySlug - slug of the category clicked.
-			 */
-			requestCategoryJobTypes(categorySlug) {
-				// show progress indicator here
-				Axios.get("/api/data/jobtype/" + categorySlug).then(
-					res => (this.jobtypes = res.data)
-				);
-				this.modalstater = true;
-			}
-		}
-	};
+import Axios from "axios";
+export default {
+    props: {
+        categories: Array
+    },
+    data() {
+        return {
+            error: null,
+            modalstater: false,
+            showModal: false,
+            jobtypes: null,
+            usertypes: [
+                {
+                    avatar: {
+                        file: "/assets/img/bg.jpg"
+                    },
+                    title: "Photography and Design"
+                },
+                {
+                    avatar: {
+                        file: "/assets/img/bg2.jpg"
+                    },
+                    title: "Tech and Software"
+                },
+                {
+                    avatar: {
+                        file: "/assets/img/bg3.jpg"
+                    },
+                    title: "Professional Consultancy"
+                },
+                {
+                    avatar: {
+                        file: "/assets/img/bg.jpg"
+                    },
+                    title: "Sales and Marketing"
+                },
+                {
+                    avatar: {
+                        file: "/assets/img/bg2.jpg"
+                    },
+                    title: "Finance and Accounting"
+                },
+                {
+                    avatar: {
+                        file: "/assets/img/bg3.jpg"
+                    },
+                    title: "Other"
+                }
+            ]
+        };
+    },
+    methods: {
+        render: function(createElement) {
+            return createElement(CategoryJobTypes);
+        },
+        popup: function(category, index) {
+            this.modalstater = true;
+            this.jobcategory = category;
+            let el = this.$el.getElementsByClassName("sectionDisplay")[0];
+            // el.scrollIntoView();
+        },
+        /**
+         * Retrieve job types for the passed category
+         *
+         * @param {string} categorySlug - slug of the category clicked.
+         */
+        requestCategoryJobTypes(categorySlug) {
+            // show progress indicator here
+            Axios.get("/api/data/jobtype/" + categorySlug).then(
+                res => (this.jobtypes = res.data)
+            );
+            this.modalstater = true;
+        }
+    }
+};
 </script>
 <style>
 	.category {
