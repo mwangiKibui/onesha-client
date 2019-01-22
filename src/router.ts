@@ -4,6 +4,7 @@ import AppFooter from '@/layout/AppFooter.vue';
 import AppHeader from '@/layout/AppHeader.vue';
 import About from '@/views/About.vue';
 import JobCategory from '@/views/components/Categories/JobCategory.vue';
+import CategoryPage from '@/views/components/Categories/CategoryPage.vue';
 import JobPage from '@/views/components/JobTemplates/JobPage.vue';
 import Landing from '@/views/Landing.vue';
 import Login from '@/views/Login.vue';
@@ -96,6 +97,15 @@ export default new Router({
             components: {
                 header: AppHeader,
                 default: JobPage,
+                footer: AppFooter,
+            },
+            props: { default: true, header: false, footer: false },
+        },{
+            path: '/category/:slug',
+            name: 'Category Title',
+            components: {
+                header: AppHeader,
+                default: CategoryPage,
                 footer: AppFooter,
             },
             props: { default: true, header: false, footer: false },
