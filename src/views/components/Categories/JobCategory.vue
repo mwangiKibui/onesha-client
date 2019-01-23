@@ -83,10 +83,10 @@
                                     v-if="templatedata.length"
                                     type="success"
                                     :value="progress"
-                                    label="Task completed"
-                                ></base-progress>
+                                    :label="jobtype.title"
+                                >Progress</base-progress>
 
-                                <div v-if="templatedata.length">A quick walkthrough for {{ jobtype.title }}</div>
+                                <div v-if="templatedata.length"></div>
                                 <div
                                     v-if="templatedata.length"
                                     class="templateModal"
@@ -106,6 +106,21 @@
                                                     :name="index"
                                                     :value="option.option"
                                                 >{{ option.option }}</base-radio>
+                                            </div>
+                                        </div>
+                                        <div v-if="template.feedback == 'multi-select'">
+                                            <div
+                                                :name="template._id"
+                                                v-for="(option, index) in template.options"
+                                                :key="index"
+                                            >
+                                                <base-checkbox
+                                                    class="mb-3"
+                                                    :id="index"
+                                                    v-model="filledindata[template.title]"
+                                                    :name="index"
+                                                    :value="option.option"
+                                                >{{ option.option }}</base-checkbox>
                                             </div>
                                         </div>
                                         <div v-if="template.feedback == 'prompt'">
@@ -163,27 +178,53 @@
                                         >
                                     </div>
                                 </div>
+                                <div class="form-group">
+                                    <div class="input-group input-group-alternative mb-4">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fa fa-map-marker"></i></span>
+                                        </div>
+                                        <input
+                                            type="tel"
+                                            name="Location"
+                                            v-model="filledindata['client']"
+                                            class="form-control"
+                                            placeholder="City / Town"
+                                        >
+                                    </div>
+                                </div>
                             </div>
 
                             <!-- no template defined -->
-                            <div v-if="!templatedata.length">No template found for specified job type.</div>
+                            <div
+                                v-if="!template.length"
+                                id="message"
+                            >
+                                <RotateSquare5
+                                    class="text-center align-items-center"
+                                    style="width: 100px; height: 100px;"
+                                > Loading</RotateSquare5>
+                            </div>
+
                             <template slot="footer">
                                 <div v-if="clientInfo == false">
-                                    <button
-                                        class="btn btn-default"
-                                        v-if="templateIndex >= 1"
-                                        @click="loadPreviousTemplate(templateIndex)"
-                                    >Previous</button>
-                                    <button
-                                        class="btn btn-dark"
-                                        v-if="templateIndex !== templatedata.length - 1"
-                                        @click="loadNextTemplate(templateIndex)"
-                                    >Next</button>
-                                    <button
-                                        class="btn btn-success"
-                                        v-if="templateIndex === templatedata.length - 1"
-                                        @click="requestClientDetails"
-                                    >Continue</button>
+                                    <div v-if="notemplate == true"></div>
+                                    <span v-if="notemplate == false">
+                                        <button
+                                            class="btn btn-default"
+                                            v-if="templateIndex >= 1"
+                                            @click="loadPreviousTemplate(templateIndex)"
+                                        >Previous</button>
+                                        <button
+                                            class="btn btn-dark"
+                                            v-if="templateIndex !== templatedata.length - 1"
+                                            @click="loadNextTemplate(templateIndex)"
+                                        >Next</button>
+                                        <button
+                                            class="btn btn-success"
+                                            v-if="templateIndex === templatedata.length - 1"
+                                            @click="requestClientDetails"
+                                        >Continue</button>
+                                    </span>
                                 </div>
                                 <div v-if="clientInfo != false">
                                     <button
@@ -214,6 +255,7 @@
 <script>
 import Modal from "@/views/components/Common/Modal.vue";
 import BaseRadio from "@/views/components/Common/BaseRadio.vue";
+import BaseCheckbox from "@/views/components/Common/BaseCheckbox.vue";
 import BaseProgress from "@/views/components/Common/BaseProgress.vue";
 import Axios from "axios";
 import { RotateSquare5 } from "vue-loading-spinner";
@@ -222,6 +264,7 @@ export default {
     components: {
         Modal,
         BaseRadio,
+        BaseCheckbox,
         RotateSquare5
     },
     props: {
@@ -231,6 +274,7 @@ export default {
         return {
             category: [],
             templateModal: false,
+            notemplate: true,
             jobtype: null,
             templateIndex: 1,
             templatedata: {},
@@ -246,13 +290,15 @@ export default {
      * Fetch all defined job types, grouped with their categories from database, and populate returned data as categories.
      */
     created() {
+        this.notemplate = true;
         this.fetchCategoryJobTypes();
     },
     methods: {
         fetchCategoryJobTypes() {
-            Axios.get("/api/data/jobtype-grouped/" + this.slug).then(
-                res => (this.category = res.data)
-            );
+            Axios.get("/api/data/jobtype-grouped/" + this.slug).then(res => {
+                this.notemplate = true;
+                return (this.category = res.data);
+            });
         },
         /**
          * Load templates from database for specified job type.
@@ -277,6 +323,12 @@ export default {
                 : [];
             this.templateIndex = 0;
             this.template = this.templatedata[0];
+            this.notemplate = false;
+            this.$nextTick(function() {
+                this.$el.querySelector("#message").innerHTML = "";
+                console.log("value is: " + this.notemplate);
+                console.log("length is: " + this.template.length);
+            });
         },
         /**
          * Loads previous template question given the current index

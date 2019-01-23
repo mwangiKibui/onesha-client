@@ -483,44 +483,55 @@
                             <div class="col-sm-2">
                                 <img style="background: url('/assets/img/clients/pangea.jpg') "
                                     class="img-back"
-                                    
                                 />
-                                <p class="text-white mt-3">Pangea Accelerator</p>
                             </div>
                             <div class="col-sm-2">
                                 <img
                                     src="/assets/img/icons/eo.jpg"
                                     class="rounded-square img-back img-fluid"
                                 />
-                                <p class="text-white mt-3">EO Kenya</p>
                             </div>
                             <div class="col-sm-2">
                                 <img
                                     class="img-back"
-                                    style="background: url('/assets/img/clients/weston.jpg');"
+                                    style="background: url('/assets/img/clients/weston.png');"
                                 />
-                                <p class="text-white mt-3">Weston Hotel</p>
                             </div>
                             <div class="col-sm-2">
                                 <img
                                     class="img-back"
-                                    style="background: url('/assets/img/clients/bdo.jpg');"
+                                    style="background: url('/assets/img/clients/bdo.png');"
                                 />
-                                <p class="text-white mt-3">BDO Kenya</p>
                             </div>
                             <div class="col-sm-2">
                                 <img
                                     class="img-back"
                                     style="background: url('/assets/img/clients/uber.jpg');"
                                 />
-                                <p class="text-white mt-3">Uber Kenya</p>
                             </div>
                             <div class="col-sm-2">
                                 <img
                                     class="img-fluid img-back"
                                     style="background: url('/assets/img/clients/flexpay.jpg') "
                                 />
-                                <p class="text-white mt-3">Flexpay Limited</p>
+                            </div>
+                            <div class="col-sm-2">
+                                <img
+                                    class="img-fluid img-back"
+                                    style="background: url('/assets/img/clients/imagine.jpg') "
+                                />
+                            </div>
+                            <div class="col-sm-2">
+                                <img
+                                    class="img-fluid img-back"
+                                    style="background: url('/assets/img/clients/taraji.jpg') "
+                                />
+                            </div>
+                            <div class="col-sm-2">
+                                <img
+                                    class="img-fluid img-back"
+                                    style="background: url('/assets/img/clients/gig.jpg') "
+                                />
                             </div>
                         </div>
                     </div>
