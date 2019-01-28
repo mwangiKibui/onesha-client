@@ -20,9 +20,9 @@
                         >
                         </div>
                         <div class="col-sm-7 order-md-2">
-                            <h3 style="color: #00f">New Design Only</h3>
+                            <h3 style="color: #00f">Design Only</h3>
                             <div class="pr-lg-5 text-default px-2">
-                                <p>Get your profile done using pre-built design pages.<br><br>
+                                <p>Get your profile done using a unique look and design.<br><br>
                                     <ul class="list-unstyled text-left">
                                         <li class="py-1">
                                             <div class="d-flex align-items-center">
@@ -30,9 +30,9 @@
                                                     type="success"
                                                     circle
                                                     class="mr-3"
-                                                    icon="ni ni-settings-gear-65"
+                                                    icon="ni ni-ruler-pencil"
                                                 ></badge>
-                                                <h6 class="mb-0">Carefully crafted components</h6>
+                                                <h6 class="mb-0">Choose from several samples</h6>
                                             </div>
                                         </li>
                                         <li class="py-2">
@@ -43,7 +43,7 @@
                                                     class="mr-3"
                                                     icon="ni ni-satisfied"
                                                 ></badge>
-                                                <h6 class="mb-0">Super friendly support team</h6>
+                                                <h6 class="mb-0">Request changes as needed</h6>
                                             </div>
                                         </li>
                                     </ul>
@@ -57,7 +57,7 @@
                                         type="info"
                                         icon="fa fa-cloud-download"
                                     >
-                                        Request A Service
+                                        Request This Service
                                     </base-button>
                                 </a>
                             </div>
@@ -100,7 +100,7 @@
                                                     class="mr-3"
                                                     icon="ni ni-satisfied"
                                                 ></badge>
-                                                <h6 class="mb-0">Super friendly support team</h6>
+                                                <h6 class="mb-0">Request changes as needed</h6>
                                             </div>
                                         </li>
                                     </ul>
@@ -114,7 +114,7 @@
                                         type="info"
                                         icon="fa fa-cloud-download"
                                     >
-                                        Request A Service
+                                        Request This Service
                                     </base-button>
                                 </a>
                             </div>
@@ -136,7 +136,7 @@
                         <div class="col-sm-7 order-md-2">
                             <h3 style="color: #00f">Redesign existing profile</h3>
                             <div class="pr-lg-5 text-default px-2">
-                                <p>Get your profile designed with content provided.<br>
+                                <p>Give your profile a new look with the content provided.<br>
                                     <ul class="list-unstyled text-left">
                                         <li class="py-1">
                                             <div class="d-flex align-items-center">
@@ -146,7 +146,7 @@
                                                     class="mr-3"
                                                     icon="ni ni-settings-gear-65"
                                                 ></badge>
-                                                <h6 class="mb-0">Carefully crafted components</h6>
+                                                <h6 class="mb-0">Choose from several samples</h6>
                                             </div>
                                         </li>
                                         <li class="py-2">
@@ -171,7 +171,7 @@
                                         type="info"
                                         icon="fa fa-cloud-download"
                                     >
-                                        Request A Service
+                                        Request This Service
                                     </base-button>
                                 </a>
                             </div>
