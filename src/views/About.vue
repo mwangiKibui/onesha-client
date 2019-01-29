@@ -259,16 +259,16 @@
                                 <div class="">
                                     <div class="row">
                                         <div class="col-sm-4 rounded-circle mb-1">
-                                            <a href="https://www.facebook.com/Fragrances-by-Lexy-1771164729606122/"><img
-                                                    src="assets/img/clients/lexy.jpeg"
+                                            <a href="https://www.facebook.com/www.westonhotel.co.ke/"><img
+                                                    src="assets/img/clients/weston.png"
                                                     class="rounded-square img-left img-fluid shadow shadow-lg--hover"
                                                     style="width: 100px;height:80px;"
                                                 ><br>
                                                 <small>See what we did</small></a>
                                         </div>
                                         <div class="col-sm-8 ">
-                                            <h5><span class="setLead text-success text-uppercase"><strong> Fragrances by Lexy</strong></span><br>
-                                                <span style="font-size: 0.75rem;">Fashion Business</span><br>
+                                            <h5><span class="setLead text-success text-uppercase"><strong> Weston Hotel</strong></span><br>
+                                                <span style="font-size: 0.75rem;">4-star Hotel</span><br>
                                                 <small class="text-default ">Content plan, page management</small></h5>
                                         </div>
                                     </div>
@@ -389,7 +389,7 @@
                             <div class="pt-4 text-center">
                                 <h5 class="title">
                                     <span class="d-block mb-1">Sarah Wambui</span>
-                                    <small class="h6 text-muted">Finance and Strategy</small>
+                                    <small class="h6 text-muted">Finance and HR</small>
                                 </h5>
                             </div>
                         </div>
@@ -616,7 +616,7 @@
                             <div class="col-lg-8">
                                 <h3 class="text-white">We are proud to work for you.</h3>
                                 <p class="lead text-white mt-3">Let us help you identify what you need to change or improve in your
-                                    digital and brand strategy. <br>Get our services today.</p>
+                                    digital and social media strategy. <br>Get our services today.</p>
                             </div>
                             <div class="col-lg-3 ml-lg-auto">
                                 <a

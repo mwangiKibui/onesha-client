@@ -15,13 +15,20 @@
 
                     <div class="row mt--100 py-1">
                         <div
-                            class="col-sm-5 order-md-1"
+                            class="col-sm-5 order-md-1 d-sm-nones"
                             style="width: 100%; height: 300px; background: url('/assets/img/theme/img-2-1200x1000.jpg'); background-size:cover"
                         >
                         </div>
                         <div class="col-sm-7 order-md-2">
-                            <h3 style="color: #00f">Company Profile Design Only</h3>
-                            <div class="pr-lg-5 text-default px-2">
+                            <h3
+                                class=" d-sm-nones"
+                                style="color: #00f"
+                            >Company Profile Design Only</h3>
+                            <h4
+                                class=" d-lg-nones"
+                                style="color: #00f"
+                            >Company Profile Design Only</h4>
+                            <div class="pr-lg-5 text-default text-left px-2">
                                 <p>Get your profile done using a unique look and design.<br><br>
                                     <ul class="list-unstyled text-left d-sm-nones">
                                         <li class="py-1">
@@ -72,13 +79,20 @@
 
                     <div class="row mt--100 py-0">
                         <div
-                            class="col-sm-5 order-md-1"
+                            class="col-sm-5 order-md-1 d-sm-nones"
                             style="width: 100%; height: 300px; background: url('/assets/img/theme/img-2-1200x1000.jpg'); background-size:cover"
                         >
                         </div>
                         <div class="col-sm-7 order-md-2">
-                            <h3 style="color: #00f">New Design plus structure</h3>
-                            <div class="pr-lg-5 text-default px-2">
+                            <h3
+                                class=" d-sm-nones"
+                                style="color: #00f"
+                            >New Design plus structure</h3>
+                            <h4
+                                class=" d-lg-nones"
+                                style="color: #00f"
+                            >New Design plus structure</h4>
+                            <div class="pr-lg-5 text-default text-left px-2">
                                 <p>Get your profile designed with new content and structure.<br><br>
                                     <ul class="list-unstyled text-left d-sm-nones">
                                         <li class="py-1">
@@ -129,13 +143,20 @@
 
                     <div class="row mt--100 py-0">
                         <div
-                            class="col-sm-5 order-md-1"
+                            class="col-sm-5 order-md-1 d-sm-nones"
                             style="width: 100%; height: 300px; background: url('/assets/img/theme/img-2-1200x1000.jpg'); background-size:cover"
                         >
                         </div>
                         <div class="col-sm-7 order-md-2">
-                            <h3 style="color: #00f">Redesign existing profile</h3>
-                            <div class="pr-lg-5 text-default px-2">
+                            <h3
+                                class=" d-sm-nones"
+                                style="color: #00f"
+                            >Redesign existing profile</h3>
+                            <h4
+                                class=" d-lg-nones"
+                                style="color: #00f"
+                            >Redesign existing profile</h4>
+                            <div class="pr-lg-5 text-default text-left px-2">
                                 <p>Give your profile a new look with the content provided.<br>
                                     <ul class="list-unstyled text-left d-sm-nones">
                                         <li class="py-1">

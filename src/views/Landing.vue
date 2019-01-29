@@ -23,7 +23,7 @@
                                     <span class="lead">Get <span
                                             class="next"
                                             data-period="2000"
-                                            data-type='[ "a new company profile", "a redesign of your existing profile", "authoritative content for your industry" ]'
+                                            data-type='[ "a new company profile", "a redesign of your profile", "authoritative industry content" ]'
                                         >your Corporate Profile</span> <span class="d-lg-nones"><br></span>done at your budget!
                                         <span class=" d-sm-nones">Get a professional looking company profile that will enable you get introductions, meetings and close sales even faster.</span></span>
                                     <span class="text-left d-sm-nones">
@@ -110,7 +110,10 @@
                 </div>
 
             </div>
-            <div class="container mt-2 mb-2">
+        </section>
+
+        <section class="section section-shaped mt--100 mb-2 bg-default ">
+            <div class="container mt-2">
                 <div class="row row-grid align-items-center">
                     <div class="col-md-4 order-md-2">
                         <img
@@ -119,12 +122,12 @@
                         >
                     </div>
                     <div class="col-md-8 order-md-1">
-                        <div class="pr-md-5">
+                        <div class="pr-md-5 text-white">
 
-                            <h3>Who needs a company profile?</h3>
-                            <p>Your company profile is a professional introduction and aims to inform people (primarily prospective buyers and stakeholders) about your products,
+                            <h3 class=" text-success">Who needs a company profile?</h3>
+                            <p class="">Your company profile is a professional introduction and aims to inform people (primarily prospective buyers and stakeholders) about your products,
                                 services, and current status. Your company profile is a key component in your marketing strategy.</p>
-                            <ul class="list-unstyled mt-2">
+                            <ul class="list-unstyled mt-2 text-success">
                                 <li class="py-2">
                                     <div class="d-flex align-items-center">
                                         <div>
@@ -133,7 +136,7 @@
                                             </div>
                                         </div>
                                         <div>
-                                            <h6 class="mb-0">Photographers and designers ready to show their portfolio</h6>
+                                            <h6 class="mb-0 text-white">Photographers and designers ready to show their portfolio</h6>
                                         </div>
                                     </div>
                                 </li>
@@ -145,7 +148,7 @@
                                             </div>
                                         </div>
                                         <div>
-                                            <h6 class="mb-0">A tech startup pitching their solutions</h6>
+                                            <h6 class="mb-0 text-white">A tech startup pitching their solutions</h6>
                                         </div>
                                     </div>
                                 </li>
@@ -157,7 +160,7 @@
                                             </div>
                                         </div>
                                         <div>
-                                            <h6 class="mb-0">A business organization looking to apply for a tender</h6>
+                                            <h6 class="mb-0 text-white">A business organization looking to apply for a tender</h6>
                                         </div>
                                     </div>
                                 </li>
@@ -169,7 +172,7 @@
                                             </div>
                                         </div>
                                         <div>
-                                            <h6 class="mb-0">Suppliers looking to deliver their goods to new customers</h6>
+                                            <h6 class="mb-0 text-white">Suppliers looking to deliver their goods to new customers</h6>
                                         </div>
                                     </div>
                                 </li>
@@ -177,6 +180,11 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section class="section section-shaped  mt-2 mb-2  ">
+            <div class="container mt-2 mb-2">
                 <div class="justify-content-between align-items-center mt-4">
                     <transition
                         name="component-fade"
@@ -410,7 +418,7 @@
                 <div class="pb-lg-4">
                     <h4 class="mb-1 text-center">Want to work with us?</h4>
                 </div>
-                <div class="row justify-content-center pb-lg-4">
+                <div class="row justify-content-center pb-lg-2">
                     <div class="col-lg-8">
                         <card
                             gradient="secondary"
@@ -461,58 +469,65 @@
             </div>
 
         </section>
-
+        <hr>
         <section
             id="clients"
-            class="section section-lg pt-lg-0 mt-200 bg-gradient-info mb-0 "
+            class="section section-lg pt-lg-0 mt-200 bg-default mb-0 "
         >
             <div class="container">
                 <div class="row justify-content-center mt-200">
-                    <div class="col-sm-12  mt-5">
+                    <div class="mt-5">
                         <h2 class="text-white font-weight-light">We have worked with</h2>
-                        <div class="row row-grid mt-5">
-                            <div class="col-sm-2"><img
-                                    class="img-back"
-                                    style="background: url(&quot;/assets/img/clients/pangea.jpg&quot;);"
-                                ></div>
-                            <div class="col-sm-2"><img
-                                    src="/assets/img/icons/eo.jpg"
-                                    class="rounded-square img-back img-fluid"
-                                ></div>
-                            <div class="col-sm-2"><img
-                                    class="img-back"
-                                    style="background: url(&quot;/assets/img/clients/weston.png&quot;);"
-                                ></div>
-                            <div class="col-sm-2"><img
-                                    class="img-back"
-                                    style="background: url(&quot;/assets/img/clients/bdo.png&quot;);"
-                                ></div>
-                            <div class="col-sm-2"><img
-                                    class="img-back"
-                                    style="background: url(&quot;/assets/img/clients/uber.jpg&quot;);"
-                                ></div>
-                            <div class="col-sm-2"><img
-                                    class="img-fluid img-back"
-                                    style="background: url(&quot;/assets/img/clients/flexpay.jpg&quot;);"
-                                ></div>
-                            <div class="col-sm-2"><img
-                                    class="img-fluid img-back"
-                                    style="background: url(&quot;/assets/img/clients/imagine.jpg&quot;);"
-                                ></div>
-                            <div class="col-sm-2"><img
-                                    class="img-fluid img-back"
-                                    style="background: url(&quot;/assets/img/clients/taraji.jpg&quot;);"
-                                ></div>
-                            <div class="col-sm-2"><img
-                                    class="img-fluid img-back"
-                                    style="background: url(&quot;/assets/img/clients/gig.jpg&quot;);"
-                                ></div>
-                        </div>
                     </div>
+                </div>
+                <div
+                    class="row row-grid mt-5"
+                    style="width:120%"
+                >
+                    <div class="col-sm-1"><img
+                            class="img-fluid img-back"
+                            style="background: url('/assets/img/clients/pangea.jpg');"
+                        ></div>
+                    <div class="col-sm-1"><img
+                            class="img-fluid img-back"
+                            style="background: url('/assets/img/clients/eo.jpg');"
+                        ></div>
+                    <div class="col-sm-1"><img
+                            class="img-fluid img-back"
+                            style="background: url('/assets/img/clients/weston.png');"
+                        ></div>
+                    <div class="col-sm-1"><img
+                            class="img-fluid img-back"
+                            style="background: url('/assets/img/clients/bdo.png');"
+                        ></div>
+                    <div class="col-sm-1"><img
+                            class="img-fluid img-back"
+                            style="background: url('/assets/img/clients/uber.jpg');"
+                        ></div>
+                    <div class="col-sm-1"><img
+                            class="img-fluid img-back"
+                            style="background: url('/assets/img/clients/flexpay.jpeg');"
+                        ></div>
+                    <div class="col-sm-1"><img
+                            class="img-fluid img-back"
+                            style="background: url('/assets/img/clients/imagine.jpg');"
+                        ></div>
+                    <div class="col-sm-1"><img
+                            class="img-fluid img-back"
+                            style="background: url('/assets/img/clients/taraji.jpg');"
+                        ></div>
+                    <div class="col-sm-1"><img
+                            class="img-fluid img-back"
+                            style="background: url('/assets/img/clients/gig.jpeg');"
+                        ></div>
+                    <div class="col-sm-1"><img
+                            class="img-fluid img-back"
+                            style="background: url('/assets/img/clients/lexy.jpeg');"
+                        ></div>
                 </div>
             </div>
         </section>
-
+        <hr>
     </section>
 
 </template>
@@ -699,8 +714,8 @@ window.onload = function() {
     background-position: center !important;
     background-size: contain !important;
     border-color: transparent;
-    width: 120px;
-    height: 80px;
+    width: 120px !important;
+    height: 60px;
 }
 .crd {
     padding: 0.8rem !important;
