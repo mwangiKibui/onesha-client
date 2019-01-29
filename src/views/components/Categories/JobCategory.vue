@@ -405,6 +405,54 @@ export default {
         },
         submitClientInformation() {
             console.log(this.filledindata);
+            //show loader
+            this.notemplate = true;
+            const mefail = `<div class="modal-content bg-gradient text-white d-none" id="modal3">
+                    <div class="modal-header bg-gradient-error">
+                        <h6 class="modal-title" id="modal-title-notification">Your request was not submitted</h6>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+
+                        <div class="py-3 text-center">
+                        <i class="ni ni-fat-remove text-error ni-3x"></i>
+                        <h4 class="heading mt-4 text-error">ERROR!</h4>
+                        <p class="text-default">There was an error sending an activation email. Please try again.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="modal-footer text-centered">
+                        <button type="button" data-dismiss="modal" class="btn btn-white">Retry</button>
+                    </div>
+
+                    </div>`;
+            const messuccess = `<div class="modal-content bg-gradient text-white d-none" id="modal2">
+                    <div class="modal-header bg-gradient-success">
+                        <h6 class="modal-title" id="modal-title-notification">Your request has been submitted</h6>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+
+                        <div class="py-3 text-center">
+                        <i class="ni ni-check-bold text-success ni-3x"></i>
+                        <h4 class="heading mt-4 text-success">Success!</h4>
+                        <p class="text-default">We have sent you an email with further instructions.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="modal-footer text-centered">
+                        <button type="button" data-dismiss="modal" class="btn btn-white">Ok, Got it</button>
+                    </div>
+
+                    </div>`;
+            //fetch data
+            //show success message
         }
     }
 };
