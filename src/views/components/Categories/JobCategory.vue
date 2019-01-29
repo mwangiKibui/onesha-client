@@ -20,19 +20,6 @@
                         <!-- display job types -->
                         <section class="col-12">
                             <div class="row">
-                                <!-- <div class="col-lg-12">
-                                    <div
-                                        v-for="(jobtype, index) in category[0].jobtypes"
-                                        :key="index"
-                                    >
-                                        <li>{{ jobtype.title }} -
-                                            <router-link
-                                                :to="`/job/` + jobtype.slug"
-                                                class="m-2"
-                                            >View Job</router-link>
-                                        </li>
-                                    </div>
-                                </div><br> -->
                                 <span style="color: rgba (0,0,0,0) !important;">.</span>
                                 <hr>
                                 <div class="col-md-12 mb-2">
@@ -136,7 +123,7 @@
                             </div>
                             <div v-if="clientInfo != false">
                                 <div class="modal-header">
-                                    <h5 class="modal-title">You are almost there, just a few more details about you.</h5>
+                                    <small class="modal-title">You are almost there, just a few more details about you.</small>
                                 </div>
                                 <div class="form-group">
                                     <div class="input-group input-group-alternative mb-4">
@@ -146,7 +133,7 @@
                                         <input
                                             type="text"
                                             name="clientName"
-                                            v-model="filledindata['client']"
+                                            v-model="filledindata['clientName']"
                                             class="form-control"
                                             placeholder="Your name"
                                         >
@@ -160,7 +147,7 @@
                                         <input
                                             type="email"
                                             name="clientEmail"
-                                            v-model="filledindata['client']"
+                                            v-model="filledindata['clientEmail']"
                                             class="form-control"
                                             placeholder="Your email address, e.g. someone@example.com"
                                         >
@@ -174,7 +161,7 @@
                                         <input
                                             type="tel"
                                             name="clientPhone"
-                                            v-model="filledindata['client']"
+                                            v-model="filledindata['clientPhone']"
                                             class="form-control"
                                             placeholder="+254 7 ....."
                                         >
@@ -187,8 +174,8 @@
                                         </div>
                                         <input
                                             type="tel"
-                                            name="Location"
-                                            v-model="filledindata['client']"
+                                            name="clientLocation"
+                                            v-model="filledindata['clientLocation']"
                                             class="form-control"
                                             placeholder="City / Town"
                                         >
@@ -334,8 +321,6 @@ export default {
             this.notemplate = false;
             this.$nextTick(function() {
                 this.$el.querySelector("#message").innerHTML = "";
-                console.log("value is: " + this.notemplate);
-                console.log("length is: " + this.template.length);
             });
         },
         /**
@@ -403,56 +388,62 @@ export default {
             this.clientInfo = true;
             this.populateTemplateFeedback(true);
         },
-        submitClientInformation() {
+        async submitClientInformation() {
             console.log(this.filledindata);
+
+            //fetch data
+            const res = await Axios.post(
+                `/api/data/${this.slug}/client-templates`,
+                this.filledindata
+            ).then(res => res.data);
+            console.log(res);
             //show loader
             this.notemplate = true;
             const mefail = `<div class="modal-content bg-gradient text-white d-none" id="modal3">
-                    <div class="modal-header bg-gradient-error">
-                        <h6 class="modal-title" id="modal-title-notification">Your request was not submitted</h6>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
+                        <div class="modal-header bg-gradient-error">
+                            <h6 class="modal-title" id="modal-title-notification">Your request was not submitted</h6>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
 
-                        <div class="py-3 text-center">
-                        <i class="ni ni-fat-remove text-error ni-3x"></i>
-                        <h4 class="heading mt-4 text-error">ERROR!</h4>
-                        <p class="text-default">There was an error sending an activation email. Please try again.</p>
+                            <div class="py-3 text-center">
+                            <i class="ni ni-fat-remove text-error ni-3x"></i>
+                            <h4 class="heading mt-4 text-error">ERROR!</h4>
+                            <p class="text-default">There was an error sending an activation email. Please try again.</p>
+                            </div>
+
                         </div>
 
-                    </div>
+                        <div class="modal-footer text-centered">
+                            <button type="button" data-dismiss="modal" class="btn btn-white">Retry</button>
+                        </div>
 
-                    <div class="modal-footer text-centered">
-                        <button type="button" data-dismiss="modal" class="btn btn-white">Retry</button>
-                    </div>
-
-                    </div>`;
+                        </div>`;
             const messuccess = `<div class="modal-content bg-gradient text-white d-none" id="modal2">
-                    <div class="modal-header bg-gradient-success">
-                        <h6 class="modal-title" id="modal-title-notification">Your request has been submitted</h6>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
+                        <div class="modal-header bg-gradient-success">
+                            <h6 class="modal-title" id="modal-title-notification">Your request has been submitted</h6>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
 
-                        <div class="py-3 text-center">
-                        <i class="ni ni-check-bold text-success ni-3x"></i>
-                        <h4 class="heading mt-4 text-success">Success!</h4>
-                        <p class="text-default">We have sent you an email with further instructions.</p>
+                            <div class="py-3 text-center">
+                            <i class="ni ni-check-bold text-success ni-3x"></i>
+                            <h4 class="heading mt-4 text-success">Success!</h4>
+                            <p class="text-default">We have sent you an email with further instructions.</p>
+                            </div>
+
                         </div>
 
-                    </div>
+                        <div class="modal-footer text-centered">
+                            <button type="button" data-dismiss="modal" class="btn btn-white">Ok, Got it</button>
+                        </div>
 
-                    <div class="modal-footer text-centered">
-                        <button type="button" data-dismiss="modal" class="btn btn-white">Ok, Got it</button>
-                    </div>
-
-                    </div>`;
-            //fetch data
-            //show success message
+                        </div>`;
+            //do stuff
         }
     }
 };
