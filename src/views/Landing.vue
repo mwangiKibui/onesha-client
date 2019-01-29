@@ -316,53 +316,7 @@
                                     <h6 class="text-primary text-uppercase">Brief Processing</h6>
                                     <p class="description mt-3">Onesha processes your request into a job brief that we present to vetted creatives for quotation.<br><br> You then selected and approve the quote.</p>
                                     <br>
-                                    <!-- <base-button tag="a"  href="#request" data-toggle="scroll" type="primary" class="mt-4">
-                                        START HERE
-                                    </base-button> -->
-                                </card>
-                            </div>
-                            <div class="col-lg-3">
-                                <card
-                                    class="border-0"
-                                    hover
-                                    shadow
-                                    body-classes="py-5"
-                                >
-                                    <icon
-                                        name="ni ni-settings"
-                                        type="primary"
-                                        rounded
-                                        class="mb-4"
-                                    >
-                                    </icon>
-                                    <h6 class="text-primary text-uppercase">Job Execution</h6>
-                                    <p class="description mt-3">We start working on your job according to the brief. We send you samples for your approval.<br><br> You will then make a deposit to continue.</p>
-                                    <br>
-                                    <!-- <base-button tag="a"  href="#request" data-toggle="scroll" type="primary" class="mt-4">
-                                        VIEW MORE
-                                    </base-button> -->
-                                </card>
-                            </div>
-                            <div class="col-lg-3">
-                                <card
-                                    class="border-0"
-                                    hover
-                                    shadow
-                                    body-classes="py-5"
-                                >
-                                    <icon
-                                        name="ni ni-check-bold"
-                                        type="primary"
-                                        rounded
-                                        class="mb-4"
-                                    >
-                                    </icon>
-                                    <h6 class="text-primary text-uppercase">Job Delivery</h6>
-                                    <p class="description mt-3">You receive the final samples and complete the payment upon being satisfied with the result.<br><br> You can choose your mode of delivery.</p>
-                                    <br>
-                                    <!-- <base-button tag="a"  href="#request" data-toggle="scroll" type="primary" class="mt-4">
-                                        VIEW MORE
-                                    </base-button> -->
+                                    <!-- <base-button tag="a"  href="#request" data-toggle="scroll" type="primary" class="mt-4">-->
                                 </card>
                             </div>
                         </div>
@@ -486,54 +440,42 @@
                                     style="background: url('/assets/img/clients/pangea.jpg') "
                                     class="img-back"
                                 />
+                                <p class="text-white mt-3">Pangea Accelerator</p>
                             </div>
                             <div class="col-sm-2">
                                 <img
                                     src="/assets/img/icons/eo.jpg"
                                     class="rounded-square img-back img-fluid"
                                 />
+                                <p class="text-white mt-3">EO Kenya</p>
                             </div>
                             <div class="col-sm-2">
                                 <img
                                     class="img-back"
-                                    style="background: url('/assets/img/clients/weston.png');"
+                                    style="background: url('/assets/img/clients/weston.jpg');"
                                 />
+                                <p class="text-white mt-3">Weston Hotel</p>
                             </div>
                             <div class="col-sm-2">
                                 <img
                                     class="img-back"
-                                    style="background: url('/assets/img/clients/bdo.png');"
+                                    style="background: url('/assets/img/clients/bdo.jpg');"
                                 />
+                                <p class="text-white mt-3">BDO Kenya</p>
                             </div>
                             <div class="col-sm-2">
                                 <img
                                     class="img-back"
                                     style="background: url('/assets/img/clients/uber.jpg');"
                                 />
+                                <p class="text-white mt-3">Uber Kenya</p>
                             </div>
                             <div class="col-sm-2">
                                 <img
                                     class="img-fluid img-back"
                                     style="background: url('/assets/img/clients/flexpay.jpg') "
                                 />
-                            </div>
-                            <div class="col-sm-2">
-                                <img
-                                    class="img-fluid img-back"
-                                    style="background: url('/assets/img/clients/imagine.jpg') "
-                                />
-                            </div>
-                            <div class="col-sm-2">
-                                <img
-                                    class="img-fluid img-back"
-                                    style="background: url('/assets/img/clients/taraji.jpg') "
-                                />
-                            </div>
-                            <div class="col-sm-2">
-                                <img
-                                    class="img-fluid img-back"
-                                    style="background: url('/assets/img/clients/gig.jpg') "
-                                />
+                                <p class="text-white mt-3">Flexpay Limited</p>
                             </div>
                         </div>
                     </div>
@@ -717,8 +659,8 @@ window.onload = function() {
     color: #22cdef;
     letter-spacing: 0.02em; /*Adjust as needed*/
     animation: 
-		        /* typing 1.5s steps(40, end),
-		        blink-caret .2s step-end infinite; */ typing
+				        /* typing 1.5s steps(40, end),
+				        blink-caret .2s step-end infinite; */ typing
             1s steps(40) 1s 1 normal both,
         blink-caret 0.55s steps(50) infinite;
 }

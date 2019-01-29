@@ -1,36 +1,36 @@
 <template>
-    <!-- Modals -->
-    <div>
+	<!-- Modals -->
+	<div>
 
-        <div class="mt-5 text-center justify-content-center">
-            <p class="text-white">Select your field</p>
-        </div>
+		<div class="mt-5 text-center justify-content-center">
+			<p class="text-white">Select your field</p>
+		</div>
 
-        <div
-            class="row justify-content-center"
-            style="text-align: center;"
-        >
-            <div
-                class="col-lg-4 col-sm-6"
-                v-for="(user, index) in usertypes"
-                :key="index"
-            >
-                <router-link
-                    :to="`/categories/business-profiles`"
-                    class="m-2"
-                >
-                    <div
-                        class="category"
-                        :style="`background-image: url(${user.avatar.file})`"
-                    >
-                        <div class="category-bg-faded">
-                            <h5 class="text-white mt-3">{{ user.title }}</h5>
-                        </div>
-                    </div>
-                </router-link>
-            </div>
+		<div
+		 class="row justify-content-center"
+		 style="text-align: center;"
+		>
+			<div
+			 class="col-lg-4 col-sm-6"
+			 v-for="(user, index) in usertypes"
+			 :key="index"
+			>
+				<router-link
+				 :to="`/categories/business-profiles`"
+				 class="m-2"
+				>
+					<div
+					 class="category"
+					 :style="`background-image: url(${user.avatar.file})`"
+					>
+						<div class="category-bg-faded">
+							<h5 class="text-white mt-3">{{ user.title }}</h5>
+						</div>
+					</div>
+				</router-link>
+			</div>
 
-            <!-- <div
+			<!-- <div
                 class="col-lg-4 col-sm-6"
                 v-for="(category, index) in categories"
                 :key="index"
@@ -59,9 +59,9 @@
                     </div>
                 </router-link>
             </div> -->
-        </div>
-    </div>
-</template>
+		</div>
+	</div>
+</template>``
 <script>
 import Axios from "axios";
 export default {
@@ -140,29 +140,29 @@ export default {
 };
 </script>
 <style>
-.category {
-    transition: 0.21s;
-    border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.2);
-    max-height: 240px;
-    overflow: hidden;
-    box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.4);
-    background-size: cover;
-    background-position: center;
-}
-.category:hover {
-    /* border: 1px solid rgba(0, 0, 0, 0.3); */
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 8px;
-    box-shadow: 0px 2px 15px 2px rgba(250, 250, 250, 0.4);
-    transform: translateY(-2px);
-    webkit-transition: all 0.15s ease;
-    transition: all 0.15s ease;
-}
-.category-bg-faded {
-    background-color: rgba(0, 0, 0, 0.5);
-    height: 100%;
-    width: 100%;
-    padding: 15px 10px;
-}
+	.category {
+		transition: 0.21s;
+		border-radius: 5px;
+		background-color: rgba(0, 0, 0, 0.2);
+		max-height: 240px;
+		overflow: hidden;
+		box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.4);
+		background-size: cover;
+		background-position: center;
+	}
+	.category:hover {
+		/* border: 1px solid rgba(0, 0, 0, 0.3); */
+		background-color: rgba(0, 0, 0, 0.5);
+		border-radius: 8px;
+		box-shadow: 0px 2px 15px 2px rgba(250, 250, 250, 0.4);
+		transform: translateY(-2px);
+		webkit-transition: all 0.15s ease;
+		transition: all 0.15s ease;
+	}
+	.category-bg-faded {
+		background-color: rgba(0, 0, 0, 0.5);
+		height: 100%;
+		width: 100%;
+		padding: 15px 10px;
+	}
 </style>

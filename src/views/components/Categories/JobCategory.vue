@@ -204,6 +204,7 @@
                                 <RotateSquare5
                                     class="text-center align-items-center"
                                     style="width: 100px; height: 100px;"
+                                    label="Loading.."
                                 > Loading</RotateSquare5>
                             </div>
 
@@ -229,6 +230,11 @@
                                     </span>
                                 </div>
                                 <div v-if="clientInfo != false">
+                                    <button
+                                        class="btn btn-default"
+                                        v-if="templateIndex >= 1"
+                                        @click="loadPreviousTemplate(templateIndex)"
+                                    >Previous</button>
                                     <button
                                         class="btn btn-success"
                                         @click="submitClientInformation"
