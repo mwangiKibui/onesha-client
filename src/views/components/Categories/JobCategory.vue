@@ -48,7 +48,7 @@
                                                     <!-- image or jobtype illustration -->
                                                     <img :src="jobtype.avatar.file">
                                                 </div>
-                                                <div class="jobtype-title">{{ jobtype.slug }}</div>
+                                                <div class="jobtype-title">{{ jobtype.title }}</div>
                                             </div>
                                         </div>
                                     </div>
@@ -84,7 +84,7 @@
                                     type="success"
                                     :value="progress"
                                     :label="jobtype.title"
-                                >Progress</base-progress>
+                                ></base-progress>
 
                                 <div v-if="templatedata.length"></div>
                                 <div
@@ -135,7 +135,9 @@
                                 </div>
                             </div>
                             <div v-if="clientInfo != false">
-                                <h4 class="modal-title">You are almost there, just a few more details about you.</h4>
+                                <div class="modal-header">
+                                    <h5 class="modal-title">You are almost there, just a few more details about you.</h5>
+                                </div>
                                 <div class="form-group">
                                     <div class="input-group input-group-alternative mb-4">
                                         <div class="input-group-prepend">

@@ -16,7 +16,7 @@
                                 <h2
                                     class="display-3 text-left text-white"
                                     style="display: inline-block; float: center"
-                                >Grow your business with African creatives
+                                >Company Profiles That Sell
                                     <!-- <span style="font-size: 0.5em">Your creative tasks sorted</span> -->
                                 </h2>
                                 <p class="justify-content-between text-white text-left pt-2">
@@ -71,7 +71,7 @@
             <div class="container pb-100">
                 <div class="row text-center justify-content-center">
                     <div class="col-lg-10">
-                        <h2 class="display-3 text-default">Business Profiles That Sell</h2>
+                        <h2 class="display-3 text-default">Build Your Pipeline Faster</h2>
                         <p class="lead text-default">According to the experts, a business profile can shape the decision of a potential client. Here is what a proper business profile can do for you.</p>
                     </div>
                 </div>
@@ -80,7 +80,7 @@
                         <div class="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
                             <i class="ni ni-atom text-primary"></i>
                         </div>
-                        <h5 class="text-default mt-3">Build Your Pipeline Faster</h5>
+                        <h5 class="text-default mt-3">Secur emore meetings</h5>
                         <p class="text-default mt-3">The interaction with your profile can convince potential clients looking for your services and lead to more referrals.</p>
                     </div>
                     <div class="col-lg-4">
@@ -94,7 +94,7 @@
                         <div class="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
                             <i class="ni ni-satisfied text-primary"></i>
                         </div>
-                        <h5 class="text-default mt-3">Increase sales productivity</h5>
+                        <h5 class="text-default mt-3">Use local Business Intelligence</h5>
                         <p class="text-default mt-3">Let your portfolio of previous work give you an edge over competitors to close that deal. Client testimonials also get you more leads.</p>
                     </div>
                 </div>
@@ -112,7 +112,7 @@
                         <div class="pr-md-5">
 
                             <h3>Who needs a business profile?</h3>
-                            <p>Your company profile is a professional introduction and aims to inform people (primarily prospective buyers and stakeholders) about your products, 
+                            <p>Your company profile is a professional introduction and aims to inform people (primarily prospective buyers and stakeholders) about your products,
                                 services, and current status. Your business profile is a key component in your marketing strategy.</p>
                             <ul class="list-unstyled mt-2">
                                 <li class="py-2">
@@ -175,8 +175,8 @@
                         <div>
                             <br>
                             <h3>What can we offer?</h3>
-                            <p>We give you a professional looking business profile that will enable you get introductions, 
-                                meetings and close sales even faster. Our quick online service simplifies the process of looking for a place to get your business profile made. 
+                            <p>We give you a professional looking business profile that will enable you get introductions,
+                                meetings and close sales even faster. Our quick online service simplifies the process of looking for a place to get your business profile made.
                                 Get high quality services from our vetted creatives with quick delivery to fit your schedule. <br><br>Simply choose a category, fill a simple job template, get your task done!</p>
 
                             <categories></categories>
@@ -404,7 +404,7 @@
                                     <div class="pl-4">
                                         <h5 class="title text-success">Wide pool of Talent</h5>
                                         <p>With our wide pool of high quality, experienced creatives, we assure you of a satisfactory service that will meet and exceed your expectations.</p>
-                                       
+
                                     </div>
                                 </div>
                             </div>
@@ -418,7 +418,7 @@
                                     <div class="pl-4">
                                         <h5 class="title text-success">Request changes before accepting</h5>
                                         <p>Receive quality work, review upto 3 times. We ensure you get the quality you are looking for.</p>
-                                       
+
                                     </div>
                                 </div>
                             </div>
@@ -432,7 +432,7 @@
                                     <div class="pl-4">
                                         <h5 class="title text-success">We control the process</h5>
                                         <p>Save time taken to compare creative professionals as we choose the right one for the job. We also do project management to reduce the hassle.</p>
-                                       
+
                                     </div>
                                 </div>
                             </div>
@@ -446,7 +446,7 @@
                                     <div class="pl-4">
                                         <h5 class="title text-success">Customer Satisfaction is key</h5>
                                         <p>We can guarantee you will get a professional looking business profile that will fit your requirements and help you reach your objectives.</p>
-                                       
+
                                     </div>
                                 </div>
                             </div>
@@ -459,7 +459,8 @@
                                 src="https://socialmedia.onesha.co.ke/assets/img/ill/ill-2.svg"
                                 class="img-center img-fluid"
                             />
-                            <br><hr><br>
+                            <br>
+                            <hr><br>
                             <p>Get a professional looking business profile that will enable you get introductions, meetings and close sales even faster. Delivered when you want it.</p>
                             <a
                                 href="#request"
@@ -481,7 +482,8 @@
                         <h2 class="text-white font-weight-light">We have worked with</h2>
                         <div class="row row-grid mt-5">
                             <div class="col-sm-2">
-                                <img style="background: url('/assets/img/clients/pangea.jpg') "
+                                <img
+                                    style="background: url('/assets/img/clients/pangea.jpg') "
                                     class="img-back"
                                 />
                             </div>
