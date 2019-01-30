@@ -308,7 +308,7 @@
                         </div>
                     </div>
                 </div>
-
+                <hr style="border:white">
             </div>
         </section>
 
@@ -318,7 +318,7 @@
         >
             <div class="container">
                 <div class="row row-grid align-items-center">
-                    <hr>
+
                 </div>
                 <div class="row">
                     <div class="col-lg-7 order-lg-1">
@@ -413,10 +413,68 @@
 
         </section>
 
-        <section class="section section-lg pt-lg-2 mt-100 section-contact-us">
+        <section
+            id="clients"
+            class="section section-lg pt-lg-0 mt-200 bg-secondary mb-0 "
+        >
+            <div class="container">
+                <div class="row justify-content-center mt-200">
+                    <div class="mt-5">
+                        <h2 class="text-default font-weight-light">We have worked with</h2>
+                    </div>
+                </div>
+                <div
+                    class="row row-grid mt-5"
+                    style="width:120%"
+                >
+                    <div class="col-sm-1"><img
+                            class="img-fluid img-back"
+                            style="background: url('/assets/img/clients/pangea.jpg');"
+                        ></div>
+                    <div class="col-sm-1"><img
+                            class="img-fluid img-back"
+                            style="background: url('/assets/img/clients/eo.jpg');"
+                        ></div>
+                    <div class="col-sm-1"><img
+                            class="img-fluid img-back"
+                            style="background: url('/assets/img/clients/weston.png');"
+                        ></div>
+                    <div class="col-sm-1"><img
+                            class="img-fluid img-back"
+                            style="background: url('/assets/img/clients/bdo.png');"
+                        ></div>
+                    <div class="col-sm-1"><img
+                            class="img-fluid img-back"
+                            style="background: url('/assets/img/clients/uber.jpg');"
+                        ></div>
+                    <div class="col-sm-1"><img
+                            class="img-fluid img-back"
+                            style="background: url('/assets/img/clients/flexpay.jpeg');"
+                        ></div>
+                    <div class="col-sm-1"><img
+                            class="img-fluid img-back"
+                            style="background: url('/assets/img/clients/imagine.jpg');"
+                        ></div>
+                    <div class="col-sm-1"><img
+                            class="img-fluid img-back"
+                            style="background: url('/assets/img/clients/taraji.jpg');"
+                        ></div>
+                    <div class="col-sm-1"><img
+                            class="img-fluid img-back"
+                            style="background: url('/assets/img/clients/gig.jpeg');"
+                        ></div>
+                    <div class="col-sm-1"><img
+                            class="img-fluid img-back"
+                            style="background: url('/assets/img/clients/lexy.jpeg');"
+                        ></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-lg pt-lg-2 mt-100 bg-gradient-info section-contact-us">
             <div class="container pt-lg">
                 <div class="pb-lg-4">
-                    <h4 class="mb-1 text-center">Want to work with us?</h4>
+                    <h4 class="mb-1 text-center text-white">Want to work with us?</h4>
                 </div>
                 <div class="row justify-content-center pb-lg-2">
                     <div class="col-lg-8">
@@ -469,65 +527,6 @@
             </div>
 
         </section>
-        <hr>
-        <section
-            id="clients"
-            class="section section-lg pt-lg-0 mt-200 bg-default mb-0 "
-        >
-            <div class="container">
-                <div class="row justify-content-center mt-200">
-                    <div class="mt-5">
-                        <h2 class="text-white font-weight-light">We have worked with</h2>
-                    </div>
-                </div>
-                <div
-                    class="row row-grid mt-5"
-                    style="width:120%"
-                >
-                    <div class="col-sm-1"><img
-                            class="img-fluid img-back"
-                            style="background: url('/assets/img/clients/pangea.jpg');"
-                        ></div>
-                    <div class="col-sm-1"><img
-                            class="img-fluid img-back"
-                            style="background: url('/assets/img/clients/eo.jpg');"
-                        ></div>
-                    <div class="col-sm-1"><img
-                            class="img-fluid img-back"
-                            style="background: url('/assets/img/clients/weston.png');"
-                        ></div>
-                    <div class="col-sm-1"><img
-                            class="img-fluid img-back"
-                            style="background: url('/assets/img/clients/bdo.png');"
-                        ></div>
-                    <div class="col-sm-1"><img
-                            class="img-fluid img-back"
-                            style="background: url('/assets/img/clients/uber.jpg');"
-                        ></div>
-                    <div class="col-sm-1"><img
-                            class="img-fluid img-back"
-                            style="background: url('/assets/img/clients/flexpay.jpeg');"
-                        ></div>
-                    <div class="col-sm-1"><img
-                            class="img-fluid img-back"
-                            style="background: url('/assets/img/clients/imagine.jpg');"
-                        ></div>
-                    <div class="col-sm-1"><img
-                            class="img-fluid img-back"
-                            style="background: url('/assets/img/clients/taraji.jpg');"
-                        ></div>
-                    <div class="col-sm-1"><img
-                            class="img-fluid img-back"
-                            style="background: url('/assets/img/clients/gig.jpeg');"
-                        ></div>
-                    <div class="col-sm-1"><img
-                            class="img-fluid img-back"
-                            style="background: url('/assets/img/clients/lexy.jpeg');"
-                        ></div>
-                </div>
-            </div>
-        </section>
-        <hr>
     </section>
 
 </template>

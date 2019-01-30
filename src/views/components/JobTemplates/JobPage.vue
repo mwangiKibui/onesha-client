@@ -74,11 +74,10 @@
                 <h1 class="text-white font-weight-light">Job was not found</h1>
                 <p class="lead text-white mt-4">Description was not found. Check the url and try again.</p>
                 <a
-                    href="#jobForm"
-                    @click="loadJobTemplates(jobtype)"
+                    on-click="window.reload()"
                     data-toggle="scroll"
                     class="btn btn-white mt-4"
-                >Fill in form</a>
+                >Reload</a>
             </div>
         </div>
     </section>

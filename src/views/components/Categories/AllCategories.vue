@@ -27,7 +27,7 @@
                             <h4
                                 class=" d-lg-nones"
                                 style="color: #00f"
-                            >Company Profile Design Only</h4>
+                            >Company Profile Design</h4>
                             <div class="pr-lg-5 text-default text-left px-2">
                                 <p>Get your profile done using a unique look and design.<br><br>
                                     <ul class="list-unstyled text-left d-sm-nones">
@@ -157,7 +157,7 @@
                                 style="color: #00f"
                             >Redesign existing profile</h4>
                             <div class="pr-lg-5 text-default text-left px-2">
-                                <p>Give your profile a new look with the content provided.<br>
+                                <p>Give your profile a new look with the content provided.<br><br>
                                     <ul class="list-unstyled text-left d-sm-nones">
                                         <li class="py-1">
                                             <div class="d-flex align-items-center">

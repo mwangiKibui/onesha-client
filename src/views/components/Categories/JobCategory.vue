@@ -276,7 +276,8 @@ export default {
             template: {},
             progress: 0,
             filledindata: {},
-            clientInfo: false
+            clientInfo: false,
+            userIndustry: null
         };
     },
     /**
@@ -286,6 +287,9 @@ export default {
      */
     created() {
         this.notemplate = true;
+        let urlParams = new URLSearchParams(window.location.search);
+        let myParam = urlParams.get("cat");
+        this.userIndustry = myParam;
         this.fetchCategoryJobTypes();
     },
     methods: {
@@ -389,8 +393,8 @@ export default {
             this.populateTemplateFeedback(true);
         },
         async submitClientInformation() {
+            filledindata["industry"] = this.userIndustry;
             console.log(this.filledindata);
-
             //fetch data
             const res = await Axios.post(
                 `/api/data/${this.slug}/client-templates`,
