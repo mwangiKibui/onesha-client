@@ -46,7 +46,7 @@
                     <p class="text-lg-center">
                         <strong><i class="fa fa-phone"></i></strong> &nbsp; +254 712 983630 <br>
                         <strong><i class="fa fa-envelope"></i></strong> &nbsp; hello@onesha.co.ke <br>
-                        <strong><i class="fa fa-map-marker"></i></strong> &nbsp; Kasarani, Nairobi
+                        <strong><i class="fa fa-map-marker"></i></strong> &nbsp; Seasons Road, Kasarani, Nairobi
                     </p>
                 </div>
             </div>
@@ -55,25 +55,29 @@
                 <div class="col-md-6">
                     <div class="copyright">
                         &copy; 2018
-                        <a>Onesha Kenya. Connecting businesses to top creative services.</a>
+                        <a>Onesha Kenya.<br> Connecting businesses to top creative services.</a>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <ul class="nav nav-footer justify-content-end">
                         <li class="nav-item">
                             <a href="/about">About Us</a>
-                            <span class="text-white">&nbsp;.</span>
+                            <span class="text-default">&nbsp;.&nbsp;</span>
                         </li>
                         <li class="nav-item">
-                            <a href="/terms">Terms</a>
-                            <span class="text-white">&nbsp;.</span>
+                            <a href="/support"> Guidelines</a>
+                            <span class="text-default">&nbsp;.&nbsp;</span>
                         </li>
                         <li class="nav-item">
-                            <a href="/privacy">Privacy</a>
-                            <span class="text-white">&nbsp;.</span>
+                            <a href="/terms"> Terms</a>
+                            <span class="text-default">&nbsp;.&nbsp;</span>
                         </li>
                         <li class="nav-item">
-                            <a href="/dashboard/login">-</a>&nbsp;
+                            <a href="/privacy"> Privacy</a>
+                            <span class="text-default">&nbsp;.&nbsp;</span>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/dashboard/login"> -</a>
                         </li>
                     </ul>
                 </div>

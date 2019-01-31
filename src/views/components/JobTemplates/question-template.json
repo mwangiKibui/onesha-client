@@ -4,7 +4,7 @@
 	"template": [
 		{
 		"title": "",
-		"feedback": "",
+		"feedback": "single-select",
 		"options":[
 			{"option": ""},
 			{"option": ""},

@@ -104,7 +104,7 @@
                                             <span class="badge badge-pill badge-success">twitter</span>
                                         </div>
                                         <a
-                                            href="learn-more"
+                                            href="https://socialmedia.onesha.co.ke/learn-more"
                                             class="btn btn-success mt-4"
                                         >Learn more</a>
                                     </div>
@@ -125,7 +125,7 @@
                                             <span class="badge badge-pill badge-info">content</span>
                                         </div>
                                         <a
-                                            href="learn-more#content"
+                                            href="https://socialmedia.onesha.co.ke/learn-more#content"
                                             class="btn btn-info mt-4"
                                         >Learn more</a>
                                     </div>

@@ -17,7 +17,7 @@
                     <h1 class="text-white font-weight-light">{{ this.job.title}}</h1>
                     <p class="lead text-white mt-4">{{ this.job.description}}.</p>
                     <a
-                        href="#jobForm"
+                        href="#jobFormArea"
                         @click="loadJobTemplates(job)"
                         data-toggle="scroll"
                         class="btn btn-white mt-4"
@@ -44,42 +44,42 @@
         </div>
         <div
             class="container pt-lg-md"
-            id="jobForm"
+            id="jobFormArea"
             v-if="job.slug"
         >
-            <div class="row justify-content-center">
-                <div class="col-lg-12">
-                    <card
-                        type="secondary"
-                        shadow
-                        header-classes="bg-white pb-5"
-                        body-classes="px-lg-5 py-lg-5"
-                        class="border-0"
-                    >
-                        <template>
-                            <h4 class="text-muted text-center mb-3">
-                                <small>Job Title form</small>
-                            </h4>
-                        </template>
-                        <job-form></job-form>
-                    </card>
+            <job-form
+                :jobs="job"
+                :toShows="toShow"
+                id="jobForm"
+            ></job-form>
+
+        </div>
+
+        <section
+            v-if="!job.slug"
+            class="d-flex justify-content-center align-items-center"
+            id="message"
+        >
+
+            <RotateSquare5 style="width: 300px; height: 300px;"></RotateSquare5>
+        </section>
+
+        <!-- <section
+            v-if="1==2"
+            class="d-flex justify-content-center align-items-center"
+        >
+            <div class="container justify-content-between align-items-center">
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <h1 class="text-white font-weight-light">Job was not found</h1>
+                    <p class="lead text-white mt-4">Description was not found. Check the url and try again.</p>
+                    <a
+                        on-click="window.reload()"
+                        data-toggle="scroll"
+                        class="btn btn-white mt-4"
+                    >Reload</a>
                 </div>
             </div>
-        </div>
-        <div
-            class="container justify-content-between align-items-center"
-            v-if="!job.slug"
-        >
-            <div class="col-lg-5 mb-5 mb-lg-0">
-                <h1 class="text-white font-weight-light">Job was not found</h1>
-                <p class="lead text-white mt-4">Description was not found. Check the url and try again.</p>
-                <a
-                    on-click="window.reload()"
-                    data-toggle="scroll"
-                    class="btn btn-white mt-4"
-                >Reload</a>
-            </div>
-        </div>
+        </section> -->
     </section>
 </template>
 <script>
@@ -87,12 +87,14 @@ import BCarousel from "bootstrap-vue/es/components/carousel/carousel";
 import BCarouselSlide from "bootstrap-vue/es/components/carousel/carousel-slide";
 import JobForm from "./JobForm.vue";
 import Axios from "axios";
+import { RotateSquare5 } from "vue-loading-spinner";
 
 export default {
     components: {
         BCarousel,
         BCarouselSlide,
-        JobForm
+        JobForm,
+        RotateSquare5
     },
     props: {
         slug: String
@@ -100,10 +102,11 @@ export default {
     data() {
         return {
             job: {},
-            templateModal: false,
+            toShow: 2,
             jobtype: null,
             templateIndex: 1,
             templatedata: {},
+            notemplate: true,
             template: {},
             progress: 0,
             filledindata: {},
@@ -121,107 +124,49 @@ export default {
             this.fetchJobDetails();
         }
     },
+    beforeRouteEnter(to, from, next) {
+        next(vm => {
+            vm.loadCategories();
+            next();
+        });
+    },
     created() {
         this.fetchJobDetails();
     },
     methods: {
-        fetchJobDetails() {
+        async fetchJobDetails() {
             Axios.get("/api/data/jobtype/" + this.slug).then(res => {
-                console.log(res.data);
+                this.notemplate = true;
                 return (this.job = res.data.length ? res.data[0] : {});
             });
         },
-        /**
-         * Load templates from database for specified job type.
-         *
-         * Returns an array of template questions.
-         */
-        async loadJobTemplates(jobtitle) {
-            Object.keys(this.filledindata).forEach(
-                entry => delete this.filledindata[entry]
-            );
-            this.templateModal = true;
-            this.job = jobtitle;
-            this.progress = 0;
-
-            // do async loading of job templates
-            const jobTemplate = await Axios.get(
-                "/api/data/templates/" + this.job.slug
-            ).then(res => res.data);
-
-            this.templatedata = jobTemplate.length
-                ? jobTemplate[0].templates
-                : [];
-            this.templateIndex = 0;
-            this.template = this.templatedata[0];
+        loadJobTemplates(job) {
+            this.notemplate = false;
+            this.toShow = 1;
+            this.job = job;
         },
         /**
-         * Loads previous template question given the current index
-         *
+         * Load available categories from server
          */
-        loadPreviousTemplate(index) {
-            if (this.templateIndex === 0) {
-                this.templateIndex = 0;
-                this.template = this.templatedata[this.templateIndex];
-            } else {
-                this.templateIndex -= 1;
-                this.template = this.templatedata[this.templateIndex];
+        loadCategories() {
+            try {
+                //display loader
+                console.log("now fetching jobtypes");
+                var progressloader = document.getElementsByClassName(
+                    "progressloader"
+                );
+                progressloader.innerHTML = "<h3>Fetching data</h3>";
+                Axios.get("/api/data/categories").then(res => {
+                    //hide loader
+                    console.log("displaying jobtypes");
+                    progressloader.innerHTML = "";
+                    return (this.categories = res.data);
+
+                    this.fetchJobDetails();
+                });
+            } catch (err) {
+                console.log(err);
             }
-            this.populateTemplateFeedback();
-        },
-        /**
-         * Loads next template question given the current index
-         *
-         */
-        loadNextTemplate(index) {
-            if (this.templateIndex == this.templatedata.length - 1) {
-                this.templateIndex = this.templatedata.length - 1;
-                this.template = this.templatedata[this.templateIndex];
-            } else {
-                this.templateIndex += 1;
-                this.template = this.templatedata[this.templateIndex];
-            }
-            this.populateTemplateFeedback();
-        },
-        /**
-         * Will populate template entry from selected options.
-         *
-         * Called for every next or previous button click when filling in job templates.
-         * Previously set object keys values are reset to the new selected option.
-         */
-        populateTemplateFeedback(end) {
-            var elem = this.$el.querySelector(".templateModal");
-            var title = elem.querySelector(".title").innerText;
-            var inputs = Array.from(elem.querySelectorAll("input"));
-            var label = "";
-            var self = this;
-            inputs.forEach(function(input) {
-                if (input.checked) {
-                    label = elem.querySelector(
-                        'label[for="' + input.getAttribute("id") + '"]'
-                    ).innerText;
-                    if (self.filledindata[title] != undefined)
-                        self.filledindata[title] = label;
-                }
-            });
-
-            var index = end
-                ? 1
-                : Number(this.templateIndex) / Number(this.templatedata.length);
-
-            this.progress = Math.ceil(index * 100);
-        },
-        /**
-         * Submit template after client fills in.
-         *
-         * Created object will be sent after sanitization to remove unwanted characters.
-         */
-        requestClientDetails() {
-            this.clientInfo = true;
-            this.populateTemplateFeedback(true);
-        },
-        submitClientInformation() {
-            console.log(this.filledindata);
         }
     }
 };

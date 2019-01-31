@@ -13,19 +13,23 @@
                         <div class="mt--300 d-lg-nones"></div>
                         <div class="justify-content-between align-items-center">
                             <div class="col-lg-11">
-                                <h2
-                                    class="display-3 text-left text-white"
+                                <h5
+                                    class="display-4 text-left text-white"
                                     style="display: inline-block; float: center"
-                                >Grow your pipeline using a company profile
+                                >Grow your sales pipeline using a corporate company profile
                                     <!-- <span style="font-size: 0.5em">Your creative tasks sorted</span> -->
-                                </h2>
+                                </h5>
                                 <p class="justify-content-between text-white text-left pt-2">
                                     <span class="lead">Get <span
                                             class="next"
                                             data-period="2000"
                                             data-type='[ "a new company profile", "a redesign of your profile", "authoritative industry content" ]'
-                                        >your Corporate Profile</span> <span class="d-lg-nones"><br></span>done at your budget!
-                                        <span class=" d-sm-nones">Get a professional looking company profile that will enable you get introductions, meetings and close sales even faster.</span></span>
+                                        >your corporate company profile</span> <span class="d-lg-nones"><br></span>done at a reasonable cost!
+
+                                        <span
+                                            class="description d-sm-nones"
+                                            style="font-size: 1rem"
+                                        ><br>Want a professional looking profile that will enable you get introductions, meetings and close sales even faster?</span></span>
                                     <span class="text-left d-sm-nones">
                                         <ul
                                             class="py-1 px-3"
@@ -48,7 +52,7 @@
                                             type="info"
                                             icon="fa fa-cloud-download"
                                         >
-                                            Request A Service
+                                            Begin Request
                                         </base-button>
                                     </a><span stye="color: transparent">.</span>
                                     <a
@@ -81,7 +85,7 @@
             <div class="container pb-100">
                 <div class="row text-center justify-content-center">
                     <div class="col-lg-10">
-                        <h2 class="display-3 text-default">Build Your Pipeline Faster</h2>
+                        <h2 class="display-3 text-default">Build Your Sales Pipeline Faster</h2>
                         <p class="lead text-default">According to the experts, a company profile can shape the decision of a potential client. Here is what a proper company profile can do for you.</p>
                     </div>
                 </div>
@@ -102,7 +106,7 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
-                            <i class="ni ni-atom text-primary"></i>
+                            <i class="ni ni-book-bookmark text-primary"></i>
                         </div>
                         <h5 class="text-default mt-3">Use Local Business Intelligence</h5>
                         <p class="text-default mt-3">Grow your market share with our local business intelligence. We use research reports and analysis to give you an in-depth knowledge about your industry.</p>
@@ -131,8 +135,8 @@
                                 <li class="py-2">
                                     <div class="d-flex align-items-center">
                                         <div>
-                                            <div class="badge badge-circle badge-success mr-3">
-                                                <i class="ni ni-settings-gear-65"></i>
+                                            <div class="badge badge-circle badge-white mr-3">
+                                                <i class="ni ni-album-2"></i>
                                             </div>
                                         </div>
                                         <div>
@@ -143,8 +147,8 @@
                                 <li class="py-2">
                                     <div class="d-flex align-items-center">
                                         <div>
-                                            <div class="badge badge-circle badge-success mr-3">
-                                                <i class="ni ni-html5"></i>
+                                            <div class="badge badge-circle badge-white mr-3">
+                                                <i class="ni ni-laptop"></i>
                                             </div>
                                         </div>
                                         <div>
@@ -155,8 +159,8 @@
                                 <li class="py-2">
                                     <div class="d-flex align-items-center">
                                         <div>
-                                            <div class="badge badge-circle badge-success mr-3">
-                                                <i class="ni ni-satisfied"></i>
+                                            <div class="badge badge-circle badge-white mr-3">
+                                                <i class="ni ni-paper-diploma"></i>
                                             </div>
                                         </div>
                                         <div>
@@ -167,8 +171,8 @@
                                 <li class="py-2">
                                     <div class="d-flex align-items-center">
                                         <div>
-                                            <div class="badge badge-circle badge-success mr-3">
-                                                <i class="ni ni-satisfied"></i>
+                                            <div class="badge badge-circle badge-white mr-3">
+                                                <i class="ni ni-cart"></i>
                                             </div>
                                         </div>
                                         <div>
@@ -241,7 +245,7 @@
                                     body-classes="py-5"
                                 >
                                     <icon
-                                        name="ni ni-istanbul"
+                                        name="ni ni-bullet-list-67"
                                         type="success"
                                         rounded
                                         class="mb-4"
@@ -269,7 +273,7 @@
                                     body-classes="py-5"
                                 >
                                     <icon
-                                        name="ni ni-planet"
+                                        name="ni ni-settings-gear-65"
                                         type="primary"
                                         rounded
                                         class="mb-4"
@@ -306,6 +310,14 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="row justify-content-center text-center">
+                            <div class="mt-5 mb-lg-3 col-md-12">
+                                <h2 class=""><a
+                                        href="/support"
+                                        class="btn btn-info"
+                                    >REVIEW OUR GUIDELINES</a></h2>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <hr style="border:white">
@@ -338,7 +350,7 @@
                                 <div class="d-flex px-3 mt-3">
                                     <div>
                                         <div class="icon icon-shape bg-gradient-success rounded-circle text-white">
-                                            <i class="ni ni-satisfied"></i>
+                                            <i class="ni ni-delivery-fast"></i>
                                         </div>
                                     </div>
                                     <div class="pl-4">
@@ -352,7 +364,7 @@
                                 <div class="d-flex px-3 mt-0">
                                     <div>
                                         <div class="icon icon-shape bg-gradient-success rounded-circle text-white">
-                                            <i class="ni ni-satisfied"></i>
+                                            <i class="ni ni-chat-round"></i>
                                         </div>
                                     </div>
                                     <div class="pl-4">
@@ -366,7 +378,7 @@
                                 <div class="d-flex px-3">
                                     <div>
                                         <div class="icon icon-shape bg-gradient-success rounded-circle text-white">
-                                            <i class="ni ni-satisfied"></i>
+                                            <i class="ni ni-album-2"></i>
                                         </div>
                                     </div>
                                     <div class="pl-4">
@@ -380,7 +392,7 @@
                                 <div class="d-flex px-3">
                                     <div>
                                         <div class="icon icon-shape bg-gradient-success rounded-circle text-white">
-                                            <i class="ni ni-satisfied"></i>
+                                            <i class="ni ni-check-bold"></i>
                                         </div>
                                     </div>
                                     <div class="pl-4">
@@ -403,13 +415,61 @@
                             <hr><br>
                             <p>Get a professional looking company profile that will enable you get introductions, meetings and close sales even faster. Delivered when you want it.</p>
                             <a
-                                href="#request"
+                                @click="showSampleModal()"
                                 class="btn btn-success"
-                            >REQUEST NOW</a>
+                            >REQUEST A SAMPLE</a>
                         </div>
                     </div>
                 </div>
             </div>
+            <modal :show.sync="showModal">
+                <template slot="header">
+                </template>
+                <div class="modal-body">
+                    <div class="my-2">
+
+                        <h5
+                            class="modal-title"
+                            id="templateModalTitle"
+                        >Enter your details to receive a sample Corporate company profile</h5>
+                        <hr>
+                        <div class="form-group">
+                            <div class="input-group input-group-alternative mb-4">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="ni ni-box-2"></i></span>
+                                </div>
+                                <input
+                                    type="text"
+                                    name="clientName"
+                                    class="form-control"
+                                    placeholder="Your name"
+                                >
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group input-group-alternative mb-4">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="ni ni-email-83"></i></span>
+                                </div>
+                                <input
+                                    type="email"
+                                    name="clientEmail"
+                                    class="form-control"
+                                    placeholder="Your email address, e.g. someone@example.com"
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <template slot="footer">
+                    <span>
+                        <button
+                            class="btn btn-success"
+                            @click=""
+                        >Submit</button>
+                    </span>
+                </template>
+            </modal>
 
         </section>
 
@@ -428,43 +488,43 @@
                     style="width:120%"
                 >
                     <div class="col-sm-1"><img
-                            class="img-fluid img-back"
+                            class="img-circle img-back"
                             style="background: url('/assets/img/clients/pangea.jpg');"
                         ></div>
                     <div class="col-sm-1"><img
-                            class="img-fluid img-back"
+                            class="img-circle img-back"
                             style="background: url('/assets/img/clients/eo.jpg');"
                         ></div>
                     <div class="col-sm-1"><img
-                            class="img-fluid img-back"
+                            class="img-circle img-back"
                             style="background: url('/assets/img/clients/weston.png');"
                         ></div>
                     <div class="col-sm-1"><img
-                            class="img-fluid img-back"
+                            class="img-circle img-back"
                             style="background: url('/assets/img/clients/bdo.png');"
                         ></div>
                     <div class="col-sm-1"><img
-                            class="img-fluid img-back"
+                            class="img-circle img-back"
                             style="background: url('/assets/img/clients/uber.jpg');"
                         ></div>
                     <div class="col-sm-1"><img
-                            class="img-fluid img-back"
+                            class="img-circle img-back"
                             style="background: url('/assets/img/clients/flexpay.jpeg');"
                         ></div>
                     <div class="col-sm-1"><img
-                            class="img-fluid img-back"
+                            class="img-circle img-back"
                             style="background: url('/assets/img/clients/imagine.jpg');"
                         ></div>
                     <div class="col-sm-1"><img
-                            class="img-fluid img-back"
+                            class="img-circle img-back"
                             style="background: url('/assets/img/clients/taraji.jpg');"
                         ></div>
                     <div class="col-sm-1"><img
-                            class="img-fluid img-back"
+                            class="img-circle img-back"
                             style="background: url('/assets/img/clients/gig.jpeg');"
                         ></div>
                     <div class="col-sm-1"><img
-                            class="img-fluid img-back"
+                            class="img-circle img-back"
                             style="background: url('/assets/img/clients/lexy.jpeg');"
                         ></div>
                 </div>
@@ -534,7 +594,7 @@
 <script>
 import Categories from "./components/Categories/AllCategories";
 import JobCategories from "./components/Categories/Category";
-import formAlert from "./components/Landing/DefaultPage";
+import Modal from "@/views/components/Common/Modal.vue";
 import Axios from "axios";
 
 let show = true;
@@ -543,13 +603,14 @@ export default {
     name: "home",
     components: {
         Categories,
-        formAlert,
-        JobCategories
+        JobCategories,
+        Modal
     },
     data() {
         return {
             selectedAnimationIn: "",
             selectedAnimationOut: "",
+            showModal: false,
             show: true,
             request: true,
             get: true,
@@ -603,7 +664,11 @@ export default {
             } catch (err) {
                 // console.log(err)
             }
-        }
+        },
+        showSampleModal() {
+            this.showModal = true;
+        },
+        submitSampleRequest() {}
     },
     beforeRouteEnter(to, from, next) {
         next(vm => {

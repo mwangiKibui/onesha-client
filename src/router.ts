@@ -8,11 +8,12 @@ import CategoryPage from "@/views/components/Categories/CategoryPage.vue";
 import JobPage from "@/views/components/JobTemplates/JobPage.vue";
 import Landing from "@/views/Landing.vue";
 import Login from "@/views/Login.vue";
-import Portfolio from "@/views/Portfolio.vue";
 import Profile from "@/views/Profile.vue";
 import Register from "@/views/Register.vue";
-import Privacy from "@/views/Privacy.vue";
-import Terms from "@/views/Terms.vue";
+import Guidelines from "@/views/components/Landing/Guidelines.vue";
+import Portfolio from "@/views/components/Landing/Portfolio.vue";
+import Privacy from "@/views/components/Landing/Privacy.vue";
+import Terms from "@/views/components/Landing/Terms.vue";
 
 Vue.use(Router);
 
@@ -35,6 +36,15 @@ export default new Router({
       components: {
         header: AppHeader,
         default: About,
+        footer: AppFooter
+      }
+    },
+    {
+      path: "/support",
+      name: "Support",
+      components: {
+        header: AppHeader,
+        default: Guidelines,
         footer: AppFooter
       }
     },

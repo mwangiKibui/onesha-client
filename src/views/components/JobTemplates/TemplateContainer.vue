@@ -1,35 +1,66 @@
 <template>
-  <div class="my-5">
-    <div>{{ template.title }}</div>
-    <div class="py-3">
-      <div v-if="template.feedback == 'single-select'">
-        <div :name="template._id" v-for="(option, index) in template.options" :key="index">
-          <input
-            type="radio"
-            v-model="filledintemplate"
-            :id="index"
-            :name="template._id"
-            :value="index"
-          >
-          <label :for="index" class="mx-4">{{ option.option }}</label>
+    <div class="my-5">
+        <div class="title">{{ template.title }}</div>
+        <div v-if="template.feedback == 'single-select'">
+            <div
+                :name="template._id"
+                v-for="(option, index) in template.options"
+                :key="index"
+            >
+                <base-radio
+                    class="mb-3"
+                    :id="index"
+                    v-model="filledindata[template.title]"
+                    :name="index"
+                    :value="option.option"
+                >{{ option.option }}</base-radio>
+            </div>
         </div>
-      </div>
+        <div v-if="template.feedback == 'multi-select'">
+            <div
+                :name="template._id"
+                v-for="(option, index) in template.options"
+                :key="index"
+            >
+                <base-checkbox
+                    class="mb-3"
+                    :id="index"
+                    v-model="filledindata[template.title]"
+                    :name="index"
+                    :value="option.option"
+                >{{ option.option }}</base-checkbox>
+            </div>
+        </div>
+        <div v-if="template.feedback == 'prompt'">
+            <textarea
+                :name="template._id"
+                v-model="filledindata[template.title]"
+                rows="2"
+                class="form-control"
+            ></textarea>
+        </div>
     </div>
-  </div>
 </template>
 <!-- -->
 <script>
 export default {
-  props: {
-    template: null
-  },
-  data() {
-    return {
-      filledintemplate: null
-    };
-  },
-  methods: {
-    pushTemplateData() {}
-  }
+    props: ["templated"],
+    data() {
+        return {
+            filledintemplate: null,
+            filledindata: {},
+            template: this.templated
+        };
+    },
+
+    watch: {
+        $route(to, from) {
+            // react to route changes...
+            console.log(this.templated);
+        }
+    },
+    methods: {
+        pushTemplateData() {}
+    }
 };
 </script>
