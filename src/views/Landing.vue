@@ -437,56 +437,57 @@
                     </div>
                 </div>
             </div>
-            <modal :show.sync="showModal" id="card-details">
-                <template slot="header">
-                </template>
-                <div class="modal-body">
-                    <div class="my-2">
+            <modal :show.sync="showModal">
+                <card id="card-details">
+                    <template slot="header">
+                    </template>
+                    <div class="modal-body">
+                        <div class="my-2">
 
-                        <h5
-                            class="modal-title"
-                            id="templateModalTitle"
-                        >Enter your details to receive a sample corporate company profile</h5>
-                        <hr>
-                        <div class="form-group">
-                            <div class="input-group input-group-alternative mb-4">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text"><i class="ni ni-box-2"></i></span>
+                            <h5
+                                class="modal-title"
+                                id="templateModalTitle"
+                            >Enter your details to receive a sample corporate company profile</h5>
+                            <hr>
+                            <div class="form-group">
+                                <div class="input-group input-group-alternative mb-4">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="ni ni-box-2"></i></span>
+                                    </div>
+                                    <input
+                                        type="text"
+                                        name="clientName"
+                                        v-model="filledindata['clientName']"
+                                        class="form-control"
+                                        placeholder="Your name"
+                                    >
                                 </div>
-                                <input
-                                    type="text"
-                                    name="clientName"
-                                    v-model="filledindata['clientName']"
-                                    class="form-control"
-                                    placeholder="Your name"
-                                >
                             </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="input-group input-group-alternative mb-4">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text"><i class="ni ni-email-83"></i></span>
+                            <div class="form-group">
+                                <div class="input-group input-group-alternative mb-4">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="ni ni-email-83"></i></span>
+                                    </div>
+                                    <input
+                                        type="email"
+                                        name="clientEmail"
+                                        v-model="filledindata['clientEmail']"
+                                        class="form-control"
+                                        placeholder="Your email address, e.g. someone@example.com"
+                                    >
                                 </div>
-                                <input
-                                    type="email"
-                                    name="clientEmail"
-                                    v-model="filledindata['clientEmail']"
-                                    class="form-control"
-                                    placeholder="Your email address, e.g. someone@example.com"
-                                >
                             </div>
                         </div>
                     </div>
-                </div>
-                <template slot="footer">
-                    <span>
-                        <button
-                            id="message2"
-                            class="btn btn-success"
-                            @click="submitClientInformation"
-                        >Submit</button>
-                    </span>
-                </template>
+                    <template slot="footer">
+                        <span id="message">
+                            <button
+                                class="btn btn-success"
+                                @click="submitClientInformation"
+                            >Submit</button>
+                        </span>
+                    </template>
+                </card>
             </modal>
 
         </section>
@@ -635,7 +636,10 @@ export default {
             view: true,
             learn: true,
             categories: null,
-            businessprofiles: null
+            businessprofiles: null,
+            filledindata: {},
+            notemplate: true,
+            clientInfo: false
         };
     },
 
@@ -684,7 +688,9 @@ export default {
             }
         },
         hideJobDetails() {
-            this.showModal= false;
+            this.showModal = false;
+            this.$emit(this.showModal, false);
+            this.$emit("close");
         },
         showSampleModal() {
             this.showModal = true;
@@ -883,10 +889,10 @@ window.onload = function() {
     background-repeat: no-repeat !important;
     background-position: center !important;
     background-size: contain !important;
-    border-color: transparent;
-    width: 125px !important;
-    height: 90px;
+    width: 100% !important;
+    height: 300%;
     border: 0px solid;
+    border-color: transparent;
     margin: 0%;
     border-radius: 0%;
 }
