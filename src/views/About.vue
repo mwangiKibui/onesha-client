@@ -1,6 +1,6 @@
 <template>
     <main>
-        <div class="position-relative">
+        <div class="position-relative2">
             <!-- Hero for FREE version -->
             <div class="blurred-image"></div>
             <!-- shape Hero -->
@@ -637,10 +637,10 @@
 
 export default {}
 <style>
-.position-relative {
+.position-relative2 {
     position: relative;
     background-image: none;
-    background-image: url("/assets/img/social-audit.png") !important;
+    background-image: url("/assets/img/social-audit.png");
     background-size: cover;
     background-position: right;
     background-repeat: no-repeat;

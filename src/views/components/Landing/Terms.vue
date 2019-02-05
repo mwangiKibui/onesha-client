@@ -1,6 +1,6 @@
 <template>
     <main>
-        <div class="position-relative">
+        <div class="position-relative2">
             <!-- Hero for FREE version -->
             <div class="blurred-image"></div>
             <!-- shape Hero -->

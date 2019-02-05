@@ -25,7 +25,7 @@
                             @click="loadJobTemplates(job)"
                             data-toggle="scroll"
                             class="btn btn-white mt-4"
-                        >Fill in form</a>
+                        >Get Started</a>
                     </div>
                     <div class="col-lg-6 mb-lg-auto">
                         <div class="rounded shadow-lg overflow-hidden transform-perspective-right">

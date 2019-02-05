@@ -12,7 +12,7 @@
                 class="navbar-brand mr-lg-1"
                 href="/"
             >
-                <img src="https://socialmedia.onesha.co.ke/assets/img/brand/white.png">
+                <img src="/assets/img/brand/white.png">
             </a>
 
             <div
@@ -22,7 +22,7 @@
             >
                 <div class="col-6 collapse-brand">
                     <a href="/">
-                        <img src="https://socialmedia.onesha.co.ke/assets/img/brand/blue.png">
+                        <img src="/assets/img/brand/blue.png">
                     </a>
                 </div>
                 <div class="col-6 collapse-close">

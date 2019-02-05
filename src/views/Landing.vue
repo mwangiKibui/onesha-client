@@ -856,7 +856,7 @@ window.onload = function() {
 .position-relative {
     position: relative;
     background-image: none;
-    background-image: url("/assets/img/social-bg.jpg");
+    background-image: url("/assets/img/social-bg.jpg") !important;
     background-size: cover;
     background-position: right;
     background-repeat: no-repeat;
