@@ -27,7 +27,7 @@
                                         class="mr-3"
                                         icon="ni ni-ruler-pencil"
                                     ></badge>
-                                    <h6 class="mb-0">Choose from several design samples</h6>
+                                    <h6 class="mb-0">Choose from design samples given</h6>
                                 </div>
                             </li>
                             <li class="py-2">
@@ -129,7 +129,7 @@
                                         class="mr-3"
                                         icon="ni ni-ruler-pencil"
                                     ></badge>
-                                    <h6 class="mb-0">Choose from several design samples</h6>
+                                    <h6 class="mb-0">Choose from design samples given</h6>
                                 </div>
                             </li>
                             <li class="py-2">

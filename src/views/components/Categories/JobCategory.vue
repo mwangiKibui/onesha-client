@@ -1,259 +1,279 @@
 <template>
-    <section class="section section-lg section-shaped overflow-hidden my-0">
-        <div class="shape shape-style-3 shape-default shape-skew">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <div class="container py-0 pb-lg ">
-            <div class="row">
-                <div class="mb-5 mb-lg-0">
-                    <section v-if="category.length">
-                        <div class="col-lg-7">
-                            <h1 class="text-white font-weight-light">{{ category[0].title }}</h1>
-                            <p class="lead text-white mt-4">{{ category[0].description }}. Choose a service below.</p>
-                        </div>
-
-                        <!-- display job types -->
-                        <section class="col-lg-12">
-                            <div class="row">
-                                <span style="color: rgba (0,0,0,0) !important;">.</span>
-                                <hr>
-                                <div class="col-md-12 mb-2">
-                                    <div class="row justify-content-center">
-                                        <div
-                                            v-for="(jobtype, index) in category[0].jobtypes"
-                                            :key="index"
-                                            class="col-md-4 col-sm-6 mb-4"
-                                            @click="loadJobTemplates(jobtype)"
-                                        >
-                                            <div class="jobtype-container d-flex flex-column card bg-transparent">
-                                                <div class="jobtype-header">
-                                                    <!-- image or jobtype illustration -->
-                                                    <img :src="jobtype.avatar.file">
-                                                </div>
-                                                <div class="jobtype-title">{{ jobtype.title }}</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+    <div>
+        <section class="section section-lg section-shaped overflow-hidden my-0">
+            <div class="shape shape-style-1 shape-default">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="container py-0 pb-lg ">
+                <div
+                    class="row"
+                    v-if="category.length"
+                >
+                    <div class="mb-5 mb-lg-0">
+                        <section>
+                            <div class="col-lg-7">
+                                <h1 class="text-white font-weight-light">{{ category[0].title }}</h1>
+                                <p class="lead text-white mt-4">{{ category[0].description }}. Choose a service below.</p>
                             </div>
-                        </section>
-                        <section v-if="!category.length">
-                            <!-- display a some what 404 page to notify when no job types found for the category provided -->
-                            <!-- display a centered section -->
-                            <div>No job types for this category at the moment.</div>
-                        </section>
 
-                        <modal
-                            :show.sync="templateModal"
-                            v-if="jobtype != null"
-                        >
-
-                            <div id="card-details">
-                                <div v-if="clientInfo == false">
-                                    <div slot="header">
-                                        <!-- <div slot="header"> -->
-                                        <h5
-                                            v-if="templatedata.length"
-                                            class="modal-title"
-                                            id="templateModalTitle"
-                                        >You are {{ Number(templatedata.length) - templateIndex }} {{ Number(templatedata.length) - templateIndex > 1 ? 'steps' : 'step'}} away from placing your order</h5>
-                                        <h5
-                                            v-if="!templatedata.length && notemplate == false"
-                                            class="modal-title"
-                                            id="templateModalTitle"
-                                        >No template found.</h5>
-                                        <!-- </div> -->
-                                    </div>
-
-                                    <base-progress
-                                        v-if="templatedata.length"
-                                        type="success"
-                                        :value="progress"
-                                        :label="jobtype.title"
-                                    ></base-progress>
-
-                                    <div v-if="templatedata.length"></div>
-                                    <div
-                                        v-if="templatedata.length"
-                                        class="templateModal"
-                                    >
-                                        <div class="my-5">
-                                            <div class="title">{{ template.title }}</div><br>
-                                            <div v-if="template.feedback == 'single-select'">
-                                                <div
-                                                    :name="template._id"
-                                                    v-for="(option, index) in template.options"
-                                                    :key="index"
-                                                >
-                                                    <base-radio
-                                                        class="mb-3"
-                                                        :id="index"
-                                                        v-model="filledindata[template.title]"
-                                                        :name="index"
-                                                        :value="option"
-                                                    >{{ option }}</base-radio>
+                            <!-- display job types -->
+                            <section class="col-lg-12">
+                                <div class="row">
+                                    <span style="color: rgba (0,0,0,0) !important;">.</span>
+                                    <hr>
+                                    <div class="col-md-12 mb-2">
+                                        <div class="row justify-content-center">
+                                            <div
+                                                v-for="(jobtype, index) in category[0].jobtypes"
+                                                :key="index"
+                                                class="col-md-4 col-sm-6 mb-4"
+                                                @click="loadJobTemplates(jobtype)"
+                                            >
+                                                <div class="jobtype-container d-flex flex-column card bg-transparent">
+                                                    <div class="jobtype-header">
+                                                        <!-- image or jobtype illustration -->
+                                                        <img
+                                                            v-if="jobtype.slug == 'new-design-only'"
+                                                            src="/assets/img/newdesign.jpg"
+                                                        >
+                                                        <img
+                                                            v-if="jobtype.slug == 'redesign-existing-profile'"
+                                                            src="/assets/img/redesign.jpg"
+                                                        >
+                                                        <img
+                                                            v-if="jobtype.slug == 'new-design-&-structure'"
+                                                            src="/assets/img/design-structure.jpg"
+                                                        >
+                                                    </div>
+                                                    <div class="jobtype-title">{{ jobtype.title }}</div>
                                                 </div>
                                             </div>
-                                            <div v-if="template.feedback == 'multi-select'">
-                                                <div
-                                                    :name="template._id"
-                                                    v-for="(option, index) in template.options"
-                                                    :key="index"
-                                                >
-                                                    <base-checkbox
-                                                        class="mb-3"
-                                                        :id="index"
-                                                        v-model="filledindata[template.title]"
-                                                        :name="index"
-                                                        :value="option"
-                                                    >{{ option }}</base-checkbox>
-                                                </div>
-                                            </div>
-                                            <div v-if="template.feedback == 'prompt'">
-                                                <textarea
-                                                    :name="template._id"
-                                                    v-model="filledindata[template.title]"
-                                                    rows="2"
-                                                    class="form-control"
-                                                ></textarea>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div v-if="clientInfo != false">
-                                    <h5 class="modal-title">You are almost there, just a few more details about you.</h5>
-                                    <div v-if="templatedata.length"></div><br>
-                                    <div class="form-group">
-                                        <div class="input-group input-group-alternative mb-4">
-                                            <div class="input-group-prepend">
-                                                <span class="input-group-text"><i class="ni ni-box-2"></i></span>
-                                            </div>
-                                            <input
-                                                type="text"
-                                                name="clientName"
-                                                v-model="filledindata['clientName']"
-                                                class="form-control"
-                                                placeholder="Your name"
-                                            >
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="input-group input-group-alternative mb-4">
-                                            <div class="input-group-prepend">
-                                                <span class="input-group-text"><i class="ni ni-email-83"></i></span>
-                                            </div>
-                                            <input
-                                                type="email"
-                                                name="clientEmail"
-                                                v-model="filledindata['clientEmail']"
-                                                class="form-control"
-                                                placeholder="Your email address, e.g. someone@example.com"
-                                            >
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="input-group input-group-alternative mb-4">
-                                            <div class="input-group-prepend">
-                                                <span class="input-group-text"><i class="fa fa-phone"></i></span>
-                                            </div>
-                                            <input
-                                                type="tel"
-                                                name="clientPhone"
-                                                v-model="filledindata['clientPhone']"
-                                                class="form-control"
-                                                placeholder="+254 7 ....."
-                                            >
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="input-group input-group-alternative mb-4">
-                                            <div class="input-group-prepend">
-                                                <span class="input-group-text"><i class="fa fa-map-marker"></i></span>
-                                            </div>
-                                            <input
-                                                type="tel"
-                                                name="clientLocation"
-                                                v-model="filledindata['clientLocation']"
-                                                class="form-control"
-                                                placeholder="City / Town"
-                                            >
-                                        </div>
-                                    </div>
-                                </div>
+                            </section>
+                            <section v-if="!category.length">
+                                <!-- display a some what 404 page to notify when no job types found for the category provided -->
+                                <!-- display a centered section -->
+                                <div>No job types for this category at the moment.</div>
+                            </section>
 
-                                <!-- no template defined -->
-                                <div
-                                    v-if="!template.length"
-                                    id="message"
-                                >
-                                    <RotateSquare5
-                                        class="text-center align-items-center"
-                                        style="width: 100px; height: 100px;"
-                                        label="Loading.."
-                                    > Loading</RotateSquare5>
-                                </div>
-                                <!-- </template> -->
+                            <modal
+                                :show.sync="templateModal"
+                                v-if="jobtype != null"
+                            >
 
-                                <div slot="footer">
+                                <div id="card-details">
                                     <div v-if="clientInfo == false">
-                                        <div v-if="notemplate == true"></div>
-                                        <span v-if="notemplate == false">
+                                        <div slot="header">
+                                            <!-- <div slot="header"> -->
+                                            <h5
+                                                v-if="templatedata.length"
+                                                class="modal-title"
+                                                id="templateModalTitle"
+                                            >You are {{ Number(templatedata.length) - templateIndex }} {{ Number(templatedata.length) - templateIndex > 1 ? 'steps' : 'step'}} away from placing your order</h5>
+                                            <h5
+                                                v-if="!templatedata.length && notemplate == false"
+                                                class="modal-title"
+                                                id="templateModalTitle"
+                                            >No template found.</h5>
+                                            <!-- </div> -->
+                                        </div>
+
+                                        <base-progress
+                                            v-if="templatedata.length"
+                                            type="success"
+                                            :value="progress"
+                                            :label="jobtype.title"
+                                        ></base-progress>
+
+                                        <div v-if="templatedata.length"></div>
+                                        <div
+                                            v-if="templatedata.length"
+                                            class="templateModal"
+                                        >
+                                            <div class="my-5">
+                                                <div class="title">{{ template.title }}</div><br>
+                                                <div v-if="template.feedback == 'single-select'">
+                                                    <div
+                                                        :name="template._id"
+                                                        v-for="(option, index) in template.options"
+                                                        :key="index"
+                                                    >
+                                                        <base-radio
+                                                            class="mb-3"
+                                                            :id="index"
+                                                            v-model="filledindata[template.title]"
+                                                            :name="index"
+                                                            :value="option"
+                                                        >{{ option }}</base-radio>
+                                                    </div>
+                                                </div>
+                                                <div v-if="template.feedback == 'multi-select'">
+                                                    <div
+                                                        :name="template._id"
+                                                        v-for="(option, index) in template.options"
+                                                        :key="index"
+                                                    >
+                                                        <base-checkbox
+                                                            class="mb-3"
+                                                            :id="index"
+                                                            v-model="filledindata[template.title]"
+                                                            :name="index"
+                                                            :value="option"
+                                                        >{{ option }}</base-checkbox>
+                                                    </div>
+                                                </div>
+                                                <div v-if="template.feedback == 'prompt'">
+                                                    <textarea
+                                                        :name="template._id"
+                                                        v-model="filledindata[template.title]"
+                                                        rows="2"
+                                                        class="form-control"
+                                                    ></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div v-if="clientInfo != false">
+                                        <h5 class="modal-title">You are almost there, just a few more details about you.</h5>
+                                        <div v-if="templatedata.length"></div><br>
+                                        <div class="form-group">
+                                            <div class="input-group input-group-alternative mb-4">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text"><i class="ni ni-box-2"></i></span>
+                                                </div>
+                                                <input
+                                                    type="text"
+                                                    name="clientName"
+                                                    v-model="filledindata['clientName']"
+                                                    class="form-control"
+                                                    placeholder="Your name"
+                                                >
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="input-group input-group-alternative mb-4">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text"><i class="ni ni-email-83"></i></span>
+                                                </div>
+                                                <input
+                                                    type="email"
+                                                    name="clientEmail"
+                                                    v-model="filledindata['clientEmail']"
+                                                    class="form-control"
+                                                    placeholder="Your email address, e.g. someone@example.com"
+                                                >
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="input-group input-group-alternative mb-4">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text"><i class="fa fa-phone"></i></span>
+                                                </div>
+                                                <input
+                                                    type="tel"
+                                                    name="clientPhone"
+                                                    v-model="filledindata['clientPhone']"
+                                                    class="form-control"
+                                                    placeholder="+254 7 ....."
+                                                >
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="input-group input-group-alternative mb-4">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text"><i class="fa fa-map-marker"></i></span>
+                                                </div>
+                                                <input
+                                                    type="text"
+                                                    name="clientLocation"
+                                                    v-model="filledindata['clientLocation']"
+                                                    class="form-control"
+                                                    placeholder="City / Town"
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- no template defined -->
+                                    <div
+                                        v-if="!template.length"
+                                        id="message"
+                                    >
+                                        <RotateSquare5
+                                            class="text-center align-items-center"
+                                            style="width: 100px; height: 100px;"
+                                            label="Loading.."
+                                        > Loading</RotateSquare5>
+                                    </div>
+                                    <!-- </template> -->
+
+                                    <div slot="footer">
+                                        <div v-if="clientInfo == false">
+                                            <div v-if="notemplate == true"></div>
+                                            <span v-if="notemplate == false">
+                                                <button
+                                                    class="btn btn-default"
+                                                    v-if="templateIndex >= 1"
+                                                    @click="loadPreviousTemplate(templateIndex)"
+                                                >Previous</button>
+                                                <button
+                                                    class="btn btn-dark"
+                                                    v-if="templateIndex !== templatedata.length - 1"
+                                                    @click="loadNextTemplate(templateIndex)"
+                                                >Next</button>
+                                                <button
+                                                    class="btn btn-success"
+                                                    v-if="templateIndex === templatedata.length - 1"
+                                                    @click="requestClientDetails"
+                                                >Continue</button>
+                                            </span>
+                                        </div>
+                                        <div
+                                            v-if="clientInfo != false"
+                                            id="message2"
+                                        >
                                             <button
                                                 class="btn btn-default"
                                                 v-if="templateIndex >= 1"
                                                 @click="loadPreviousTemplate(templateIndex)"
                                             >Previous</button>
                                             <button
-                                                class="btn btn-dark"
-                                                v-if="templateIndex !== templatedata.length - 1"
-                                                @click="loadNextTemplate(templateIndex)"
-                                            >Next</button>
-                                            <button
                                                 class="btn btn-success"
-                                                v-if="templateIndex === templatedata.length - 1"
-                                                @click="requestClientDetails"
-                                            >Continue</button>
-                                        </span>
-                                    </div>
-                                    <div
-                                        v-if="clientInfo != false"
-                                        id="message2"
-                                    >
-                                        <button
-                                            class="btn btn-default"
-                                            v-if="templateIndex >= 1"
-                                            @click="loadPreviousTemplate(templateIndex)"
-                                        >Previous</button>
-                                        <button
-                                            class="btn btn-success"
-                                            @click="submitClientInformation"
-                                        >Submit</button>
+                                                @click="submitClientInformation"
+                                            >Submit</button>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </modal>
-                    </section>
-                    <section
-                        v-if="!category.length"
-                        class="d-flex justify-content-center align-items-center"
-                    >
-                        <RotateSquare5 style="width: 300px; height: 300px;"></RotateSquare5>
+                            </modal>
+                        </section>
 
-                    </section>
+                        <!-- job template modal -->
 
-                    <!-- job template modal -->
-
+                    </div>
+                    <!-- <div class="col-lg-6 mb-lg-auto"></div> -->
                 </div>
-                <!-- <div class="col-lg-6 mb-lg-auto"></div> -->
+
+                <section
+                    v-if="!category.length"
+                    class="d-flex justify-content-center align-items-center"
+                >
+                    <RotateSquare5 style="width: 300px; height: 300px;"></RotateSquare5>
+
+                </section>
             </div>
-        </div>
-        <!-- <router-view></router-view> -->
-    </section>
+            <!-- <router-view></router-view> -->
+        </section>
+    </div>
 </template>
 <script>
 import Modal from "@/views/components/Common/Modal.vue";

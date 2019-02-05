@@ -20,7 +20,10 @@
                     <div class="col px-0">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
-                                <h1 class="display-3  text-white">CONNECTING CREATIVITY TO OPPORTUNITY</h1>
+                                <h1
+                                    class="display-3  text-white"
+                                    style="text-transform: sentence"
+                                >CONNECTING BUSINESSES TO TOP CREATIVE SERVICES</h1>
                                 <!-- <span class="text-white">Taking you digital</span> -->
 
                                 <p class="lead  text-white">At Onesha, we aim to help businesses and individuals access creative services easily through our network of skilled creatives. Here are our guidelines.</p>
@@ -94,12 +97,12 @@
                             </li>
                         </ol>
                     </div>
-                    <hr>
                 </div>
                 <div
                     class="row"
                     id="clients"
-                ></div><br><br>
+                ></div>
+                <hr><br>
                 <div class="row  text-center justify-content-center">
                     <div class="col-lg-12">
                         <h2 class="display-3 text-info">For Clients</h2>
@@ -112,7 +115,7 @@
                         <ol>
                             <li><strong>Getting a Creative</strong>
                                 <p>You can request a job to be done using our Job Request Template which can be found <a
-                                        href="https://goo.gl/forms/uwHRbhVQStE4P9UI2"
+                                        href="/#request"
                                         target="_blank"
                                     >here</a> or by contacting us directly for a personalized process. Contact us through 0708533383 / 0712983630.</p>
                             </li>
@@ -175,13 +178,13 @@
                                 <p>All payments shall be done via Mobile Money (Mpesa, Airtel Money or Eazzy Pay), Paypal, Cheque or Wire Transfer to the our bank account as specified in the terms below. Payment of Onesha Creatives shall be through our payment channels mentioned above.</p>
                             </li>
                             <li><strong>Advance Payment</strong>
-                                <p>Clients pay Onesha in advance to create an order for our creatives. Creatives get 25% after reaching the first milestone and the rest is paid after the client is satisfied with the task done. Creatives collect their payment after the job is done via the payment channels above.</p>
+                                <p>Clients pay Onesha on completion of the job done by our creatives. Creatives are paid after the client is satisfied with the task done via the payment channels above.</p>
                             </li>
                             <li><strong>Charges on Quotes</strong>
                                 <p> Creatives give their quotes to clients for the jobs they seek to undertake. Depending on the labour, time and resources required, provide a quote as to how much you will charge. Always be clear on how much you charge. Do not bring other charges after you’ve confirmed the price.</p>
                             </li>
                             <li><strong>Commission</strong>
-                                <p> Onesha takes a 20% commission on jobs below Ksh 15,000 and 10% commission on jobs above Ksh 15000. Note that this is a cut on the creative's quote therefore the client is not affected. For creatives, take this into account as you give your quotes.</p>
+                                <p> Onesha takes a 20% commission on all jobs. Note that this is a cut on the creative's quote therefore the client is not affected. For creatives, take this into account as you give your quotes.</p>
                             </li>
                             <li><strong>Reviews</strong>
                                 <p> Each job shall have 2 reviews by the client before the creative is paid the full amount.Onesha holds the money safely for the client.</p>

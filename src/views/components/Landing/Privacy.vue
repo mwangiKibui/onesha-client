@@ -54,10 +54,9 @@
                         <h4 class="text-default text-center">PRIVACY POLICY</h4>
                         <p>Effective March 1, 2016</p>
                         <hr><br>
-                        <p>Briglobe Investment Group Ltd. owns “Onesha”, an online platform where young professionals can
-                            showcase their work and discover the professional visual work of others. Onesha is
+                        <p>Briglobe Investment Group Ltd. owns “Onesha”, a platform that gives businesses access to top creative services from our wide pool of vetted creatives. Onesha is
                             hosted exclusively in Kenya and is operated from the Briglobe Investment Group offices in Nairobi,
-                            KE. Onesha may be accessed directly on the web at <b><a href="http://www.onesha.co.ke">onesha.briglobe.com</a> </b>. <br>
+                            KE. Onesha may be accessed directly on the web at <b><a href="http://www.onesha.co.ke">onesha.co.ke</a> </b>. <br>
                             Onesha is a wholly-owned product of Briglobe Investment Group, and any information you provide to
                             Onesha will be held within Briglobe Investment Group's responsibilty. Hereforth, privacy-related
                             information specific to Onesha is provided below.
@@ -94,7 +93,7 @@
                             e-mails.
                             <br><br>
 
-                            <b>Cookies</b> <br>
+                            <strong>Cookies</strong> <br>
                             A cookie is a string of information that a website stores on a visitors computer,
                             and that the visitors browser provides to the website each time the visitor returns.
                             Onesha uses cookies to help Onesha identify and track visitors, their usage of
@@ -103,8 +102,8 @@
                             cookies before using Onesha's websites, with the drawback that certain features of
                             Onesha's websites may not function properly without the aid of cookies.
                             <br><br>
-                            <b>Analytics information:</b> <br>
-                            ◾We use third-party analytics tools to help us measure traffic and usage trends for
+                            <strong>Analytics information:</strong> <br>
+                            We use third-party analytics tools to help us measure traffic and usage trends for
                             the Service. These tools collect information sent by your device or our Service,
                             including the web pages you visit, add-ons, and other information that assists us in
                             improving the Service. We collect and use this analytics information with analytics

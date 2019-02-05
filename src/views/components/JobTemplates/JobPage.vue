@@ -1,86 +1,103 @@
 <template>
-    <section class="section section-lg section-shaped overflow-hidden my-0">
-        <div class="shape shape-style-1 shape-default shape-skew">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <div
-            class="container py-0 pb-lg"
-            v-if="job.slug"
-        >
-            <div class="row justify-content-between align-items-center">
-                <div class="col-lg-5 mb-5 mb-lg-0">
-                    <h1 class="text-white font-weight-light">{{ this.job.title}}</h1>
-                    <p class="lead text-white mt-4">{{ this.job.description}}.</p>
-                    <a
-                        href="#jobFormArea"
-                        @click="loadJobTemplates(job)"
-                        data-toggle="scroll"
-                        class="btn btn-white mt-4"
-                    >Fill in form</a>
-                </div>
-                <div class="col-lg-6 mb-lg-auto">
-                    <div class="rounded shadow-lg overflow-hidden transform-perspective-right">
-                        <b-carousel
-                            id="carousel1"
-                            controls
-                            indicators
-                        >
-                            <!-- Text slides with image -->
-                            <b-carousel-slide
-                                v-for="(file,index) in job.avatar"
-                                :key="index"
-                                :img-src="file"
-                            ></b-carousel-slide>
-                        </b-carousel>
+    <div>
+        <section class="section section-lg section-shaped overflow-hidden my-0">
+            <div class="shape shape-style-1 shape-default">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div
+                class="container py-0 pb-lg"
+                v-if="job.slug"
+            >
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-lg-5 mb-5 mb-lg-0">
+                        <h1 class="text-white font-weight-light">{{ this.job.title}}</h1>
+                        <p class="lead text-white mt-4">{{ this.job.description}}.</p>
+                        <a
+                            href="#jobFormArea"
+                            @click="loadJobTemplates(job)"
+                            data-toggle="scroll"
+                            class="btn btn-white mt-4"
+                        >Fill in form</a>
+                    </div>
+                    <div class="col-lg-6 mb-lg-auto">
+                        <div class="rounded shadow-lg overflow-hidden transform-perspective-right">
+                            <b-carousel
+                                id="carousel1"
+                                controls
+                                indicators
+                            >
+                                <!-- Text slides with image -->
+                                <!-- image or jobtype illustration -->
+                                <b-carousel-slide
+                                    v-if="job.slug == 'new-design-only'"
+                                    :key="index"
+                                    img-src="/assets/img/newdesign.jpg"
+                                ></b-carousel-slide>
+                                <b-carousel-slide
+                                    v-if="job.slug == 'redesign-existing-profile'"
+                                    :key="index"
+                                    img-src="/assets/img/redesign.jpg"
+                                ></b-carousel-slide>
+                                <b-carousel-slide
+                                    v-if="job.slug == 'new-design-&-structure'"
+                                    :key="index"
+                                    img-src="/assets/img/design-structure.jpg"
+                                ></b-carousel-slide>
+                                </b-carousel-slide>
+                            </b-carousel>
+                        </div>
                     </div>
                 </div>
+
+            </div>
+            <div
+                class="container pt-lg-md"
+                id="jobFormArea"
+                v-if="job.slug"
+            >
+                <job-form
+                    :jobs="job"
+                    :toShows="toShow"
+                    id="jobForm"
+                ></job-form>
+
             </div>
 
-        </div>
-        <div
-            class="container pt-lg-md"
-            id="jobFormArea"
-            v-if="job.slug"
-        >
-            <job-form
-                :jobs="job"
-                :toShows="toShow"
-                id="jobForm"
-            ></job-form>
+            <section
+                v-if="!job.slug"
+                class="d-flex justify-content-center align-items-center"
+                id="message"
+            >
 
-        </div>
+                <RotateSquare5 style="width: 300px; height: 300px;"></RotateSquare5>
+            </section>
 
-        <section
-            v-if="!job.slug"
-            class="d-flex justify-content-center align-items-center"
-            id="message"
-        >
-
-            <RotateSquare5 style="width: 300px; height: 300px;"></RotateSquare5>
-        </section>
-
-        <!-- <section
-            v-if="1==2"
-            class="d-flex justify-content-center align-items-center"
-        >
-            <div class="container justify-content-between align-items-center">
-                <div class="col-lg-5 mb-5 mb-lg-0">
-                    <h1 class="text-white font-weight-light">Job was not found</h1>
-                    <p class="lead text-white mt-4">Description was not found. Check the url and try again.</p>
-                    <a
-                        on-click="window.reload()"
-                        data-toggle="scroll"
-                        class="btn btn-white mt-4"
-                    >Reload</a>
+            <!-- <section
+                v-if="1==2"
+                class="d-flex justify-content-center align-items-center"
+            >
+                <div class="container justify-content-between align-items-center">
+                    <div class="col-lg-5 mb-5 mb-lg-0">
+                        <h1 class="text-white font-weight-light">Job was not found</h1>
+                        <p class="lead text-white mt-4">Description was not found. Check the url and try again.</p>
+                        <a
+                            on-click="window.reload()"
+                            data-toggle="scroll"
+                            class="btn btn-white mt-4"
+                        >Reload</a>
+                    </div>
                 </div>
-            </div>
-        </section> -->
-    </section>
+            </section> -->
+        </section>
+    </div>
 </template>
 <script>
 import BCarousel from "bootstrap-vue/es/components/carousel/carousel";

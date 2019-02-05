@@ -24,7 +24,7 @@
                                 <!-- <span class="text-white">Taking you digital</span> -->
 
                                 <p class="lead  text-white">At Onesha, we aim to make businesses in line with the times. We help you with
-                                    digital and social media through our network of skilled creatives.</p>
+                                    design, digital and social media through our network of skilled creatives.</p>
                                 <div class="btn-wrapper">
                                     <a
                                         href="#services"
@@ -143,8 +143,9 @@
                     id="digital"
                 >
                     <div class="col-md-6 order-md-2">
+                        <br></br>
                         <img
-                            src="/assets/img/theme/promo-1.png"
+                            src="/assets/img/theme/promo-1.jpg"
                             class="img-fluid floating"
                         >
                     </div>
@@ -239,7 +240,7 @@
                                     <div class="row">
                                         <div class="col-sm-4 rounded-circle mb-0">
                                             <a href="https://www.youtube.com/watch?v=noMCbtXGhnE"><img
-                                                    src="https://www.pangeaa.com/wp-content/uploads/2018/01/Pangea-accelerator-logo.jpg"
+                                                    src="/assets/img/clients/pangea.jpg"
                                                     class="rounded-square img-left img-fluid shadow shadow-lg--hover"
                                                     style="width: 180px;height:50px;"
                                                 ><br>
@@ -429,7 +430,7 @@
                     <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
                         <div class="px-4">
                             <img
-                                src="http://weetracker.com/wp-content/uploads/2018/08/kevin-150x150.jpeg"
+                                src="/assets/img/brand/kevin.jpg"
                                 class="rounded-circle img-center img-fluid shadow shadow-lg--hover"
                                 style="height: 180px"
                             >
@@ -444,13 +445,14 @@
                     <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
                         <div class="px-4">
                             <img
-                                src="/assets/img/brand/maureen.jpeg"
+                                src="/assets/img/brand/lorine.jpg"
                                 class="rounded-circle img-center img-fluid shadow shadow-lg--hover"
-                                style="height: 180px;"
+                                style="height: 180px;-webkit-transform: rotateX(-20deg); /* Safari */
+  transform: rotateX(-20deg);"
                             >
                             <div class="pt-4 text-center">
                                 <h5 class="title">
-                                    <span class="d-block mb-1">Maureen Mbugua</span>
+                                    <span class="d-block mb-1">Lorine Adier</span>
                                     <small class="h6 text-muted">Digital Media</small>
                                 </h5>
                             </div>
@@ -634,3 +636,23 @@
 
 
 export default {}
+<style>
+.position-relative {
+    position: relative;
+    background-image: none;
+    background-image: url("/assets/img/social-audit.png") !important;
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 100vh !important;
+}
+.home-content {
+    background-color: rgba(0, 0, 34, 0.7);
+    z-index: 9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+</style>

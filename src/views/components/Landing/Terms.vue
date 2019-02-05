@@ -55,8 +55,7 @@
 
                         <p>Effective March 1, 2016</p>
                         <hr><br>
-                        <p>Briglobe Investment Group Ltd. owns “Onesha”, an online platform where young professionals can
-                            showcase their work and discover the professional visual work of others. Onesha is
+                        <p>Briglobe Investment Group Ltd. owns “Onesha”, a platform that gives businesses access to top creative services from our wide pool of vetted creatives. Onesha is
                             hosted exclusively in Kenya and is operated from the Briglobe Investment Group offices in
                             Nairobi, KE. Onesha may be accessed directly on the web at <b><a href="http://www.onesha.co.ke">onesha.co.ke</a> </b>. <br>
                             Onesha is a wholly-owned product of Briglobe Investment Group, and any information you provide to
@@ -207,7 +206,8 @@
                             or the downloading, copying or use of which is subject to additional terms and
                             conditions, stated or unstated. Onesha disclaims any responsibility for any harm
                             resulting from the use by visitors of the Website, or from any downloading by those
-                            visitors of content there posted.
+                            visitors of content there posted.<br>
+                            For any European &amp; US users, Onesha shall apply GDPR data regulations to be in line with EU policies of user data protection.
                         </p> <br>
                         <h5>4. OUR SERVICES</h5>
                         <p>

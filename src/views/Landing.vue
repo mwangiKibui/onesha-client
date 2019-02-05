@@ -35,8 +35,8 @@
                                             class="py-1 px-3"
                                             style="list-style: tick"
                                         >
-                                            <li>Get quicker connections</li>
-                                            <li>Increase your conversion rate for clients</li>
+                                            <li>Get quicker business connections</li>
+                                            <li>Increase your pool of potential clients</li>
                                             <li>Showcase the capability of your company</li>
                                         </ul>
                                     </span>
@@ -111,8 +111,23 @@
                         <h5 class="text-default mt-3">Use Local Business Intelligence</h5>
                         <p class="text-default mt-3">Grow your market share with our local business intelligence. We use research reports and analysis to give you an in-depth knowledge about your industry.</p>
                     </div>
+                </div><br><br>
+                <div class="row text-center justify-content-center">
+                    <div class="btn-wrapper justify-content-center">
+                        <a
+                            href="#request"
+                            data-toggle="scroll"
+                        >
+                            <base-button
+                                class="btn btn-lg btn-success btn-icon mb-3 mb-sm-0"
+                                type="info"
+                                icon=""
+                            >
+                                I WANT THIS
+                            </base-button>
+                        </a>
+                    </div>
                 </div>
-
             </div>
         </section>
 
@@ -121,7 +136,7 @@
                 <div class="row row-grid align-items-center">
                     <div class="col-md-4 order-md-2">
                         <img
-                            src="https://socialmedia.onesha.co.ke/assets/img/theme/promo-1.png"
+                            src="/assets/img/theme/promo.jpg"
                             class="img-fluid floating"
                         >
                     </div>
@@ -280,7 +295,7 @@
                                     >
                                     </icon>
                                     <h6 class="text-primary text-uppercase">Brief Processing</h6>
-                                    <p class="description mt-3">Onesha processes your request into a job brief that we present to vetted creatives for quotation.<br><br> You then selected and approve the quote.</p>
+                                    <p class="description mt-3">Onesha processes your request into a job brief that we present to vetted creatives for quotation.<br><br> Select and approve the quote.</p>
                                     <br>
                                     <!-- <base-button tag="a"  href="#request" data-toggle="scroll" type="primary" class="mt-4">-->
                                 </card>
@@ -291,7 +306,7 @@
                                     <div class="card-body py-5">
                                         <div class="icon icon-shape mb-4 icon-shape-primary rounded-circle"><i class="ni ni-settings"></i></div>
                                         <h6 class="text-primary text-uppercase">Job Execution</h6>
-                                        <p class="description mt-3">We start working on your job according to the brief. We send you samples for your approval.<br><br> You will then make a deposit to continue.</p><br>
+                                        <p class="description mt-3">We start working on your job according to the brief. We send you samples for your approval.<br><br> Make a deposit to continue.</p><br>
                                     </div>
                                     <!---->
                                     <!---->
@@ -303,7 +318,7 @@
                                     <div class="card-body py-5">
                                         <div class="icon icon-shape mb-4 icon-shape-primary rounded-circle"><i class="ni ni-check-bold"></i></div>
                                         <h6 class="text-primary text-uppercase">Job Delivery</h6>
-                                        <p class="description mt-3">You receive the final samples and complete the payment upon being satisfied with the result.<br><br> You can choose your mode of delivery.</p><br>
+                                        <p class="description mt-3">You receive the final samples and complete the payment upon being satisfied with the result.<br><br> Choose your mode of delivery.</p><br>
                                     </div>
                                     <!---->
                                     <!---->
@@ -369,7 +384,7 @@
                                     </div>
                                     <div class="pl-4">
                                         <h5 class="title text-success">Request changes before accepting</h5>
-                                        <p>Receive 2 samples work, review upto 3 times. We ensure you get the quality you are looking for.</p>
+                                        <p>Receive 2 samples of work, review upto 3 times. We ensure you get the quality you are looking for.</p>
 
                                     </div>
                                 </div>
@@ -396,8 +411,8 @@
                                         </div>
                                     </div>
                                     <div class="pl-4">
-                                        <h5 class="title text-success">We control the process</h5>
-                                        <p>Save time taken to compare creative professionals as we choose the right one for the job. We also do project management to reduce the hassle.</p>
+                                        <h5 class="title text-success">We manage the process</h5>
+                                        <p>Save time taken to compare creative professionals as we choose the right one for the job.</p>
 
                                     </div>
                                 </div>
@@ -405,10 +420,10 @@
                         </div>
 
                     </div>
-                    <div class="col-md-4 order-lg-2 ml-lg-auto">
+                    <div class="col-md-5 col-sm-6 order-lg-2 ml-lg-auto">
                         <div class="mt-2 pl-md-5 pt-5 text-white">
                             <img
-                                src="https://socialmedia.onesha.co.ke/assets/img/ill/ill-2.svg"
+                                src="/assets/img/ill/ill-2.svg"
                                 class="img-center img-fluid"
                             />
                             <br>
@@ -417,7 +432,7 @@
                             <a
                                 @click="showSampleModal()"
                                 class="btn btn-success"
-                            >REQUEST A SAMPLE</a>
+                            >Send Me A Sample</a>
                         </div>
                     </div>
                 </div>
@@ -431,7 +446,7 @@
                         <h5
                             class="modal-title"
                             id="templateModalTitle"
-                        >Enter your details to receive a sample Corporate company profile</h5>
+                        >Enter your details to receive a sample corporate company profile</h5>
                         <hr>
                         <div class="form-group">
                             <div class="input-group input-group-alternative mb-4">
@@ -488,44 +503,44 @@
                     style="width:120%"
                 >
                     <div class="col-sm-1"><img
-                            class="img-circle img-back"
+                            class="img-fluid   img-back"
                             style="background: url('/assets/img/clients/pangea.jpg');"
                         ></div>
                     <div class="col-sm-1"><img
-                            class="img-circle img-back"
+                            class="img-fluid   img-back"
                             style="background: url('/assets/img/clients/eo.jpg');"
                         ></div>
                     <div class="col-sm-1"><img
-                            class="img-circle img-back"
+                            class="img-fluid   img-back"
                             style="background: url('/assets/img/clients/weston.png');"
                         ></div>
                     <div class="col-sm-1"><img
-                            class="img-circle img-back"
+                            class="img-fluid   img-back"
                             style="background: url('/assets/img/clients/bdo.png');"
                         ></div>
                     <div class="col-sm-1"><img
-                            class="img-circle img-back"
+                            class="img-fluid   img-back"
                             style="background: url('/assets/img/clients/uber.jpg');"
                         ></div>
                     <div class="col-sm-1"><img
-                            class="img-circle img-back"
+                            class="img-fluid   img-back"
                             style="background: url('/assets/img/clients/flexpay.jpeg');"
                         ></div>
                     <div class="col-sm-1"><img
-                            class="img-circle img-back"
-                            style="background: url('/assets/img/clients/imagine.jpg');"
+                            class="img-fluid   img-back"
+                            style="background: url('/assets/img/clients/dafabet.jpg');"
                         ></div>
                     <div class="col-sm-1"><img
-                            class="img-circle img-back"
+                            class="img-fluid   img-back"
                             style="background: url('/assets/img/clients/taraji.jpg');"
                         ></div>
                     <div class="col-sm-1"><img
-                            class="img-circle img-back"
+                            class="img-fluid   img-back"
                             style="background: url('/assets/img/clients/gig.jpeg');"
                         ></div>
                     <div class="col-sm-1"><img
-                            class="img-circle img-back"
-                            style="background: url('/assets/img/clients/lexy.jpeg');"
+                            class="img-fluid img-back"
+                            style="background: url('/assets/img/clients/longitude.jpg');"
                         ></div>
                 </div>
             </div>
@@ -744,7 +759,7 @@ window.onload = function() {
 .position-relative {
     position: relative;
     background-image: none;
-    background-image: url("/assets/img/social-audit.jpg");
+    background-image: url("/assets/img/social-bg.jpg");
     background-size: cover;
     background-position: right;
     background-repeat: no-repeat;
@@ -778,8 +793,14 @@ window.onload = function() {
     background-position: center !important;
     background-size: contain !important;
     border-color: transparent;
-    width: 120px !important;
-    height: 60px;
+    width: 125px !important;
+    height: 90px;
+    border: 0px solid;
+    margin: 0%;
+    border-radius: 0%;
+}
+.col-sm-1 {
+    width: 130px !important;
 }
 .crd {
     padding: 0.8rem !important;

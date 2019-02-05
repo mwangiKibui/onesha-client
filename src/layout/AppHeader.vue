@@ -4,7 +4,7 @@
             class="navbar-main"
             transparent
             type
-            effect="light"
+            effect="dark"
             expand
         >
             <a
