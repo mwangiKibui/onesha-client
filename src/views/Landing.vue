@@ -437,7 +437,7 @@
                     </div>
                 </div>
             </div>
-            <modal :show.sync="showModal">
+            <modal :show.sync="showModal" id="card-details">
                 <template slot="header">
                 </template>
                 <div class="modal-body">
@@ -456,6 +456,7 @@
                                 <input
                                     type="text"
                                     name="clientName"
+                                    v-model="filledindata['clientName']"
                                     class="form-control"
                                     placeholder="Your name"
                                 >
@@ -469,6 +470,7 @@
                                 <input
                                     type="email"
                                     name="clientEmail"
+                                    v-model="filledindata['clientEmail']"
                                     class="form-control"
                                     placeholder="Your email address, e.g. someone@example.com"
                                 >
@@ -479,8 +481,9 @@
                 <template slot="footer">
                     <span>
                         <button
+                            id="message2"
                             class="btn btn-success"
-                            @click=""
+                            @click="submitClientInformation"
                         >Submit</button>
                     </span>
                 </template>
@@ -680,10 +683,98 @@ export default {
                 // console.log(err)
             }
         },
+        hideJobDetails() {
+            this.showModal= false;
+        },
         showSampleModal() {
             this.showModal = true;
         },
-        submitSampleRequest() {}
+        async submitClientInformation() {
+            //show loader
+            this.$el.querySelector("#message").innerHTML = `<div
+                    >
+                        <p
+                            class="text-default"
+                        >SENDING...</p>
+                    </div>`;
+            //fetch data
+            const res = await Axios.post(
+                `/api/data/sample-profile`,
+                this.filledindata
+            ).then(res => res.data);
+            const mefail = `<div class="modal-body bg-gradient-error text-white" id="modal3">
+                        <div class="modal-header bg-gradient-error">
+                            <h6 class="modal-title" id="modal-title-notification">Your request was not submitted</h6>
+                            <button type="button" class="close" @click="hideJobDetails()" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+
+                            <div class="py-3 text-center">
+                            <i class="ni ni-fat-remove text-error ni-3x"></i>
+                            <h4 class="heading mt-4 text-error">ERROR!</h4>
+                            <p class="text-default">There was an error sending you the confirmation email. Please try again.</p>
+                            </div>
+
+                        </div>
+
+                        <div class="modal-footer text-centered">
+                            <button type="button" @click="hideJobDetails()" class="btn btn-white">Retry</button>
+                        </div>
+
+                        </div>`;
+            const messuccess = `<div class="modal-body bg-gradient-success text-white" id="modal2">
+                        <div class="modal-header bg-gradient-success">
+                            <h6 class="modal-title" id="modal-title-notification">Your request has been submitted</h6>
+                            <button type="button" class="close" @click="hideJobDetails()" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+
+                            <div class="py-3 text-center">
+                            <i class="ni ni-check-bold text-success ni-3x"></i>
+                            <h4 class="heading mt-4 text-success">Success!</h4>
+                            <p class="text-default">We have sent the sample profile to your email.</p>
+                            </div>
+
+                        </div>
+
+                        <div class="modal-footer text-centered">
+                            <button type="button" @click="hideJobDetails()" class="btn btn-white">Ok, Got it</button>
+                        </div>
+
+                        </div>`;
+            const meresend = `<div class="modal-content bg-gradient-error text-white" id="modal3">
+                    <div class="modal-header bg-gradient-error">
+                        <h6 class="modal-title" id="modal-title-notification">Your request was not submitted</h6>
+                        <button type="button" class="close" @click="hideJobDetails()" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="py-3 text-center">
+                            <i class="ni ni-fat-remove text-error ni-3x"></i>
+                            <h4 class="heading mt-4 text-error">Sorry!</h4>
+                            <p class="text-default">We encountered a problem sending the sample.</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer text-centered">
+                        <button type="button" @click="hideJobDetails()" class="btn btn-white">Retry</button>
+                    </div>
+                
+                    </div>`;
+
+            //success response
+            if (res.message == "success") {
+                this.$el.querySelector("#card-details").innerHTML = messuccess;
+            } else if (res.message == "failed") {
+                this.$el.querySelector("#card-details").innerHTML = mefail;
+            } else {
+                this.$el.querySelector("#card-details").innerHTML = meresend;
+            }
+        }
     },
     beforeRouteEnter(to, from, next) {
         next(vm => {
