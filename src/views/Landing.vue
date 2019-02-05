@@ -143,7 +143,7 @@
                     <div class="col-md-8 order-md-1">
                         <div class="pr-md-5 text-white">
 
-                            <h3 class=" text-success">Who needs a company profile?</h3>
+                            <h3 class=" text-info">Who needs a company profile?</h3>
                             <p class="">Your company profile is a professional introduction and aims to inform people (primarily prospective buyers and stakeholders) about your products,
                                 services, and current status. Your company profile is a key component in your marketing strategy.</p>
                             <ul class="list-unstyled mt-2 text-success">
