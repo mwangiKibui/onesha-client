@@ -1,12 +1,14 @@
 <template>
     <footer class="footer has-cards">
+        <h3 class="text-primary text-center font-weight-light mt-0 pt-2">Call our sales team today!<br><br> <a
+                class="btn btn-primary btn-lg"
+                href="tel://+254712983630"
+            >+254 712983630</a></h3>
         <div class="container">
             <div class="row row-grid align-items-center my-md">
                 <div class="col-lg-6">
                     <h3 class="text-primary font-weight-light mb-2">We are here for you!</h3>
-                    <h4 class="mb-0 font-weight-light">Let's get in touch on any of these platforms.</h4>
-                </div>
-                <div class="col-lg-6 text-lg-center btn-wrapper">
+                    <h4 class="mb-0 font-weight-light">Let's get in touch on any of these platforms.</h4><br>
                     <a
                         target="_blank"
                         href="https://twitter.com/onesha_KE"
@@ -42,9 +44,13 @@
                         data-original-title="Subscribe to our channel"
                     >
                         <i class="fa fa-youtube"></i>
-                    </a><br>.
+                    </a>
+                </div>
+                <div class="col-lg-6 text-lg-center btn-wrapper">
+                    <h5>Reach us through</h5>
                     <p class="text-lg-center">
                         <strong><i class="fa fa-phone"></i></strong> &nbsp; +254 712 983630 <br>
+                        <strong><i class="fa fa-envelope"></i></strong> &nbsp; Box 21933-00100 <br>
                         <strong><i class="fa fa-envelope"></i></strong> &nbsp; hello@onesha.co.ke <br>
                         <strong><i class="fa fa-map-marker"></i></strong> &nbsp; Seasons Road, Kasarani, Nairobi
                     </p>

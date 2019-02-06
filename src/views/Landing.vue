@@ -13,12 +13,12 @@
                         <div class="mt--300 d-lg-nones"></div>
                         <div class="justify-content-between align-items-center">
                             <div class="col-lg-11">
-                                <h5
-                                    class="display-4 text-left text-white"
+                                <h2
+                                    class="display-3 text-left text-white"
                                     style="display: inline-block; float: center"
                                 >Grow your sales pipeline using a corporate company profile
                                     <!-- <span style="font-size: 0.5em">Your creative tasks sorted</span> -->
-                                </h5>
+                                </h2>
                                 <p class="justify-content-between text-white text-left pt-2">
                                     <span class="lead">Get <span
                                             class="next"
@@ -556,7 +556,10 @@
                     <h4 class="mb-1 text-center text-white">Want to work with us?</h4>
                 </div>
                 <div class="row justify-content-center pb-lg-2">
-                    <div class="col-lg-8">
+                    <div
+                        class="col-lg-8"
+                        id="carddetails2"
+                    >
                         <card
                             gradient="secondary"
                             shadow
@@ -568,38 +571,48 @@
                                 class="mt-5"
                                 alternative
                                 placeholder="Your name"
+                                name="name"
+                                v-model="filledindata['name']"
                                 addon-left-icon="ni ni-user-run"
                             >
                             </base-input>
                             <base-input
                                 alternative
                                 placeholder="Email address"
+                                name="email"
+                                v-model="filledindata['email']"
                                 addon-left-icon="ni ni-email-83"
                             >
                             </base-input>
                             <base-input
                                 alternative
                                 placeholder="Location"
+                                name="location"
+                                v-model="filledindata['location']"
                                 addon-left-icon="ni ni-pin-3"
                             >
                             </base-input>
                             <base-input class="mb-4">
                                 <textarea
                                     class="form-control form-control-alternative"
-                                    name="name"
+                                    name="message"
+                                    v-model="filledindata['message']"
                                     rows="4"
                                     cols="80"
                                     placeholder="What do you need done?..."
                                 ></textarea>
                             </base-input>
-                            <base-button
-                                type="default"
-                                round
-                                block
-                                size="lg"
-                            >
-                                Send Request
-                            </base-button>
+                            <span id="message2">
+                                <base-button
+                                    type="default"
+                                    round
+                                    block
+                                    size="lg"
+                                    @click="submitClientRequest()"
+                                >
+                                    Send Request
+                                </base-button>
+                            </span>
                         </card>
                     </div>
                 </div>
@@ -688,9 +701,12 @@ export default {
             }
         },
         hideJobDetails() {
-            this.showModal = false;
-            this.$emit(this.showModal, false);
-            this.$emit("close");
+            console.log("clicked");
+            this.$el
+                .querySelector("#carddetails2")
+                .parentNode.removeChild(
+                    this.$el.querySelector("#carddetails2")
+                );
         },
         showSampleModal() {
             this.showModal = true;
@@ -779,6 +795,92 @@ export default {
                 this.$el.querySelector("#card-details").innerHTML = mefail;
             } else {
                 this.$el.querySelector("#card-details").innerHTML = meresend;
+            }
+        },
+        async submitClientRequest() {
+            //show loader
+            this.$el.querySelector("#message2").innerHTML = `<div
+                    >
+                        <p
+                            class="text-default"
+                        >SENDING...</p>
+                    </div>`;
+            //fetch data
+            const res = await Axios.post(
+                `/api/data/leave-us-message`,
+                this.filledindata
+            ).then(res => res.data);
+            const mefail = `<div class="modal-body bg-gradient-error text-white" id="modal3">
+                        <div class="modal-header bg-gradient-error">
+                            <h6 class="modal-title" id="modal-title-notification">Your message was not submitted</h6>
+                            <button type="button" class="close" @click="hideJobDetails()" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+
+                            <div class="py-3 text-center">
+                            <i class="ni ni-fat-remove text-error ni-3x"></i>
+                            <h4 class="heading mt-4 text-error">ERROR!</h4>
+                            <p class="text-default">There was an error sending the message. Please try again.</p>
+                            </div>
+
+                        </div>
+
+                        <div class="modal-footer text-centered">
+                            <button type="button" @click="hideJobDetails()" class="btn btn-white">Retry</button>
+                        </div>
+
+                        </div>`;
+            const messuccess = `<div class="modal-body bg-gradient-success text-white" id="modal2">
+                        <div class="modal-header bg-gradient-success">
+                            <h6 class="modal-title" id="modal-title-notification">Your message has been submitted</h6>
+                            <button type="button" class="close" @click="hideJobDetails()" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+
+                            <div class="py-3 text-center">
+                            <i class="ni ni-check-bold text-success ni-3x"></i>
+                            <h4 class="heading mt-4 text-success">Success!</h4>
+                            <p class="text-default">We have received your message.</p>
+                            </div>
+
+                        </div>
+
+                        <div class="modal-footer text-centered">
+                            <button type="button" @click="hideJobDetails()" class="btn btn-white">Ok, Got it</button>
+                        </div>
+
+                        </div>`;
+            const meresend = `<div class="modal-body bg-gradient-error text-white" id="modal3">
+                    <div class="modal-header bg-gradient-error">
+                        <h6 class="modal-title" id="modal-title-notification">Your message was not submitted</h6>
+                        <button type="button" class="close" @click="hideJobDetails()" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="py-3 text-center">
+                            <i class="ni ni-fat-remove text-error ni-3x"></i>
+                            <h4 class="heading mt-4 text-error">Sorry!</h4>
+                            <p class="text-default">We encountered a problem sending the message.</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer text-centered">
+                        <button type="button" @click="hideJobDetails()" class="btn btn-white">Retry</button>
+                    </div>
+                
+                    </div>`;
+
+            //success response
+            if (res.message == "success") {
+                this.$el.querySelector("#carddetails2").innerHTML = messuccess;
+            } else if (res.message == "failed") {
+                this.$el.querySelector("#carddetails2").innerHTML = mefail;
+            } else {
+                this.$el.querySelector("#carddetails2").innerHTML = meresend;
             }
         }
     },
