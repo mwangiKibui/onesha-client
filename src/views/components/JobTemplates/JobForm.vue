@@ -316,8 +316,10 @@ export default {
             this.filledindata["industry"] = category;
         },
         hideJobDetails() {
+            this.$router.go();
             this.$el.querySelector("#usercategories").hidden = false;
             this.$el.querySelector("#jobDetails").hidden = true;
+            window.location.reload(true);
         },
         /**
          * Load templates from database for specified job type.
@@ -464,8 +466,8 @@ export default {
                         <div class="modal-body">
 
                             <div class="py-3 text-center">
-                            <i class="ni ni-check-bold text-success ni-3x"></i>
-                            <h4 class="heading mt-4 text-success">Success!</h4>
+                            <i class="ni ni-check-bold text-white ni-3x"></i>
+                            <h4 class="heading mt-4 text-default">Success!</h4>
                             <p class="text-default">We have sent you an email with further instructions.</p>
                             </div>
 
@@ -499,10 +501,13 @@ export default {
             //success response
             if (res.message == "success") {
                 this.$el.querySelector("#card-details").innerHTML = messuccess;
+                window.location.reload(true);
             } else if (res.message == "failed") {
                 this.$el.querySelector("#card-details").innerHTML = mefail;
+                window.location.reload(true);
             } else {
                 this.$el.querySelector("#card-details").innerHTML = meresend;
+                window.location.reload(true);
             }
         }
     }

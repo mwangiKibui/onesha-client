@@ -84,7 +84,13 @@
                                                 v-if="!templatedata.length && notemplate == false"
                                                 class="modal-title"
                                                 id="templateModalTitle"
-                                            >No template found.</h5>
+                                            >
+                                                <RotateSquare5
+                                                    class="text-center align-items-center"
+                                                    style="width: 100px; height: 100px;"
+                                                    label="Loading.."
+                                                > Loading</RotateSquare5>
+                                            </h5>
                                             <!-- </div> -->
                                         </div>
 
@@ -223,12 +229,12 @@
                                             <span v-if="notemplate == false">
                                                 <button
                                                     class="btn btn-default"
-                                                    v-if="templateIndex >= 1"
+                                                    v-if="templateIndex >= 1 && templatedata.length "
                                                     @click="loadPreviousTemplate(templateIndex)"
                                                 >Previous</button>
                                                 <button
                                                     class="btn btn-dark"
-                                                    v-if="templateIndex !== templatedata.length - 1"
+                                                    v-if="templateIndex !== templatedata.length - 1 && templatedata.length "
                                                     @click="loadNextTemplate(templateIndex)"
                                                 >Next</button>
                                                 <button
@@ -322,10 +328,12 @@ export default {
     },
     methods: {
         hideJobDetails() {
+            this.$router.go();
             this.$el.querySelector("#modal1").hidden = true;
             this.$el.querySelector("#modal2").hidden = true;
             this.$el.querySelector("#modal3").hidden = true;
             this.$el.querySelector("#card-details").hidden = true;
+            window.location.reload(true);
         },
         fetchCategoryJobTypes() {
             Axios.get("/api/data/jobtype-grouped/" + this.slug).then(res => {
@@ -473,7 +481,7 @@ export default {
                         <div class="modal-body">
 
                             <div class="py-3 text-center">
-                            <i class="ni ni-check-bold text-success ni-3x"></i>
+                            <i class="ni ni-check-bold text-white ni-3x"></i>
                             <h4 class="heading mt-4 text-default">Success!</h4>
                             <p class="text-default">We have sent you an email with further instructions.</p>
                             </div>
