@@ -37,7 +37,7 @@
                         class="nav-link"
                         replace
                     >
-                        <i class="ni ni-collection d-lg-none"></i>
+                        <i class="ni ni-single-copy-04"></i>
                         <span class="nav-link-inner--text">HOW IT WORKS</span>
                     </router-link>
                 </li>
@@ -52,7 +52,7 @@
                         data-toggle="dropdown"
                         role="button"
                     >
-                        <i class="ni ni-collection d-lg-none"></i>
+                        <i class="ni ni-bullet-list-67"></i>
                         <span class="nav-link-inner--text">SERVICES</span>
                     </a>
                     <router-link
@@ -81,13 +81,25 @@
             <ul class="navbar-nav align-items-lg-center ml-lg-auto">
                 <li class="nav-item">
                     <a
-                        href="https://socialmedia.onesha.co.ke/blog"
+                        href="about"
                         class="nav-link"
                         replace
                     >
 
                         <span class="nav-link-inner--text">
-                            <i class="ni ni-collection"></i> BLOG
+                            <i class="ni ni-single-02"></i>ABOUT US
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a
+                        href="https://blog.onesha.co.ke"
+                        class="nav-link"
+                        replace
+                    >
+
+                        <span class="nav-link-inner--text">
+                            <i class="ni ni-archive-2"></i>BLOG
                         </span>
                     </a>
                 </li>
