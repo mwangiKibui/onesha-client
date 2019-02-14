@@ -81,13 +81,13 @@
             <ul class="navbar-nav align-items-lg-center ml-lg-auto">
                 <li class="nav-item">
                     <a
-                        href="about"
+                        href="/about"
                         class="nav-link"
                         replace
                     >
-
+                        <i class="ni ni-single-02"></i>
                         <span class="nav-link-inner--text">
-                            <i class="ni ni-single-02"></i>ABOUT US
+                            ABOUT US
                         </span>
                     </a>
                 </li>
@@ -97,9 +97,9 @@
                         class="nav-link"
                         replace
                     >
-
+                        <i class="ni ni-archive-2"></i>
                         <span class="nav-link-inner--text">
-                            <i class="ni ni-archive-2"></i>BLOG
+                            BLOG
                         </span>
                     </a>
                 </li>
