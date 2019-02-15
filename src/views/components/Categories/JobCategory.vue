@@ -75,6 +75,7 @@
                                         v-bind:is="component"
                                         @response="childComponentResponse"
                                         :jslug="this.jobtype"
+                                        :category="this.userIndustry"
                                     ></component>
                                 </keep-alive>
                             </modal>
@@ -140,21 +141,13 @@ export default {
         this.fetchCategoryJobTypes();
     },
     methods: {
-        hideJobDetails() {
-            this.$router.go();
-            this.$el.querySelector("#modal1").hidden = true;
-            this.$el.querySelector("#modal2").hidden = true;
-            this.$el.querySelector("#modal3").hidden = true;
-            this.$el.querySelector("#card-details").hidden = true;
-            window.location.reload(true);
-        },
         fetchCategoryJobTypes() {
             Axios.get("/api/data/jobtype-grouped/" + this.slug).then(res => {
                 this.notemplate = true;
                 return (this.category = res.data);
             });
         },
-        async loadJobTemplatesModal(jobtype) {
+        loadJobTemplatesModal(jobtype) {
             this.progress = 0;
             this.templateModal = true;
             this.jobtype = jobtype.slug;

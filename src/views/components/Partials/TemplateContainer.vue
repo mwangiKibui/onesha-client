@@ -1,10 +1,13 @@
 <template>
-    <div class="my-5">
+    <div
+        class="my-5"
+        v-if="templated"
+    >
         <div class="title">{{ templated.title }}</div><br>
-        <div v-if="template.feedback == 'single-select'">
+        <div v-if="templated.feedback == 'single-select'">
             <div
                 :name="templated._id"
-                v-for="(option, index) in template.options"
+                v-for="(option, index) in templated.options"
                 :key="index"
             >
                 <base-radio

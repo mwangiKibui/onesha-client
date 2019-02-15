@@ -38,20 +38,16 @@
                                 <!-- image or jobtype illustration -->
                                 <b-carousel-slide
                                     v-if="job.slug == 'new-design-only'"
-                                    :key="index"
                                     img-src="/assets/img/newdesign.jpg"
                                 ></b-carousel-slide>
                                 <b-carousel-slide
                                     v-if="job.slug == 'redesign-existing-profile'"
-                                    :key="index"
                                     img-src="/assets/img/redesign.jpg"
                                 ></b-carousel-slide>
                                 <b-carousel-slide
                                     v-if="job.slug == 'new-design-&-structure'"
-                                    :key="index"
                                     img-src="/assets/img/design-structure.jpg"
                                 ></b-carousel-slide>
-                                </b-carousel-slide>
                             </b-carousel>
                         </div>
                     </div>

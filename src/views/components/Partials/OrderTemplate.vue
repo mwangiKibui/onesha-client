@@ -8,6 +8,7 @@
         >
             <span aria-hidden="true">×</span>
         </button>
+        <!-- <form @submit.prevent="submitClientInformation"> -->
         <div v-if="clientInfo == false">
             <div slot="header">
                 <h5
@@ -55,7 +56,7 @@
 
         <!-- no template defined -->
         <div
-            v-if="!template.length"
+            v-if="!templatedata"
             id="message"
         >
             <RotateSquare5
@@ -66,22 +67,25 @@
         </div>
 
         <!-- <template slot="footer"> -->
-        <div v-if="templatedata && clientInfo == false">
+        <div v-if="clientInfo == false">
             <div v-if="notemplate == true">
             </div>
             <span v-if="notemplate == false">
                 <button
                     class="btn btn-default"
+                    role="button"
                     v-if="templatedata.length && templateIndex >= 1"
                     @click="loadPreviousTemplate(templateIndex)"
                 >Previous</button>
                 <button
                     class="btn btn-dark"
+                    role="button"
                     v-if="templatedata.length && templateIndex !== templatedata.length - 1"
                     @click="loadNextTemplate(templateIndex)"
                 >Next</button>
                 <button
                     class="btn btn-success"
+                    role="button"
                     v-if="templateIndex === templatedata.length - 1"
                     @click="requestClientDetails"
                 >Continue</button>
@@ -96,6 +100,7 @@
                 @click="submitClientInformation"
             >Submit</button>
         </div>
+        <!-- </form> -->
     </card>
 </template>
 
@@ -110,7 +115,7 @@ import { RotateSquare5 } from "vue-loading-spinner";
 
 export default {
     name: "order-template",
-    props: ["jslug"],
+    props: ["jslug", "category"],
     components: {
         BaseRadio,
         BaseCheckbox,
@@ -184,9 +189,12 @@ export default {
             this.templateIndex = 0;
             this.template = this.templatedata[0];
             this.notemplate = false;
-            this.$nextTick(function() {
-                this.$el.querySelector("#message").innerHTML = "";
-            });
+            if (this.template) {
+                this.$nextTick(function() {
+                    //this.$el.querySelector("#message").innerHTML = "";
+                });
+            }
+
             //console.log(this.template);
         },
         /**
@@ -264,6 +272,8 @@ export default {
                             class="text-default"
                         >SENDING...</p>
                     </div>`;
+
+            this.filledindata["industry"] = this.category;
             //fetch data
             const res = await Axios.post(
                 `/api/data/${this.jobtype}/client-templates`,
