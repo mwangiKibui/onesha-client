@@ -1,0 +1,284 @@
+<template>
+    <card id="card-details">
+        <button
+            type="button"
+            class="close"
+            @click="closeModal"
+            aria-label="Close"
+        >
+            <span aria-hidden="true">×</span>
+        </button>
+        <div v-if="clientInfo == false">
+            <div slot="header">
+                <h5
+                    v-if="templatedata && templatedata.length"
+                    class="modal-title"
+                    id="templateModalTitle"
+                >You are {{ Number(templatedata.length) - templateIndex }} {{ Number(templatedata.length) - templateIndex > 1 ? 'steps' : 'step'}} away from placing your order</h5>
+                <h5
+                    v-if="!templatedata.length && notemplate == false"
+                    class="modal-title"
+                    id="templateModalTitle"
+                >
+                    <RotateSquare5
+                        class="text-center align-items-center"
+                        style="width: 100px; height: 100px;"
+                        label="Loading.."
+                    > Loading</RotateSquare5>
+                </h5>
+            </div>
+
+            <base-progress
+                v-if="templatedata && templatedata.length"
+                type="success"
+                :value="progress"
+                :label="jobtype"
+            ></base-progress>
+
+            <div v-if="templatedata && !templatedata.length"></div>
+            <div>
+                <!-- Show the template questions -->
+                <keep-alive>
+                    <template-container
+                        :templated="template"
+                        v-if="templatedata && templatedata.length"
+                        class="templateModal"
+                    ></template-container>
+                </keep-alive>
+            </div>
+        </div>
+
+        <!-- Request the client details -->
+        <div v-if="clientInfo == true">
+            <order-client :templatedata="this.template"></order-client>
+        </div>
+
+        <!-- no template defined -->
+        <div
+            v-if="!template.length"
+            id="message"
+        >
+            <RotateSquare5
+                class="text-center align-items-center"
+                style="width: 100px; height: 100px;"
+                label="Loading.."
+            > Loading</RotateSquare5>
+        </div>
+
+        <!-- <template slot="footer"> -->
+        <div v-if="templatedata && clientInfo == false">
+            <div v-if="notemplate == true">
+            </div>
+            <span v-if="notemplate == false">
+                <button
+                    class="btn btn-default"
+                    v-if="templatedata.length && templateIndex >= 1"
+                    @click="loadPreviousTemplate(templateIndex)"
+                >Previous</button>
+                <button
+                    class="btn btn-dark"
+                    v-if="templatedata.length && templateIndex !== templatedata.length - 1"
+                    @click="loadNextTemplate(templateIndex)"
+                >Next</button>
+                <button
+                    class="btn btn-success"
+                    v-if="templateIndex === templatedata.length - 1"
+                    @click="requestClientDetails"
+                >Continue</button>
+            </span>
+        </div>
+        <div
+            v-if="clientInfo != false"
+            id="message2"
+        >
+            <button
+                class="btn btn-success"
+                @click="submitClientInformation"
+            >Submit</button>
+        </div>
+    </card>
+</template>
+
+<script>
+import BaseRadio from "@/views/components/Common/BaseRadio.vue";
+import BaseCheckbox from "@/views/components/Common/BaseCheckbox.vue";
+import BaseProgress from "@/views/components/Common/BaseProgress.vue";
+import OrderClient from "@/views/components/Partials/OrderClient.vue";
+import TemplateContainer from "./TemplateContainer.vue";
+import Axios from "axios";
+import { RotateSquare5 } from "vue-loading-spinner";
+
+export default {
+    name: "order-template",
+    props: ["jslug"],
+    components: {
+        BaseRadio,
+        BaseCheckbox,
+        BaseProgress,
+        TemplateContainer,
+        OrderClient,
+        RotateSquare5
+    },
+    data() {
+        return {
+            filledindata: {},
+            clientInfo: false,
+            notemplate: true,
+            templateIndex: 1,
+            jobtype: this.jslug,
+            templatedata: {},
+            template: {},
+            progress: 0
+        };
+    },
+    watch: {
+        jslug: function(val1, val2) {
+            this.jobtype = val1;
+            this.loadJobTemplates(this.jobtype);
+        },
+        templateIndex: function(val1, val2) {
+            this.templateIndex = val1;
+            this.template = this.templatedata[this.templateIndex];
+        }
+    },
+    /**
+     * On template mount, execute defined action below.
+     *
+     * Fetch all job templates, from given jobtype from database, and populate returned data as templatedata.
+     */
+    mounted() {
+        this.loadJobTemplates(this.jobtype);
+        //console.log(this.jobtype);
+    },
+    computed: {
+        updateJobTemplates(jslug) {
+            // do async loading of job templates
+            this.loadJobTemplates(jslug);
+            console.log("done");
+        }
+    },
+    methods: {
+        /**
+         * Load templates from database for specified job type.
+         *
+         * Returns an array of template questions.
+         */
+        async loadJobTemplates(jslug) {
+            if (this.filledindata) {
+                Object.keys(this.filledindata).forEach(
+                    entry => delete this.filledindata[entry]
+                );
+            }
+            this.jobtype = jslug;
+            this.clientInfo = false;
+            this.templateModal = true;
+            this.progress = 0;
+            this.templatedata = [];
+            // do async loading of job templates
+            const jobTemplate = await Axios.get(
+                "/api/data/templates/" + this.jobtype
+            ).then(res => res.data);
+            this.templatedata = jobTemplate.length
+                ? jobTemplate[0].templates
+                : [];
+            this.templateIndex = 0;
+            this.template = this.templatedata[0];
+            this.notemplate = false;
+            this.$nextTick(function() {
+                this.$el.querySelector("#message").innerHTML = "";
+            });
+            //console.log(this.template);
+        },
+        /**
+         * Loads previous template question given the current index
+         *
+         */
+        loadPreviousTemplate(index) {
+            if (this.templateIndex === 0) {
+                this.templateIndex = 0;
+                this.template = this.templatedata[this.templateIndex];
+            } else {
+                this.templateIndex -= 1;
+                this.template = this.templatedata[this.templateIndex];
+            }
+            this.populateTemplateFeedback();
+        },
+        /**
+         * Loads next template question given the current index
+         *
+         */
+        loadNextTemplate(index) {
+            if (this.templateIndex == this.templatedata.length - 1) {
+                this.templateIndex = this.templatedata.length - 1;
+                this.template = this.templatedata[this.templateIndex];
+            } else {
+                this.templateIndex += 1;
+                this.template = this.templatedata[this.templateIndex];
+            }
+            this.populateTemplateFeedback();
+        },
+        /**
+         * Will populate template entry from selected options.
+         *
+         * Called for every next or previous button click when filling in job templates.
+         * Previously set object keys values are reset to the new selected option.
+         */
+        populateTemplateFeedback(end) {
+            var elem = this.$el.querySelector(".templateModal");
+            var title = elem.querySelector(".title").innerText;
+            var inputs = Array.from(elem.querySelectorAll("input"));
+            var label = "";
+            var self = this;
+            inputs.forEach(function(input) {
+                if (input.checked) {
+                    label = elem.querySelector(
+                        'label[for="' + input.getAttribute("id") + '"]'
+                    ).innerText;
+                    if (self.filledindata[title] != undefined)
+                        self.filledindata[title] = label;
+                }
+            });
+
+            var index = end
+                ? 1
+                : Number(this.templateIndex) / Number(this.templatedata.length);
+
+            this.progress = Math.ceil(index * 100);
+        },
+        /**
+         * Submit template after client fills in.
+         *
+         * Created object will be sent after sanitization to remove unwanted characters.
+         */
+        requestClientDetails() {
+            this.clientInfo = true;
+            this.populateTemplateFeedback(true);
+        },
+        async submitClientInformation() {
+            //show loader
+            this.notemplate = true;
+            this.$el.querySelector("#message2").innerHTML = "";
+            this.$el.querySelector("#message").innerHTML = `<div
+                    >
+                        <p
+                            class="text-default"
+                        >SENDING...</p>
+                    </div>`;
+            //fetch data
+            const res = await Axios.post(
+                `/api/data/${this.jobtype}/client-templates`,
+                this.filledindata
+            ).then(res => res.data);
+            const mefail = ``;
+            const messuccess = ``;
+            const meresend = ``;
+
+            //give response
+            this.$emit("response", res.message);
+        },
+        closeModal() {
+            this.$emit("response", "closemodal");
+        }
+    }
+};
+</script>

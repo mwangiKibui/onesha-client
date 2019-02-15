@@ -225,7 +225,6 @@
 </template>
 <script>
 import ProgressSection from "./JobProgress";
-import TemplateContainer from "./TemplateContainer";
 import JobCategories from "../Categories/UserCategory";
 import BaseRadio from "@/views/components/Common/BaseRadio.vue";
 import BaseCheckbox from "@/views/components/Common/BaseCheckbox.vue";
@@ -293,7 +292,6 @@ export default {
     },
     components: {
         ProgressSection,
-        TemplateContainer,
         JobCategories,
         BaseRadio,
         BaseCheckbox,
@@ -434,69 +432,9 @@ export default {
                 `/api/data/${this.slug}/client-templates`,
                 this.filledindata
             ).then(res => res.data);
-            const mefail = `<div class="modal-body bg-gradient-error text-white" id="modal3">
-                        <div class="modal-header bg-gradient-error">
-                            <h6 class="modal-title" id="modal-title-notification">Your request was not submitted</h6>
-                            <button type="button" class="close" @click="hideJobDetails()" aria-label="Close">
-                            <span aria-hidden="true">×</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-
-                            <div class="py-3 text-center">
-                            <i class="ni ni-fat-remove text-error ni-3x"></i>
-                            <h4 class="heading mt-4 text-error">ERROR!</h4>
-                            <p class="text-default">There was an error sending you the confirmation email. Please try again.</p>
-                            </div>
-
-                        </div>
-
-                        <div class="modal-footer text-centered">
-                            <button type="button" @click="hideJobDetails()" class="btn btn-white">Retry</button>
-                        </div>
-
-                        </div>`;
-            const messuccess = `<div class="modal-body bg-gradient-success text-white" id="modal2">
-                        <div class="modal-header bg-gradient-success">
-                            <h6 class="modal-title" id="modal-title-notification">Your request has been submitted</h6>
-                            <button type="button" class="close" @click="hideJobDetails()" aria-label="Close">
-                            <span aria-hidden="true">×</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-
-                            <div class="py-3 text-center">
-                            <i class="ni ni-check-bold text-white ni-3x"></i>
-                            <h4 class="heading mt-4 text-default">Success!</h4>
-                            <p class="text-default">We have sent you an email with further instructions.</p>
-                            </div>
-
-                        </div>
-
-                        <div class="modal-footer text-centered">
-                            <button type="button" @click="hideJobDetails()" class="btn btn-white">Ok, Got it</button>
-                        </div>
-
-                        </div>`;
-            const meresend = `<div class="modal-content bg-gradient-error text-white" id="modal3">
-                    <div class="modal-header bg-gradient-error">
-                        <h6 class="modal-title" id="modal-title-notification">Your request was not submitted</h6>
-                        <button type="button" class="close" @click="hideJobDetails()" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="py-3 text-center">
-                            <i class="ni ni-fat-remove text-error ni-3x"></i>
-                            <h4 class="heading mt-4 text-error">Sorry!</h4>
-                            <p class="text-default">This request has already been submitted</p>
-                        </div>
-                    </div>
-                    <div class="modal-footer text-centered">
-                        <button type="button" @click="hideJobDetails()" class="btn btn-white">Retry</button>
-                    </div>
-                
-                    </div>`;
+            const mefail = ``;
+            const messuccess = ``;
+            const meresend = ``;
 
             //success response
             if (res.message == "success") {
