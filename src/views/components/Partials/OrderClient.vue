@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="title">
         <h5 class="modal-title">You are almost there, just a few more details about you.</h5>
         <div v-if="templatedata.length"></div><br>
         <div class="form-group">
@@ -71,18 +71,19 @@ export default {
         };
     },
     mounted() {
-        var title = elem.querySelector(".title").innerText;
-        var inputs = Array.from(elem.querySelectorAll("input"));
-        var label = "";
-        var self = this;
-        inputs.forEach(function(input) {
-            if (input.checked) {
-                label = elem.querySelector(
-                    'label[for="' + input.getAttribute("id") + '"]'
-                ).innerText;
-                if (self.filledindata[title] != undefined)
-                    self.filledindata[title] = label;
-            }
+        var elems = Array.from(this.$el.querySelectorAll(".form-group"));
+        elems.forEach(function(elem) {
+            var title = elem.querySelector("input").getAttribute("name");
+            var inputs = Array.from(elem.querySelectorAll("input"));
+            var label = "";
+            var self = this;
+            inputs.forEach(function(input) {
+                if (input.checked) {
+                    label = self.getAttribute("name");
+                    if (self.filledindata[title] != undefined)
+                        self.filledindata[title] = label;
+                }
+            });
         });
     }
 };

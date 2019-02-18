@@ -266,7 +266,7 @@ export default {
             //show loader
             this.notemplate = true;
             this.$el.querySelector("#message2").innerHTML = "";
-            this.$el.querySelector("#message").innerHTML = `<div
+            this.$el.querySelector("#message2").innerHTML = `<div
                     >
                         <p
                             class="text-default"
@@ -274,17 +274,18 @@ export default {
                     </div>`;
 
             this.filledindata["industry"] = this.category;
+            console.log(this.filledindata);
             //fetch data
-            const res = await Axios.post(
-                `/api/data/${this.jobtype}/client-templates`,
-                this.filledindata
-            ).then(res => res.data);
+            // const res = await Axios.post(
+            //     `/api/data/${this.jobtype}/client-templates`,
+            //     this.filledindata
+            // ).then(res => res.data);
             const mefail = ``;
             const messuccess = ``;
             const meresend = ``;
 
             //give response
-            this.$emit("response", res.message);
+            // this.$emit("response", res.message);
         },
         closeModal() {
             this.$emit("response", "closemodal");
