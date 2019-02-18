@@ -149,6 +149,7 @@ export default {
             }
             if (response == "closemodal") {
                 this.templateModal = false;
+                this.component = "order-template";
                 this.$el.querySelector("#usercategories").hidden = false;
                 this.$el.querySelector("#jobDetails").hidden = true;
             }

@@ -45,7 +45,7 @@
 
                         <base-button
                             tag="a"
-                            href="#request"
+                            href="/job/new-design-only"
                             data-toggle="scroll"
                             type="success"
                             class="mt-4"
@@ -96,7 +96,7 @@
 
                         <base-button
                             tag="a"
-                            href="#request"
+                            href="/job/new-design-&-structure"
                             data-toggle="scroll"
                             type="primary"
                             class="mt-4"
@@ -147,7 +147,7 @@
 
                         <base-button
                             tag="a"
-                            href="#request"
+                            href="/job/redesign-existing-profile"
                             data-toggle="scroll"
                             type="info"
                             class="mt-4"

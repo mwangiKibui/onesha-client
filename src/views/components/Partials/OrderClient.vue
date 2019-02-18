@@ -64,11 +64,9 @@
 <script>
 export default {
     name: "order-client",
-    props: ["templatedata"],
+    props: ["templatedata", "filledindata"],
     data() {
-        return {
-            filledindata: {}
-        };
+        return {};
     },
     mounted() {
         var elems = Array.from(this.$el.querySelectorAll(".form-group"));

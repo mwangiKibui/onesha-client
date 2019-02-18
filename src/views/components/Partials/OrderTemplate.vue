@@ -42,6 +42,7 @@
                 <keep-alive>
                     <template-container
                         :templated="template"
+                        :filledindata="this.filledindata"
                         v-if="templatedata && templatedata.length"
                         class="templateModal"
                     ></template-container>
@@ -51,7 +52,10 @@
 
         <!-- Request the client details -->
         <div v-if="clientInfo == true">
-            <order-client :templatedata="this.template"></order-client>
+            <order-client
+                :templatedata="this.template"
+                :filledindata="this.filledindata"
+            ></order-client>
         </div>
 
         <!-- no template defined -->
@@ -105,8 +109,6 @@
 </template>
 
 <script>
-import BaseRadio from "@/views/components/Common/BaseRadio.vue";
-import BaseCheckbox from "@/views/components/Common/BaseCheckbox.vue";
 import BaseProgress from "@/views/components/Common/BaseProgress.vue";
 import OrderClient from "@/views/components/Partials/OrderClient.vue";
 import TemplateContainer from "./TemplateContainer.vue";
@@ -117,8 +119,6 @@ export default {
     name: "order-template",
     props: ["jslug", "category"],
     components: {
-        BaseRadio,
-        BaseCheckbox,
         BaseProgress,
         TemplateContainer,
         OrderClient,
@@ -276,16 +276,16 @@ export default {
             this.filledindata["industry"] = this.category;
             console.log(this.filledindata);
             //fetch data
-            // const res = await Axios.post(
-            //     `/api/data/${this.jobtype}/client-templates`,
-            //     this.filledindata
-            // ).then(res => res.data);
+            const res = await Axios.post(
+                `/api/data/${this.jobtype}/client-templates`,
+                this.filledindata
+            ).then(res => res.data);
             const mefail = ``;
             const messuccess = ``;
             const meresend = ``;
 
             //give response
-            // this.$emit("response", res.message);
+            this.$emit("response", res.message);
         },
         closeModal() {
             this.$emit("response", "closemodal");
