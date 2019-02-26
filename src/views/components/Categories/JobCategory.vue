@@ -159,6 +159,9 @@ export default {
             if (response == "failed") {
                 this.component = "order-failed";
             }
+            if (response == "empty") {
+                this.component = "order-failed";
+            }
             if (response == "closemodal") {
                 this.templateModal = false;
                 this.component = "order-template";

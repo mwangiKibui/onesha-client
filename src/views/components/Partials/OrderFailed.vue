@@ -22,7 +22,7 @@
             <div class="py-3 text-center">
                 <i class="ni ni-fat-remove text-error ni-3x"></i>
                 <h4 class="heading mt-4 text-error">ERROR!</h4>
-                <p class="text-default">There was an error sending you the confirmation email. Please try again.</p>
+                <p class="text-default">There was an error sending your order. Please check your details again.</p>
             </div>
 
         </div>

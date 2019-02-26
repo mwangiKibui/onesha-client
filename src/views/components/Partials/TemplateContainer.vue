@@ -1,5 +1,5 @@
 <template>
-    <div
+    <form
         class="my-5"
         v-if="templated"
     >
@@ -40,9 +40,10 @@
                 v-model="filledindata[templated.title]"
                 rows="2"
                 class="form-control"
+                required
             ></textarea>
         </div>
-    </div>
+    </form>
 </template>
 <!-- -->
 <script>

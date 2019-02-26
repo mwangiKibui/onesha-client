@@ -1,6 +1,15 @@
 <template>
-    <div class="title">
+    <form
+        class="title"
+        id="clientForm"
+    >
         <h5 class="modal-title">You are almost there, just a few more details about you.</h5>
+        <p v-if="errors.length">
+            <b>Please correct the following error(s):</b>
+            <ul>
+                <li v-for="error in errors">{{ error }}</li>
+            </ul>
+        </p>
         <div v-if="templatedata.length"></div><br>
         <div class="form-group">
             <div class="input-group input-group-alternative mb-4">
@@ -13,7 +22,8 @@
                     v-model="filledindata['clientName']"
                     class="form-control"
                     placeholder="Your name"
-                >
+                    required
+                />
             </div>
         </div>
         <div class="form-group">
@@ -27,7 +37,8 @@
                     v-model="filledindata['clientEmail']"
                     class="form-control"
                     placeholder="Your email address, e.g. someone@example.com"
-                >
+                    required="true"
+                />
             </div>
         </div>
         <div class="form-group">
@@ -41,7 +52,8 @@
                     v-model="filledindata['clientPhone']"
                     class="form-control"
                     placeholder="+254 7 ....."
-                >
+                    required
+                />
             </div>
         </div>
         <div class="form-group">
@@ -55,10 +67,11 @@
                     v-model="filledindata['clientLocation']"
                     class="form-control"
                     placeholder="City / Town"
-                >
+                    required
+                />
             </div>
         </div>
-    </div>
+    </form>
 </template>
 
 <script>
@@ -66,7 +79,7 @@ export default {
     name: "order-client",
     props: ["templatedata", "filledindata"],
     data() {
-        return {};
+        return { errors: [] };
     },
     mounted() {
         var elems = Array.from(this.$el.querySelectorAll(".form-group"));
@@ -83,6 +96,30 @@ export default {
                 }
             });
         });
+    },
+    methods: {
+        checkForm: function(e) {
+            if (this.name && this.age) {
+                return true;
+            }
+
+            this.errors = [];
+
+            if (!this.filledindata["clientName"]) {
+                this.errors.push("Name required.");
+            }
+            if (!this.filledindata["clientEmail"]) {
+                this.errors.push("Email required.");
+            }
+            if (!this.filledindata["clientPhone"]) {
+                this.errors.push("phone Number required.");
+            }
+            if (!this.filledindata["clientLocation"]) {
+                this.errors.push("Location required.");
+            }
+
+            e.preventDefault();
+        }
     }
 };
 </script>

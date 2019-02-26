@@ -274,18 +274,25 @@ export default {
                     </div>`;
 
             this.filledindata["industry"] = this.category;
-            console.log(this.filledindata);
-            //fetch data
-            const res = await Axios.post(
-                `/api/data/${this.jobtype}/client-templates`,
-                this.filledindata
-            ).then(res => res.data);
-            const mefail = ``;
-            const messuccess = ``;
-            const meresend = ``;
+            this.filledindata["jobtype"] = this.jobtype;
 
-            //give response
-            this.$emit("response", res.message);
+            if (Object.keys(this.filledindata).length != 11) {
+                //show empty fields detected
+                this.$emit("response", "empty");
+            } //else give responses
+            else {
+                //fetch data
+                const res = await Axios.post(
+                    `/api/data/${this.jobtype}/client-templates`,
+                    this.filledindata
+                ).then(res => res.data);
+                const mefail = ``;
+                const messuccess = ``;
+                const meresend = ``;
+
+                //give response
+                this.$emit("response", res.message);
+            }
         },
         closeModal() {
             this.$emit("response", "closemodal");
