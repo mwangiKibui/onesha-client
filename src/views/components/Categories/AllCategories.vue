@@ -27,7 +27,7 @@
                                         class="mr-3"
                                         icon="ni ni-ruler-pencil"
                                     ></badge>
-                                    <h6 class="mb-0">Choose from design samples given</h6>
+                                    <p class="description mb-0">Choose from design samples given</p>
                                 </div>
                             </li>
                             <li class="py-2">
@@ -38,7 +38,7 @@
                                         class="mr-3"
                                         icon="ni ni-satisfied"
                                     ></badge>
-                                    <h6 class="mb-0">Request changes as needed</h6>
+                                    <p class="description mb-0">Request changes as needed</p>
                                 </div>
                             </li>
                         </ul>
@@ -78,7 +78,7 @@
                                         class="mr-3"
                                         icon="ni ni-ruler-pencil"
                                     ></badge>
-                                    <h6 class="mb-0">Carefully crafted design components</h6>
+                                    <p class="description mb-0">Carefully crafted design components</p>
                                 </div>
                             </li>
                             <li class="py-2">
@@ -89,7 +89,7 @@
                                         class="mr-3"
                                         icon="ni ni-satisfied"
                                     ></badge>
-                                    <h6 class="mb-0">Business intelligence for your content</h6>
+                                    <p class="description mb-0">Business intelligence for your content</p>
                                 </div>
                             </li>
                         </ul>
@@ -129,7 +129,7 @@
                                         class="mr-3"
                                         icon="ni ni-ruler-pencil"
                                     ></badge>
-                                    <h6 class="mb-0">Choose from design samples given</h6>
+                                    <p class="description mb-0">Choose from design samples given</p>
                                 </div>
                             </li>
                             <li class="py-2">
@@ -140,7 +140,7 @@
                                         class="mr-3"
                                         icon="ni ni-satisfied"
                                     ></badge>
-                                    <h6 class="mb-0">Request changes as needed</h6>
+                                    <p class="description mb-0">Request changes as needed</p>
                                 </div>
                             </li>
                         </ul>

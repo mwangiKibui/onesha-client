@@ -501,6 +501,11 @@ export default {
     components: {
         BCarousel,
         BCarouselSlide
+    },
+    metaInfo: {
+        title: "Onesha - Terms and Conditions",
+        // override the parent template and just use the above title only
+        titleTemplate: null
     }
 };
 </script>

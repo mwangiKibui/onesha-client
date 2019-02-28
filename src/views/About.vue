@@ -634,8 +634,23 @@
     </main>
 </template>
 
+<script>
+export default {
+    metaInfo: {
+      title: 'About Onesha',
+      // override the parent template and just use the above title only
+      titleTemplate: null
+    }
+}
+</script>
 
-export default {}
+export default {
+    metaInfo: {
+      title: 'My Awesome Webapp',
+      // override the parent template and just use the above title only
+      titleTemplate: null
+    }
+}
 <style>
 .position-relative2 {
     position: relative;

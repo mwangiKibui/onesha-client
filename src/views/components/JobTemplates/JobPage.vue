@@ -181,6 +181,12 @@ export default {
                 console.log(err);
             }
         }
+    },
+
+    metaInfo: {
+        title: "Onesha - New Job",
+        // override the parent template and just use the above title only
+        titleTemplate: null
     }
 };
 </script>

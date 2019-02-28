@@ -1,5 +1,6 @@
 import Vue from "vue";
 import Router from "vue-router";
+import Meta from "vue-meta";
 import AppFooter from "@/layout/AppFooter.vue";
 import AppHeader from "@/layout/AppHeader.vue";
 import About from "@/views/About.vue";
@@ -15,8 +16,10 @@ import Portfolio from "@/views/components/Landing/Portfolio.vue";
 import Privacy from "@/views/components/Landing/Privacy.vue";
 import Terms from "@/views/components/Landing/Terms.vue";
 
+Vue.use(Meta);
 Vue.use(Router);
 
+// @ts-ignore
 export default new Router({
   linkExactActiveClass: "active",
   mode: "history",
