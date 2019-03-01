@@ -52,7 +52,7 @@
                                             type="info"
                                             icon="fa fa-cloud-download"
                                         >
-                                            Begin Request
+                                            Request Profile
                                         </base-button>
                                     </a><span stye="color: transparent">.</span>
                                     <a
