@@ -69,8 +69,6 @@
                         </div>
 
                         <div class="">
-                            <p><br>
-                            </p>
                         </div>
 
                     </div>
