@@ -11,6 +11,7 @@ import Landing from "@/views/Landing.vue";
 import Login from "@/views/Login.vue";
 import Profile from "@/views/Profile.vue";
 import Register from "@/views/Register.vue";
+import Redirector from "@/views/Redirector.vue";
 import Guidelines from "@/views/components/Landing/Guidelines.vue";
 import Portfolio from "@/views/components/Landing/Portfolio.vue";
 import Privacy from "@/views/components/Landing/Privacy.vue";
@@ -106,15 +107,6 @@ export default new Router({
       }
     },
     {
-      path: "/profile",
-      name: "profile",
-      components: {
-        header: AppHeader,
-        default: Profile,
-        footer: AppFooter
-      }
-    },
-    {
       path: "/categories/:slug",
       name: "Category view",
       components: {
@@ -143,6 +135,47 @@ export default new Router({
         footer: AppFooter
       },
       props: { default: true, header: false, footer: false }
+    },
+    //handle older routes
+    { path: '/profile/:slug', name: "Redirector", component: Redirector,
+      alias: '/user',
+      props: { default: true }
+    },
+    { path: '/user/:slug', name: "Redirector", component: Redirector,
+      props: { default: true }
+    },
+    { path: '/affiliate/:slug', name: "Redirector", component: Redirector,
+      props: { default: true }
+    },
+    { path: '/institution/:slug', name: "Redirector", component: Redirector,
+      props: { default: true }
+    },
+    { path: '/institutions', name: "Redirector", component: Redirector,
+      props: { default: true }
+    },
+    { path: '/project/:slug', name: "Redirector", component: Redirector,
+      props: { default: true }
+    },
+    { path: '/projects', name: "Redirector", component: Redirector,
+      props: { default: true }
+    },
+    { path: '/students/:slug', name: "Redirector", component: Redirector,
+      props: { default: true }
+    },
+    { path: '/service/:slug', name: "Redirector", component: Redirector,
+      props: { default: true }
+    },
+    { path: '/services', name: "Redirector", component: Redirector,
+      props: { default: true }
+    },
+    { path: '/jobs', name: "Redirector", component: Redirector,
+      props: { default: true }
+    },
+    { path: '/company/:slug', name: "Redirector", component: Redirector,
+      props: { default: true }
+    },
+    { path: '/companies', name: "Redirector", component: Redirector,
+      props: { default: true }
     }
   ],
   scrollBehavior: to => {
