@@ -11,7 +11,7 @@
 			<button
 			 type="button"
 			 class="close"
-			 @click="hideJobDetails()"
+			 @click="c()"
 			 aria-label="Close"
 			>
 				<span aria-hidden="true">×</span>
@@ -30,7 +30,7 @@
 		<div class="modal-footer text-centered">
 			<button
 			 type="button"
-			 @click="hideJobDetails()"
+			 @click="closeModal"
 			 class="btn btn-white"
 			>Retry</button>
 		</div>
@@ -40,6 +40,11 @@
 
 <script>
 	export default {
-		name: "request-failed"
+		name: "request-failed",
+		methods: {
+			closeModal() {
+				this.$emit("response", "closemodal");
+			}
+		}
 	};
 </script>
