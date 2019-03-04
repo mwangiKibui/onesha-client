@@ -6,7 +6,7 @@ export default {
     },
     beforeCreate(){    
         let urlParams = window.location.pathname;
-        window.location.href= 'http://demo.onesha.co.ke' + urlParams;
+        window.location.href= 'https://v1.onesha.co.ke' + urlParams;
     }
 }
 </script>
