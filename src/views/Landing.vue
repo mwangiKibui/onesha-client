@@ -507,68 +507,25 @@
         <section class="section section-lg pt-lg-2 mt-100 bg-gradient-info section-contact-us">
             <div class="container pt-lg">
                 <div class="pb-lg-4">
-                    <h4 class="mb-1 text-center text-white">Want to work with us?</h4>
+                    <h4 class="mb-1 text-center text-white">Want to work with us? jjj</h4>                    
                 </div>
-                <div class="row justify-content-center pb-lg-2">
-                    <div
-                        class="col-lg-8"
-                        id="carddetails2"
-                    >
-                        <card
-                            gradient="secondary"
-                            shadow
-                            body-classes="p-lg-5"
-                        >
-
-                            <p class="mt-0">Your project is very important to us. Describe what you want done.</p>
-                            <base-input
-                                class="mt-5"
-                                alternative
-                                placeholder="Your name"
-                                name="name"
-                                v-model="filledindata['name']"
-                                addon-left-icon="ni ni-user-run"
-                            >
-                            </base-input>
-                            <base-input
-                                alternative
-                                placeholder="Email address"
-                                name="email"
-                                v-model="filledindata['email']"
-                                addon-left-icon="ni ni-email-83"
-                            >
-                            </base-input>
-                            <base-input
-                                alternative
-                                placeholder="Location"
-                                name="location"
-                                v-model="filledindata['location']"
-                                addon-left-icon="ni ni-pin-3"
-                            >
-                            </base-input>
-                            <base-input class="mb-4">
-                                <textarea
-                                    class="form-control form-control-alternative"
-                                    name="message"
-                                    v-model="filledindata['message']"
-                                    rows="4"
-                                    cols="80"
-                                    placeholder="What do you need done?..."
-                                ></textarea>
-                            </base-input>
-                            <span id="message2">
-                                <base-button
-                                    type="default"
-                                    round
-                                    block
-                                    size="lg"
-                                    @click="submitClientRequest()"
-                                >
-                                    Send Request
-                                </base-button>
-                            </span>
-                        </card>
-                    </div>
+                <div class="row justify-content-center enq">
+                    <a
+                            @click="showEnquirySec('quote')"
+                            class="btn btn-success"
+                        >Request A Quote</a>
+                    <a
+                            @click="showEnquirySec('enquire')"
+                            class="btn btn-success"
+                        >Make an Enquiry</a>
+               
+                </div>
+                <div v-if="this.showEnquiry">
+                    <component
+                        v-bind:is="component2"
+                        @response="enquiryResponse"
+                        :type="this.enquiry"
+                    ></component>
                 </div>
             </div>
 
@@ -584,6 +541,9 @@ import Modal from "@/views/components/Common/Modal.vue";
 import RequestSample from "@/views/components/Partials/SampleRequest.vue";
 import RequestSuccess from "@/views/components/Partials/RequestSuccess.vue";
 import RequestFailed from "@/views/components/Partials/RequestFailed.vue";
+import EnquiryForm from "@/views/components/Partials/EnquiryForm.vue";
+import EnquirySuccess from "@/views/components/Partials/EnquirySuccess.vue";
+import EnquiryFailed from "@/views/components/Partials/EnquiryFailed.vue";
 import Axios from "axios";
 
 let show = true;
@@ -596,7 +556,10 @@ export default {
         Modal,
         RequestSample,
         RequestFailed,
-        RequestSuccess
+        RequestSuccess,
+        EnquiryForm,
+        EnquirySuccess,
+        EnquiryFailed
     },
     metaInfo: {
         title: "Onesha - Home",
@@ -607,7 +570,9 @@ export default {
         return {
             selectedAnimationIn: "",
             selectedAnimationOut: "",
+            enquiry: "",
             showModal: false,
+            showEnquiry: false,
             show: true,
             request: true,
             get: true,
@@ -618,7 +583,8 @@ export default {
             filledindata: {},
             notemplate: true,
             clientInfo: false,
-            component: "request-sample"
+            component: "request-sample",
+            component2: "enquiry-form"
         };
     },
 
@@ -674,6 +640,17 @@ export default {
         showSampleModal() {
             this.showModal = true;
         },
+        showEnquirySec(val) {
+            console.log(val);
+            document.getElementsByClassName("enq").innerHTML = '';
+            this.showEnquiry = true;
+            this.enquiry  = val;
+        },
+        watch: {
+            enquiry: function(val1, val2) {
+                this.enquiry = val1;
+            }
+        },
         childComponentResponse(response) {
             if (response == "success") {
                 this.component = "request-success";
@@ -686,97 +663,26 @@ export default {
                 this.component = "request-sample";
             }
         },
-        async submitClientRequest() {
-            //show loader
-            this.$el.querySelector("#message2").innerHTML = `<div
-											                    >
-											                        <p
-											                            class="text-default"
-											                        >SENDING...</p>
-											                    </div>`;
-            //fetch data
-            const res = await Axios.post(
-                `/api/data/leave-us-message`,
-                this.filledindata
-            ).then(res => res.data);
-            const mefail = `<div class="modal-body bg-gradient-error text-white" id="modal3">
-											                        <div class="modal-header bg-gradient-error">
-											                            <h6 class="modal-title" id="modal-title-notification">Your message was not submitted</h6>
-											                            <button type="button" class="close" @click="hideJobDetails()" aria-label="Close">
-											                            <span aria-hidden="true">×</span>
-											                            </button>
-											                        </div>
-											                        <div class="modal-body">
-
-											                            <div class="py-3 text-center">
-											                            <i class="ni ni-fat-remove text-error ni-3x"></i>
-											                            <h4 class="heading mt-4 text-error">ERROR!</h4>
-											                            <p class="text-default">There was an error sending the message. Please try again.</p>
-											                            </div>
-
-											                        </div>
-
-											                        <div class="modal-footer text-centered">
-											                            <button type="button" @click="hideJobDetails()" class="btn btn-white">Retry</button>
-											                        </div>
-
-											                        </div>`;
-            const messuccess = `<div class="modal-body bg-gradient-success text-white" id="modal2">
-											                        <div class="modal-header bg-gradient-success">
-											                            <h6 class="modal-title" id="modal-title-notification">Your message has been submitted</h6>
-											                            <button type="button" class="close" @click="hideJobDetails()" aria-label="Close">
-											                            <span aria-hidden="true">×</span>
-											                            </button>
-											                        </div>
-											                        <div class="modal-body">
-
-											                            <div class="py-3 text-center">
-											                            <i class="ni ni-check-bold text-success ni-3x"></i>
-											                            <h4 class="heading mt-4 text-success">Success!</h4>
-											                            <p class="text-default">We have received your message.</p>
-											                            </div>
-
-											                        </div>
-
-											                        <div class="modal-footer text-centered">
-											                            <button type="button" @click="hideJobDetails()" class="btn btn-white">Ok, Got it</button>
-											                        </div>
-
-											                        </div>`;
-            const meresend = `<div class="modal-body bg-gradient-error text-white" id="modal3">
-											                    <div class="modal-header bg-gradient-error">
-											                        <h6 class="modal-title" id="modal-title-notification">Your message was not submitted</h6>
-											                        <button type="button" class="close" @click="hideJobDetails()" aria-label="Close">
-											                        <span aria-hidden="true">×</span>
-											                        </button>
-											                    </div>
-											                    <div class="modal-body">
-											                        <div class="py-3 text-center">
-											                            <i class="ni ni-fat-remove text-error ni-3x"></i>
-											                            <h4 class="heading mt-4 text-error">Sorry!</h4>
-											                            <p class="text-default">We encountered a problem sending the message.</p>
-											                        </div>
-											                    </div>
-											                    <div class="modal-footer text-centered">
-											                        <button type="button" @click="hideJobDetails()" class="btn btn-white">Retry</button>
-											                    </div>
-											                
-											                    </div>`;
-
-            //success response
-            if (res.message == "success") {
-                this.$el.querySelector("#carddetails2").innerHTML = messuccess;
-            } else if (res.message == "failed") {
-                this.$el.querySelector("#carddetails2").innerHTML = mefail;
-            } else {
-                this.$el.querySelector("#carddetails2").innerHTML = meresend;
+        enquiryResponse(response) {
+            if (response == "success") {
+                this.component = "enquiry-success";
+            }
+            if (response == "failed") {
+                this.component = "enquiry-failed";
+            }
+            if (response == "closemodal") {
+                this.showEnquiry = false;
+                this.component = "enquiry-form";
+            }else {
+                this.showEnquiry = false;
+                this.component = "enquiry-form";
+            
             }
         }
     },
     beforeRouteEnter(to, from, next) {
         next(vm => {
             vm.loadCategories();
-            vm.loadRequests();
             next();
         });
     }
@@ -842,91 +748,91 @@ window.onload = function() {
 };
 </script>
 <style>
-.display-3 span {
-    display: inline-flex !important;
-}
-.position-relative {
-    position: relative;
-    background-image: none;
-    background-image: url("/assets/img/social-bg.jpg") !important;
-    background-size: cover;
-    background-position: right;
-    background-repeat: no-repeat;
-    height: 100vh !important;
-}
-.home-content {
-    background-color: rgba(0, 0, 34, 0.7);
-    z-index: 9;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-}
-.next {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: 0.05em solid rgb(102, 88, 61); /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    margin-right: 2px;
-    color: #22cdef;
-    letter-spacing: 0.02em; /*Adjust as needed*/
-    animation: 
-															        /* typing 1.5s steps(40, end),
-															        blink-caret .2s step-end infinite; */ typing
-            1s steps(40) 1s 1 normal both,
-        blink-caret 0.55s steps(50) infinite;
-}
-.img-back {
-    background-repeat: no-repeat !important;
-    background-position: center !important;
-    background-size: contain !important;
-    width: 100% !important;
-    height: 300%;
-    border: 0px solid;
-    border-color: transparent;
-    margin: 0%;
-    border-radius: 0%;
-}
-.col-sm-1 {
-    width: 130px !important;
-}
-.crd {
-    padding: 0.8rem !important;
-    padding-top: 200px;
-}
-
-@media screen and (max-width: 579px) {
-    .d-sm-nones {
-        display: none !important;
+    .display-3 span {
+        display: inline-flex !important;
     }
-}
-
-@media screen and (min-width: 579px) {
-    .d-sm-nones {
-        display: block !important;
+    .position-relative {
+        position: relative;
+        background-image: none;
+        background-image: url("/assets/img/social-bg.jpg") !important;
+        background-size: cover;
+        background-position: right;
+        background-repeat: no-repeat;
+        height: 100vh !important;
     }
-    .d-lg-nones {
-        display: none !important;
+    .home-content {
+        background-color: rgba(0, 0, 34, 0.7);
+        z-index: 9;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
     }
-}
-
-/* The typing effect */
-@keyframes typing {
-    from {
-        width: 0;
+    .next {
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: 0.05em solid rgb(102, 88, 61); /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+        margin-right: 2px;
+        color: #22cdef;
+        letter-spacing: 0.02em; /*Adjust as needed*/
+        animation: 
+                                                                        /* typing 1.5s steps(40, end),
+                                                                        blink-caret .2s step-end infinite; */ typing
+                1s steps(40) 1s 1 normal both,
+            blink-caret 0.55s steps(50) infinite;
     }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-    from,
-    to {
+    .img-back {
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+        background-size: contain !important;
+        width: 100% !important;
+        height: 300%;
+        border: 0px solid;
         border-color: transparent;
+        margin: 0%;
+        border-radius: 0%;
     }
-    30% {
-        border-color: orange;
+    .col-sm-1 {
+        width: 130px !important;
     }
-}
+    .crd {
+        padding: 0.8rem !important;
+        padding-top: 200px;
+    }
+
+    @media screen and (max-width: 579px) {
+        .d-sm-nones {
+            display: none !important;
+        }
+    }
+
+    @media screen and (min-width: 579px) {
+        .d-sm-nones {
+            display: block !important;
+        }
+        .d-lg-nones {
+            display: none !important;
+        }
+    }
+
+    /* The typing effect */
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+    }
+
+    /* The typewriter cursor effect */
+    @keyframes blink-caret {
+        from,
+        to {
+            border-color: transparent;
+        }
+        30% {
+            border-color: orange;
+        }
+    }
 </style>
 

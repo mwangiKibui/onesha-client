@@ -53,15 +53,6 @@ export default new Router({
       }
     },
     {
-      path: "/projects",
-      name: "Portfolio",
-      components: {
-        header: AppHeader,
-        default: Portfolio,
-        footer: AppFooter
-      }
-    },
-    {
       path: "/process",
       name: "process",
       components: {
@@ -141,40 +132,40 @@ export default new Router({
       alias: '/user',
       props: { default: true }
     },
-    { path: '/user/:slug', name: "Redirector", component: Redirector,
+    { path: '/user/:slug', name: "Redirector1", component: Redirector,
       props: { default: true }
     },
-    { path: '/affiliate/:slug', name: "Redirector", component: Redirector,
+    { path: '/affiliate/:slug', name: "Redirector2", component: Redirector,
       props: { default: true }
     },
-    { path: '/institution/:slug', name: "Redirector", component: Redirector,
+    { path: '/institution/:slug', name: "Redirector3", component: Redirector,
       props: { default: true }
     },
-    { path: '/institutions', name: "Redirector", component: Redirector,
+    { path: '/institutions', name: "Redirector4", component: Redirector,
       props: { default: true }
     },
-    { path: '/project/:slug', name: "Redirector", component: Redirector,
+    { path: '/project/:slug', name: "Redirector5", component: Redirector,
       props: { default: true }
     },
-    { path: '/projects', name: "Redirector", component: Redirector,
+    { path: '/projects', name: "Redirector6", component: Redirector,
       props: { default: true }
     },
-    { path: '/students/:slug', name: "Redirector", component: Redirector,
+    { path: '/students/:slug', name: "Redirector7", component: Redirector,
       props: { default: true }
     },
-    { path: '/service/:slug', name: "Redirector", component: Redirector,
+    { path: '/service/:slug', name: "Redirector8", component: Redirector,
       props: { default: true }
     },
-    { path: '/services', name: "Redirector", component: Redirector,
+    { path: '/services', name: "Redirector9", component: Redirector,
       props: { default: true }
     },
-    { path: '/jobs', name: "Redirector", component: Redirector,
+    { path: '/jobs', name: "Redirector10", component: Redirector,
       props: { default: true }
     },
-    { path: '/company/:slug', name: "Redirector", component: Redirector,
+    { path: '/company/:slug', name: "Redirector11", component: Redirector,
       props: { default: true }
     },
-    { path: '/companies', name: "Redirector", component: Redirector,
+    { path: '/companies', name: "Redirector12", component: Redirector,
       props: { default: true }
     }
   ],
