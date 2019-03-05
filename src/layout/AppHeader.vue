@@ -70,6 +70,11 @@
                         class="dropdown-item"
                         tag="a"
                     >Redesign of existing</router-link>
+                    <router-link
+                        to="/job/new-creative-service"
+                        class="dropdown-item"
+                        tag="a"
+                    >Other Creative Services</router-link>
                 </base-dropdown>
                 <!-- <li class="nav-item">
                 <router-link to="/projects" class="nav-link" replace>

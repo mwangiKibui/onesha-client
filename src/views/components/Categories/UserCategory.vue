@@ -18,10 +18,11 @@
                 <a
                     :data-type="user.title"
                     class="m-2"
+                    :style="`cursor: pointer`"
                 >
                     <div
                         class="category"
-                        :style="`background-image: url(${user.avatar.file})`"
+                        :style="`background-image: url(${user.avatar.file});cursor: pointer`"
                     >
                         <div class="category-bg-faded">
                             <h5 class="text-white mt-3">{{ user.title }}</h5>

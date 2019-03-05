@@ -138,7 +138,6 @@ export default {
             this.$el.querySelector("#usercategories").hidden = true;
             this.$el.querySelector("#jobDetails").hidden = false;
 
-            console.log(this.jobslug);
         },
         childComponentResponse(response) {
             if (response == "success") {

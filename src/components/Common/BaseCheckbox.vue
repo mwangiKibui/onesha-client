@@ -1,6 +1,5 @@
 <template>
-  <div class="custom-control custom-checkbox"
-       :class="[{disabled: disabled}, inlineClass]">
+  <div class="custom-control custom-checkbox" :class="[{disabled: disabled}, inlineClass]">
     <input :id="cbId"
            class="custom-control-input"
            type="checkbox"

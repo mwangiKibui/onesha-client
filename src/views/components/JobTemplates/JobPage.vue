@@ -48,6 +48,10 @@
                                     v-if="job.slug == 'new-design-&-structure'"
                                     img-src="/assets/img/design-structure.jpg"
                                 ></b-carousel-slide>
+                                <b-carousel-slide
+                                    v-if="job.slug == 'new-creative-service'"
+                                    img-src="/assets/img/design-structure.jpg"
+                                ></b-carousel-slide>
                             </b-carousel>
                         </div>
                     </div>

@@ -469,46 +469,46 @@
                     class="row row-grid mt-5"
                     style="width:120%"
                 >
+                    <div class="col-lg-1 col-xs-4"><img alt="Rounded image" 
+                            class="img-fluid rounded shadow" 
+                            data-src="@/assets/img/clients/pangea.jpg" 
+                            src="@/assets/img/clients/pangea.jpg" lazy="loaded"></div>
+                    <div class="col-lg-1 col-xs-4"><img
+                            class="img-fluid rounded shadow"
+                            data-src="@/assets/img/clients/eo.jpg" 
+                            src="@/assets/img/clients/eo.jpg"  lazy="loaded"></div>
+                    <div class="col-lg-1 col-xs-4"><img
+                            class="img-fluid rounded shadow"
+                            data-src="@/assets/img/clients/weston.png" 
+                            src="@/assets/img/clients/weston.png"  lazy="loaded"></div>
+                    <div class="col-lg-1 col-xs-4"><img
+                            class="img-fluid rounded shadow"
+                            data-src="@/assets/img/clients/bdo.png" 
+                            src="@/assets/img/clients/bdo.png"  lazy="loaded"></div>
                     <div class="col-sm-1"><img
-                            class="img-fluid   img-back"
-                            style="background: url('/assets/img/clients/pangea.jpg');"
-                        ></div>
+                            class="img-fluid rounded shadow"
+                            data-src="@/assets/img/clients/flexpay.jpeg" 
+                            src="@/assets/img/clients/flexpay.jpeg"  lazy="loaded"></div>
                     <div class="col-sm-1"><img
-                            class="img-fluid   img-back"
-                            style="background: url('/assets/img/clients/eo.jpg');"
-                        ></div>
-                    <div class="col-sm-1"><img
-                            class="img-fluid   img-back"
-                            style="background: url('/assets/img/clients/weston.png');"
-                        ></div>
-                    <div class="col-sm-1"><img
-                            class="img-fluid   img-back"
-                            style="background: url('/assets/img/clients/bdo.png');"
-                        ></div>
-                    <div class="col-sm-1"><img
-                            class="img-fluid   img-back"
-                            style="background: url('/assets/img/clients/uber.jpg');"
-                        ></div>
-                    <div class="col-sm-1"><img
-                            class="img-fluid   img-back"
-                            style="background: url('/assets/img/clients/flexpay.jpeg');"
-                        ></div>
-                    <div class="col-sm-1"><img
-                            class="img-fluid   img-back"
-                            style="background: url('/assets/img/clients/dafabet.jpg');"
-                        ></div>
-                    <div class="col-sm-1"><img
-                            class="img-fluid   img-back"
-                            style="background: url('/assets/img/clients/taraji.jpg');"
-                        ></div>
-                    <div class="col-sm-1"><img
-                            class="img-fluid   img-back"
-                            style="background: url('/assets/img/clients/gig.jpeg');"
-                        ></div>
-                    <div class="col-sm-1"><img
-                            class="img-fluid img-back"
-                            style="background: url('/assets/img/clients/longitude.jpg');"
-                        ></div>
+                            class="img-fluid rounded shadow"
+                            data-src="@/assets/img/clients/uber.jpg" 
+                            src="@/assets/img/clients/uber.jpg"  lazy="loaded"></div>
+                    <div class="col-lg-1 col-xs-4"><img
+                            class="img-fluid rounded shadow"
+                            data-src="@/assets/img/clients/dafabet.jpg" 
+                            src="@/assets/img/clients/dafabet.jpg"  lazy="loaded"></div>
+                    <div class="col-lg-1 col-xs-4"><img
+                            class="img-fluid rounded shadow"
+                            data-src="@/assets/img/clients/taraji.jpg" 
+                            src="@/assets/img/clients/taraji.jpg"  lazy="loaded"></div>
+                    <div class="col-lg-1 col-xs-4"><img
+                            class="img-fluid rounded shadow-lg "
+                            data-src="@/assets/img/clients/gig.jpeg" 
+                            src="@/assets/img/clients/gig.jpeg"  lazy="loaded"></div>
+                    <div class="col-lg-1 col-xs-4"><img
+                            class="img-fluid rounded shadow-lg"
+                            data-src="@/assets/img/clients/og+a.jpg" 
+                            src="@/assets/img/clients/og+a.jpg"  lazy="loaded"></div>
                 </div>
             </div>
         </section>

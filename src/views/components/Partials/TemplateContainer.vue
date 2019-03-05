@@ -24,15 +24,14 @@
                 :name="templated._id"
                 v-for="(option, index) in templated.options"
                 :key="index"
-            >
+            >  
                 <base-checkbox
                     class="mb-3"
-                    :id="index"
                     v-model="filledindata[templated.title]"
-                    :name="index"
                     :value="option"
+                    :id="option"
                 >{{ option }}</base-checkbox>
-            </div>
+            </div> 
         </div>
         <div v-if="templated.feedback == 'prompt'">
             <textarea
@@ -58,8 +57,17 @@ export default {
     },
     data() {
         return {
-            value: ""
+            value: "",
+            checkedItems: []
         };
+    },
+    methods: {
+        check: function(i,p) {
+            let item = i;
+            console.log(this.checkedItems);
+            this.checkedItems.push(item);
+            console.log(filledindata,e)
+        }
     }
 };
 </script>
