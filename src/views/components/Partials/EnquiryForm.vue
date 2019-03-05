@@ -9,7 +9,6 @@
                 shadow
                 body-classes="p-lg-5"
             >
-                {{this.enquiryType}}
                 <p class="mt-0" v-if="this.enquiryType == 'quote'">Get a quote for the service you need done.</p>
                 <p class="mt-0" v-if="this.enquiryType == 'enquire'">Your project is very important to us. Describe what you want done.</p>
                 <base-input

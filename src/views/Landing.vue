@@ -223,10 +223,10 @@
 
         <section
             class="section section-lg pt-lg-2 mt-200 bg-gradient-info"
-            id="request"
+            
         >
             <div class="container pt-lg">
-                <div class="row text-center justify-content-center">
+                <div class="row text-center justify-content-center" id="request">
                     <div class="col-lg-10">
                         <h2 class="display-3 text-white">Begin your request</h2>
                         <p class="lead text-white">Your journey starts here. Revamp your existing company profile, or get a new one.</p>
@@ -234,6 +234,15 @@
                 </div>
                 <!-- <JobCategories :categories="categories"></JobCategories> -->
                 <categories></categories>
+                <div class="row justify-content-center text-center">
+                            <div class="mt-5 mb-lg-3 col-md-12 text-white">
+                                <p>Need another service? We also offer graphic design, posters for social media and web design.</p>
+                                <h2 class=""><a
+                                        href="/job/new-creative-service"
+                                        class="btn btn-success"
+                                    >REQUEST ANOTHER CREATIVE SERVICE</a></h2>
+                            </div>
+                        </div>
             </div>
         </section>
         <section
@@ -507,22 +516,22 @@
         <section class="section section-lg pt-lg-2 mt-100 bg-gradient-info section-contact-us">
             <div class="container pt-lg">
                 <div class="pb-lg-4">
-                    <h4 class="mb-1 text-center text-white">Want to work with us? jjj</h4>                    
+                    <h4 class="mb-1 text-center text-white">Want to work with us?</h4>                    
                 </div>
                 <div class="row justify-content-center enq">
                     <a
-                            @click="showEnquirySec('quote')"
-                            class="btn btn-success"
-                        >Request A Quote</a>
+                        @click="showEnquirySec('quote')"
+                        class="btn btn-success"
+                    >Request A Quote</a>
                     <a
-                            @click="showEnquirySec('enquire')"
-                            class="btn btn-success"
-                        >Make an Enquiry</a>
+                        @click="showEnquirySec('enquire')"
+                        class="btn btn-success"
+                    >Make an Enquiry</a>
                
                 </div>
                 <div v-if="this.showEnquiry">
                     <component
-                        v-bind:is="component2"
+                        :is="component2"
                         @response="enquiryResponse"
                         :type="this.enquiry"
                     ></component>
@@ -544,6 +553,7 @@ import RequestFailed from "@/views/components/Partials/RequestFailed.vue";
 import EnquiryForm from "@/views/components/Partials/EnquiryForm.vue";
 import EnquirySuccess from "@/views/components/Partials/EnquirySuccess.vue";
 import EnquiryFailed from "@/views/components/Partials/EnquiryFailed.vue";
+import EnquirySection from "@/views/components/Partials/EnquirySection.vue";
 import Axios from "axios";
 
 let show = true;
@@ -559,7 +569,8 @@ export default {
         RequestSuccess,
         EnquiryForm,
         EnquirySuccess,
-        EnquiryFailed
+        EnquiryFailed,
+        EnquirySection
     },
     metaInfo: {
         title: "Onesha - Home",
@@ -584,7 +595,8 @@ export default {
             notemplate: true,
             clientInfo: false,
             component: "request-sample",
-            component2: "enquiry-form"
+            component2: "enquiry-form",
+            component3: "enquiry-section"
         };
     },
 
@@ -640,17 +652,6 @@ export default {
         showSampleModal() {
             this.showModal = true;
         },
-        showEnquirySec(val) {
-            console.log(val);
-            document.getElementsByClassName("enq").innerHTML = '';
-            this.showEnquiry = true;
-            this.enquiry  = val;
-        },
-        watch: {
-            enquiry: function(val1, val2) {
-                this.enquiry = val1;
-            }
-        },
         childComponentResponse(response) {
             if (response == "success") {
                 this.component = "request-success";
@@ -663,22 +664,38 @@ export default {
                 this.component = "request-sample";
             }
         },
+        hideEnquirySec() {
+            this.$el.querySelector(".enq").innerHTML = '';
+        },
+        showEnquirySec(val) {
+            this.showEnquiry = false    ;
+            console.log(val);
+            this.hideEnquirySec();
+            this.showEnquiry = true;
+            this.enquiry  = val;
+        },
         enquiryResponse(response) {
+            console.log(response)
             if (response == "success") {
-                this.component = "enquiry-success";
+                this.component2 = "enquiry-success";
             }
             if (response == "failed") {
-                this.component = "enquiry-failed";
+                this.component2 = "enquiry-failed";
+                this.component2 = "enquiry-section";
+                this.showEnquiry = true;
             }
             if (response == "closemodal") {
                 this.showEnquiry = false;
-                this.component = "enquiry-form";
-            }else {
+                this.component2 = "enquiry-section";
+                this.showEnquiry = true;
+            }
+            else if (response !== "success" && response !== "failed" && response !== "closemodal"){
                 this.showEnquiry = false;
-                this.component = "enquiry-form";
-            
+                this.component2 = "enquiry-section";
+                this.showEnquiry = true;
             }
         }
+        
     },
     beforeRouteEnter(to, from, next) {
         next(vm => {

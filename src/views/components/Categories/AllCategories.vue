@@ -17,7 +17,7 @@
                         >
                         </icon>
                         <h6 class="text-success text-uppercase">New Design Only</h6>
-                        <p class="description mt-3">Get your profile done using a unique look and design.</p>
+                        <p class="description mt-3">Get your first profile done using a unique look and design.</p>
                         <ul class="list-unstyled text-left d-sm-nones description">
                             <li class="py-1">
                                 <div class="d-flex align-items-center">
@@ -68,7 +68,7 @@
                         >
                         </icon>
                         <h6 class="text-primary text-uppercase">New Design plus content</h6>
-                        <p class="description mt-3">Get your profile designed with new content and structure.</p>
+                        <p class="description mt-3">Get your first profile designed with new content and structure.</p>
                         <ul class="list-unstyled text-left d-sm-nones description">
                             <li class="py-1">
                                 <div class="d-flex align-items-center">
@@ -78,7 +78,7 @@
                                         class="mr-3"
                                         icon="ni ni-ruler-pencil"
                                     ></badge>
-                                    <p class="description mb-0">Carefully crafted design components</p>
+                                    <p class="description mb-0">Choose from various profile content sections</p>
                                 </div>
                             </li>
                             <li class="py-2">

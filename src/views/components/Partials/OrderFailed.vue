@@ -1,9 +1,9 @@
 <template>
     <div
-        class="modal-content bg-gradient-error text-white"
+        class="modal-content bg-white text-danger"
         id="modal3"
     >
-        <div class="modal-header bg-gradient-error">
+        <div class="modal-header bg-danger">
             <h6
                 class="modal-title"
                 id="modal-title-notification"
@@ -20,8 +20,8 @@
         <div class="modal-body">
 
             <div class="py-3 text-center">
-                <i class="ni ni-fat-remove text-error ni-3x"></i>
-                <h4 class="heading mt-4 text-error">ERROR!</h4>
+                <i class="ni ni-fat-remove text-danger ni-3x"></i>
+                <h4 class="heading mt-4 text-danger">ERROR!</h4>
                 <p class="text-default">There was an error sending your order. Please check your details again.</p>
             </div>
 
