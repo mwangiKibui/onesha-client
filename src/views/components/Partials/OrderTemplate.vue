@@ -276,7 +276,7 @@ export default {
             this.filledindata["industry"] = this.category;
             this.filledindata["jobtype"] = this.jobtype;
 
-            if (Object.keys(this.filledindata).length != 11) {
+            if (Object.keys(this.filledindata).length < 10) {
                 //show empty fields detected
                 this.$emit("response", "empty");
             } //else give responses
