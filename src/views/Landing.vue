@@ -50,28 +50,32 @@
                                         <base-button
                                             class="btn btn-md btn-success btn-icon mb-3 mb-sm-0"
                                             type="info"
-                                            icon="fa fa-cloud-download"
                                         >
                                             Request Profile
                                         </base-button>
                                     </a><span stye="color: transparent">.</span>
                                     <a
-                                        href="#about"
+                                        href="#samp"
                                         data-toggle="scroll"
                                         class="btn btn-md btn-white btn-icon mb-3 mb-sm-0"
                                     >
                                         <span class="btn-inner--icon"><i class="ni ni-eye"></i></span>
-                                        <span class="btn-inner--text">Learn More</span>
+                                        <span class="btn-inner--text">View Sample</span>
                                     </a>
                                 </div>
                             </div>
 
                         </div>
 
-                        <div class="">
-                        </div>
-
                     </div>
+                </div>
+
+                <div class="row btn-wrapper justify-content-center floating">
+                    <a
+                        href="#about"
+                        data-toggle="scroll"
+                        class="btn-inner--icon text-white"><i class="ni ni-bold-down"></i>
+                    </a>
                 </div>
             </section>
         </div>
@@ -80,152 +84,130 @@
             style="background: white; color: black"
             id="about"
         >
-            <div class="container pb-100">
-                <div class="row text-center justify-content-center">
-                    <div class="col-lg-10">
-                        <h2 class="display-3 text-default">Build Your Sales Pipeline Faster</h2>
+            <div class="container mb-4">
+                <div class="row btn-wrapper justify-content-center">
+                    <div class="col-lg-10 text-center">
+                        <h2 class="display-3 text-info">Build Your Sales Pipeline Faster</h2>
                         <p class="lead text-default">According to the experts, a company profile can shape the decision of a potential client. Here is what a proper company profile can do for you.</p>
                     </div>
                 </div>
                 <div class="row row-grid mt-5">
                     <div class="col-lg-4">
                         <div class="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
-                            <i class="ni ni-satisfied text-primary"></i>
+                            <i class="ni ni-satisfied text-info"></i>
                         </div>
-                        <h5 class="text-default mt-3">Secure More Meetings</h5>
+                        <h5 class="text-primary mt-3">Secure More Meetings</h5>
                         <p class="text-default mt-3">Highlight your services and client testimonials on your profile to convince potential clients looking for your services and lead to more referrals.</p>
                     </div>
                     <div class="col-lg-4">
                         <div class="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
-                            <i class="ni ni-ruler-pencil text-primary"></i>
+                            <i class="ni ni-ruler-pencil text-info"></i>
                         </div>
-                        <h5 class="text-default mt-3">Establish Credibility</h5>
+                        <h5 class="text-primary mt-3">Establish Credibility</h5>
                         <p class="text-default mt-3">Let your portfolio of previous work give you an edge over competitors to close that deal and build a credible background for your business.</p>
                     </div>
                     <div class="col-lg-4">
                         <div class="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
-                            <i class="ni ni-book-bookmark text-primary"></i>
+                            <i class="ni ni-book-bookmark text-info"></i>
                         </div>
-                        <h5 class="text-default mt-3">Use Local Business Intelligence</h5>
+                        <h5 class="text-primary mt-3">Use Local Business Intelligence</h5>
                         <p class="text-default mt-3">Grow your market share with our local business intelligence. We use research reports and analysis to give you an in-depth knowledge about your industry.</p>
                     </div>
                 </div>
                 <div class="row justify-content-center text-center">
-                    <div class="mt-5 mb-lg-3 col-md-12">
-                        <h2 class=""><a
+                    <div class="mt-5  col-md-12">
+                        <p class=""><a
                                 href="#request"
-                                class="btn btn-info"
-                            > I WANT THIS</a></h2>
+                                    class="btn btn-primary  text-white"
+                                >Get Started</a></p>
                     </div>
                 </div>
             </div>
+
         </section>
 
-        <section class="section section-shaped mt--100 mb-2 bg-default ">
+        <section class="section section-shaped mt--100 mb-2 bg-white" id="samp">
             <div class="container mt-2">
                 <div class="row row-grid align-items-center">
                     <div class="col-md-4 order-md-2">
                         <img
                             src="/assets/img/theme/promo.jpg"
                             class="img-fluid floating"
+                            style="width:100%"
                         >
                     </div>
                     <div class="col-md-8 order-md-1">
-                        <div class="pr-md-5 text-white">
+                        <div class="pr-md-5">
 
-                            <h3 class=" text-info">Who needs a company profile?</h3>
+                            <h3 class=" text-primary">Who needs a company profile?</h3>
                             <p class="">Your company profile is a professional introduction and aims to inform people (primarily prospective buyers and stakeholders) about your products,
                                 services, and current status. Your company profile is a key component in your marketing strategy.</p>
-                            <ul class="list-unstyled mt-2 text-success">
+                            <ul class="list-unstyled mt-2 text-primary">
                                 <li class="py-2">
                                     <div class="d-flex align-items-center">
                                         <div>
-                                            <div class="badge badge-circle badge-white mr-3">
+                                            <div class="badge badge-circle badge-primary mr-3">
                                                 <i class="ni ni-album-2"></i>
                                             </div>
                                         </div>
                                         <div>
-                                            <h6 class="mb-0 text-white">Photographers and designers ready to show their portfolio</h6>
+                                            <h6 class="mb-0 ">Photographers and designers ready to show their portfolio</h6>
                                         </div>
                                     </div>
                                 </li>
                                 <li class="py-2">
                                     <div class="d-flex align-items-center">
                                         <div>
-                                            <div class="badge badge-circle badge-white mr-3">
+                                            <div class="badge badge-circle badge-primary mr-3">
                                                 <i class="ni ni-laptop"></i>
                                             </div>
                                         </div>
                                         <div>
-                                            <h6 class="mb-0 text-white">A tech startup pitching their solutions</h6>
+                                            <h6 class="mb-0 ">A tech startup pitching their solutions</h6>
                                         </div>
                                     </div>
                                 </li>
                                 <li class="py-2">
                                     <div class="d-flex align-items-center">
                                         <div>
-                                            <div class="badge badge-circle badge-white mr-3">
+                                            <div class="badge badge-circle badge-primary mr-3">
                                                 <i class="ni ni-paper-diploma"></i>
                                             </div>
                                         </div>
                                         <div>
-                                            <h6 class="mb-0 text-white">A business organization looking to apply for a tender</h6>
+                                            <h6 class="mb-0 ">Suppliers looking to apply for a tender</h6>
                                         </div>
                                     </div>
                                 </li>
                                 <li class="py-2">
                                     <div class="d-flex align-items-center">
                                         <div>
-                                            <div class="badge badge-circle badge-white mr-3">
+                                            <div class="badge badge-circle badge-primary mr-3">
                                                 <i class="ni ni-cart"></i>
                                             </div>
                                         </div>
                                         <div>
-                                            <h6 class="mb-0 text-white">Suppliers looking to deliver their goods to new customers</h6>
+                                            <h6 class="mb-0 ">A business looking to deliver their goods to new customers</h6>
                                         </div>
                                     </div>
                                 </li>
                             </ul>
                             <p><a
+                                    href="#request"
+                                    class="btn btn-primary "
+                                >Get Yours Here</a> 
+                                or &nbsp; <a
                                     @click="showSampleModal()"
-                                    class="btn btn-primary btn-sm"
-                                >Send Me A Sample</a> or &nbsp; <a
-                                    href="#expect"
-                                    class="text-primary"
-                                >See what to expect</a></p>
+                                    class="btn btn-white text-primary"
+                                >Show Me A Sample</a></p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section section-shaped  mt-2 mb-2  ">
-            <div class="container mt-2 mb-2">
-                <div class="justify-content-between align-items-center mt-4">
-                    <transition
-                        name="component-fade"
-                        mode="out-in"
-                    >
-                        <div>
-                            <br>
-                            <h3>What can we offer?</h3>
-                            <p>We give you a professional looking company profile that will enable you get introductions,
-                                meetings and close sales even faster. Our quick online service simplifies the process of looking for a place to get your company profile made.
-                                Get high quality services from our vetted creatives with quick delivery to fit your schedule. <br><br>Simply choose a category, fill a simple job template, get your task done!</p>
-
-                        </div>
-                    </transition>
-                </div>
-            </div>
-        </section>
-
-        <section></section>
-
-        <section
-            class="section section-lg pt-lg-2 mt-200 bg-gradient-info"
-            
-        >
-            <div class="container pt-lg">
+        <section class="section section-lg  mt-100 bg-gradient-info">  
+            <div class="container">
                 <div class="row text-center justify-content-center" id="request">
                     <div class="col-lg-10">
                         <h2 class="display-3 text-white">Begin your request</h2>
@@ -245,6 +227,7 @@
                         </div>
             </div>
         </section>
+
         <section
             class="section section-sm bg-secondary mt-200  bg-secondary"
             id="process"
@@ -252,7 +235,7 @@
             <div class="container">
                 <div class="row justify-content-center text-center">
                     <div class="mt-5 mb-lg-3 col-md-12">
-                        <h2 class="">Our Process</h2>
+                        <h2 class="text-primary">Our Process</h2>
                         <p class="lead mt-4">We follow this process to ensure you quality.</p>
 
                     </div>
@@ -267,19 +250,19 @@
                                 >
                                     <icon
                                         name="ni ni-bullet-list-67"
-                                        type="success"
+                                        type="primary"
                                         rounded
                                         class="mb-4"
                                     >
                                     </icon>
-                                    <h6 class="text-success text-uppercase">Request a Service</h6>
+                                    <h6 class="text-primary text-uppercase">Request a Service</h6>
                                     <p class="description mt-3">Onesha helps you flesh out your request using easy to use job templates that make filling forms a simple process.</p>
 
                                     <base-button
                                         tag="a"
                                         href="#request"
                                         data-toggle="scroll"
-                                        type="success"
+                                        type="primary"
                                         class="mt-4"
                                     >
                                         BEGIN REQUEST
@@ -331,24 +314,39 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row justify-content-center text-center">
-                            <div class="mt-5 mb-lg-3 col-md-12">
-                                <h2 class=""><a
-                                        href="/support"
-                                        class="btn btn-info"
-                                    >REVIEW OUR GUIDELINES</a></h2>
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <hr style="border:white">
             </div>
         </section>
 
-        <section
-            class="section section-lg bg-gradient-info"
-            id="expect"
-        >
+        <section class="mb-2 bg-white section section-sm bg-secondary bg-secondary" id="expect">
+            
+            <div class="container mb-2">
+                <div class="justify-content-between align-items-center">
+                    <transition
+                        name="component-fade"
+                        mode="out-in"
+                    >
+                        <div class="row justify-content-center text-center">
+                            <!-- <h3>What can we offer?</h3> -->
+                            <p>We give you a professional looking company profile that will enable you get introductions,
+                                meetings and close sales even faster. Our quick online service simplifies the process of looking for a place to get your company profile made.
+                                Get high quality services from our vetted creatives with quick delivery to fit your schedule. <br><br>Simply choose a category, fill a simple job template, get your task done!
+                               </p>
+                            <div class="mt-3 mb-lg-1 col-md-12">
+                                <h2 class=""><a
+                                        href="/support"
+                                        class="btn btn-primary"
+                                    >REVIEW OUR GUIDELINES</a></h2><br>
+                            </div>
+                        </div>
+                    </transition>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-lg bg-gradient-info" >
             <div class="container">
                 <div class="row row-grid align-items-center">
 
@@ -462,7 +460,7 @@
             <div class="container">
                 <div class="row justify-content-center mt-200">
                     <div class="mt-5">
-                        <h2 class="text-default font-weight-light">We have worked with</h2>
+                        <h2 class="text-primary font-weight-light">We have worked with</h2>
                     </div>
                 </div>
                 <div
@@ -485,11 +483,11 @@
                             class="img-fluid rounded shadow"
                             data-src="@/assets/img/clients/bdo.png" 
                             src="@/assets/img/clients/bdo.png"  lazy="loaded"></div>
-                    <div class="col-sm-1"><img
-                            class="img-fluid rounded shadow"
+                    <div class="col-lg-1"><img
+                            class="img-fluid rounded shadow hover"
                             data-src="@/assets/img/clients/flexpay.jpeg" 
                             src="@/assets/img/clients/flexpay.jpeg"  lazy="loaded"></div>
-                    <div class="col-sm-1"><img
+                    <div class="col-lg-1"><img
                             class="img-fluid rounded shadow"
                             data-src="@/assets/img/clients/uber.jpg" 
                             src="@/assets/img/clients/uber.jpg"  lazy="loaded"></div>
@@ -514,7 +512,7 @@
         </section>
 
         <section class="section section-lg pt-lg-2 mt-100 bg-gradient-info section-contact-us">
-            <div class="container pt-lg">
+            <div class="container pt-lg text-white">
                 <div class="pb-lg-4">
                     <h4 class="mb-1 text-center text-white">Want to work with us?</h4>                    
                 </div>

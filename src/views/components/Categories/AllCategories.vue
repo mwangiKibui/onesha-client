@@ -11,18 +11,18 @@
                     >
                         <icon
                             name="ni ni-istanbul"
-                            type="success"
+                            type="primary"
                             rounded
                             class="mb-4"
                         >
                         </icon>
-                        <h6 class="text-success text-uppercase">New Design Only</h6>
+                        <h6 class="text-primary text-uppercase">New Design Only</h6>
                         <p class="description mt-3">Get your first profile done using a unique look and design.</p>
                         <ul class="list-unstyled text-left d-sm-nones description">
                             <li class="py-1">
                                 <div class="d-flex align-items-center">
                                     <badge
-                                        type="success"
+                                        type="primary"
                                         circle
                                         class="mr-3"
                                         icon="ni ni-ruler-pencil"
@@ -33,7 +33,7 @@
                             <li class="py-2">
                                 <div class="d-flex align-items-center">
                                     <badge
-                                        type="success"
+                                        type="primary"
                                         circle
                                         class="mr-3"
                                         icon="ni ni-satisfied"
@@ -47,8 +47,8 @@
                             tag="a"
                             href="/job/new-design-only"
                             data-toggle="scroll"
-                            type="success"
-                            class="mt-4"
+                            type="primary"
+                            class="mt-4 text-white"
                         >
                             Get this service
                         </base-button>
@@ -89,7 +89,7 @@
                                         class="mr-3"
                                         icon="ni ni-satisfied"
                                     ></badge>
-                                    <p class="description mb-0">Business intelligence for your content</p>
+                                    <p class="description mb-0">Content research for your business</p>
                                 </div>
                             </li>
                         </ul>
@@ -113,18 +113,18 @@
                     >
                         <icon
                             name="ni ni-istanbul"
-                            type="info"
+                            type="primary"
                             rounded
                             class="mb-4"
                         >
                         </icon>
-                        <h6 class="text-info text-uppercase">Redesign existing profile</h6>
+                        <h6 class="text-primary text-uppercase">Redesign existing profile</h6>
                         <p class="description mt-3">Give your profile a new look with the content provided.</p>
                         <ul class="list-unstyled text-left d-sm-nones description">
                             <li class="py-1">
                                 <div class="d-flex align-items-center">
                                     <badge
-                                        type="info"
+                                        type="primary"
                                         circle
                                         class="mr-3"
                                         icon="ni ni-ruler-pencil"
@@ -135,7 +135,7 @@
                             <li class="py-2">
                                 <div class="d-flex align-items-center">
                                     <badge
-                                        type="info"
+                                        type="primary"
                                         circle
                                         class="mr-3"
                                         icon="ni ni-satisfied"
@@ -149,7 +149,7 @@
                             tag="a"
                             href="/job/redesign-existing-profile"
                             data-toggle="scroll"
-                            type="info"
+                            type="primary"
                             class="mt-4"
                         >
                             Get this service
