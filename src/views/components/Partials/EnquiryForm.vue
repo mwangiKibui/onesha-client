@@ -3,14 +3,22 @@
         <div
             class="col-lg-8"
             id="carddetails2"
-        >
+        >   <form>
             <card
                 gradient="secondary"
                 shadow
                 body-classes="p-lg-5"
-            >
-                <p class="mt-0" v-if="this.enquiryType == 'quote'">Get a quote for the service you need done.</p>
-                <p class="mt-0" v-if="this.enquiryType == 'enquire'">Your project is very important to us. Describe what you want done.</p>
+            >   
+                <button
+                    type="button"
+                    class="close"
+                    @click="closeModal"
+                    aria-label="Close"
+                >
+                    <span aria-hidden="true">×</span>
+                </button>
+                <p class="mt-0 text-primary" v-if="this.enquiryType == 'quote'">Get a quote for the service you need done.</p>
+                <p class="mt-0 text-primary" v-if="this.enquiryType == 'enquire'">Your project is very important to us. Describe what you want done.</p>
                 <base-input
                     class="mt-5"
                     alternative
@@ -18,6 +26,7 @@
                     name="name"
                     v-model="filledindata['name']"
                     addon-left-icon="ni ni-user-run"
+                    aria-required=""
                 >
                 </base-input>
                 <base-input
@@ -26,6 +35,7 @@
                     name="email"
                     v-model="filledindata['email']"
                     addon-left-icon="ni ni-email-83"
+                    aria-required=""
                 >
                 </base-input>
                 <base-input
@@ -34,6 +44,7 @@
                     name="location"
                     v-model="filledindata['location']"
                     addon-left-icon="ni ni-pin-3"
+                    aria-required=""
                 >
                 </base-input>
                 <base-input class="mb-4">
@@ -44,6 +55,7 @@
                         rows="4"
                         cols="80"
                         placeholder="What do you need done?..."
+                        required
                     ></textarea>
                 </base-input>
                 <span id="message2">
@@ -58,6 +70,7 @@
                     </base-button>
                 </span>
             </card>
+            </form>
         </div>
     </div>
 </template>
@@ -88,6 +101,9 @@ export default {
             ).then(res => res.data);
 
             this.$emit("response", res.message);
+        },
+        closeModal() {
+            this.$emit("response", "closemodal");
         }
     }
 

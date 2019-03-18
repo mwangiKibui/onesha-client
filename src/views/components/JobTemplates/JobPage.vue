@@ -188,7 +188,7 @@ export default {
     },
 
     metaInfo: {
-        title: "Onesha - New Job",
+        title: "New Job - Onesha",
         // override the parent template and just use the above title only
         titleTemplate: null
     }

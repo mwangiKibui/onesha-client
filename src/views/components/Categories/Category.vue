@@ -68,6 +68,11 @@ export default {
     props: {
         categories: Array
     },
+    metaInfo: {
+        title: "All Jobs - Onesha",
+        // override the parent template and just use the above title only
+        titleTemplate: null
+    },
     data() {
         return {
             error: null,

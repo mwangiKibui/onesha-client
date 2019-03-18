@@ -60,7 +60,7 @@ export default{
             }
             if (response == "closemodal") {
                 this.showEnquiry = false;
-                this.component2 = "enquiry-form";
+                this.component2 = "enquiry-section";
                 this.showEnquiry = true;
             }
             else if (response !== "success" && response !== "failed" && response !== "closemodal"){

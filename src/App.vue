@@ -57,6 +57,8 @@ export default {
 
               ga('create', 'UA- 106922338 -1', 'auto');
               ga('send', 'pageview');
+              gtag('config', 'AW-942723254');
+
 
           // start mixpanel Analytics 
           // const mixpanel1 = document.createElement('script')

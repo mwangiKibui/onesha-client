@@ -33,7 +33,7 @@
             <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
                 <li class="nav-item">
                     <router-link
-                        to="/#process"
+                        to="/learn-more#process"
                         class="nav-link"
                         replace
                     >

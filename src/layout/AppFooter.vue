@@ -1,9 +1,11 @@
 <template>
     <footer class="footer has-cards">
-        <h3 class="text-primary text-center font-weight-light mt-0 pt-2">Call our sales team today!<br><br> <a
-                class="btn btn-primary btn-lg"
+        <h3 class="text-primary text-center font-weight-light mt-0 pt-2">Call our sales team today!<br><br> 
+        <a class="btn btn-primary btn-lg"
                 href="tel://+254712983630"
-            >+254 712983630</a></h3>
+            >+254 712 983630</a> <a class="btn btn-primary btn-lg"
+                href="tel://+254750737413"
+            >+254 750 737413</a></h3>
         <div class="container">
             <div class="row row-grid align-items-center my-md">
                 <div class="col-lg-6">
@@ -45,13 +47,32 @@
                     >
                         <i class="fa fa-youtube"></i>
                     </a>
+                    <a
+                        target="_blank"
+                        href="https://linkedin.com/company/onesha"
+                        class="btn btn-neutral btn-icon-only btn-linkedin btn-round btn-lg"
+                        data-toggle="tooltip"
+                        data-original-title="Follow our Page"
+                    >
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a
+                        target="_blank"
+                        href="https://api.whatsapp.com/send?phone=254798206888#"
+                        class="btn btn-success btn-icon-only btn-whatsapp btn-round btn-lg"
+                        data-toggle="tooltip"
+                        data-original-title="Message our Team"
+                    >
+                        <i class="fa fa-whatsapp"></i>
+                    </a>
                 </div>
                 <div class="col-lg-6 text-lg-center btn-wrapper">
                     <h5>Reach us through</h5>
                     <p class="text-lg-center">
                         <strong><i class="fa fa-phone"></i></strong> &nbsp; +254 712 983630 <br>
-                        <strong><i class="fa fa-envelope"></i></strong> &nbsp; Box 21933-00100 <br>
+                        <strong><i class="fa fa-phone"></i></strong> &nbsp; +254 708 533383<br>
                         <strong><i class="fa fa-envelope"></i></strong> &nbsp; hello@onesha.co.ke <br>
+                        <strong><i class="fa fa-envelope"></i></strong> &nbsp; Box 21933-00100, Nairobi <br>
                         <strong><i class="fa fa-map-marker"></i></strong> &nbsp; Seasons Road, Kasarani, Nairobi
                     </p>
                 </div>

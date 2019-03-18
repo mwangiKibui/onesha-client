@@ -1,15 +1,22 @@
 <template>
     <card id="card-details">
         <template slot="header">
+            <h5
+                        class="modal-title"
+                        id="templateModalTitle"
+                    >Enter your details to receive a sample corporate company profile</h5>
+            <button
+            type="button"
+            class="close"
+            @click="closeModal"
+            aria-label="Close"
+        >
+            <span aria-hidden="true">×</span>
+        </button>
         </template>
         <div class="modal-body">
             <form @submit.prevent="requestSample">
                 <div class="my-2">
-                    <h5
-                        class="modal-title"
-                        id="templateModalTitle"
-                    >Enter your details to receive a sample corporate company profile</h5>
-                    <hr>
                     <div class="form-group">
                         <div class="input-group input-group-alternative mb-4">
                             <div class="input-group-prepend">
@@ -35,11 +42,31 @@
                                 name="clientEmail"
                                 v-model="filledindata['clientEmail']"
                                 class="form-control"
-                                placeholder="Your email address, e.g. someone@example.com"
+                                placeholder="Email address e.g. someone@example.com"
                                 required
                             >
                         </div>
                     </div>
+                    <div class="form-group">
+                        <div class="input-group input-group-alternative">
+                            <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="ni ni-building"></i></span>
+                            </div>
+                            <select class="select form-control" aria-placeholder="Select Ind" name="industry" required>
+                            <option disabled selected>Select Industry</option>
+                            <option value="fashion">Fashion &amp; Design</option>
+                            <option value="media">Media, Photography and Film</option>
+                            <option value="ict">ICT products and services</option>
+                            <option value="business services">Professional Consultancy Services</option>
+                            <option value="accounting">Hotel and Hospitality</option>
+                            <option value="manufacturing">Manufacturing and Transport</option>
+                            <option value="procurement">Supplies and Procurement</option>
+                            <option value="real estate">Real Estate &amp; Construction</option>
+                            <option value="other">Other</option>
+                            </select>
+                            <!-- <input class="form-control" placeholder="Industry" type="text"> -->
+                        </div>
+                        </div>
                 </div>
                 <div class="form-group">
                     <span id="message">
@@ -76,6 +103,9 @@ export default {
             ).then(res => res.data);
 
             this.$emit("response", res.message);
+        },
+        closeModal() {
+            this.$emit("response", "closemodal");
         }
     }
 };

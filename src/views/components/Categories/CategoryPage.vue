@@ -70,6 +70,11 @@ export default {
   props: {
     slug: String
   },
+  metaInfo: {
+        title: "Category Jobs - Onesha",
+        // override the parent template and just use the above title only
+        titleTemplate: null
+    },
   data() {
     return {
       category: {},
