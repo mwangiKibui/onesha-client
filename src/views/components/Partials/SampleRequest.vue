@@ -66,7 +66,7 @@
                             </select>
                             <!-- <input class="form-control" placeholder="Industry" type="text"> -->
                         </div>
-                        </div>
+                    </div>
                 </div>
                 <div class="form-group">
                     <span id="message">

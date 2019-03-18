@@ -4,7 +4,7 @@
             <div class="col-lg-5 mb-5 mb-lg-0">
                 <h2 class="text-info font-weight-light">New Design</h2>
                 <p class=" text-default mt-4">Our Design System comes with several pre-built sections to help you get started faster. You can change the text and images and you're good to go.</p>
-                <a @click="gtag_report_conversion()"  href="/job/new-design-only" class="btn btn-info mt-4">Begin Request</a>
+                <a @click="gtag_report_conversion()"  href="/job/new-design-only#jobFormArea" class="btn btn-info mt-4">Begin Request</a>
             </div>
             <div class="col-lg-6 mb-lg-auto">
                 <div class="rounded shadow-lg overflow-hidden transform-perspective-right">
@@ -63,7 +63,7 @@
             <div class="col-lg-5 mb-5 mb-lg-0">
                 <h2 class="text-info font-weight-light">New Content and Structure</h2>
                 <p class=" text-default mt-4">Get your first profile designed with new content and structure. You can choose from various profile content sections and get content research for your business.</p>
-                <a @click="gtag_report_conversion()"  href="/job/new-design-&-structure" class="btn btn-info mt-4">Begin Request</a>
+                <a @click="gtag_report_conversion()"  href="/job/new-design-&-structure#jobFormArea" class="btn btn-info mt-4">Begin Request</a>
             </div>
             
         </div><br>
@@ -71,7 +71,7 @@
             <div class="col-lg-5 mb-5 mb-lg-0">
                 <h2 class="text-info font-weight-light">Redesign Existing Profile</h2>
                 <p class=" text-default mt-4">Give your profile a new look with the content provided. You can specify your theme or choose from design samples given.</p>
-                <a @click="gtag_report_conversion()" href="/job/redesign-existing-profile" class="btn btn-info mt-4">Begin Request</a>
+                <a @click="gtag_report_conversion()" href="/job/redesign-existing-profile#jobFormArea" class="btn btn-info mt-4">Begin Request</a>
             </div>
             <div class="col-lg-6 mb-lg-auto">
                 <div class="rounded shadow-lg overflow-hidden transform-perspective-right">

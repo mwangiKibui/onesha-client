@@ -46,7 +46,7 @@
                         <base-button
                             tag="a"
                             @click="gtag_report_conversion()"
-                            href="/job/new-design-only"
+                            href="/job/new-design-only#jobFormArea"
                             data-toggle="scroll"
                             type="success"
                             class="mt-4 text-white"
@@ -98,7 +98,7 @@
                         <base-button
                             tag="a"
                             @click="gtag_report_conversion()"
-                            href="/job/new-design-&-structure"
+                            href="/job/new-design-&-structure#jobFormArea"
                             data-toggle="scroll"
                             type="success"
                             class="mt-4"
@@ -151,7 +151,7 @@
                         <base-button
                             tag="a"
                             @click="gtag_report_conversion()"
-                            href="/job/redesign-existing-profile"
+                            href="/job/redesign-existing-profile#jobFormArea"
                             data-toggle="scroll"
                             type="success"
                             class="mt-4"
