@@ -91,11 +91,11 @@
                         <p class="lead text-default">According to research, a company profile can shape the decision of a potential client. Here is what else a proper company profile can do for you.</p>
                     </div>
                 </div>
-                <div class="row row-grid mt-5">
+                <div class="row row-grid mt-5 text-center">
                     <div class="col-lg-4">
                         <div class="card card-lift--hover shadow border-0">
                             <a href="/learn-more" title="Learn More">
-                            <img src="@/assets/img/theme/profile.jpg" class="card-img">
+                            <img src="@/assets/img/theme/meetings.jpeg" class="card-img">
                             </a>
                         </div>
                         <h5 class="text-default mt-3">Secure More Meetings</h5>
@@ -103,7 +103,7 @@
                     <div class="col-lg-4">
                         <div class="card card-lift--hover shadow border-0">
                             <a href="/learn-more" title="Learn More">
-                            <img src="@/assets/img/theme/about.jpg" class="card-img">
+                            <img src="@/assets/img/theme/social-audit.jpg" class="card-img">
                             </a>
                         </div>
                         <h5 class="text-default mt-3">Establish Credibility</h5>
@@ -111,7 +111,7 @@
                     <div class="col-lg-4">
                         <div class="card card-lift--hover shadow border-0">
                             <a href="/learn-more" title="Learn More">
-                            <img src="@/assets/img/theme/landing.jpg" class="card-img">
+                            <img src="@/assets/img/theme/localbi.jpeg" class="card-img">
                             </a>
                         </div>
                         <h5 class="text-default mt-3">Use Local Business Intelligence</h5>

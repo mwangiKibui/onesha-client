@@ -20,7 +20,7 @@
             body-classes="px-lg-5 py-lg-5"
             class="border-0"
           >
-            <template>
+            <!-- <template>
               <div class="text-muted text-center mb-3">
                 <small>Sign in with</small>
               </div>
@@ -35,55 +35,105 @@
                   Google
                 </base-button>
               </div>
-            </template>
+            </template> -->
             <template>
-              <div class="text-center text-muted mb-4">
-                <small>Or sign up with credentials</small>
+              <div class="text-center text-muted mb-2">
+                <small>Sign up with credentials</small>
+                <span id="errormsg"></span>
               </div>
               <form role="form">
                 <base-input
                   alternative
+                  v-model="filledindata['firstname']"
                   class="mb-3"
                   placeholder="Name"
                   addon-left-icon="ni ni-hat-3"
                 ></base-input>
                 <base-input
                   alternative
+                  v-model="filledindata['email']"
                   class="mb-3"
                   placeholder="Email"
                   addon-left-icon="ni ni-email-83"
+                  required
                 ></base-input>
                 <base-input
                   alternative
+                  v-model="filledindata['password']"
                   type="password"
                   placeholder="Password"
                   addon-left-icon="ni ni-lock-circle-open"
+                  required
                 ></base-input>
                 <div class="text-muted font-italic">
                   <small>
                     password strength:
                     <span class="text-success font-weight-700">strong</span>
                   </small>
-                </div>
+                </div><br>
                 <base-checkbox>
-                  <span>
+                  <small>
                     I agree with the
-                    <a href="#">Privacy Policy</a>
-                  </span>
+                    <a href="terms">Terms</a> and <a href="privacy">Privacy Policy</a>
+                  </small>
                 </base-checkbox>
-                <div class="text-center">
-                  <base-button type="primary" class="my-4">Create account</base-button>
+                <div class="text-center" id="progressloader">
+                  <base-button type="primary" nativeType="submit" @click="submitDetails()" class="my-4">Create account</base-button>
                 </div>
               </form>
             </template>
           </card>
+            <div class="row mt-2">
+                <div class="col-12 text-center">
+                    <small class="text-light">Already a user?</small>&nbsp; <router-link to="/login" ><small> Login to account</small></router-link>
+                </div>
+            </div>
         </div>
       </div>
     </div>
   </section>
 </template>
 <script>
-export default {};
+import Axios from "axios";
+export default {
+    data() {
+      return {
+        filledindata: {}
+      }
+    },
+    methods: {
+        /**
+      * Submit login details
+      */
+      async submitDetails() {
+       //check if details are correct
+              //display loader
+              var progressloader = this.$el.querySelector("#progressloader");
+              progressloader.innerHTML = "<br><p>Authenticating...</p>";
+              console.log('clicked')
+              console.log(progressloader)
+          try {
+              await Axios.post("/api/auth/create-admin", this.filledindata).then(res => {
+                  //hide loader
+                  progressloader.innerHTML = "";
+                  var errormsg = this.$el.querySelector("#errormsg");
+                  res = JSON.parse(res.data);
+
+                  if (res.message == "success") {
+                      //redirect to /login if valid
+                      errormsg.innerHTML = '<p class="text-danger">' + res.message + '</p>'
+                      window.location.href = "/login"
+                  }else {                      
+                      errormsg.innerHTML = '<p class="text-danger">' + res.message + '</p>'
+                  }
+
+              });
+          } catch (err) {
+              console.log(err);
+          }
+      }
+    }
+};
 </script>
 <style>
 </style>

@@ -19,24 +19,29 @@
                           class="border-0">
                         <template>
                             <div class="text-center text-muted mb-4">
-                                <small>Sign in with your credentials</small>
+                                <small>Sign in with your credentials</small><br>
+                                <span id="err-msg"></span>
                             </div>
                             <form role="form">
                                 <base-input alternative
+                                            v-model="filledindata['email']" 
                                             class="mb-3"
                                             placeholder="Email"
+                                            required
                                             addon-left-icon="ni ni-email-83">
                                 </base-input>
                                 <base-input alternative
+                                            v-model="filledindata['password']" 
                                             type="password"
                                             placeholder="Password"
+                                            required
                                             addon-left-icon="ni ni-lock-circle-open">
                                 </base-input>
                                 <base-checkbox>
                                     Remember me
                                 </base-checkbox>
-                                <div class="text-center">
-                                    <base-button type="primary" class="my-4">Sign In</base-button>
+                                <div class="text-center" id="progressloader">
+                                    <base-button type="primary" nativeType="submit" @click="submitDetails" class="my-4">Sign In</base-button>
                                 </div>
                             </form>
                         </template>
@@ -48,9 +53,7 @@
                             </a>
                         </div>
                         <div class="col-6 text-right">
-                            <a href="#" class="text-light">
-                                <small>Create new account</small>
-                            </a>
+                            <router-link to="/register" class="text-light"><small>Create new account</small></router-link>
                         </div>
                     </div>
                 </div>
@@ -59,7 +62,46 @@
     </section>
 </template>
 <script>
-export default {};
+import Axios from "axios";
+export default {
+    data() {
+        return {
+            filledindata: {}
+        }
+    },
+     methods: {
+      /**
+      * Submit login details
+      */
+      async submitDetails() {
+            //check if details are correct
+            //display loader
+            var progressloader = this.$el.querySelector("#progressloader");
+                progressloader.innerHTML = "<br><p>Authenticating...</p>";
+            console.log(this.filledindata)
+            try {
+                await Axios.post("/api/auth/signin", this.filledindata).then(res => {
+                //hide loader
+                progressloader.innerHTML = '<br><base-button type="primary" @click="submitDetails" class="my-4">Sign In</base-button>';
+                res = JSON.parse(res.data);
+                var errormsg = this.$el.querySelector("#err-msg");
+                console.log(res)
+
+                    if (res.message == "success") {
+                    //redirect to /home if valid
+                    errormsg.innerHTML = '<p class="text-danger">' + res.message + '</p>'
+                    window.location.href = "/dashboard/home"
+                    }else {
+                    errormsg.innerHTML = '<p class="text-danger">' + res.message + '</p>'
+                    }
+
+                });
+            } catch (err) {
+            console.log(err);
+            }
+        }
+    }
+};
 </script>
 <style>
 </style>

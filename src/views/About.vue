@@ -476,13 +476,13 @@
                     <div class="row justify-content-center">
                         <div class="col-sm-2 col-4">
                             <a
-                                href="http://weetracker.com/2018/08/08/bridging-the-creative-gap-meet-kenyas-onesha/"
+                                href="https://weetracker.com/2018/08/08/bridging-the-creative-gap-meet-kenyas-onesha/"
                                 target="_blank"
                                 data-toggle="tooltip"
                                 data-original-title="WeeTracker - Stories about African Startups"
                             >
                                 <img
-                                    src="http://weetracker.com/wp-content/uploads/2018/10/Weetracker-logo-2.png"
+                                    src="https://weetracker.com/wp-content/uploads/2018/10/Weetracker-logo-2.png"
                                     class="img-fluid"
                                     style="height: 90px"
                                 >
@@ -524,7 +524,7 @@
                                 data-original-title="Founder360 - Pitch your startup or business"
                             >
                                 <img
-                                    src="http://founder360mag.com/wp-content/uploads/2017/12/lOGOColor.png"
+                                    src="https://founder360mag.com/wp-content/uploads/2017/12/lOGOColor.png"
                                     class="img-fluid "
                                     style="padding-top: 25px; padding-bottom: 25px; height: 90px"
                                 >
