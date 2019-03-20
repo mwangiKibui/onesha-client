@@ -1,13 +1,18 @@
 <template>
   <div>
-    <section>
-
-        <div class="position-relative">
-            <!-- shape Hero -->
-            <!-- <div class="blurred-image"></div> -->
-            <section class="mt--300 d-lg-none"></section>
-            <section class="section  section-lg section-hero bg-gradient-primary">
-              <div class="container shape-container py-md">
+    <section class="section section-shaped section-lg my-0">
+            <div class="shape shape-style-1 bg-gradient-primary">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            </div>
+            <section>
+             <div class="container pt-lg-md">
                     <div class="col px-0">
                         <div class="my-0 py-1 d-sm-nones"></div>
                         <div class="mt--300 d-lg-nones"></div>
@@ -52,36 +57,35 @@
                     </a>
                 </div>
             </section>
-        </div>
     </section>
-    <section id="who" class="section section-shaped my-4 mb-2  bg-secondary mt-lg-auto bg-white">
-                <div class="container mt-4"><div class="row row-grid align-items-center">
-                    <div class="d-flex pl-2 text-white">
-                            <h4 class="display-3 text-primary">Who needs a company profile?</h4>
-                        
-                    </div>
-                <div class="col-lg-5 mb-lg-auto order-md-2">
-                  <img src="@/assets/img/theme/promo.jpg" class="img-fluid floating" style="width: 100%;"></div>
-                  <div class="col-lg-7 order-md-1"><div class="pr-md-5">
-                  <p>Your company profile is a professional introduction and aims to inform your prospective clients and stakeholders about your products,
-                            services and current status. Your company profile is a key component in your marketing strategy. It is especially important for:</p><ul class="list-unstyled mt-2 text-primary"><li class="py-2"><div class="d-flex align-items-center"><div><div class="badge badge-circle badge-primary mr-3"><i class="ni ni-album-2"></i></div></div><div><h6 class="mb-0 ">Photographers and designers ready to show their portfolio</h6></div></div></li><li class="py-2"><div class="d-flex align-items-center"><div><div class="badge badge-circle badge-primary mr-3"><i class="ni ni-laptop"></i></div></div><div><h6 class="mb-0 ">A tech startup pitching their solutions</h6></div></div></li><li class="py-2"><div class="d-flex align-items-center"><div><div class="badge badge-circle badge-primary mr-3"><i class="ni ni-paper-diploma"></i></div></div><div><h6 class="mb-0 ">Suppliers looking to apply for a tender</h6></div></div></li><li class="py-2"><div class="d-flex align-items-center"><div><div class="badge badge-circle badge-primary mr-3"><i class="ni ni-cart"></i></div></div><div><h6 class="mb-0 ">A business looking to deliver their goods to new customers</h6></div></div></li></ul><p><a href="#request" class="btn btn-primary ">Get Yours Here</a> 
-                            or &nbsp; <a class="btn btn-white text-primary" @click="showSampleModal()">Show Me A Sample</a></p>
-                            </div>
-                        </div>
+    <section id="who" class="section section-shaped my-4 mb-2  bg-secondary mt-lg-auto ">
+        <div class="container mt-4"><div class="row row-grid align-items-center">
+            <div class="d-flex pl-2 text-white">
+                    <h4 class="display-3 text-primary">Who needs a company profile?</h4>
+                
+            </div>
+        <div class="col-lg-5 mb-lg-auto order-md-2">
+            <img src="@/assets/img/theme/promo.jpg" class="img-fluid floating" style="width: 100%;"></div>
+            <div class="col-lg-7 order-md-1"><div class="pr-md-5">
+            <p>Your company profile is a professional introduction and aims to inform your prospective clients and stakeholders about your products,
+                    services and current status. Your company profile is a key component in your marketing strategy. It is especially important for:</p><ul class="list-unstyled mt-2 text-primary"><li class="py-2"><div class="d-flex align-items-center"><div><div class="badge badge-circle badge-primary mr-3"><i class="ni ni-album-2"></i></div></div><div><h6 class="mb-0 ">Photographers and designers ready to show their portfolio</h6></div></div></li><li class="py-2"><div class="d-flex align-items-center"><div><div class="badge badge-circle badge-primary mr-3"><i class="ni ni-laptop"></i></div></div><div><h6 class="mb-0 ">A tech startup pitching their solutions</h6></div></div></li><li class="py-2"><div class="d-flex align-items-center"><div><div class="badge badge-circle badge-primary mr-3"><i class="ni ni-paper-diploma"></i></div></div><div><h6 class="mb-0 ">Suppliers looking to apply for a tender</h6></div></div></li><li class="py-2"><div class="d-flex align-items-center"><div><div class="badge badge-circle badge-primary mr-3"><i class="ni ni-cart"></i></div></div><div><h6 class="mb-0 ">A business looking to deliver their goods to new customers</h6></div></div></li></ul><p><a href="#request" class="btn btn-primary ">Get Yours Here</a> 
+                    or &nbsp; <a class="btn btn-white text-primary" @click="showSampleModal()">Show Me A Sample</a></p>
                     </div>
                 </div>
-            </section>
+            </div>
+        </div><br>
+    </section>
     <section
-            class="section section-sm bg-secondary mt-200  bg-secondary"
+            class="section section-sm bg-secondary mt--100  bg-secondary"
             id="process"
         >
         <div class="container">
             <div class="row justify-content-center text-center" id="process">
-              <div class="mt-5 mb-lg-3 col-md-12">
+              <div class="mt-4 mb-lg-3 col-md-12">
                         <h2 class="text-primary">Our Process</h2>
                         <p class="lead mt-4">We follow this process to ensure you quality.</p>
               </div>
-              <div class="col-lg-12">
+              <div class="mb-lg-3 col-md-12">
                 
                   <div class="row row-grid">
                       <div class="col-lg-3">

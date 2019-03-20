@@ -110,18 +110,16 @@ export default {
               //display loader
               var progressloader = this.$el.querySelector("#progressloader");
               progressloader.innerHTML = "<br><p>Authenticating...</p>";
-              console.log('clicked')
-              console.log(progressloader)
           try {
               await Axios.post("/api/auth/create-admin", this.filledindata).then(res => {
                   //hide loader
                   progressloader.innerHTML = "";
                   var errormsg = this.$el.querySelector("#errormsg");
-                  res = JSON.parse(res.data);
+                  res = res.data;
 
                   if (res.message == "success") {
                       //redirect to /login if valid
-                      errormsg.innerHTML = '<p class="text-danger">' + res.message + '</p>'
+                      errormsg.innerHTML = '<p class="text-success">' + res.message + '</p>'
                       window.location.href = "/login"
                   }else {                      
                       errormsg.innerHTML = '<p class="text-danger">' + res.message + '</p>'

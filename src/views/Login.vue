@@ -78,18 +78,16 @@ export default {
             //display loader
             var progressloader = this.$el.querySelector("#progressloader");
                 progressloader.innerHTML = "<br><p>Authenticating...</p>";
-            console.log(this.filledindata)
             try {
                 await Axios.post("/api/auth/signin", this.filledindata).then(res => {
                 //hide loader
-                progressloader.innerHTML = '<br><base-button type="primary" @click="submitDetails" class="my-4">Sign In</base-button>';
-                res = JSON.parse(res.data);
+                progressloader.innerHTML = '<br><a href="/login">Sign in</a>';
+                res = res.data;
                 var errormsg = this.$el.querySelector("#err-msg");
-                console.log(res)
 
                     if (res.message == "success") {
                     //redirect to /home if valid
-                    errormsg.innerHTML = '<p class="text-danger">' + res.message + '</p>'
+                    errormsg.innerHTML = '<p class="text-success">' + res.message + '</p>'
                     window.location.href = "/dashboard/home"
                     }else {
                     errormsg.innerHTML = '<p class="text-danger">' + res.message + '</p>'
