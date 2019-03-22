@@ -40,13 +40,14 @@
                                 <base-checkbox>
                                     Remember me
                                 </base-checkbox>
-                                <div class="text-center" id="progressloader">
+                                <div><span id="progressloader"></span></div>
+                                <div class="text-center" >
                                     <base-button type="primary" nativeType="submit" @click="submitDetails" class="my-4">Sign In</base-button>
                                 </div>
                             </form>
                         </template>
                     </card>
-                    <div class="row mt-3">
+                    <!-- <div class="row mt-3">
                         <div class="col-6">
                             <a href="#" class="text-light">
                                 <small>Forgot password?</small>
@@ -55,7 +56,7 @@
                         <div class="col-6 text-right">
                             <router-link to="/register" class="text-light"><small>Create new account</small></router-link>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -81,14 +82,14 @@ export default {
             try {
                 await Axios.post("/api/auth/signin", this.filledindata).then(res => {
                 //hide loader
-                progressloader.innerHTML = '<br><a href="/login">Sign in</a>';
+                progressloader.innerHTML = '';
                 res = res.data;
                 var errormsg = this.$el.querySelector("#err-msg");
 
                     if (res.message == "success") {
                     //redirect to /home if valid
                     errormsg.innerHTML = '<p class="text-success">' + res.message + '</p>'
-                    window.location.href = "/dashboard/home"
+                    window.location.href = "/dashboard"
                     }else {
                     errormsg.innerHTML = '<p class="text-danger">' + res.message + '</p>'
                     }

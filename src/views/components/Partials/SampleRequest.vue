@@ -48,6 +48,20 @@
                         </div>
                     </div>
                     <div class="form-group">
+                        <div class="input-group input-group-alternative mb-4">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="ni ni-pin-3"></i></span>
+                            </div>
+                            <input
+                                alternative
+                                placeholder="Location"
+                                type="text"
+                                v-model="filledindata['location']"
+                                class="form-control"
+                                required />
+                        </div>
+                    </div>
+                    <div class="form-group">
                         <div class="input-group input-group-alternative">
                             <div class="input-group-prepend">
                             <span class="input-group-text"><i class="ni ni-building"></i></span>

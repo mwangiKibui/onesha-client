@@ -77,7 +77,8 @@
                     <a href="terms">Terms</a> and <a href="privacy">Privacy Policy</a>
                   </small>
                 </base-checkbox>
-                <div class="text-center" id="progressloader">
+                <div><span id="progressloader"></span></div>
+                <div class="text-center" >
                   <base-button type="primary" nativeType="submit" @click="submitDetails()" class="my-4">Create account</base-button>
                 </div>
               </form>
