@@ -20,7 +20,7 @@
                     <div class="col px-0">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
-                                <h1 class="display-3  text-white">Creativity at Work</h1>
+                                <h1 class="display-3  text-white">CREATIVITY AT WORK</h1>
                                 <!-- <span class="text-white">Taking you digital</span> -->
 
                                 <p class="lead  text-white">At Onesha, we aim to make businesses in line with the times. We help you with

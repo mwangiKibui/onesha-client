@@ -54,7 +54,7 @@
             </div>
             <div class="col-lg-6 mb-5 mb-lg-0">
                 <h2 class="text-info font-weight-light">Redesign Existing Profile</h2>
-                <p class=" text-default mt-4">Give your profile a new look with the content provided. You can specify your theme or choose from design samples given.</p>
+                <p class=" text-default mt-4">Give your current profile a new look with the content provided. You can specify your theme or choose from design samples given.</p>
                 <a @click="gtag_report_conversion()" href="/job/redesign-existing-profile#jobFormArea" class="btn btn-info mt-4">Begin Request</a>
             </div>
             
