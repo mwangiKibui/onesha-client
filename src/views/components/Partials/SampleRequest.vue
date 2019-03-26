@@ -66,7 +66,7 @@
                             <div class="input-group-prepend">
                             <span class="input-group-text"><i class="ni ni-building"></i></span>
                             </div>
-                            <select class="select form-control" aria-placeholder="Select Ind" name="industry" required>
+                            <select class="select form-control" aria-placeholder="Select Ind" v-model="filledindata['industry']" required>
                             <option disabled selected>Select Industry</option>
                             <option value="fashion">Fashion &amp; Design</option>
                             <option value="media">Media, Photography and Film</option>

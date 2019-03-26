@@ -42,7 +42,7 @@
                                 </div>
                             </li>
                         </ul>
-                        <span>Starting from <strong>Ksh. 1500</strong></span><br>
+                        <span>Starting from <strong>Ksh. 2500</strong></span><br>
                         <base-button
                             tag="a"
                             @click="gtag_report_conversion()"
@@ -94,7 +94,7 @@
                                 </div>
                             </li>
                         </ul>
-                        <span>Starting from <strong>Ksh. 2500</strong></span><br>
+                        <span>Starting from <strong>Ksh. 3500</strong></span><br>
                         <base-button
                             tag="a"
                             @click="gtag_report_conversion()"
@@ -147,7 +147,7 @@
                                 </div>
                             </li>
                         </ul>
-                        <span>Starting from <strong>Ksh. 1500</strong></span><br>
+                        <span>Starting from <strong>Ksh. 2500</strong></span><br>
                         <base-button
                             tag="a"
                             @click="gtag_report_conversion()"

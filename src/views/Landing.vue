@@ -139,46 +139,7 @@
                     </div>
                 </div><br>
                 <offers></offers>
-            </div>
-            <div class="conatiner faq events people-legacy"><h2>Frequently asked questions</h2><div class="all-questions shown" id="events-questions"><div class="question-row"><div class="question-div"><h3>What is a data point?</h3><div class="answer">A data point is counted every
-                        time you track an event with Mixpanel. Each
-                        event (a song play, user
-                        comment, or step in a funnel) will count
-                        as a data point. They are like tracking
-                        credits.</div></div><div class="question-div col-lg-10 text-center"><h3 class="display-3 text-primary">What's the difference between monthly and annual plans?</h3><div class="answer">
-                        Customers on monthly plans prepay
-                        for their data on the 1st of each month. Prepaid data
-                        does not roll over to the next month. Customers on
-                        annual plans prepay for data for the entire year, but
-                        have the flexibility to spread data point usage over a
-                        year instead of month to month.</div></div></div><div class="question-row"><div class="question-div"><h3>
-                        What if I go over my prepaid monthly or annual data point amount?
-                    </h3><div class="answer">We do not
-                        stop collecting your data. Once you have
-                        finished using your prepaid data point amount
-                        you will be charged our à la carte rate (20% above
-                        our normal plan rates) for each
-                        additional data point you send to us through
-                        the end of your billing period.</div></div><div class="question-div"><h3>What do you mean by data history limits? Are you deleting my data?</h3><div class="answer">While we store all data sent to us by
-                        our customers, we do limit the length of time in the
-                        past a customer can query this data on some of our
-                        plans. Upgrading your account will provide access to
-                        more historical data.</div></div></div><div class="clear"></div></div><div class="all-questions hidden" id="people-questions" style="display: none;"><div class="question-row"><div class="question-div"><h3>What counts as a profile?</h3><div class="answer">A profile is associated with a
-                        person that has signed up for your application
-                        and someone you would tie data to within
-                        Mixpanel. Generally, this is not a user who
-                        would be a guest to your application, or who
-                        hasn't signed up.</div></div><div class="question-div"><h3>Is this an additional charge?</h3><div class="answer">People plans are an additional
-                        charge every month, on top of your Engagement
-                        plan.</div></div></div><div class="question-row"><div class="question-div"><h3>What if I go over my profile quota?</h3><div class="answer">Exceeding your people plan will
-                        result in an overage charge. You will be charged
-                        20% above the normal plan rate for each profile you
-                        are over.</div></div><div class="question-div"><h3>Can I send my customers unlimited email and push notifications?</h3><div class="answer">Yes. Mixpanel has a feature
-                        called <a href="/messages/">Notifications</a>
-                        which allows you to send emails or push notifications
-                        automatically. If you have a People plan, you can
-                        send as many emails or push notifications as you
-                        would like.</div></div></div><div class="clear"></div></div><div class="support"><div class="support-image"></div></div></div>
+            </div>            
         </section>
 
         <section class="section section-lg mt-4 bg-gradient-primary" >

@@ -160,6 +160,9 @@ export default new Router({
     { path: '/projects', name: "Redirector6", component: Redirector,
       props: { default: true }
     },
+    { path: '/creatives', name: "Redirector61", component: Redirector,
+      props: { default: true }
+    },
     { path: '/students/:slug', name: "Redirector7", component: Redirector,
       props: { default: true }
     },
