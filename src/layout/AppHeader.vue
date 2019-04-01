@@ -64,12 +64,7 @@
                         to="/job/new-design-&-structure"
                         class="dropdown-item"
                         tag="a"
-                    >New Design plus structure</router-link>
-                    <router-link
-                        to="/job/redesign-existing-profile"
-                        class="dropdown-item"
-                        tag="a"
-                    >Redesign of existing</router-link>
+                    >New Content plus structure</router-link>
                     <router-link
                         to="/job/new-creative-service"
                         class="dropdown-item"
@@ -98,13 +93,13 @@
                 </li>
                 <li class="nav-item">
                     <a
-                        href="https://blog.onesha.co.ke"
+                        href="/learn-more"
                         class="nav-link"
                         replace
                     >
                         <i class="ni ni-archive-2"></i>
                         <span class="nav-link-inner--text">
-                            BLOG
+                            LEARN MORE
                         </span>
                     </a>
                 </li>

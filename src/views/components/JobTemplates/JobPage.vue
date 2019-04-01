@@ -19,7 +19,12 @@
                 <div class="row justify-content-between align-items-center">
                     <div class="col-lg-5 mb-5 mb-lg-0">
                         <h1 class="text-white font-weight-light">{{ this.job.title}}</h1>
-                        <p class="lead text-white mt-4">{{ this.job.description}}.</p>
+                        <p class="lead text-white mt-4">{{ this.job.description}}. </p>
+                        <p class="text-white pricing">
+                            <span v-if="this.job.slug == 'new-design-&-structure'">Starting from $70 (Ksh 7000)</span>    
+                            <span v-if="this.job.slug != 'new-design-&-structure'">Starting from @ $50 (Ksh 5000)</span>                            
+                        </p>
+                        
                         <a
                             href="#jobFormArea"
                             @click="loadJobTemplates(job)"
@@ -79,23 +84,6 @@
 
                 <RotateSquare5 style="width: 300px; height: 300px;"></RotateSquare5>
             </section>
-
-            <!-- <section
-                v-if="1==2"
-                class="d-flex justify-content-center align-items-center"
-            >
-                <div class="container justify-content-between align-items-center">
-                    <div class="col-lg-5 mb-5 mb-lg-0">
-                        <h1 class="text-white font-weight-light">Job was not found</h1>
-                        <p class="lead text-white mt-4">Description was not found. Check the url and try again.</p>
-                        <a
-                            on-click="window.reload()"
-                            data-toggle="scroll"
-                            class="btn btn-white mt-4"
-                        >Reload</a>
-                    </div>
-                </div>
-            </section> -->
         </section>
     </div>
 </template>
@@ -127,7 +115,10 @@ export default {
             template: {},
             progress: 0,
             filledindata: {},
-            clientInfo: false
+            clientInfo: false,
+            pricing: null,
+            pricing1: '3 pages @ $35 (Ksh 3500) 7 pages @ $70 (Ksh 7000), 10+ pages @ $100 (Ksh 10000)',
+            pricing2: '3 pages @ $25 (Ksh 2500), 7 pages @ $50 (Ksh 5000), 10+ pages @ $75 (Ksh 7500)'
         };
     },
     /**
@@ -143,8 +134,8 @@ export default {
     },
     beforeRouteEnter(to, from, next) {
         next(vm => {
-            vm.loadCategories();
-            next();
+            // vm.loadCategories();
+            // next();
         });
     },
     created() {
@@ -169,9 +160,7 @@ export default {
             try {
                 //display loader
                 console.log("now fetching jobtypes");
-                var progressloader = document.getElementsByClassName(
-                    "progressloader"
-                );
+                var progressloader = this.$el.querySelector("#progressloader");
                 progressloader.innerHTML = "<h3>Fetching data</h3>";
                 Axios.get("/api/data/categories").then(res => {
                     //hide loader
@@ -180,6 +169,8 @@ export default {
                     return (this.categories = res.data);
 
                     this.fetchJobDetails();
+                    
+                    
                 });
             } catch (err) {
                 console.log(err);

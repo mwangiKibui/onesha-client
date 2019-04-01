@@ -16,7 +16,7 @@
                                 <h2
                                     class="display-3 text-left text-white"
                                     style="display: inline-block; float: center"
-                                >Grow your sales pipeline using a corporate company profile
+                                >Grow your sales pipeline with a professional company profile
                                     <!-- <span style="font-size: 0.5em">Your creative tasks sorted</span> -->
                                 </h2>
                                 <p class="justify-content-between text-white text-left pt-2">
@@ -29,7 +29,7 @@
                                         <span
                                             class="description d-sm-nones"
                                             style="font-size: 1rem"
-                                        ><br>Want a professional looking profile that will enable you get introductions, meetings and close sales even faster?</span></span>
+                                        ><br>Want an attractive profile that will enable you get introductions, meetings and close sales even faster?</span></span>
                                     <span class="text-left d-sm-nones">
                                         <ul
                                             class="py-1 px-3"
@@ -87,7 +87,7 @@
             <div class="container mb-4">
                 <div class="row btn-wrapper justify-content-center">
                     <div class="col-lg-10 text-center">
-                        <h2 class="display-3 text-primary">Build Your Sales Pipeline Faster</h2>
+                        <h2 class="display-3 text-primary">Build your sales pipeline faster</h2>
                         <p class="lead text-default">According to research, a company profile can shape the decision of a potential client. Here is what else a proper company profile can do for you.</p>
                     </div>
                 </div>
@@ -120,13 +120,13 @@
                 <div class="row justify-content-center text-center">
                     <div class="mt-5  col-md-12">
                         <p class=""><a
-                                href="#request"
+                                href="/learn-more"
                                     class="btn btn-success  text-white"
-                                >Get Started</a></p>
+                                >LEARN MORE</a></p>
                     </div>
                 </div>
             </div>
-            <div class="container mt-3 text-center"><a href="/learn-more#who">See who needs a company profile</a></div>
+            <div class="container mt-3 text-center"><a href="/learn-more#who">Find out who needs a company profile</a></div>
         </section>
 
         
@@ -134,8 +134,8 @@
             <div class="container " id="samp">
                 <div class="row btn-wrapper justify-content-center">
                     <div class="col-lg-10 text-center">
-                        <h2 class="display-3 text-primary">What we offer</h2>
-                        <p class="lead text-default">Choose a company profile service fit for you or  <a @click="showSampleModal()" class="btn text-primary">request a sample</a></p>
+                        <h2 class="display-3 text-primary">Get Your Company Profile Done Here</h2>
+                        <p class="lead text-default">We offer company profile design services to fit your business. Choose a service below or  <a @click="showSampleModal()" class="btn text-primary">view a sample</a></p>
                     </div>
                 </div><br>
                 <offers></offers>
@@ -181,7 +181,7 @@
                                     </div>
                                     <div class="pl-4">
                                         <h5 class="title text-success">Request changes before accepting</h5>
-                                        <p>Receive 2 samples of work, review upto 3 times. We ensure you get the quality you are looking for.</p>
+                                        <p>Receive first draft of work, review upto 3 times. We ensure you get the quality you are looking for.</p>
 
                                     </div>
                                 </div>
