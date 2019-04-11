@@ -50,7 +50,7 @@ import BaseRadio from "@/views/components/Common/BaseRadio.vue";
 import BaseCheckbox from "@/views/components/Common/BaseCheckbox.vue";
 export default {
     name: "template-container",
-    props: ["templated", "filledindata"],
+    props: ["templated", "filledindata","jslug"],
     components: {
         BaseRadio,
         BaseCheckbox
@@ -65,16 +65,23 @@ export default {
         check: function(i) {
             let item = i;
             this.checkedItems[i] = i;
-            this.filledindata['Tick all sections to include in your profile'] = this.checkedItems;
+            if(this.jslug == 'new-creative-service'){
+                this.filledindata['Please select the services you want'] = this.checkedItems;
+            }else{
+                this.filledindata['Tick all sections to include in your profile'] = this.checkedItems;
+            }
         }
     },
     watch: {
         checkedItems: function (newVal, oldVal) {
-            this.checkedItems = newVal;
-            // this.filledindata['Tick all sections to include in your profile'] = oldVal + ', ' + newVal;
-            this.filledindata['Tick all sections to include in your profile'] = this.checkedItems;
-            console.log(this.filledindata)
-            console.log(newVal)
+            this.checkedItems[newVal] = newVal;
+            if(this.jslug == 'new-creative-service'){
+                this.filledindata['Please select the services you want'] = this.checkedItems;
+            }else{
+                this.filledindata['Tick all sections to include in your profile'] = this.checkedItems;
+            }
+            // console.log(this.filledindata)
+            // console.log(this.checkedItems)
         }
     }
 };

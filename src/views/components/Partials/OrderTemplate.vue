@@ -41,6 +41,7 @@
                 <template-container
                     :templated="template"
                     :filledindata="this.filledindata"
+                    :jslug="jslug"
                     v-if="templatedata && templatedata.length && clientInfo == false"
                     class="templateModal"
                 ></template-container>
@@ -252,8 +253,7 @@ export default {
                 ? 1
                 : Number(this.templateIndex) / Number(this.templatedata.length);
             
-            console.log(self.filledindata)            
-            console.log(self.filledindata)
+            console.log(this.filledindata)   
             this.progress = Math.ceil(index * 100);
         },
         /**
