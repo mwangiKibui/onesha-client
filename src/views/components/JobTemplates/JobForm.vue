@@ -46,6 +46,7 @@
                         v-bind:is="component"
                         @response="childComponentResponse"
                         :jslug="this.jobslug"
+                        :jdata="this.jobs"
                         :category="this.userIndustry"
                     ></component>
                     <!-- </keep-alive> -->
@@ -120,6 +121,14 @@ export default {
             ],
             templateModal: this.toShows
         };
+    },
+    watch: {
+        jobs: function(val1, val2) {            
+            this.jobs = val1;
+        },
+        jobslug: function(val1, val2) {            
+            this.jobslug = val1;
+        }
     },
     components: {
         JobCategories,

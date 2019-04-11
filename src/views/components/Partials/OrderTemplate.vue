@@ -1,21 +1,25 @@
 <template>
     <card id="card-details">
+        
         <button
             type="button"
             class="close"
             @click="closeModal"
             aria-label="Close"
         >
-            <span aria-hidden="true">×</span>
-        </button>
+            <span>x</span>
+        </button><br>
+    
         <!-- <form @submit.prevent="submitClientInformation"> -->
         <div v-if="clientInfo == false">
-            <div slot="header">
-                <h5
+            <div >
+                
+                <base-progress
                     v-if="templatedata && templatedata.length"
-                    class="modal-title"
-                    id="templateModalTitle"
-                >You are {{ Number(templatedata.length) - templateIndex }} {{ Number(templatedata.length) - templateIndex > 1 ? 'steps' : 'step'}} away from placing your order</h5>
+                    type="success"
+                    :value="progress"
+                    :label="jobname"
+                ></base-progress>
                 <h5
                     v-if="!templatedata.length && notemplate == false"
                     class="modal-title"
@@ -28,27 +32,21 @@
                     > Loading</RotateSquare5>
                 </h5>
             </div>
+        </div>   
 
-            <base-progress
-                v-if="templatedata && templatedata.length"
-                type="success"
-                :value="progress"
-                :label="jobtype"
-            ></base-progress>
-
-            <div v-if="templatedata && !templatedata.length"></div>
-            <div>
-                <!-- Show the template questions -->
-                <keep-alive>
-                    <template-container
-                        :templated="template"
-                        :filledindata="this.filledindata"
-                        v-if="templatedata && templatedata.length"
-                        class="templateModal"
-                    ></template-container>
-                </keep-alive>
-            </div>
+        <div v-if="templatedata && !templatedata.length"></div>
+        <div>
+            <!-- Show the template questions -->
+            <keep-alive>
+                <template-container
+                    :templated="template"
+                    :filledindata="this.filledindata"
+                    v-if="templatedata && templatedata.length && clientInfo == false"
+                    class="templateModal"
+                ></template-container>
+            </keep-alive>
         </div>
+        
 
         <!-- Request the client details -->
         <div v-if="clientInfo == true">
@@ -117,7 +115,7 @@ import { RotateSquare5 } from "vue-loading-spinner";
 
 export default {
     name: "order-template",
-    props: ["jslug", "category"],
+    props: ["jslug", "jdata","category"],
     components: {
         BaseProgress,
         TemplateContainer,
@@ -131,6 +129,7 @@ export default {
             notemplate: true,
             templateIndex: 1,
             jobtype: this.jslug,
+            jobname: this.jdata.title,
             templatedata: {},
             template: {},
             progress: 0
@@ -140,6 +139,9 @@ export default {
         jslug: function(val1, val2) {
             this.jobtype = val1;
             this.loadJobTemplates(this.jobtype);
+        },
+        jdata: function(val1, val2) {
+            this.jdata = val1;
         },
         templateIndex: function(val1, val2) {
             this.templateIndex = val1;
@@ -246,11 +248,12 @@ export default {
                         self.filledindata[title] = label;
                 }
             });
-
             var index = end
                 ? 1
                 : Number(this.templateIndex) / Number(this.templatedata.length);
-
+            
+            console.log(self.filledindata)            
+            console.log(self.filledindata)
             this.progress = Math.ceil(index * 100);
         },
         /**

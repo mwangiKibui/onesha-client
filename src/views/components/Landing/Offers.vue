@@ -3,7 +3,7 @@
         <div class="row justify-content-between align-items-center my-5 pt-lg-2">
             <div class="col-lg-6 mb-5 mb-lg-0">
                 <h2 class="text-info font-weight-light">New Design</h2>
-                <p class=" text-default mt-4">We give your profile a new look with the content you provided. Get the first draft and suggest changes upto 3 times. You can specify your theme or let our designers choose for you.</p> <b>Starting from</b> @ $50 (Ksh 5000)<br>
+                <p class=" text-default mt-4">We give your profile a new look with the content you provided. Get the first draft and suggest changes upto 3 times. You can specify your theme or let our designers choose for you.</p> 
                 <a @click="gtag_report_conversion()"  href="/job/new-design-only#jobFormArea" class="btn btn-info mt-4">Begin Request</a>
             </div>
             <div class="col-lg-5 mb-lg-auto">
@@ -33,7 +33,7 @@
             
             <div class="col-lg-5 mb-5 mb-lg-0">
                 <h2 class="text-info font-weight-light">New Content and Structure</h2>
-                <p class=" text-default mt-4">Get your first profile designed with new content and structure. You can choose from various profile content sections and get content research for your business.</p> <b>Starting from</b> @ $70 (Ksh 7000)<br>
+                <p class=" text-default mt-4">Get your first profile designed with new content and structure. You can choose from various profile content sections and get content research for your business.</p> 
                 <a @click="gtag_report_conversion()"  href="/job/new-design-&-structure#jobFormArea" class="btn btn-info mt-4">Begin Request</a>
             </div>
             <div class="col-lg-6 mb-lg-auto">

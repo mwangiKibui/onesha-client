@@ -42,7 +42,7 @@
                                 </div>
                             </li>
                         </ul>
-                        <span>Starting from <strong>$50 <br>(Ksh. 5000)</strong></span><br>
+                        <!-- <span>Starting from <strong>$50 <br>(Ksh. 5000)</strong></span><br> -->
                         <base-button
                             tag="a"
                             @click="gtag_report_conversion()"
@@ -94,7 +94,7 @@
                                 </div>
                             </li>
                         </ul>
-                        <span>Starting from <strong>$70 <br>(Ksh. 7000)</strong></span><br>
+                        <!-- <span>Starting from <strong>$70 <br>(Ksh. 7000)</strong></span><br> -->
                         <base-button
                             tag="a"
                             @click="gtag_report_conversion()"

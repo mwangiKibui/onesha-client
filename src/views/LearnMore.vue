@@ -220,7 +220,7 @@
 
 <script>
 import RequestSample from "@/views/components/Partials/SampleRequest.vue";
-import Categories from "./components/Categories/AllCategories";
+import Categories from "./components/Landing/AllCategories";
 import Modal from "@/views/components/Common/Modal.vue";
 export default {
     metaInfo: {

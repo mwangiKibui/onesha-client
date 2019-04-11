@@ -379,9 +379,9 @@
 </template>
 
 <script>
-import Categories from "./components/Categories/AllCategories";
 import JobCategories from "./components/Categories/Category";
 import Modal from "@/views/components/Common/Modal.vue";
+import Categories from "./components/Landing/AllCategories";
 import Offers from "@/views/components/Landing/Offers.vue";
 import RequestSample from "@/views/components/Partials/SampleRequest.vue";
 import RequestSuccess from "@/views/components/Partials/RequestSuccess.vue";

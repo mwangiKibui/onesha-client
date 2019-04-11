@@ -20,10 +20,10 @@
                     <div class="col-lg-5 mb-5 mb-lg-0">
                         <h1 class="text-white font-weight-light">{{ this.job.title}}</h1>
                         <p class="lead text-white mt-4">{{ this.job.description}}. </p>
-                        <p class="text-white pricing">
+                        <!-- <p class="text-white pricing">
                             <span v-if="this.job.slug == 'new-design-&-structure'">Starting from $70 (Ksh 7000)</span>    
-                            <span v-if="this.job.slug != 'new-design-&-structure'">Starting from @ $50 (Ksh 5000)</span>                            
-                        </p>
+                            <span v-if="this.job.slug != 'new-design-&-structure'">Starting from @ $50 (Ksh 5000)</span>
+                        </p>                             -->
                         
                         <a
                             href="#jobFormArea"
@@ -130,7 +130,10 @@ export default {
         $route(to, from) {
             // react to route changes...
             this.fetchJobDetails();
-        }
+        },
+        job: function(val1, val2) {            
+            this.job = val1;
+        },
     },
     beforeRouteEnter(to, from, next) {
         next(vm => {

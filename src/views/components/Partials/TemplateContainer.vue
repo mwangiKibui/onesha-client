@@ -27,7 +27,7 @@
             >  
                 <base-checkbox
                     class="mb-3"
-                    v-model="filledindata[templated.title]"
+                    v-model="checkedItems[option]"
                     :value="option"
                     :id="option"
                 >{{ option }}</base-checkbox>
@@ -58,15 +58,23 @@ export default {
     data() {
         return {
             value: "",
-            checkedItems: []
+            checkedItems: {}
         };
     },
     methods: {
-        check: function(i,p) {
+        check: function(i) {
             let item = i;
-            console.log(this.checkedItems);
-            this.checkedItems.push(item);
-            console.log(filledindata,e)
+            this.checkedItems[i] = i;
+            this.filledindata['Tick all sections to include in your profile'] = this.checkedItems;
+        }
+    },
+    watch: {
+        checkedItems: function (newVal, oldVal) {
+            this.checkedItems = newVal;
+            // this.filledindata['Tick all sections to include in your profile'] = oldVal + ', ' + newVal;
+            this.filledindata['Tick all sections to include in your profile'] = this.checkedItems;
+            console.log(this.filledindata)
+            console.log(newVal)
         }
     }
 };
