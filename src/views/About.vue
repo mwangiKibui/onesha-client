@@ -599,7 +599,7 @@
                                     data-original-title="PANGEA - WE FACILITATE TRUST, TRANSPARENCY AND IMPACT"
                                 >
                                     <img
-                                        src="https://www.pangeaa.com/wp-content/uploads/2018/01/Pangea-accelerator-logo.jpg"
+                                        src="https://www.pangeaa.com/wp-content/uploads/2019/03/cropped-logo-normal-tight-1-242x44.jpg"
                                         class="img img-fluid"
                                         style="height: 110px;"
                                     > <small>Pangea Funds</small>

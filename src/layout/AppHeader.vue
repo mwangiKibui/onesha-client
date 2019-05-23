@@ -103,6 +103,19 @@
                         </span>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a
+                        href="https://blog.onesha.co.ke"
+                        target="_blank"
+                        class="nav-link"
+                        replace
+                    >
+                        <i class="ni ni-archive-2"></i>
+                        <span class="nav-link-inner--text">
+                            BLOG
+                        </span>
+                    </a>
+                </li>
                 <!-- 
                 <li class="nav-item d-none d-lg-block ml-lg-4">
                 <router-link to="/register" class="btn btn-neutral btn-icon">

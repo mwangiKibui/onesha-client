@@ -12,32 +12,30 @@
                 <div id="usercategories">
 
                     <div class="mt-5 text-center justify-content-center">
-                        <p class="text-default">Select your field</p>
+                        <p class="text-default">Select the field your business is in</p>
                     </div>
 
                     <div
-                        class="row justify-content-center"
+                        class="row justify-content-center mb-4"
                         style="text-align: center;"
                     >
-                        <div
-                            class="col-lg-4 col-sm-6"
-                            v-for="(user, index) in usertypes"
-                            :key="index"
-                        >
-                            <a
-                                @click="hideCategories(user.title)"
-                                class="m-2"
+                        <select class="select form-control" placeholder="Select Industry" name="userIndustry" v-model="userIndustry">
+                            <option disabled selected>Select your industry</option>
+                            <option
+                                v-for="(user, index) in usertypes"
                             >
-                                <div
-                                    class="category"
-                                    :style="`background-image: url(${user.avatar.file})`"
-                                >
-                                    <div class="category-bg-faded">
-                                        <h5 class="text-white mt-3">{{ user.title }}</h5>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+                                {{ user.title }}
+                            </option>
+                        </select>
+                    </div>
+                    <br>
+                    <div
+                        id="message2"
+                    >
+                        <button
+                            @click="hideCategories()"
+                            class="btn btn-primary" 
+                        >Next</button>
                     </div>
                 </div>
                 <div id="jobDetails">
@@ -76,7 +74,7 @@ export default {
         return {
             notemplate: true,
             clientInfo: false,
-            userIndustry: null,
+            userIndustry: 'Select your industry',
             jobslug: this.jobs.slug,
             categories: null,
             businessprofiles: null,
@@ -86,7 +84,7 @@ export default {
                     avatar: {
                         file: "/assets/img/bg.jpg"
                     },
-                    title: "Photography and Design"
+                    title: "Photography and Film"
                 },
                 {
                     avatar: {
@@ -111,6 +109,42 @@ export default {
                         file: "/assets/img/bg2.jpg"
                     },
                     title: "Finance and Accounting"
+                },
+                {
+                    avatar: {
+                        file: "/assets/img/bg3.jpg"
+                    },
+                    title: "General Supplies"
+                },
+                {
+                    avatar: {
+                        file: "/assets/img/bg.jpg"
+                    },
+                    title: "Transport and Logistics"
+                },
+                {
+                    avatar: {
+                        file: "/assets/img/bg2.jpg"
+                    },
+                    title: "Manufacturing and Petroleum"
+                },
+                {
+                    avatar: {
+                        file: "/assets/img/bg3.jpg"
+                    },
+                    title: "Fashion and Design"
+                },
+                {
+                    avatar: {
+                        file: "/assets/img/bg.jpg"
+                    },
+                    title: "Agricultural Products"
+                },
+                {
+                    avatar: {
+                        file: "/assets/img/bg2.jpg"
+                    },
+                    title: "Engineeering and Construction"
                 },
                 {
                     avatar: {
@@ -142,8 +176,9 @@ export default {
         this.$el.querySelector("#jobDetails").hidden = true;
     },
     methods: {
-        hideCategories(category) {
-            this.userIndustry = category;
+        hideCategories() {
+            // console.log(this.userIndustry)
+            // this.userIndustry = category;
             this.$el.querySelector("#usercategories").hidden = true;
             this.$el.querySelector("#jobDetails").hidden = false;
 

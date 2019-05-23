@@ -252,8 +252,7 @@ export default {
             var index = end
                 ? 1
                 : Number(this.templateIndex) / Number(this.templatedata.length);
-            
-            console.log(this.filledindata)   
+              
             this.progress = Math.ceil(index * 100);
         },
         /**
@@ -264,6 +263,7 @@ export default {
         requestClientDetails() {
             this.clientInfo = true;
             this.populateTemplateFeedback(true);
+            console.log(this.filledindata);
         },
         async submitClientInformation() {
             //show loader

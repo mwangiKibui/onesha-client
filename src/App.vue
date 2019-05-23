@@ -30,7 +30,7 @@ export default {
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { name:"keywords", content:"Briglobe, Onesha, Showcase, Digital, Online, Creative, Africa, Community, Visual, Portfolio, Professional" },
         { name:"author", content:"onesha.co.ke"},
-        { name:"description", content:"Onesha enables businesses access to top creative services from our wide pool of vetted creatives. Hire from top talent and get high quality company profiles."},
+        { name:"description", content:"Onesha enables businesses access top creative services from our wide pool of vetted creatives. Hire from top talent and get high quality company profiles."},
         { name:"http-equiv=X-UA-Compatible", content:"IE=edge"},
         { name:"viewport", content:"width=device-width,initial-scale=1"}
       ],

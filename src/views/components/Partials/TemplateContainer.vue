@@ -74,14 +74,13 @@ export default {
     },
     watch: {
         checkedItems: function (newVal, oldVal) {
-            this.checkedItems[newVal] = newVal;
+            // console.log(this.checkedItems)
             if(this.jslug == 'new-creative-service'){
                 this.filledindata['Please select the services you want'] = this.checkedItems;
             }else{
                 this.filledindata['Tick all sections to include in your profile'] = this.checkedItems;
             }
             // console.log(this.filledindata)
-            // console.log(this.checkedItems)
         }
     }
 };

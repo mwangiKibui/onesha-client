@@ -70,7 +70,7 @@
                     <h5>Reach us through</h5>
                     <p class="text-lg-center">
                         <strong><i class="fa fa-phone"></i></strong> &nbsp; +254 712 983630 <br>
-                        <strong><i class="fa fa-phone"></i></strong> &nbsp; +254 708 533383<br>
+                        <strong><i class="fa fa-phone"></i></strong> &nbsp; +254 798 206888<br>
                         <strong><i class="fa fa-envelope"></i></strong> &nbsp; hello@onesha.co.ke <br>
                         <strong><i class="fa fa-envelope"></i></strong> &nbsp; Box 21933-00100, Nairobi <br>
                         <strong><i class="fa fa-map-marker"></i></strong> &nbsp; Seasons Road, Kasarani, Nairobi
@@ -81,7 +81,7 @@
             <div class="row align-items-center justify-content-md-between">
                 <div class="col-md-6">
                     <div class="copyright">
-                        &copy; 2018
+                        &copy; {{ new Date().getFullYear() }}
                         <a>Onesha Kenya.<br> Connecting businesses to top creative services.</a>
                     </div>
                 </div>

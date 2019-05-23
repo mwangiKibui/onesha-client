@@ -8,6 +8,7 @@ import LearnMore from "@/views/LearnMore.vue";
 import JobCategory from "@/views/components/Categories/JobCategory.vue";
 import CategoryPage from "@/views/components/Categories/CategoryPage.vue";
 import JobPage from "@/views/components/JobTemplates/JobPage.vue";
+import JobView from "@/views/components/JobTemplates/JobView.vue";
 import Landing from "@/views/Landing.vue";
 import Login from "@/views/Login.vue";
 import Profile from "@/views/Profile.vue";
@@ -128,6 +129,16 @@ export default new Router({
       props: { default: true, header: false, footer: false }
     },
     {
+      path: "/job-preview/:slug",
+      name: "Job Details",
+      components: {
+        header: AppHeader,
+        default: JobView,
+        footer: AppFooter
+      },
+      props: { default: true, header: false, footer: false }
+    },
+    {
       path: "/category/:slug",
       name: "Category Title",
       components: {
@@ -179,6 +190,12 @@ export default new Router({
       props: { default: true }
     },
     { path: '/companies', name: "Redirector12", component: Redirector,
+      props: { default: true }
+    },
+    { path: '/adminpage', name: "Redirector13", component: Redirector,
+      props: { default: true }
+    },
+    { path: '/viewProject', name: "Redirector14", component: Redirector,
       props: { default: true }
     }
   ],
