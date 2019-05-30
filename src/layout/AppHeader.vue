@@ -58,17 +58,24 @@
                     <router-link
                         to="/job/new-design-only"
                         class="dropdown-item"
-                        tag="a"
+                        style="cursor:pointer"
                     >New Design Only</router-link>
                     <router-link
                         to="/job/new-design-&-structure"
                         class="dropdown-item"
-                        tag="a"
+                        style="cursor:pointer"
                     >New Content plus structure</router-link>
+                    <router-link
+                        to="/job/content-research-only"
+                        class="dropdown-item"
+                        tag="a"
+                        style="cursor:pointer"
+                    >Content research only</router-link>
                     <router-link
                         to="/job/new-creative-service"
                         class="dropdown-item"
                         tag="a"
+                        style="cursor:pointer"
                     >Other Creative Services</router-link>
                 </base-dropdown>
                 <!-- <li class="nav-item">
@@ -118,12 +125,12 @@
                 </li>
                 <!-- 
                 <li class="nav-item d-none d-lg-block ml-lg-4">
-                <router-link to="/register" class="btn btn-neutral btn-icon">
+                <a to="/register" class="btn btn-neutral btn-icon">
                     <span class="btn-inner--icon">
                     <i class="fa fa-user-plus mr-2"></i>
                     </span>
                     <span class="nav-link-inner--text">Become a Creative</span>
-                </router-link>
+                </a>
                 </li> -->
             </ul>
         </base-nav>

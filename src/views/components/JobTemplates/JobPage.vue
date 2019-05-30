@@ -46,7 +46,7 @@
                                     img-src="/assets/img/newdesign.jpg"
                                 ></b-carousel-slide>
                                 <b-carousel-slide
-                                    v-if="job.slug == 'redesign-existing-profile'"
+                                    v-if="job.slug == 'content-research-only'"
                                     img-src="/assets/img/redesign.jpg"
                                 ></b-carousel-slide>
                                 <b-carousel-slide
@@ -133,6 +133,8 @@ export default {
         },
         job: function(val1, val2) {            
             this.job = val1;
+            this.loadJobTemplates(val1)
+            // window.location.reload()
         },
     },
     beforeRouteEnter(to, from, next) {
