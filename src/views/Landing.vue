@@ -5,8 +5,7 @@
             <!-- shape Hero -->
             <!-- <div class="blurred-image"></div> -->
             <section class="mt--300 d-lg-none"></section>
-            <section class="section home-content section-lg section-hero">
-
+            <!-- <section class="section home-content section-lg section-hero">
                 <div class="container shape-container py-md">
                     <div class="col px-0">
                         <div class="my-0 py-1 d-sm-nones"></div>
@@ -17,7 +16,6 @@
                                     class="display-3 text-left text-white"
                                     style="display: inline-block; float: center"
                                 >Grow your sales pipeline with a professional company profile
-                                    <!-- <span style="font-size: 0.5em">Your creative tasks sorted</span> -->
                                 </h2>
                                 <p class="justify-content-between text-white text-left pt-2">
                                     <span class="lead">Get <span
@@ -69,7 +67,6 @@
 
                     </div>
                 </div>
-
                 <div class="row btn-wrapper justify-content-center floating">
                     <a
                         href="#about"
@@ -77,7 +74,7 @@
                         class="btn-inner--icon text-white"><i class="ni ni-bold-down"></i>
                     </a>
                 </div>
-            </section>
+            </section> -->
         </div>
         <section
             class="section section-lg my-4 mb-2 bg-secondary"
@@ -607,15 +604,17 @@ window.onload = function() {
     }
     .position-relative {
         position: relative;
-        background-image: none;
-        background-image: url("/assets/img/social-bg.jpg") !important;
-        background-size: cover;
-        background-position: right;
-        background-repeat: no-repeat;
-        height: 100vh !important;
+        /* background-image: none; */
+        /* background-image: url("../assets/img/social-bg.jpg") !important; */
+        /* background-size: cover; */
+        /* background-position: right; */
+        /* background-repeat: no-repeat; */
+        background: linear-gradient(114.59deg, #FF5E62 38.33%, #FF9966 91.76%) !important;
+        /* height: 100vh !important; */
+        min-height: 80vh !important;
     }
     .home-content {
-        background-color: rgba(0, 0, 34, 0.7);
+        /* background-color: rgba(0, 0, 34, 0.7); */
         z-index: 9;
         position: absolute;
         top: 0;

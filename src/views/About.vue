@@ -143,7 +143,7 @@
                     id="digital"
                 >
                     <div class="col-md-6 order-md-2">
-                        <br></br>
+                        <br>
                         <img
                             src="/assets/img/theme/promo-1.jpg"
                             class="img-fluid floating"
