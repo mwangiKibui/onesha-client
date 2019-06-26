@@ -1,8 +1,8 @@
 import Vue from "vue";
 import Router from "vue-router";
 import Meta from "vue-meta";
-import AppFooter from "@/layout/AppFooter.vue";
-import AppHeader from "@/layout/AppHeader.vue";
+import AppFooter from "@/views/components/layout/AppFooter.vue";
+import AppHeader from "@/views/components/layout/AppHeader.vue";
 import About from "@/views/About.vue";
 import LearnMore from "@/views/LearnMore.vue";
 import JobCategory from "@/views/components/Categories/JobCategory.vue";
@@ -211,7 +211,7 @@ export default new Router({
       props: { default: true }
     },
     {
-      path: "/services",
+      path: "/all-services",
       name: "Redirector9",
       component: Redirector,
       props: { default: true }

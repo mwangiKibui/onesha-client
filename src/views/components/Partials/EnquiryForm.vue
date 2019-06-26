@@ -5,7 +5,7 @@
             id="carddetails2"
         >   <form>
             <card
-                gradient="secondary"
+                gradient="warning"
                 shadow
                 body-classes="p-lg-5"
             >   
@@ -61,6 +61,7 @@
                 <span id="message2">
                     <base-button
                         type="default"
+                        class="colorSchemeBtn"
                         round
                         block
                         size="lg"

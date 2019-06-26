@@ -1,7 +1,7 @@
 <template>
     <div>
         <section class="section section-lg section-shaped overflow-hidden my-0">
-            <div class="shape shape-style-1 shape-default">
+            <div class="shape shape-style-1 shape-warning">
                 <span></span>
                 <span></span>
                 <span></span>

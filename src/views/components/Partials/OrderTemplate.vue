@@ -1,5 +1,5 @@
 <template>
-    <card id="card-details">
+    <div id="card-details">
         
         <button
             type="button"
@@ -8,7 +8,7 @@
             aria-label="Close"
         >
             <span>x</span>
-        </button><br>
+        </button>
     
         <!-- <form @submit.prevent="submitClientInformation"> -->
         <div v-if="clientInfo == false">
@@ -16,7 +16,7 @@
                 
                 <base-progress
                     v-if="templatedata && templatedata.length"
-                    type="success"
+                    type="warning"
                     :value="progress"
                     :label="jobname"
                 ></base-progress>
@@ -81,13 +81,13 @@
                     @click="loadPreviousTemplate(templateIndex)"
                 >Previous</button>
                 <button
-                    class="btn btn-dark"
+                    class="btn btn-warning"
                     role="button"
                     v-if="templatedata.length && templateIndex !== templatedata.length - 1"
                     @click="loadNextTemplate(templateIndex)"
                 >Next</button>
                 <button
-                    class="btn btn-success"
+                    class="btn btn-warning"
                     role="button"
                     v-if="templateIndex === templatedata.length - 1"
                     @click="requestClientDetails"
@@ -104,11 +104,11 @@
             >Submit</button>
         </div>
         <!-- </form> -->
-    </card>
+    </div>
 </template>
 
 <script>
-import BaseProgress from "@/views/components/Common/BaseProgress.vue";
+import BaseProgress from "@/components/Common/BaseProgress.vue";
 import OrderClient from "@/views/components/Partials/OrderClient.vue";
 import TemplateContainer from "./TemplateContainer.vue";
 import Axios from "axios";

@@ -1,57 +1,55 @@
 <template>
-    <div class="row justify-content-center">
-        <div class="col-lg-12">
-            <card
-                type="secondary"
-                shadow
-                header-classes="bg-white pb-5"
-                body-classes="px-lg-5 py-lg-5"
-                class="border-0"
-                id="card-details"
-            >
-                <div id="usercategories">
+    <div class="col-lg-10 justify-content-center">
+        
+        <card
+            header-classes="pb-5"
+            body-classes="px-lg-5"
+            class="border-0"
+            id="card-details"
+        >
+            <div id="usercategories">
 
-                    <div class="mt-5 text-center justify-content-center">
-                        <p class="text-default">Select the field your business is in</p>
-                    </div>
-
-                    <div
-                        class="row justify-content-center mb-4"
-                        style="text-align: center;"
-                    >
-                        <select class="select form-control" placeholder="Select Industry" name="userIndustry" v-model="userIndustry">
-                            <option disabled selected>Select your industry</option>
-                            <option
-                                v-for="(user, index) in usertypes"
-                            >
-                                {{ user.title }}
-                            </option>
-                        </select>
-                    </div>
-                    <br>
-                    <div
-                        id="message2"
-                    >
-                        <button
-                            @click="hideCategories()"
-                            class="btn btn-primary" 
-                        >Next</button>
-                    </div>
+                <div class=" text-center justify-content-center">
+                    <h4 class="text-white">Select the field your business is in</h4>
                 </div>
-                <div id="jobDetails">
-                    <!-- <keep-alive> -->
-                    <component
-                        v-bind:is="component"
-                        @response="childComponentResponse"
-                        :jslug="this.jobslug"
-                        :jdata="this.jobs"
-                        :category="this.userIndustry"
-                    ></component>
-                    <!-- </keep-alive> -->
 
+                <div
+                    class="row justify-content-center mb-4"
+                    style="text-align: center;"
+                >
+                    <select class="select form-control" placeholder="Select Industry" name="userIndustry" v-model="userIndustry">
+                        <option disabled selected>Select your industry</option>
+                        <option
+                            v-for="(user, index) in usertypes"
+                        >
+                            {{ user.title }}
+                        </option>
+                    </select>
                 </div>
-            </card>
-        </div>
+                <br>
+                <div
+                    id="message2"
+                >
+                    <button
+                        @click="hideCategories()"
+                        class="btn btn-default" 
+                    >Next</button>
+                </div>
+            </div>
+            <div id="jobDetails">
+                <!-- <keep-alive> -->
+                <component
+                    v-bind:is="component"
+                    @response="childComponentResponse"
+                    :jslug="this.jobslug"
+                    :jdata="this.jobs"
+                    :category="this.userIndustry"
+                ></component>
+                <!-- </keep-alive> -->
+
+            </div>
+        </card>
+        
     </div>
     <!-- job template modal -->
 

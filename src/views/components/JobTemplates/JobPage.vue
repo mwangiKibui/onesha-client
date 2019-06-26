@@ -13,7 +13,7 @@
                 <span></span>
             </div>
             <div
-                class="container py-0 pb-lg"
+                class="container py-0 pb-lg mt-4"
                 v-if="job.slug"
             >
                 <div class="row justify-content-between align-items-center">
@@ -61,29 +61,40 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-            <div
-                class="container pt-lg-md"
-                id="jobFormArea"
-                v-if="job.slug"
-            >
-                <job-form
-                    :jobs="job"
-                    :toShows="toShow"
-                    id="jobForm"
-                ></job-form>
-
+            
+        </section>
+        <section class="section vector2 section-lg">
+            <div class="row row-grid justify-content-center mt-3 mb-5" id="jobFormArea">
+                <div class=".col-lg-8 text-center">
+                <h4 class="display-3 colorSchemeHeading text-right">Your Journey Begins Here</h4>
+                <p
+                        class="colorSchemeSubHeading"
+                        >Get to work with our pool of vetted creatives and get your creative task done</p>
+                </div>
             </div>
+            <div class="container">
+                <div
+                    class=""
+                    v-if="job.slug"
+                >
+                    <job-form
+                        :jobs="job"
+                        :toShows="toShow"
+                        id="jobForm"
+                    ></job-form>
 
-            <section
-                v-if="!job.slug"
-                class="d-flex justify-content-center align-items-center"
-                id="message"
-            >
+                </div>
 
-                <RotateSquare5 style="width: 300px; height: 300px;"></RotateSquare5>
-            </section>
+                <section
+                    v-if="!job.slug"
+                    class="d-flex justify-content-center align-items-center"
+                    id="message"
+                >
+
+                    <RotateSquare5 style="width: 300px; height: 300px;"></RotateSquare5>
+                </section>
+            </div>
         </section>
     </div>
 </template>

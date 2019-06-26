@@ -46,8 +46,8 @@
 </template>
 <!-- -->
 <script>
-import BaseRadio from "@/views/components/Common/BaseRadio.vue";
-import BaseCheckbox from "@/views/components/Common/BaseCheckbox.vue";
+import BaseRadio from "@/components/Common/BaseRadio.vue";
+import BaseCheckbox from "@/components/Common/BaseCheckbox.vue";
 export default {
     name: "template-container",
     props: ["templated", "filledindata","jslug"],

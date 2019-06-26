@@ -17,15 +17,15 @@
         <div class="container shape-container d-flex">
           <div class="col px-0">
             <div class="row">
-              <div class="col-lg-6">
-                <h1 class="display-3 text-white">Outsource Your Design Work</h1>
+              <div class="col-lg-8">
+                <h1 class="display-2 colorSchemeHeading text-white">Outsource Your Design Work</h1>
                 <p
-                  class="lead text-white"
+                  class="lead text-white col-lg-10" style="margin-left: -10px"
                 >We know you are busy. Discover what you can accomplish with Onesha creatives.</p>
                 <div class="btn-wrapper">
                   <base-button
                     tag="a"
-                    href
+                    href="#services"
                     class="mb-3 mb-sm-0 colorSchemeBtn"
                     type="default"
                   >VIEW OUR SERVICES</base-button>
@@ -37,7 +37,10 @@
       </section>
       <!-- 1st Hero Variation -->
       <section class="section-shaped personImg">
-        <img src="../assets/img/girl.png" class="img-fluid text-right" alt>
+        <img src="../assets/img/clients/girl-1.png" class="img-fluid text-right" alt>
+        <p style="margin-top: -110px; margin-left: -80px">
+            <strong class="lead">Sally Ngugi</strong> <br> <small><i>Law Society of Kenya</i> <br>Happy Client </small>
+        </p>
       </section>
     </div>
     <section class="section section-lg">
@@ -46,7 +49,7 @@
           <div class="col-lg-12">
             <h2 class="display-3 text-center colorSchemeHeading pt-5 px-3">You are in good hands</h2>
             <h6
-              class="lead text-center colorSchemeSubHeading mb-5"
+              class="text-center colorSchemeSubHeading mb-5"
             >Don't let our promises scare you, get the information right from our customers.</h6>
             <div class="row clientStrip">
               <div class="col-lg-1 col-xs-6 col-2 mb-3">
@@ -100,7 +103,7 @@
               </div>
               <div class="col-lg-1 col-2 mb-3">
                 <a
-                  href="https://reactjs.org/"
+                  href="#"
                   target="_blank"
                   data-toggle="tooltip"
                   data-original-title="[Coming Soon] React - A JavaScript library for building user interfaces"
@@ -110,7 +113,7 @@
               </div>
               <div class="col-lg-1 col-2 mb-3">
                 <a
-                  href="https://reactjs.org/"
+                  href="#"
                   target="_blank"
                   data-toggle="tooltip"
                   data-original-title="[Coming Soon] React - A JavaScript library for building user interfaces"
@@ -120,7 +123,7 @@
               </div>
               <div class="col-lg-1 col-2 mb-3">
                 <a
-                  href="https://reactjs.org/"
+                  href="#"
                   target="_blank"
                   data-toggle="tooltip"
                   data-original-title="[Coming Soon] React - A JavaScript library for building user interfaces"
@@ -130,7 +133,7 @@
               </div>
               <div class="col-lg-1 col-2 mb-3">
                 <a
-                  href="https://reactjs.org/"
+                  href="#"
                   target="_blank"
                   data-toggle="tooltip"
                   data-original-title="[Coming Soon] React - A JavaScript library for building user interfaces"
@@ -140,7 +143,7 @@
               </div>
               <div class="col-lg-1 col-2 mb-3">
                 <a
-                  href="https://reactjs.org/"
+                  href="#"
                   target="_blank"
                   data-toggle="tooltip"
                   data-original-title="[Coming Soon] React - A JavaScript library for building user interfaces"
@@ -150,7 +153,7 @@
               </div>
               <div class="col-lg-1 col-2 mb-3">
                 <a
-                  href="https://reactjs.org/"
+                  href="#"
                   target="_blank"
                   data-toggle="tooltip"
                   data-original-title="[Coming Soon] React - A JavaScript library for building user interfaces"
@@ -160,7 +163,7 @@
               </div>
               <div class="col-lg-1 col-2 mb-3">
                 <a
-                  href="https://reactjs.org/"
+                  href="#"
                   target="_blank"
                   data-toggle="tooltip"
                   data-original-title="[Coming Soon] React - A JavaScript library for building user interfaces"
@@ -172,7 +175,7 @@
             <div class="btn-wrapper text-center mt-5">
               <base-button
                 tag="a"
-                href
+                href="case-studies"
                 class="mb-3 mb-sm-0 colorSchemeBtn"
                 type="default"
               >VIEW CASE STUDIES</base-button>
@@ -184,7 +187,7 @@
     <section class="section section-lg vector">
       <div class="myContainer px-5">
         <div class="row row-grid">
-          <div class="col-lg-6 order-lg-2 ml-lg-auto">
+          <div class="col-lg-6 order-lg-2">
             <div class="d-flex px-5 mt-5 text-right">
               <div>
                 <icon
@@ -196,14 +199,14 @@
                   rounded
                 ></icon>
               </div>
-              <div class="pl-4 mb-5">
+              <div class="mb-5">
                 <h4 class="display-3 colorSchemeHeading whiteSmall text-right">Why Choose Us?</h4>
                 <p
                   class="colorSchemeSubHeading text-right"
                 >Here is why we are your best choice for this service</p>
               </div>
             </div>
-            <div class="position-relative mt-5 pl-md-5">
+            <div class="position-relative mt-1 pl-md-5">
               <img src="../assets/img/whyUs.png" class="img-center img-fluid">
             </div>
             <div class="btn-wrapper text-center">
@@ -264,10 +267,13 @@
         </div>
       </div>
     </section>
-    <section class="section vector2 section-lg">
+    <section class="section vector2 section-lg" id="services">
       <div class="row row-grid justify-content-center mb-5">
         <div class=".col-lg-8 text-center">
           <h4 class="display-3 colorSchemeHeading text-right">Services Available</h4>
+          <p
+                  class="colorSchemeSubHeading"
+                >Here are our most requested services</p>
         </div>
       </div>
       <div class="myContainer mb-5">
@@ -276,81 +282,82 @@
             <div class="row row-grid">
               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-5">
                 <card class="border-0 ServiceCard" hover shadow body-classes="py-5">
-                  <div class="text-center">
+                  <a href="#">
+                    <div class="text-center">
                     <img src="../assets/img/services/Service1.svg" alt>
                     <h6 class="text-warning text-uppercase mt-3 mb-5">Business Profiles</h6>
-                    <a href="#" class="serviceAnchor mt-5">REQUEST</a>
-                  </div>
+                    <span class="serviceAnchor mt-0 btn btn-white">REQUEST</span>
+                  </div></a>
                 </card>
               </div>
               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-5">
                 <card class="border-0 ServiceCard" hover shadow body-classes="py-5">
-                  <div class="text-center">
+                  <a href="#">
+                    <div class="text-center">
                     <img src="../assets/img/services/Service1.svg" alt>
-
                     <h6 class="text-warning text-uppercase mt-3 mb-5">Logo Design</h6>
-                    <a href="#" class="serviceAnchor mt-5">REQUEST</a>
-                  </div>
+                    <span class="serviceAnchor mt-0 btn btn-white">REQUEST</span>
+                  </div></a>
                 </card>
               </div>
               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-5">
                 <card class="border-0 ServiceCard" hover shadow body-classes="py-5">
-                  <div class="text-center">
+                  <a href="#">
+                    <div class="text-center">
                     <img src="../assets/img/services/Service1.svg" alt>
-
                     <h6 class="text-warning text-uppercase mt-3 mb-5">Brochures</h6>
-                    <a href="#" class="serviceAnchor mt-5">REQUEST</a>
-                  </div>
+                    <span class="serviceAnchor mt-0 btn btn-white">REQUEST</span>
+                  </div></a>
                 </card>
               </div>
               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-5">
                 <card class="border-0 ServiceCard" hover shadow body-classes="py-5">
-                  <div class="text-center">
+                  <a href="#">
+                    <div class="text-center">
                     <img src="../assets/img/services/Service1.svg" alt>
-
                     <h6 class="text-warning text-uppercase mt-3 mb-5">Posters</h6>
-                    <a href="#" class="serviceAnchor mt-5">REQUEST</a>
-                  </div>
+                    <span class="serviceAnchor mt-0 btn btn-white">REQUEST</span>
+                  </div></a>
                 </card>
               </div>
               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-5">
                 <card class="border-0 ServiceCard" hover shadow body-classes="py-5">
-                  <div class="text-center">
+                  <a href="#">
+                    <div class="text-center">
                     <img src="../assets/img/services/Service1.svg" alt>
-
                     <h6 class="text-warning text-uppercase mt-3 mb-5">Business Cards</h6>
-                    <a href="#" class="serviceAnchor mt-5">REQUEST</a>
-                  </div>
+                    <span class="serviceAnchor mt-0 btn btn-white">REQUEST</span>
+                  </div></a>
                 </card>
               </div>
               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-5">
                 <card class="border-0 ServiceCard" hover shadow body-classes="py-5">
-                  <div class="text-center">
+                  <a href="#">
+                    <div class="text-center">
                     <img src="../assets/img/services/Service1.svg" alt>
-
                     <h6 class="text-warning text-uppercase mt-3 mb-5">Stationery Branding</h6>
-                    <a href="#" class="serviceAnchor mt-5">REQUEST</a>
-                  </div>
+                    <span class="serviceAnchor mt-0 btn btn-white">REQUEST</span>
+                  </div></a>
                 </card>
               </div>
               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-5">
                 <card class="border-0 ServiceCard" hover shadow body-classes="py-5">
-                  <div class="text-center">
+                  <a href="#">
+                    <div class="text-center">
                     <img src="../assets/img/services/Service1.svg" alt>
-
-                    <h6 class="text-warning text-uppercase mt-3 mb-5">Web Design</h6>
-                    <a href="#" class="serviceAnchor mt-5">REQUEST</a>
-                  </div>
+                    <h6 class="text-warning text-uppercase mt-3 mb-5">Illustrations</h6>
+                    <span class="serviceAnchor mt-0 btn btn-white">REQUEST</span>
+                  </div></a>
                 </card>
               </div>
               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-5">
                 <card class="border-0 ServiceCard" hover shadow body-classes="py-5">
-                  <div class="text-center">
+                  <a href="#">
+                    <div class="text-center">
                     <img src="../assets/img/services/Service1.svg" alt>
-
                     <h6 class="text-warning text-uppercase mt-3 mb-5">Banners</h6>
-                    <a href="#" class="serviceAnchor mt-5">REQUEST</a>
-                  </div>
+                    <span class="serviceAnchor mt-0 btn btn-white">REQUEST</span>
+                  </div></a>
                 </card>
               </div>
             </div>
@@ -358,7 +365,7 @@
         </div>
       </div>
       <div class="btn-wrapper text-center">
-        <base-button tag="a" href class="mb-3 mb-sm-0 colorSchemeBtn" type="default">See All</base-button>
+        <base-button tag="a" href="services" class="mb-3 mb-sm-0 colorSchemeBtn" type="default">See All Services</base-button>
       </div>
     </section>
     <section class="section section-large mb-5">
@@ -366,10 +373,10 @@
         <div class=".col-lg-8 text-center">
           <h4 class="display-3 colorSchemeHeading">Meet the Creatives</h4>
           <h6
-            class="lead colorSchemeSubHeading"
+            class="colorSchemeSubHeading"
           >Get to work with our pool of vetted creatives and get your creative work done on the go .</h6>
           <p
-            class="myContainer"
+            class="myContainer text-center mt-4  col-lg-10"
           >Onesha is an African focused platform that seeks to connect the top creative talent with opportunity. We seek to be the link between the experts in the creative industry and clients seeking their services. With a vetted, sorted and talented pool of the best skills Africa has to offer, we want you to get your desired task done PRONTO!</p>
         </div>
       </div>
@@ -377,7 +384,7 @@
         <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
           <div class="px-4">
             <img
-              v-lazy="'img/theme/team-1-800x800.jpg'"
+              v-lazy="'../assets/img/theme/team-1-800x800.jpg'"
               class="rounded-circle img-center img-fluid shadow shadow-lg--hover"
               style="width: 200px;"
             >
@@ -392,7 +399,7 @@
         <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
           <div class="px-4">
             <img
-              v-lazy="'img/theme/team-2-800x800.jpg'"
+              v-lazy="'../assets/img/theme/team-2-800x800.jpg'"
               class="rounded-circle img-center img-fluid shadow shadow-lg--hover"
               style="width: 200px;"
             >
@@ -407,7 +414,7 @@
         <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
           <div class="px-4">
             <img
-              v-lazy="'img/theme/team-3-800x800.jpg'"
+              v-lazy="'../assets/img/theme/team-3-800x800.jpg'"
               class="rounded-circle img-center img-fluid shadow shadow-lg--hover"
               style="width: 200px;"
             >
@@ -422,7 +429,7 @@
         <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
           <div class="px-4">
             <img
-              v-lazy="'img/theme/team-4-800x800.jpg'"
+              v-lazy="'../assets/img/theme/team-4-800x800.jpg'"
               class="rounded-circle img-center img-fluid shadow shadow-lg--hover"
               style="width: 200px;"
             >
@@ -442,20 +449,20 @@
           <div class="p-5">
             <div class="row align-items-center">
               <div class="col-lg-8">
-                <h3 class="text-white">OFFER CREATIVE SERVICES.</h3>
+                <h3 class="text-white colorSchemeHeading"><strong>OFFER CREATIVE SERVICES</strong></h3>
                 <p class="lead text-white mt-3">
-                  Do you have creative skills you can work with? We empower creative talent to build their online portfolio and get access to their next opportunity. You can also offer your services to potential clients. Join the creative community by requesting a creative account today.
+                  Do you have creative skills you can work with? <br>We empower creative talent to build their online portfolio and get access to their next opportunity. Join the creative community by requesting a creative account today.
                   .
                 </p>
               </div>
               <div class="col-lg-3 ml-lg-auto">
                 <base-button
                   tag="a"
-                  href="https://www.creative-tim.com/product/vue-argon-design-system"
+                  href="request"
                   class="colorSchemeBtn"
                   block
                   size="lg"
-                >VIEW OUR SERVICES</base-button>
+                >REQUEST ACCOUNT</base-button>
               </div>
             </div>
           </div>
@@ -505,11 +512,19 @@
               </div>
             </div>
           </div>
+        </div>        
+      </div>
+    </section>
+    <section>
+      <div class="row row-grid justify-content-center mb-5">
+        <div class=".col-lg-8 text-center">
+          <h4 class="display-3 colorSchemeHeading text-right">What Our Clients Say</h4>
         </div>
       </div>
     </section>
-    <section class="section vector3 section-skew">
-      <div class="container">
+    <section class="section vector3 section-skew mb-5">
+      
+      <div class="container mt-2">
         <card shadow class="card-profile TestimonialCard" no-body>
           <div class="px-4">
             <div class="row justify-content-center">
@@ -523,19 +538,20 @@
               <div class="col-lg-4 order-lg-3 text-lg-right align-self-lg-center"></div>
               <div class="col-lg-4 order-lg-1"></div>
             </div>
-            <div class="text-center mt-5 testimonialCardText">
+            <div class="text-center mt-3 mb-3 testimonialCardText">
               <h3 class="colorSchemeHeading">Levis Njihia</h3>
               <div class="h6 font-weight-300">
-                <i class="ni location_pin mr-2"></i>Nairobi Kenya
-              </div>
-              <div class="h6">
                 <i class="ni business_briefcase-24 mr-2"></i>Briglobe - Production team
               </div>
-              <div>
+              <small>
                 <i class="ni education_hat mr-2"></i>University of Computer Science
-              </div>
+              </small> &nbsp; - &nbsp;  
+              <small>
+                <i class="ni location_pin mr-2"></i>Nairobi Kenya
+              </small>
+              
             </div>
-            <div class="py-5 border-top text-center">
+            <div class="py-4 border-top text-center">
               <div class="row justify-content-center">
                 <div class="col-lg-9">
                   <p
@@ -547,42 +563,43 @@
           </div>
         </card>
       </div>
-    </section>
-    <section class="section section-lg pt-lg-0 section-contact-us">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <card gradient="warning" shadow body-classes="p-lg-5">
-              <h4 class="mb-1 text-white">Want to work with us?</h4>
-              <p class="mt-0 text-white">Your project is very important to us.</p>
-              <base-input
-                class="mt-5"
-                alternative
-                placeholder="Your name"
-                addon-left-icon="ni ni-user-run"
-              ></base-input>
-              <base-input alternative placeholder="Email address" addon-left-icon="ni ni-email-83"></base-input>
-              <base-input class="mb-4">
-                <textarea
-                  class="form-control form-control-alternative"
-                  name="name"
-                  rows="4"
-                  cols="80"
-                  placeholder="Type a message..."
-                ></textarea>
-              </base-input>
-              <base-button type="default" class="colorSchemeBtn" round block size="lg">Send Message</base-button>
-            </card>
-          </div>
+      <div class="btn-wrapper text-center pt-3">
+        <base-button tag="a" href="case-studies" class="mb-3 mb-sm-0 btn-white" type="default">
+          VIEW CASE STUDIES</base-button>
         </div>
+    </section>
+    <section class="section section-lg pt-lg-2 mt-5 section-contact-us">
+      <div class="container">
+        <div class="pb-lg-4">
+            <h3 class="mb-1 text-center text-warning">Want to work with us?</h3>                    
+        </div>
+        <div class="row justify-content-center enq"><br>
+            <a
+                @click="showEnquirySec('quote')"
+                class="btn btn-white text-default"
+            >Request A Quote</a>
+            <a
+                @click="showEnquirySec('enquire')"
+                class="btn btn-white text-default"
+            >Make an Enquiry</a>
+        
+        </div>
+        <div v-if="this.showEnquiry">
+            <component
+                :is="component2"
+                @response="enquiryResponse"
+                :type="this.enquiry"
+            ></component>
+        </div>
+        
       </div>
     </section>
   </section>
 </template>
 
 <script>
+import Modal from "@/components/Common/Modal.vue";
 import JobCategories from "./components/Categories/Category";
-import Modal from "@/views/components/Common/Modal.vue";
 import Categories from "./components/Landing/AllCategories";
 import Offers from "@/views/components/Landing/Offers.vue";
 import RequestSample from "@/views/components/Partials/SampleRequest.vue";
@@ -808,10 +825,10 @@ body {
 }
 @import url("https://fonts.googleapis.com/css?family=Offside&display=swap");
 .section-shaped .shape-style-1.shape-default {
-  background: url("../assets/img/Vectorbg.svg") no-repeat;
+  background: url("../assets/img/ill/Vectorbg.svg") no-repeat;
 }
 .personImg {
-  margin-top: -85vh;
+  margin-top: -90vh;
   margin-left: 65vw;
 }
 .myContainer {
@@ -820,15 +837,15 @@ body {
   margin: 0 auto;
 }
 .vector {
-  background: url("../assets/img/Vector1.svg") no-repeat;
+  background: url("../assets/img/ill/Vector1.svg") no-repeat;
   background-position-x: -10px;
 }
 .vector2 {
-  background: url("../assets/img/Vector2.svg") no-repeat;
+  background: url("../assets/img/ill/Vector2.svg") no-repeat;
   background-position-x: 1000px;
 }
 .vector3 {
-  background: url("../assets/img/Vector3.svg") no-repeat;
+  background: url("../assets/img/ill/Vector3.svg") no-repeat;
   background-position-x: 55%;
 }
 .ServiceCard {
