@@ -18,7 +18,7 @@ import Guidelines from "@/views/components/Landing/Guidelines.vue";
 import Portfolio from "@/views/components/Landing/Portfolio.vue";
 import Privacy from "@/views/components/Landing/Privacy.vue";
 import Terms from "@/views/components/Landing/Terms.vue";
-
+import Services from "@/views/Services.vue";
 Vue.use(Meta);
 Vue.use(Router);
 
@@ -42,6 +42,15 @@ export default new Router({
       components: {
         header: AppHeader,
         default: About,
+        footer: AppFooter
+      }
+    },
+    {
+      path: "/services",
+      name: "services",
+      components: {
+        header: AppHeader,
+        default: Services,
         footer: AppFooter
       }
     },
@@ -149,53 +158,101 @@ export default new Router({
       props: { default: true, header: false, footer: false }
     },
     //handle older routes
-    { path: '/profile/:slug', name: "Redirector", component: Redirector,
-      alias: '/user',
+    {
+      path: "/profile/:slug",
+      name: "Redirector",
+      component: Redirector,
+      alias: "/user",
       props: { default: true }
     },
-    { path: '/user/:slug', name: "Redirector1", component: Redirector,
+    {
+      path: "/user/:slug",
+      name: "Redirector1",
+      component: Redirector,
       props: { default: true }
     },
-    { path: '/affiliate/:slug', name: "Redirector2", component: Redirector,
+    {
+      path: "/affiliate/:slug",
+      name: "Redirector2",
+      component: Redirector,
       props: { default: true }
     },
-    { path: '/institution/:slug', name: "Redirector3", component: Redirector,
+    {
+      path: "/institution/:slug",
+      name: "Redirector3",
+      component: Redirector,
       props: { default: true }
     },
-    { path: '/institutions', name: "Redirector4", component: Redirector,
+    {
+      path: "/institutions",
+      name: "Redirector4",
+      component: Redirector,
       props: { default: true }
     },
-    { path: '/project/:slug', name: "Redirector5", component: Redirector,
+    {
+      path: "/project/:slug",
+      name: "Redirector5",
+      component: Redirector,
       props: { default: true }
     },
-    { path: '/projects', name: "Redirector6", component: Redirector,
+    {
+      path: "/projects",
+      name: "Redirector6",
+      component: Redirector,
       props: { default: true }
     },
-    { path: '/creatives', name: "Redirector61", component: Redirector,
+    {
+      path: "/creatives",
+      name: "Redirector61",
+      component: Redirector,
       props: { default: true }
     },
-    { path: '/students/:slug', name: "Redirector7", component: Redirector,
+    {
+      path: "/students/:slug",
+      name: "Redirector7",
+      component: Redirector,
       props: { default: true }
     },
-    { path: '/service/:slug', name: "Redirector8", component: Redirector,
+    {
+      path: "/service/:slug",
+      name: "Redirector8",
+      component: Redirector,
       props: { default: true }
     },
-    { path: '/services', name: "Redirector9", component: Redirector,
+    {
+      path: "/services",
+      name: "Redirector9",
+      component: Redirector,
       props: { default: true }
     },
-    { path: '/jobs', name: "Redirector10", component: Redirector,
+    {
+      path: "/jobs",
+      name: "Redirector10",
+      component: Redirector,
       props: { default: true }
     },
-    { path: '/company/:slug', name: "Redirector11", component: Redirector,
+    {
+      path: "/company/:slug",
+      name: "Redirector11",
+      component: Redirector,
       props: { default: true }
     },
-    { path: '/companies', name: "Redirector12", component: Redirector,
+    {
+      path: "/companies",
+      name: "Redirector12",
+      component: Redirector,
       props: { default: true }
     },
-    { path: '/adminpage', name: "Redirector13", component: Redirector,
+    {
+      path: "/adminpage",
+      name: "Redirector13",
+      component: Redirector,
       props: { default: true }
     },
-    { path: '/viewProject', name: "Redirector14", component: Redirector,
+    {
+      path: "/viewProject",
+      name: "Redirector14",
+      component: Redirector,
       props: { default: true }
     }
   ],
