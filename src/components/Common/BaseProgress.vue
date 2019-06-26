@@ -13,14 +13,15 @@
       </div>
     </div>
     <div class="progress" :style="`height: ${height}px`">
-      <div class="progress-bar"
-           :class="computedClasses"
-           role="progressbar"
-           :aria-valuenow="value"
-           aria-valuemin="0"
-           aria-valuemax="100"
-           :style="`width: ${value}%;`">
-      </div>
+      <div
+        class="progress-bar"
+        :class="computedClasses"
+        role="progressbar"
+        :aria-valuenow="value"
+        aria-valuemin="0"
+        aria-valuemax="100"
+        :style="`width: ${value}%;`"
+      ></div>
     </div>
   </div>
 </template>
@@ -39,7 +40,7 @@ export default {
     },
     label: {
       type: String,
-      default: '',
+      default: "",
       description: "Progress label (shown on the left above progress)"
     },
     height: {

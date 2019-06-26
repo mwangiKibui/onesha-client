@@ -4,7 +4,7 @@
         style="width: 100%"
     >
         <base-progress
-            type="primary"
+            type="warning"
             :value="this.progressval"
             v-model="progressval"
             label="Completion"

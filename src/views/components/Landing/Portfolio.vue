@@ -13,16 +13,16 @@
     </div>
 </template>
 <script>
-import Hero from "@/views/components/Common/Hero";
-import BasicElements from "@/views/components/Common/BasicElements";
-import Inputs from "@/views/components/Common/Inputs";
-import CustomControls from "@/views/components/Common/CustomControls";
-import Navigation from "@/views/components/Navigation";
-import JavascriptComponents from "@/views/components/JavascriptComponents";
-import Carousel from "@/views/components/Common/Carousel";
-import Icons from "@/views/components/Common/Icons";
-import Examples from "@/views/components/Common/Examples";
-import DownloadSection from "@/views/components/Common/DownloadSection";
+import Hero from "@/components/Common/Hero";
+import BasicElements from "@/components/Common/BasicElements";
+import Inputs from "@/components/Common/Inputs";
+import CustomControls from "@/components/Common/CustomControls";
+import Navigation from "@/components/Navigation";
+import JavascriptComponents from "@/components/JavascriptComponents";
+import Carousel from "@/components/Common/Carousel";
+import Icons from "@/components/Common/Icons";
+import Examples from "@/components/Common/Examples";
+import DownloadSection from "@/components/Common/DownloadSection";
 
 export default {
     name: "components",

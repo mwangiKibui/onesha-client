@@ -99,7 +99,7 @@
     </div>
 </template>
 <script>
-import Modal from "@/views/components/Common/Modal.vue";
+import Modal from "@/components/Common/Modal.vue";
 import OrderTemplate from "@/views/components/Partials/OrderTemplate.vue";
 import OrderSuccess from "@/views/components/Partials/OrderSuccess.vue";
 import OrderFailed from "@/views/components/Partials/OrderFailed.vue";

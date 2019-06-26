@@ -77,9 +77,9 @@
     </section>
 </template>
 <script>
-import Modal from "../Common/Modal";
-import BaseRadio from "../Common/BaseRadio";
-import BaseProgress from "../Common/BaseProgress";
+import Modal from "@/components/Common/Modal";
+import BaseRadio from "@/components/Common/BaseRadio";
+import BaseProgress from "@/components/Common/BaseProgress";
 import TemplateContainer from "./TemplateContainer";
 import Axios from "axios";
 

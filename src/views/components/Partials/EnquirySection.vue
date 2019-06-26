@@ -3,11 +3,11 @@
         <div class="row justify-content-center enq">
             <a
                 @click="showEnquirySec('quote')"
-                class="btn btn-success"
+                class="btn btn-default"
             >Request A Quote</a>
             <a
                 @click="showEnquirySec('enquire')"
-                class="btn btn-success"
+                class="btn btn-default"
             >Make an Enquiry</a>
         </div>
         <div v-if="this.showEnquiry">
