@@ -141,7 +141,7 @@
           <div class="col-md-10">
             <div class="copyright">
             <a class="mt-2 navbar-brand mr-lg-1">
-              <span class="text-default" style="line-height: 2em">
+              <span class="text-white" style="line-height: 2em">
                 &copy; {{ new Date().getFullYear() }}
                 Onesha Kenya. Connecting businesses to top creative services.
               </span>

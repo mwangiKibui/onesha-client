@@ -56,11 +56,11 @@
       </section>
     </section>
 
-    <section class="section section-sm bg-secondary mt--100 bg-secondary" id="process">
+    <section class="section section-sm bg-secondary mt--100 bg-secondary" id="request">
       <div class="container">
         <div class="row justify-content-center text-center" id="process">
           <div class="mt-4 mb-lg-3 col-md-3">
-            <h2 class="text-warning">Graphic Design</h2>
+            <h2 class="text-warning" style="margin-left: -5px">Graphic Design</h2>
             <p class="text-left text-warning">For Print</p>
             <img src="@/assets/img/ill/ill-2.svg" class="img-center img-fluid">
             <p class="mt-4">Get high quality print-ready designs with delivery options availale</p>
@@ -123,7 +123,7 @@
                   <!---->
                   <div class="card-body py-5">
                     <icon name="ni ni-check-bold" class="mb-4 text-warning"></icon>
-                    <h6 class="text-warning">Business cards</h6>
+                    <h6 class="text-warning">Business Cards</h6>
                     <base-button
                       tag="a"
                       href="#request"
@@ -142,7 +142,7 @@
                   <!---->
                   <div class="card-body py-5">
                     <icon name="ni ni-check-bold" class="mb-4 text-warning"></icon>
-                    <h6 class="text-warning">stationery Branding</h6>
+                    <h6 class="text-warning">Stationery Branding</h6>
                     <base-button
                       tag="a"
                       href="#request"
@@ -180,7 +180,7 @@
                   <!---->
                   <div class="card-body py-5">
                     <icon name="ni ni-check-bold" class="mb-4 text-warning"></icon>
-                    <h6 class="text-warning">Banners</h6>
+                    <h6 class="text-warning">Banners</h6><br>
                     <base-button
                       tag="a"
                       href="#request"
@@ -199,7 +199,7 @@
                   <!---->
                   <div class="card-body py-5">
                     <icon name="ni ni-check-bold" class="mb-4 text-warning"></icon>
-                    <h6 class="text-warning">Reports and Presentation</h6>
+                    <h6 class="text-warning">Reports and Presentations</h6>
                     <base-button
                       tag="a"
                       href="#request"
@@ -218,7 +218,7 @@
                   <!---->
                   <div class="card-body py-5">
                     <icon name="ni ni-check-bold" class="mb-4 text-warning"></icon>
-                    <h6 class="text-warning">Other designs</h6>
+                    <h6 class="text-warning">Other designs</h6><br>
                     <base-button
                       tag="a"
                       href="#request"
@@ -243,8 +243,8 @@
       <div class="container">
         <div class="row justify-content-center text-center" id="process">
           <div class="mt-4 mb-lg-3 col-md-3">
-            <h2 class="text-warning">General Services</h2>
-            <p class="text-left text-warning">Long term projects</p>
+            <h2 class="text-warning" style="margin-left: -19px">General Services</h2>
+            <p class="text-left text-warning">Longer term projects</p>
             <img src="@/assets/img/ill/ill-2.svg" class="img-center img-fluid">
             <p
               class="mt-4"
@@ -259,7 +259,7 @@
                     class="mb-4 text-warning"
                     style="border-radius:5px,border:1px solid #fb6340"
                   ></icon>
-                  <h6 class="text-warning">social media audit</h6>
+                  <h6 class="text-warning">Social Media Audit</h6>
                   <base-button
                     tag="a"
                     href="#request"
@@ -273,7 +273,7 @@
               <div class="col-lg-4">
                 <card class="border-0" hover shadow body-classes="py-5">
                   <icon name="ni ni-settings-gear-65" class="mb-4 text-warning"></icon>
-                  <h6 class="text-warning">web design</h6>
+                  <h6 class="text-warning">Web Design</h6>
                   <base-button
                     tag="a"
                     href="#request"
@@ -290,7 +290,7 @@
                   <!---->
                   <div class="card-body py-5">
                     <icon name="ni ni-check-bold" class="mb-4 text-warning"></icon>
-                    <h6 class="text-warning">mobile app design</h6>
+                    <h6 class="text-warning">Mobile App Design</h6>
                     <base-button
                       tag="a"
                       href="#request"
@@ -311,7 +311,7 @@
                     class="mb-4 text-warning"
                     style="border-radius:5px,border:1px solid #fb6340"
                   ></icon>
-                  <h6 class="text-warning">social media strategy</h6>
+                  <h6 class="text-warning">Social Media Strategy</h6><br>
                   <base-button
                     tag="a"
                     href="#request"
@@ -325,7 +325,7 @@
               <div class="col-lg-4 mt-5">
                 <card class="border-0" hover shadow body-classes="py-5">
                   <icon name="ni ni-settings-gear-65" class="mb-4 text-warning"></icon>
-                  <h6 class="text-warning">page management</h6>
+                  <h6 class="text-warning">Page Management</h6><br>
                   <base-button
                     tag="a"
                     href="#request"
@@ -342,7 +342,7 @@
                   <!---->
                   <div class="card-body py-5">
                     <icon name="ni ni-check-bold" class="mb-4 text-warning"></icon>
-                    <h6 class="text-warning">campaign/ Ad management</h6>
+                    <h6 class="text-warning">Campaign/ Ad management</h6>
                     <base-button
                       tag="a"
                       href="#request"
@@ -365,13 +365,13 @@
       <div class="container">
         <div class="row justify-content-center text-center" id="process">
           <div class="mt-4 mb-lg-3 col-md-3">
-            <h2 class="text-warning">Digital Design</h2>
+            <h2 class="text-warning" style="margin-left: -30px">Digital Design</h2>
             <p class="text-left text-warning">For Social Media</p>
             <img src="@/assets/img/ill/ill-2.svg" class="img-center img-fluid">
             <p class="mt-4">Get high quality print-ready designs with delivery options available</p>
           </div>
-          <div class="mb-lg-3 col-md-9 pl-4">
-            <div class="row row-grid pl-4">
+          <div class="mb-lg-3 col-md-9 pl-4 mt-4">
+            <div class="row row-grid pl-4 mt-5">
               <div class="col-lg-4">
                 <card class="border-0" hover shadow body-classes="py-5">
                   <icon
@@ -442,63 +442,37 @@
               class="btn btn-md btn-success btn-icon mb-3 mb-sm-0"
               style="height:50px"
               type="success"
-            >REQUEST</base-button>
+              @click="showEnquirySec('quote')"
+            >REQUEST A QUOTE</base-button>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section section-lg mt-100">
+    <section class="section section-lg pt-lg-2 mt-5 section-contact-us">
       <div class="container">
-        <div class="row container">
-          <div class="col-md-12 bg-gradient-warning pt-30 pl-10" style="border-radius:10px">
-            <h3 style="color:#fff">Want to work with us?</h3>
-            <h6 style="color:#fff">Your Project is very important to us</h6>
-            <form>
-              <div class="form-group input-group input-group-alternative mt-5">
-                <div class="input-group-prepend">
-                  <span class="input-group-text">
-                    <i class="ni ni-user-run"></i>
-                  </span>
-                </div>
-                <input
-                  aria-describedby="addon-right addon-left"
-                  placeholder="Your name"
-                  class="form-control"
-                >
-              </div>
-              <div class="form-group input-group input-group-alternative mt-5">
-                <div class="input-group-prepend">
-                  <span class="input-group-text">
-                    <i class="ni ni-email-83"></i>
-                  </span>
-                </div>
-                <input
-                  aria-describedby="addon-right addon-left"
-                  placeholder="Your email address"
-                  class="form-control"
-                >
-              </div>
-              <div class="form-group input-group input-group-alternative mt-5">
-                <textarea
-                  class="form-control"
-                  placeholder="Enter your message"
-                  name="message"
-                  cols="80"
-                  rows="4"
-                ></textarea>
-              </div>
-              <div class="form-group text-center">
-                <base-button
-                  type="primary"
-                  round
-                  size="sm"
-                  @click="submitClientRequest()"
-                >Send Request</base-button>
-              </div>
-            </form>
-          </div>
+        <div class="pb-lg-4">
+            <h3 class="mb-1 text-center text-warning">Want to work with us?</h3>                    
         </div>
+        <div class="row justify-content-center enq"><br>
+            <a
+                @click="showEnquirySec('quote')"
+                class="btn btn-white text-default"
+            >Request A Quote</a>
+            <a
+                @click="showEnquirySec('enquire')"
+                class="btn btn-white text-default"
+            >Make an Enquiry</a>
+        
+        </div>
+        <div v-if="this.showEnquiry">
+            <component
+                :is="component2"
+                @response="enquiryResponse"
+                :type="this.enquiry"
+            ></component>
+        </div>
+        
       </div>
     </section>
   </div>
@@ -506,8 +480,16 @@
 
 <script>
 import RequestSample from "@/views/components/Partials/SampleRequest.vue";
+import EnquiryForm from "@/views/components/Partials/EnquiryForm.vue";
+import EnquirySuccess from "@/views/components/Partials/EnquirySuccess.vue";
+import EnquiryFailed from "@/views/components/Partials/EnquiryFailed.vue";
+import EnquirySection from "@/views/components/Partials/EnquirySection.vue";
 import Categories from "./components/Landing/AllCategories";
-import Modal from "@/views/components/Common/Modal.vue";
+import Modal from "@/components/Common/Modal.vue";
+import Axios from "axios";
+
+let show = true;
+
 export default {
   metaInfo: {
     title: "Learn More - Onesha",
@@ -517,30 +499,56 @@ export default {
   components: {
     Categories,
     Modal,
-    RequestSample
+    RequestSample,
+    EnquiryForm,
+    EnquirySuccess,
+    EnquiryFailed,
+    EnquirySection
   },
   data() {
     return {
       selectedAnimationIn: "",
       selectedAnimationOut: "",
       showModal: false,
-      component: "request-sample"
+      showEnquiry: false,
+      component: "request-sample",
+      component2: "enquiry-form",
+      component3: "enquiry-section"
     };
   },
   methods: {
-    showSampleModal() {
-      this.showModal = true;
+    hideEnquirySec() {
+      this.$el.querySelector(".enq").innerHTML = "";
     },
-    childComponentResponse(response) {
+    showEnquirySec(val) {
+      this.showEnquiry = false;
+      console.log(val);
+      this.hideEnquirySec();
+      this.showEnquiry = true;
+      this.enquiry = val;
+    },
+    enquiryResponse(response) {
+      console.log(response);
       if (response == "success") {
-        this.component = "request-success";
+        this.component2 = "enquiry-success";
       }
       if (response == "failed") {
-        this.component = "request-failed";
+        this.component2 = "enquiry-failed";
+        this.component2 = "enquiry-section";
+        this.showEnquiry = true;
       }
       if (response == "closemodal") {
-        this.showModal = false;
-        this.component = "request-sample";
+        this.showEnquiry = false;
+        this.component2 = "enquiry-section";
+        this.showEnquiry = true;
+      } else if (
+        response !== "success" &&
+        response !== "failed" &&
+        response !== "closemodal"
+      ) {
+        this.showEnquiry = false;
+        this.component2 = "enquiry-section";
+        this.showEnquiry = true;
       }
     }
   }

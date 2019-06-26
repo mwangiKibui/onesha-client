@@ -55,6 +55,15 @@ export default new Router({
       }
     },
     {
+      path: "/allservices",
+      name: "all-services",
+      components: {
+        header: AppHeader,
+        default: Services,
+        footer: AppFooter
+      }
+    },
+    {
       path: "/learn-more",
       name: "learn-more",
       components: {

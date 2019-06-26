@@ -365,7 +365,7 @@
         </div>
       </div>
       <div class="btn-wrapper text-center">
-        <base-button tag="a" href="services" class="mb-3 mb-sm-0 colorSchemeBtn" type="default">See All Services</base-button>
+        <base-button tag="a" href="allservices" class="mb-3 mb-sm-0 colorSchemeBtn" type="default">See All Services</base-button>
       </div>
     </section>
     <section class="section section-large mb-5">
