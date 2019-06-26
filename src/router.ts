@@ -18,7 +18,7 @@ import Guidelines from "@/views/components/Landing/Guidelines.vue";
 import Portfolio from "@/views/components/Landing/Portfolio.vue";
 import Privacy from "@/views/components/Landing/Privacy.vue";
 import Terms from "@/views/components/Landing/Terms.vue";
-
+import Services from "@/views/Services.vue";
 Vue.use(Meta);
 Vue.use(Router);
 
@@ -42,6 +42,15 @@ export default new Router({
       components: {
         header: AppHeader,
         default: About,
+        footer: AppFooter
+      }
+    },
+    {
+      path: "/services",
+      name: "services",
+      components: {
+        header: AppHeader,
+        default: Services,
         footer: AppFooter
       }
     },
