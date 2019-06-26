@@ -49,7 +49,7 @@
               class="lead text-center colorSchemeSubHeading mb-5"
             >Don't let our promises scare you, get the information right from our customers.</h6>
             <div class="row clientStrip">
-              <div class="col-lg-1 col-xs-6 col-2">
+              <div class="col-lg-1 col-xs-6 col-2 mb-3">
                 <a
                   href="https://getbootstrap.com/"
                   target="_blank"
@@ -59,7 +59,7 @@
                   <img src="../assets/img/companies/company1.png" class="img-fluid">
                 </a>
               </div>
-              <div class="col-lg-1 col-2">
+              <div class="col-lg-1 col-2 mb-3">
                 <a
                   href="https://www.sketchapp.com/"
                   target="_blank"
@@ -69,7 +69,7 @@
                   <img src="../assets/img/companies/company2.png" class="img-fluid opacity-5">
                 </a>
               </div>
-              <div class="col-lg-1 col-2">
+              <div class="col-lg-1 col-2 mb-3">
                 <a
                   href="https://www.adobe.com/products/photoshop.html"
                   data-toggle="tooltip"
@@ -78,7 +78,7 @@
                   <img src="../assets/img/companies/company3.png" class="img-fluid opacity-5">
                 </a>
               </div>
-              <div class="col-lg-1 col-2">
+              <div class="col-lg-1 col-2 mb-3">
                 <a
                   href="https://vuejs.org/"
                   target="_blank"
@@ -88,7 +88,7 @@
                   <img src="../assets/img/companies/company4.png" class="img-fluid">
                 </a>
               </div>
-              <div class="col-lg-1 col-2">
+              <div class="col-lg-1 col-2 mb-3">
                 <a
                   href="https://angularjs.org/"
                   target="_blank"
@@ -98,7 +98,7 @@
                   <img src="../assets/img/companies/company5.png" class="img-fluid opacity-5">
                 </a>
               </div>
-              <div class="col-lg-1 col-2">
+              <div class="col-lg-1 col-2 mb-3">
                 <a
                   href="https://reactjs.org/"
                   target="_blank"
@@ -108,7 +108,7 @@
                   <img src="../assets/img/companies/company1.png" class="img-fluid opacity-5">
                 </a>
               </div>
-              <div class="col-lg-1 col-2">
+              <div class="col-lg-1 col-2 mb-3">
                 <a
                   href="https://reactjs.org/"
                   target="_blank"
@@ -118,7 +118,7 @@
                   <img src="../assets/img/companies/company6.png" class="img-fluid opacity-5">
                 </a>
               </div>
-              <div class="col-lg-1 col-2">
+              <div class="col-lg-1 col-2 mb-3">
                 <a
                   href="https://reactjs.org/"
                   target="_blank"
@@ -128,7 +128,7 @@
                   <img src="../assets/img/companies/company7.png" class="img-fluid opacity-5">
                 </a>
               </div>
-              <div class="col-lg-1 col-2">
+              <div class="col-lg-1 col-2 mb-3">
                 <a
                   href="https://reactjs.org/"
                   target="_blank"
@@ -138,7 +138,7 @@
                   <img src="../assets/img/companies/company8.png" class="img-fluid opacity-5">
                 </a>
               </div>
-              <div class="col-lg-1 col-2">
+              <div class="col-lg-1 col-2 mb-3">
                 <a
                   href="https://reactjs.org/"
                   target="_blank"
@@ -148,7 +148,7 @@
                   <img src="../assets/img/companies/company9.png" class="img-fluid opacity-5">
                 </a>
               </div>
-              <div class="col-lg-1 col-2">
+              <div class="col-lg-1 col-2 mb-3">
                 <a
                   href="https://reactjs.org/"
                   target="_blank"
@@ -158,7 +158,7 @@
                   <img src="../assets/img/companies/company10.png" class="img-fluid opacity-5">
                 </a>
               </div>
-              <div class="col-lg-1 col-2">
+              <div class="col-lg-1 col-2 mb-3">
                 <a
                   href="https://reactjs.org/"
                   target="_blank"
@@ -184,7 +184,7 @@
     <section class="section section-lg vector">
       <div class="myContainer px-5">
         <div class="row row-grid">
-          <div class="col-md-6 order-lg-2 ml-lg-auto">
+          <div class="col-lg-6 order-lg-2 ml-lg-auto">
             <div class="d-flex px-5 mt-5 text-right">
               <div>
                 <icon
@@ -210,7 +210,7 @@
               <base-button
                 tag="a"
                 href
-                class="mb-sm-0 colorSchemeBtn"
+                class="mb-sm-0 serviceHide colorSchemeBtn"
                 type="default"
               >REQUEST SERVICE</base-button>
             </div>
@@ -277,112 +277,79 @@
               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-5">
                 <card class="border-0 ServiceCard" hover shadow body-classes="py-5">
                   <div class="text-center">
-                    <icon name="ni ni-check-bold" type="warning" rounded class="mb-4"></icon>
-                    <h6 class="text-warning text-uppercase">Business Profiles</h6>
-                    <base-button
-                      tag="a"
-                      href="#"
-                      type="warning"
-                      class="mt-4 btn-sm colorSchemeBtn"
-                    >Request</base-button>
+                    <img src="../assets/img/services/Service1.svg" alt>
+                    <h6 class="text-warning text-uppercase mt-3 mb-5">Business Profiles</h6>
+                    <a href="#" class="serviceAnchor mt-5">REQUEST</a>
                   </div>
                 </card>
               </div>
               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-5">
                 <card class="border-0 ServiceCard" hover shadow body-classes="py-5">
                   <div class="text-center">
-                    <icon name="ni ni-check-bold" type="warning" rounded class="mb-4"></icon>
-                    <h6 class="text-warning text-uppercase">Logo Design</h6>
-                    <base-button
-                      tag="a"
-                      href="#"
-                      type="warning"
-                      class="mt-4 btn-sm colorSchemeBtn"
-                    >Request</base-button>
+                    <img src="../assets/img/services/Service1.svg" alt>
+
+                    <h6 class="text-warning text-uppercase mt-3 mb-5">Logo Design</h6>
+                    <a href="#" class="serviceAnchor mt-5">REQUEST</a>
                   </div>
                 </card>
               </div>
               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-5">
                 <card class="border-0 ServiceCard" hover shadow body-classes="py-5">
                   <div class="text-center">
-                    <icon name="ni ni-check-bold" type="warning" rounded class="mb-4"></icon>
-                    <h6 class="text-warning text-uppercase">Brochures</h6>
-                    <base-button
-                      tag="a"
-                      href="#"
-                      type="warning"
-                      class="mt-4 btn-sm colorSchemeBtn"
-                    >Request</base-button>
+                    <img src="../assets/img/services/Service1.svg" alt>
+
+                    <h6 class="text-warning text-uppercase mt-3 mb-5">Brochures</h6>
+                    <a href="#" class="serviceAnchor mt-5">REQUEST</a>
                   </div>
                 </card>
               </div>
               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-5">
                 <card class="border-0 ServiceCard" hover shadow body-classes="py-5">
                   <div class="text-center">
-                    <icon name="ni ni-check-bold" type="warning" rounded class="mb-4"></icon>
-                    <h6 class="text-warning text-uppercase">Posters</h6>
-                    <base-button
-                      tag="a"
-                      href="#"
-                      type="warning"
-                      class="mt-4 btn-sm colorSchemeBtn"
-                    >Request</base-button>
+                    <img src="../assets/img/services/Service1.svg" alt>
+
+                    <h6 class="text-warning text-uppercase mt-3 mb-5">Posters</h6>
+                    <a href="#" class="serviceAnchor mt-5">REQUEST</a>
                   </div>
                 </card>
               </div>
               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-5">
                 <card class="border-0 ServiceCard" hover shadow body-classes="py-5">
                   <div class="text-center">
-                    <icon name="ni ni-check-bold" type="warning" rounded class="mb-4"></icon>
-                    <h6 class="text-warning text-uppercase">Business Cards</h6>
-                    <base-button
-                      tag="a"
-                      href="#"
-                      type="warning"
-                      class="mt-4 btn-sm colorSchemeBtn"
-                    >Request</base-button>
+                    <img src="../assets/img/services/Service1.svg" alt>
+
+                    <h6 class="text-warning text-uppercase mt-3 mb-5">Business Cards</h6>
+                    <a href="#" class="serviceAnchor mt-5">REQUEST</a>
                   </div>
                 </card>
               </div>
               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-5">
                 <card class="border-0 ServiceCard" hover shadow body-classes="py-5">
                   <div class="text-center">
-                    <icon name="ni ni-check-bold" type="warning" rounded class="mb-4"></icon>
-                    <h6 class="text-warning text-uppercase">Stationery Branding</h6>
-                    <base-button
-                      tag="a"
-                      href="#"
-                      type="warning"
-                      class="mt-4 btn-sm colorSchemeBtn"
-                    >Request</base-button>
+                    <img src="../assets/img/services/Service1.svg" alt>
+
+                    <h6 class="text-warning text-uppercase mt-3 mb-5">Stationery Branding</h6>
+                    <a href="#" class="serviceAnchor mt-5">REQUEST</a>
                   </div>
                 </card>
               </div>
               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-5">
                 <card class="border-0 ServiceCard" hover shadow body-classes="py-5">
                   <div class="text-center">
-                    <icon name="ni ni-check-bold" type="warning" rounded class="mb-4"></icon>
-                    <h6 class="text-warning text-uppercase">Web Design</h6>
-                    <base-button
-                      tag="a"
-                      href="#"
-                      type="warning"
-                      class="mt-4 btn-sm colorSchemeBtn"
-                    >Request</base-button>
+                    <img src="../assets/img/services/Service1.svg" alt>
+
+                    <h6 class="text-warning text-uppercase mt-3 mb-5">Web Design</h6>
+                    <a href="#" class="serviceAnchor mt-5">REQUEST</a>
                   </div>
                 </card>
               </div>
               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-5">
                 <card class="border-0 ServiceCard" hover shadow body-classes="py-5">
                   <div class="text-center">
-                    <icon name="ni ni-check-bold" type="warning" rounded class="mb-4"></icon>
-                    <h6 class="text-warning text-uppercase">Banners</h6>
-                    <base-button
-                      tag="a"
-                      href="#"
-                      type="warning"
-                      class="mt-4 btn-sm colorSchemeBtn"
-                    >Request</base-button>
+                    <img src="../assets/img/services/Service1.svg" alt>
+
+                    <h6 class="text-warning text-uppercase mt-3 mb-5">Banners</h6>
+                    <a href="#" class="serviceAnchor mt-5">REQUEST</a>
                   </div>
                 </card>
               </div>
@@ -416,7 +383,7 @@
             >
             <div class="pt-4 text-center">
               <h5 class="title">
-                <span class="d-block mb-1">Ryan Tompson</span>
+                <span class="d-block mb-1">Dan Kimani</span>
                 <small class="h6 text-muted">Web Developer</small>
               </h5>
             </div>
@@ -431,8 +398,8 @@
             >
             <div class="pt-4 text-center">
               <h5 class="title">
-                <span class="d-block mb-1">Romina Hadid</span>
-                <small class="h6 text-muted">Marketing Strategist</small>
+                <span class="d-block mb-1">Ken Mwangi</span>
+                <small class="h6 text-muted">Web developer</small>
               </h5>
             </div>
           </div>
@@ -446,7 +413,7 @@
             >
             <div class="pt-4 text-center">
               <h5 class="title">
-                <span class="d-block mb-1">Alexander Smith</span>
+                <span class="d-block mb-1">Agnes Wanjiru</span>
                 <small class="h6 text-muted">UI/UX Designer</small>
               </h5>
             </div>
@@ -461,8 +428,8 @@
             >
             <div class="pt-4 text-center">
               <h5 class="title">
-                <span class="d-block mb-1">John Doe</span>
-                <small class="h6 text-muted">Founder and CEO</small>
+                <span class="d-block mb-1">Victoria Muiruri</span>
+                <small class="h6 text-muted">Graphics Designer</small>
               </h5>
             </div>
           </div>
@@ -506,33 +473,33 @@
           <div class="col-lg-12">
             <div class="row row-grid">
               <div class="col-lg-2">
-                <card class="border-0 PortfolioCard" hover shadow body-classes="py-5">
+                <card class="border-0 PortfolioCard" shadow body-classes="py-5">
                   <div class="text-center"></div>
                 </card>
               </div>
               <div class="col-lg-2">
-                <card class="border-0 PortfolioCard" hover shadow body-classes="py-5">
+                <card class="border-0 PortfolioCard" shadow body-classes="py-5">
                   <div class="text-center"></div>
                 </card>
               </div>
               <div class="col-lg-2">
-                <card class="border-0 PortfolioCard" hover shadow body-classes="py-5">
+                <card class="border-0 PortfolioCard" shadow body-classes="py-5">
                   <div class="text-center"></div>
                 </card>
               </div>
 
               <div class="col-lg-2">
-                <card class="border-0 PortfolioCard" hover shadow body-classes="py-5">
+                <card class="border-0 PortfolioCard" shadow body-classes="py-5">
                   <div class="text-center"></div>
                 </card>
               </div>
               <div class="col-lg-2">
-                <card class="border-0 PortfolioCard" hover shadow body-classes="py-5">
+                <card class="border-0 PortfolioCard" shadow body-classes="py-5">
                   <div class="text-center"></div>
                 </card>
               </div>
               <div class="col-lg-2">
-                <card class="border-0 PortfolioCard" hover shadow body-classes="py-5">
+                <card class="border-0 PortfolioCard" shadow body-classes="py-5">
                   <div class="text-center"></div>
                 </card>
               </div>
@@ -841,7 +808,7 @@ body {
 }
 @import url("https://fonts.googleapis.com/css?family=Offside&display=swap");
 .section-shaped .shape-style-1.shape-default {
-  background: linear-gradient(114.59deg, #fc7c5f 38.33%, #ff9966 91.76%);
+  background: url("../assets/img/Vectorbg.svg") no-repeat;
 }
 .personImg {
   margin-top: -85vh;
@@ -894,6 +861,15 @@ body {
 }
 .colorSchemeBtn {
   background: #5a3183;
+}
+.serviceAnchor {
+  text-decoration: none;
+  color: #5a3183;
+}
+.serviceAnchor:hover,
+.serviceAnchor:visited {
+  text-decoration: none;
+  color: #5a3183;
 }
 .card-profile-image img {
   height: 12em;
@@ -963,6 +939,13 @@ body {
   }
 }
 @media screen and (max-width: 768px) {
+  .personImg {
+    display: none;
+  }
+  .clientStrip {
+    display: none;
+  }
+
   .whiteSmall {
     color: white;
   }
@@ -990,7 +973,33 @@ body {
     font-size: 80%;
   }
 }
-@media screen and (max-width: 922px) {
+@media screen and (max-width: 992px) {
+  .personImg {
+    margin-top: -70vh;
+    margin-left: 65vw;
+  }
+  .serviceHide {
+    display: none;
+  }
+  .whiteSmall {
+    color: white;
+  }
+  .clientStrip {
+    padding: 0.5em;
+  }
+  .PortfolioCard {
+    /* background: red; */
+    border-radius: 55px;
+    height: 15em;
+    width: 40vw;
+    margin: 1em auto;
+    padding-top: 2em;
+  }
+  .card-profile-image img {
+    height: 10em;
+    margin-top: -5em;
+    margin-left: 26%;
+  }
 }
 </style>
 
