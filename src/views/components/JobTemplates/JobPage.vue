@@ -43,19 +43,19 @@
                                 <!-- image or jobtype illustration -->
                                 <b-carousel-slide
                                     v-if="job.slug == 'new-design-only'"
-                                    img-src="/assets/img/newdesign.jpg"
+                                    img-src="assets/img/newdesign.jpg"
                                 ></b-carousel-slide>
                                 <b-carousel-slide
                                     v-if="job.slug == 'content-research-only'"
-                                    img-src="/assets/img/redesign.jpg"
+                                    img-src="assets/img/redesign.jpg"
                                 ></b-carousel-slide>
                                 <b-carousel-slide
                                     v-if="job.slug == 'new-design-&-structure'"
-                                    img-src="/assets/img/design-structure.jpg"
+                                    img-src="assets/img/design-structure.jpg"
                                 ></b-carousel-slide>
                                 <b-carousel-slide
                                     v-if="job.slug == 'new-creative-service'"
-                                    img-src="/assets/img/design-structure.jpg"
+                                    img-src="assets/img/design-structure.jpg"
                                 ></b-carousel-slide>
                             </b-carousel>
                         </div>
@@ -64,8 +64,8 @@
             </div>
             
         </section>
-        <section class="section vector2 section-lg">
-            <div class="row row-grid justify-content-center mt-3 mb-5" id="jobFormArea">
+        <section class="section vector2 mt-4 section-lg" id="jobFormArea">
+            <div class="row row-grid justify-content-center mb-5">
                 <div class=".col-lg-8 text-center">
                 <h4 class="display-3 colorSchemeHeading text-right">Your Journey Begins Here</h4>
                 <p

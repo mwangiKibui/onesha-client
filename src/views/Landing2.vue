@@ -286,7 +286,7 @@
                     <div class="text-center">
                     <img src="../assets/img/services/Service1.svg" alt>
                     <h6 class="text-warning text-uppercase mt-3 mb-5">Business Profiles</h6>
-                    <span class="serviceAnchor mt-0 btn btn-white">REQUEST</span>
+                    <span class="serviceAnchor mt-0 btn btn-warning">REQUEST</span>
                   </div></a>
                 </card>
               </div>
@@ -296,7 +296,7 @@
                     <div class="text-center">
                     <img src="../assets/img/services/Service1.svg" alt>
                     <h6 class="text-warning text-uppercase mt-3 mb-5">Logo Design</h6>
-                    <span class="serviceAnchor mt-0 btn btn-white">REQUEST</span>
+                    <span class="serviceAnchor mt-0 btn btn-warning">REQUEST</span>
                   </div></a>
                 </card>
               </div>
@@ -306,7 +306,7 @@
                     <div class="text-center">
                     <img src="../assets/img/services/Service1.svg" alt>
                     <h6 class="text-warning text-uppercase mt-3 mb-5">Brochures</h6>
-                    <span class="serviceAnchor mt-0 btn btn-white">REQUEST</span>
+                    <span class="serviceAnchor mt-0 btn btn-warning">REQUEST</span>
                   </div></a>
                 </card>
               </div>
@@ -316,7 +316,7 @@
                     <div class="text-center">
                     <img src="../assets/img/services/Service1.svg" alt>
                     <h6 class="text-warning text-uppercase mt-3 mb-5">Posters</h6>
-                    <span class="serviceAnchor mt-0 btn btn-white">REQUEST</span>
+                    <span class="serviceAnchor mt-0 btn btn-warning">REQUEST</span>
                   </div></a>
                 </card>
               </div>
@@ -326,7 +326,7 @@
                     <div class="text-center">
                     <img src="../assets/img/services/Service1.svg" alt>
                     <h6 class="text-warning text-uppercase mt-3 mb-5">Business Cards</h6>
-                    <span class="serviceAnchor mt-0 btn btn-white">REQUEST</span>
+                    <span class="serviceAnchor mt-0 btn btn-warning">REQUEST</span>
                   </div></a>
                 </card>
               </div>
@@ -336,7 +336,7 @@
                     <div class="text-center">
                     <img src="../assets/img/services/Service1.svg" alt>
                     <h6 class="text-warning text-uppercase mt-3 mb-5">Stationery Branding</h6>
-                    <span class="serviceAnchor mt-0 btn btn-white">REQUEST</span>
+                    <span class="serviceAnchor mt-0 btn btn-warning">REQUEST</span>
                   </div></a>
                 </card>
               </div>
@@ -346,7 +346,7 @@
                     <div class="text-center">
                     <img src="../assets/img/services/Service1.svg" alt>
                     <h6 class="text-warning text-uppercase mt-3 mb-5">Illustrations</h6>
-                    <span class="serviceAnchor mt-0 btn btn-white">REQUEST</span>
+                    <span class="serviceAnchor mt-0 btn btn-warning">REQUEST</span>
                   </div></a>
                 </card>
               </div>
@@ -356,7 +356,7 @@
                     <div class="text-center">
                     <img src="../assets/img/services/Service1.svg" alt>
                     <h6 class="text-warning text-uppercase mt-3 mb-5">Banners</h6>
-                    <span class="serviceAnchor mt-0 btn btn-white">REQUEST</span>
+                    <span class="serviceAnchor mt-0 btn btn-warning">REQUEST</span>
                   </div></a>
                 </card>
               </div>
@@ -629,7 +629,7 @@ export default {
     EnquirySection
   },
   metaInfo: {
-    title: "Onesha - Home",
+    title: "Onesha - Outsource your design work",
     // override the parent template and just use the above title only
     titleTemplate: null
   },
@@ -818,205 +818,3 @@ window.onload = function() {
   document.body.appendChild(css);
 };
 </script>
-<style>
-body {
-  min-height: 768px;
-  min-width: 450px;
-}
-@import url("https://fonts.googleapis.com/css?family=Offside&display=swap");
-.section-shaped .shape-style-1.shape-default {
-  background: url("../assets/img/ill/Vectorbg.svg") no-repeat;
-}
-.personImg {
-  margin-top: -90vh;
-  margin-left: 65vw;
-}
-.myContainer {
-  position: relative;
-  max-width: 90%;
-  margin: 0 auto;
-}
-.vector {
-  background: url("../assets/img/ill/Vector1.svg") no-repeat;
-  background-position-x: -10px;
-}
-.vector2 {
-  background: url("../assets/img/ill/Vector2.svg") no-repeat;
-  background-position-x: 1000px;
-}
-.vector3 {
-  background: url("../assets/img/ill/Vector3.svg") no-repeat;
-  background-position-x: 55%;
-}
-.ServiceCard {
-  /* background: red; */
-  border-radius: 85px;
-  height: 20em;
-  padding-top: 2em;
-}
-.PortfolioCard {
-  /* background: red; */
-  border-radius: 55px;
-  height: 15em;
-  padding-top: 2em;
-}
-.TestimonialCard {
-  border-radius: 30px;
-  max-width: 60vw;
-  max-height: 80vh;
-  margin: 1em auto;
-}
-.BannerCard {
-  border-radius: 20px;
-}
-.colorSchemeHeading {
-  color: #ff9966;
-  font-family: "Offside", cursive;
-}
-.colorSchemeSubHeading {
-  color: #5a3183;
-}
-.colorSchemeBtn {
-  background: #5a3183;
-}
-.serviceAnchor {
-  text-decoration: none;
-  color: #5a3183;
-}
-.serviceAnchor:hover,
-.serviceAnchor:visited {
-  text-decoration: none;
-  color: #5a3183;
-}
-.card-profile-image img {
-  height: 12em;
-  margin-top: -5em;
-}
-@media screen and (max-width: 579px) {
-  .showcase {
-    margin-bottom: 5em;
-  }
-  .personImg {
-    display: none;
-  }
-  .clients {
-    margin-top: 2em;
-    padding: 1em;
-  }
-  .clientStrip {
-    display: none;
-  }
-  .whiteSmall {
-    color: white;
-  }
-  .iconSmall {
-    display: none;
-  }
-  .textSmall {
-    font-size: 80%;
-    text-align: center;
-  }
-  .creativesSection {
-    padding: 1em;
-  }
-  .ServiceCard {
-    /* background: red; */
-    border-radius: 85px;
-    height: 20em;
-    width: 60vw;
-    margin: 1em auto;
-    padding-top: 2em;
-  }
-  .PortfolioCard {
-    /* background: red; */
-    border-radius: 55px;
-    height: 15em;
-    width: 60vw;
-    margin: 1em auto;
-    padding-top: 2em;
-  }
-  .TestimonialCard {
-    border-radius: 30px;
-    min-width: 80vw;
-    margin: 1em auto;
-  }
-  .testimonialCardText {
-    font-size: 80%;
-  }
-  .testimonialText {
-    font-size: 80%;
-  }
-  .BannerCard {
-    border-radius: 20px;
-  }
-  .card-profile-image img {
-    height: 10em;
-    margin-top: -5em;
-    margin-left: 18vw;
-  }
-}
-@media screen and (max-width: 768px) {
-  .personImg {
-    display: none;
-  }
-  .clientStrip {
-    display: none;
-  }
-
-  .whiteSmall {
-    color: white;
-  }
-  .creativesSection {
-    padding: 1.5em;
-  }
-  .card-profile-image img {
-    height: 10em;
-    margin-top: -5em;
-    margin-left: 30%;
-  }
-  .PortfolioCard {
-    /* background: red; */
-    border-radius: 55px;
-    height: 15em;
-    width: 40vw;
-    margin: 1em auto;
-    padding-top: 2em;
-  }
-  .testimonialCardText {
-    font-size: 80%;
-  }
-  .testimonialText {
-    margin-top: -1em;
-    font-size: 80%;
-  }
-}
-@media screen and (max-width: 992px) {
-  .personImg {
-    margin-top: -70vh;
-    margin-left: 65vw;
-  }
-  .serviceHide {
-    display: none;
-  }
-  .whiteSmall {
-    color: white;
-  }
-  .clientStrip {
-    padding: 0.5em;
-  }
-  .PortfolioCard {
-    /* background: red; */
-    border-radius: 55px;
-    height: 15em;
-    width: 40vw;
-    margin: 1em auto;
-    padding-top: 2em;
-  }
-  .card-profile-image img {
-    height: 10em;
-    margin-top: -5em;
-    margin-left: 26%;
-  }
-}
-</style>
-

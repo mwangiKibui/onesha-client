@@ -24,7 +24,11 @@
             <span class="nav-link-inner--text">HOW IT WORKS</span>
           </router-link>
         </li>
-        <base-dropdown tag="li" class="nav-item">
+        <router-link to="/services" class="nav-link" replace>
+            <i class="ni ni-bullet-list-67"></i>
+            <span class="nav-link-inner--text">SERVICES</span>
+          </router-link>
+        <!-- <base-dropdown tag="li" class="nav-item">
           <a slot="title" href="#" class="nav-link" data-toggle="dropdown" role="button">
             <i class="ni ni-bullet-list-67"></i>
             <span class="nav-link-inner--text">SERVICES</span>
@@ -51,8 +55,8 @@
             tag="a"
             style="cursor:pointer"
           >Other Creative Services</router-link>
-        </base-dropdown>
-        <!-- <li class="nav-item">
+          </base-dropdown>
+        <li class="nav-item">
                 <router-link to="/projects" class="nav-link" replace>
                     <i class="ni ni-collection d-lg-none"></i>
                     <span class="nav-link-inner--text">OUR PORTFOLIO</span>

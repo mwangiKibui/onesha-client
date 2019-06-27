@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="row justify-content-center enq">
+        <div class="justify-content-right enq">
             <a
                 @click="showEnquirySec('quote')"
                 class="btn btn-default text-white"
