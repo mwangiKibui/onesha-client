@@ -1,7 +1,7 @@
 <template>
   <div>
-    <section class="section section-lg section-shaped my-0" style="height:100vh">
-      <div class="shape shape-style-1 shape-skew bg-gradient-warning">
+    <section class="section section-lg section-shaped my-0">
+      <div class="shape shape-style-1 shape-default shape-skew">
         <span></span>
         <span></span>
         <span></span>
@@ -56,7 +56,7 @@
       </section>
     </section>
 
-    <section class="section section-sm bg-secondary mt--100 bg-secondary" id="request">
+    <section class="section section-sm bg-white  bg-white" id="request">
       <div class="container">
         <div class="row justify-content-center text-center" id="process">
           <div class="mt-4 mb-lg-3 col-md-3">
@@ -68,12 +68,8 @@
           <div class="mb-lg-3 col-md-9 pl-4">
             <div class="row row-grid pl-4">
               <div class="col-lg-4">
-                <card class="border-0" hover shadow body-classes="py-5">
-                  <icon
-                    name="ni ni-bullet-list-67"
-                    class="mb-4 text-warning"
-                    style="border-radius:5px,border:1px solid #fb6340"
-                  ></icon>
+                <card class="border-0 ServiceCard" hover shadow body-classes="py-5">
+                  <img class="mb-4" src="../assets/img/services/Service1.svg" alt><br>
                   <h6 class="text-warning">Business Profiles</h6>
                   <base-button
                     tag="a"
@@ -85,8 +81,8 @@
                 </card>
               </div>
               <div class="col-lg-4">
-                <card class="border-0" hover shadow body-classes="py-5">
-                  <icon name="ni ni-settings-gear-65" class="mb-4 text-warning"></icon>
+                <card class="border-0 ServiceCard" hover shadow body-classes="py-5">
+                  <img class="mb-4" src="../assets/img/services/Service1.svg" alt><br>
                   <h6 class="text-warning">Brochures</h6>
                   <base-button
                     tag="a"
@@ -100,10 +96,10 @@
               </div>
 
               <div class="col-lg-4">
-                <div class="card border-0 card-lift--hover shadow">
+                <div class="card border-0 ServiceCard card-lift--hover shadow">
                   <!---->
                   <div class="card-body py-5">
-                    <icon name="ni ni-check-bold" class="mb-4 text-warning"></icon>
+                    <img class="mb-4" src="../assets/img/services/Service1.svg" alt><br>
                     <h6 class="text-warning">Posters</h6>
                     <base-button
                       tag="a"
@@ -119,10 +115,10 @@
               </div>
 
               <div class="col-lg-4 mt-5">
-                <div class="card border-0 card-lift--hover shadow">
+                <div class="card border-0 ServiceCard card-lift--hover shadow">
                   <!---->
                   <div class="card-body py-5">
-                    <icon name="ni ni-check-bold" class="mb-4 text-warning"></icon>
+                    <img class="mb-4" src="../assets/img/services/Service1.svg" alt><br>
                     <h6 class="text-warning">Business Cards</h6>
                     <base-button
                       tag="a"
@@ -138,10 +134,10 @@
               </div>
 
               <div class="col-lg-4 mt-5">
-                <div class="card border-0 card-lift--hover shadow">
+                <div class="card border-0 ServiceCard card-lift--hover shadow">
                   <!---->
                   <div class="card-body py-5">
-                    <icon name="ni ni-check-bold" class="mb-4 text-warning"></icon>
+                    <img class="mb-4" src="../assets/img/services/Service1.svg" alt><br>
                     <h6 class="text-warning">Stationery Branding</h6>
                     <base-button
                       tag="a"
@@ -157,10 +153,10 @@
               </div>
 
               <div class="col-lg-4 mt-5">
-                <div class="card border-0 card-lift--hover shadow">
+                <div class="card border-0 ServiceCard card-lift--hover shadow">
                   <!---->
                   <div class="card-body py-5">
-                    <icon name="ni ni-check-bold" class="mb-4 text-warning"></icon>
+                    <img class="mb-4" src="../assets/img/services/Service1.svg" alt><br>
                     <h6 class="text-warning">Attire Branding</h6>
                     <base-button
                       tag="a"
@@ -176,10 +172,10 @@
               </div>
 
               <div class="col-lg-4 mt-5">
-                <div class="card border-0 card-lift--hover shadow">
+                <div class="card border-0 ServiceCard card-lift--hover shadow">
                   <!---->
                   <div class="card-body py-5">
-                    <icon name="ni ni-check-bold" class="mb-4 text-warning"></icon>
+                    <img class="mb-4" src="../assets/img/services/Service1.svg" alt><br>
                     <h6 class="text-warning">Banners</h6><br>
                     <base-button
                       tag="a"
@@ -195,10 +191,10 @@
               </div>
 
               <div class="col-lg-4 mt-5">
-                <div class="card border-0 card-lift--hover shadow">
+                <div class="card border-0 ServiceCard card-lift--hover shadow">
                   <!---->
                   <div class="card-body py-5">
-                    <icon name="ni ni-check-bold" class="mb-4 text-warning"></icon>
+                    <img class="mb-4" src="../assets/img/services/Service1.svg" alt><br>
                     <h6 class="text-warning">Reports and Presentations</h6>
                     <base-button
                       tag="a"
@@ -214,10 +210,10 @@
               </div>
 
               <div class="col-lg-4 mt-5">
-                <div class="card border-0 card-lift--hover shadow">
+                <div class="card border-0 ServiceCard card-lift--hover shadow">
                   <!---->
                   <div class="card-body py-5">
-                    <icon name="ni ni-check-bold" class="mb-4 text-warning"></icon>
+                    <img class="mb-4" src="../assets/img/services/Service1.svg" alt><br>
                     <h6 class="text-warning">Other designs</h6><br>
                     <base-button
                       tag="a"
@@ -253,12 +249,8 @@
           <div class="mb-lg-3 col-md-9 pl-4">
             <div class="row row-grid pl-4">
               <div class="col-lg-4">
-                <card class="border-0" hover shadow body-classes="py-5">
-                  <icon
-                    name="ni ni-bullet-list-67"
-                    class="mb-4 text-warning"
-                    style="border-radius:5px,border:1px solid #fb6340"
-                  ></icon>
+                <card class="border-0 ServiceCard" hover shadow body-classes="py-5">
+                  <img class="mb-4" src="../assets/img/services/Service1.svg" alt><br>
                   <h6 class="text-warning">Social Media Audit</h6>
                   <base-button
                     tag="a"
@@ -271,8 +263,8 @@
               </div>
 
               <div class="col-lg-4">
-                <card class="border-0" hover shadow body-classes="py-5">
-                  <icon name="ni ni-settings-gear-65" class="mb-4 text-warning"></icon>
+                <card class="border-0 ServiceCard" hover shadow body-classes="py-5">
+                  <img class="mb-4" src="../assets/img/services/Service1.svg" alt><br>
                   <h6 class="text-warning">Web Design</h6>
                   <base-button
                     tag="a"
@@ -286,10 +278,10 @@
               </div>
 
               <div class="col-lg-4">
-                <div class="card border-0 card-lift--hover shadow">
+                <div class="card border-0 ServiceCard card-lift--hover shadow">
                   <!---->
                   <div class="card-body py-5">
-                    <icon name="ni ni-check-bold" class="mb-4 text-warning"></icon>
+                    <img class="mb-4" src="../assets/img/services/Service1.svg" alt><br>
                     <h6 class="text-warning">Mobile App Design</h6>
                     <base-button
                       tag="a"
@@ -305,12 +297,8 @@
               </div>
 
               <div class="col-lg-4 mt-5">
-                <card class="border-0" hover shadow body-classes="py-5">
-                  <icon
-                    name="ni ni-bullet-list-67"
-                    class="mb-4 text-warning"
-                    style="border-radius:5px,border:1px solid #fb6340"
-                  ></icon>
+                <card class="border-0 ServiceCard" hover shadow body-classes="py-5">
+                  <img class="mb-4" src="../assets/img/services/Service1.svg" alt><br>
                   <h6 class="text-warning">Social Media Strategy</h6><br>
                   <base-button
                     tag="a"
@@ -323,8 +311,8 @@
               </div>
 
               <div class="col-lg-4 mt-5">
-                <card class="border-0" hover shadow body-classes="py-5">
-                  <icon name="ni ni-settings-gear-65" class="mb-4 text-warning"></icon>
+                <card class="border-0 ServiceCard" hover shadow body-classes="py-5">
+                  <img class="mb-4" src="../assets/img/services/Service1.svg" alt><br>
                   <h6 class="text-warning">Page Management</h6><br>
                   <base-button
                     tag="a"
@@ -338,10 +326,10 @@
               </div>
 
               <div class="col-lg-4 mt-5">
-                <div class="card border-0 card-lift--hover shadow">
+                <div class="card border-0 ServiceCard card-lift--hover shadow">
                   <!---->
                   <div class="card-body py-5">
-                    <icon name="ni ni-check-bold" class="mb-4 text-warning"></icon>
+                    <img class="mb-4" src="../assets/img/services/Service1.svg" alt><br>
                     <h6 class="text-warning">Campaign/ Ad management</h6>
                     <base-button
                       tag="a"
@@ -366,14 +354,14 @@
         <div class="row justify-content-center text-center" id="process">
           <div class="mt-4 mb-lg-3 col-md-3">
             <h2 class="text-warning" style="margin-left: -30px">Digital Design</h2>
-            <p class="text-left text-warning">For Social Media</p>
+            <p class="text-left text-warning">For Digital Media</p>
             <img src="@/assets/img/ill/ill-2.svg" class="img-center img-fluid">
             <p class="mt-4">Get high quality print-ready designs with delivery options available</p>
           </div>
           <div class="mb-lg-3 col-md-9 pl-4 mt-4">
             <div class="row row-grid pl-4 mt-5">
               <div class="col-lg-4">
-                <card class="border-0" hover shadow body-classes="py-5">
+                <card class="border-0 ServiceCard" hover shadow body-classes="py-5">
                   <icon
                     name="ni ni-bullet-list-67"
                     class="mb-4 text-warning"
@@ -391,7 +379,7 @@
               </div>
 
               <div class="col-lg-4">
-                <card class="border-0" hover shadow body-classes="py-5">
+                <card class="border-0 ServiceCard" hover shadow body-classes="py-5">
                   <icon name="ni ni-settings-gear-65" class="mb-4 text-warning"></icon>
                   <h6 class="text-warning">UI Mockups</h6>
                   <base-button
@@ -406,7 +394,7 @@
               </div>
 
               <div class="col-lg-4">
-                <div class="card border-0 card-lift--hover shadow">
+                <div class="card border-0 ServiceCard card-lift--hover shadow">
                   <!---->
                   <div class="card-body py-5">
                     <icon name="ni ni-check-bold" class="mb-4 text-warning"></icon>
@@ -429,52 +417,50 @@
       </div>
     </section>
 
-    <section class="section section-lg mt-100 bg-gradient-warning">
+    <section class="section section-lg mt-100">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-9 justify-content-left" id="request">
-            <h4 style="color:#fff">Any other services you require</h4>
-            <br>
-            <h6 style="color:#fff">Get in touch with us today</h6>
+      <card gradient="BannerCard" no-body shadow-size="lg" class="border-0">
+          <div class="p-5">
+            <div class="row ">
+              <div class="col-lg-6 justify-content-left" id="request">
+                <h3 class="mb-1 text-left text-warning">Want to work with us?</h3>
+                <h6 >Get in touch with us today.</h6>
+              </div>
+              <div class="col-lg-6 row text-right justify-content-right enq"><br>
+                  <div class="">
+                      <a
+                          @click="showEnquirySec('quote')"
+                          class="btn btn-default text-white"
+                      >Request A Quote</a>
+                      <a
+                          @click="showEnquirySec('enquire')"
+                          class="btn btn-default text-white"
+                      >Make an Enquiry</a>
+                  </div>
+              </div>
+            </div>
+            <div v-if="this.showEnquiry">
+                  <component
+                      :is="component2"
+                      @response="enquiryResponse"
+                      :type="this.enquiry"
+                  ></component>
+              
+            </div>
           </div>
-          <div class="col-lg-3 row text-right justify-content-right">
-            <base-button
-              class="btn btn-md btn-success btn-icon mb-3 mb-sm-0"
-              style="height:50px"
-              type="success"
-              @click="showEnquirySec('quote')"
-            >REQUEST A QUOTE</base-button>
-          </div>
-        </div>
+      </card>
       </div>
     </section>
 
-    <section class="section section-lg pt-lg-2 mt-5 section-contact-us">
+    <!-- <section class="section section-lg pt-lg-2 mt-5 section-contact-us">
       <div class="container">
         <div class="pb-lg-4">
             <h3 class="mb-1 text-center text-warning">Want to work with us?</h3>                    
         </div>
-        <div class="row justify-content-center enq"><br>
-            <a
-                @click="showEnquirySec('quote')"
-                class="btn btn-white text-default"
-            >Request A Quote</a>
-            <a
-                @click="showEnquirySec('enquire')"
-                class="btn btn-white text-default"
-            >Make an Enquiry</a>
         
-        </div>
-        <div v-if="this.showEnquiry">
-            <component
-                :is="component2"
-                @response="enquiryResponse"
-                :type="this.enquiry"
-            ></component>
-        </div>
         
       </div>
-    </section>
+    </section> -->
   </div>
 </template>
 
@@ -491,11 +477,6 @@ import Axios from "axios";
 let show = true;
 
 export default {
-  metaInfo: {
-    title: "Learn More - Onesha",
-    // override the parent template and just use the above title only
-    titleTemplate: null
-  },
   components: {
     Categories,
     Modal,
@@ -504,6 +485,11 @@ export default {
     EnquirySuccess,
     EnquiryFailed,
     EnquirySection
+  },
+  metaInfo: {
+    title: "All Services - Onesha",
+    // override the parent template and just use the above title only
+    titleTemplate: null
   },
   data() {
     return {
@@ -568,13 +554,13 @@ export default {
   background-repeat: no-repeat;
   height: 100vh !important;
 }
-@media screen and (max-width: 579px) {
+@media screen and (max-width: 768px) {
   .d-sm-nones {
     display: none !important;
   }
 }
 
-@media screen and (min-width: 579px) {
+@media screen and (min-width: 768px) {
   .d-sm-nones {
     display: block !important;
   }

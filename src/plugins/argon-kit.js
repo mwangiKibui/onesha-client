@@ -3,6 +3,7 @@ import "../assets/vendor/font-awesome/css/font-awesome.css";
 import "../assets/scss/argon.scss";
 import "../assets/vendor/jquery/jquery.min.js";
 import "../assets/css/nprogress.css";
+import "../assets/css/globalStyle.css";
 import "../assets/vendor/scrollreveal.min.js";
 import globalComponents from "./globalComponents";
 import globalDirectives from "./globalDirectives";
