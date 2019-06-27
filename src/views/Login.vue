@@ -1,29 +1,31 @@
 <template>
-  <div>
-    <section class="section-profile-cover section-shaped my-0">
-      <div class="shape shape-style-1 shape-default shape-skew alpha-4">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <div class="container shape-container d-flex">
-        <div class="col px-0">
-          <div class="row">
-            <div class="col-lg-8">
-              <h1 class="display-2 colorSchemeHeading text-white">Welcome Back</h1>
-              <p
-                class="lead text-white col-lg-10"
-                style="margin-left: -10px"
-              >Login with your details to continue</p>
+  <section>
+    <div class="position-relative showcase">
+      <section class="section-shaped my-0">
+        <div class="shape shape-style-1 shape-default shape-skew">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="container shape-container d-flex">
+          <div class="col px-0">
+            <div class="row">
+              <div class="col-lg-8">
+                <h1 class="display-2 colorSchemeHeading text-white">Welcome Back</h1>
+                <p
+                  class="lead text-white col-lg-10"
+                  style="margin-left: -10px"
+                >Login with your details to continue</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
     <section class="section section-skew">
       <div class="container">
         <div class="row justify-content-center">
@@ -87,7 +89,7 @@
         </div>
       </div>
     </section>
-  </div>
+  </section>
 </template>
 <script>
 import Axios from "axios";
