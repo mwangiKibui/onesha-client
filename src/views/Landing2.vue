@@ -37,7 +37,7 @@
       </section>
       <!-- 1st Hero Variation -->
       <section class="section-shaped personImg">
-        <img src="../assets/img/clients/girl-1.png" class="img-fluid text-right" alt>
+        <img src="../assets/img/clients/girl-1.png" class="img-fluid text-right" style="filter: brightness(90%);-webkit-filter: grayscale(40%);" alt>
         <p style="margin-top: -110px; margin-left: -80px">
             <strong class="lead">Sally Ngugi</strong> <br> <small><i>Law Society of Kenya</i> <br>Happy Client </small>
         </p>
@@ -209,7 +209,7 @@
             <div class="position-relative mt-1 pl-md-5">
               <img src="../assets/img/whyUs.png" class="img-center img-fluid">
             </div>
-            <div class="btn-wrapper text-center">
+            <div class="btn-wrapper text-center mt--100">
               <base-button
                 tag="a"
                 href
@@ -449,10 +449,9 @@
           <div class="p-5">
             <div class="row align-items-center">
               <div class="col-lg-8">
-                <h3 class="text-white colorSchemeHeading"><strong>OFFER CREATIVE SERVICES</strong></h3>
-                <p class="lead text-white mt-3">
+                <h3 class="text-white"><strong>OFFER CREATIVE SERVICES</strong></h3>
+                <p class=" text-white mt-3">
                   Do you have creative skills you can work with? <br>We empower creative talent to build their online portfolio and get access to their next opportunity. Join the creative community by requesting a creative account today.
-                  .
                 </p>
               </div>
               <div class="col-lg-3 ml-lg-auto">
@@ -570,28 +569,32 @@
     </section>
     <section class="section section-lg pt-lg-2 mt-5 section-contact-us">
       <div class="container">
-        <div class="pb-lg-4">
-            <h3 class="mb-1 text-center text-warning">Want to work with us?</h3>                    
-        </div>
-        <div class="row justify-content-center enq"><br>
-            <a
-                @click="showEnquirySec('quote')"
-                class="btn btn-white text-default"
-            >Request A Quote</a>
-            <a
-                @click="showEnquirySec('enquire')"
-                class="btn btn-white text-default"
-            >Make an Enquiry</a>
-        
-        </div>
-        <div v-if="this.showEnquiry">
-            <component
-                :is="component2"
-                @response="enquiryResponse"
-                :type="this.enquiry"
-            ></component>
-        </div>
-        
+        <card gradient="warning BannerCard" no-body shadow-size="lg" class="border-0">
+          <div class="p-5">
+              <div class="pb-lg-4">
+                  <h3 class="mb-1 text-center text-white">Want to work with us?</h3>
+                  <h6 class="mb-1 text-center">Let us know what you need</h6>                    
+              </div>
+              <div class="row justify-content-center enq"><br>
+                  <a
+                      @click="showEnquirySec('quote')"
+                      class="btn btn-white text-default"
+                  >Request A Quote</a>
+                  <a
+                      @click="showEnquirySec('enquire')"
+                      class="btn btn-white text-default"
+                  >Make an Enquiry</a>
+              
+              </div>
+              <div v-if="this.showEnquiry">
+                  <component
+                      :is="component2"
+                      @response="enquiryResponse"
+                      :type="this.enquiry"
+                  ></component>
+              </div>
+          </div>
+        </card>        
       </div>
     </section>
   </section>

@@ -19,7 +19,7 @@
       <!-- <ul class="navbar-nav navbar-nav-hover align-items-lg-center"></ul> -->
       <ul class="navbar-nav align-items-lg-center ml-lg-auto">
         <li class="nav-item">
-          <router-link to="/learn-more#process" class="nav-link" replace>
+          <router-link to="/how-it-works" class="nav-link" replace>
             <i class="ni ni-single-copy-04"></i>
             <span class="nav-link-inner--text">HOW IT WORKS</span>
           </router-link>

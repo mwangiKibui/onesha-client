@@ -17,24 +17,23 @@
             <div class="col-lg-9 order-lg-1">
               <div class="my-0 py-1 d-sm-nones"></div>
               <div class="mt--300 d-lg-nones"></div>
-              <div class="justify-content-between align-items-center">
-                <div class="col-lg-11">
-                  <h2
-                    class="display-1 text-left text-white"
-                    style="display: inline-block; float: center"
+              <div class="row">
+                <div class="col-lg-9">
+                  <h1
+                    class="display-1 text-white colorSchemeHeading"
                   >
                     Creativity at Work
                     <!-- <span style="font-size: 0.5em">Your creative tasks sorted</span> -->
-                  </h2>
-                  <h3
-                    class="justify-content-between text-white text-left pt-2 my-2"
-                  >Through our network of skilled creatives, we provide you with the following services</h3>
-
-                  <div class="btn-wrapper justify-content-center mt-4">
+                  </h1>
+                  <p
+                    class="lead text-white col-lg-10 text-left pt-2 "  style="margin-left: -10px"
+                  >Through our network of skilled creatives, we provide you with the following services
+                  </p>
+                  <div class="btn-wrapper justify-content-center">
                     <a href="#request" data-toggle="scroll">
                       <base-button
-                        class="btn btn-md btn-default btn-icon mb-3 mt-5 mb-sm-0"
-                        type="info"
+                        class="btn btn-md text-white colorSchemeBtn btn-icon mb-3 mb-sm-0"
+                        type="default"
                       >VIEW OUR SERVICES</base-button>
                     </a>
                     <span stye="color: transparent">.</span>
@@ -42,7 +41,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 d-sm-nones order-lg-2" id="expect" style="margin-left:-50px">
+            <div class="col-lg-3 d-sm-nones order-lg-2" id="expect" style="margin-left:-70px">
               <div class="text-white">
                 <img
                   src="@/assets/img/ill/ill-2.svg"
@@ -67,7 +66,7 @@
           </div>
           <div class="mb-lg-3 col-md-9 pl-4">
             <div class="row row-grid pl-4">
-              <div class="col-lg-4">
+              <div class="col-lg-4 col-sm-6 mt-5">
                 <card class="border-0 ServiceCard" hover shadow body-classes="py-5">
                   <img class="mb-4" src="../assets/img/services/Service1.svg" alt><br>
                   <h6 class="text-warning">Business Profiles</h6>
@@ -80,7 +79,7 @@
                   >REQUEST</base-button>
                 </card>
               </div>
-              <div class="col-lg-4">
+              <div class="col-lg-4 col-sm-6 mt-5">
                 <card class="border-0 ServiceCard" hover shadow body-classes="py-5">
                   <img class="mb-4" src="../assets/img/services/Service1.svg" alt><br>
                   <h6 class="text-warning">Brochures</h6>
@@ -95,7 +94,7 @@
                 </card>
               </div>
 
-              <div class="col-lg-4">
+              <div class="col-lg-4 col-sm-6 mt-5">
                 <div class="card border-0 ServiceCard card-lift--hover shadow">
                   <!---->
                   <div class="card-body py-5">
@@ -114,7 +113,7 @@
                 </div>
               </div>
 
-              <div class="col-lg-4 mt-5">
+              <div class="col-lg-4 col-sm-6 mt-5">
                 <div class="card border-0 ServiceCard card-lift--hover shadow">
                   <!---->
                   <div class="card-body py-5">
@@ -133,7 +132,7 @@
                 </div>
               </div>
 
-              <div class="col-lg-4 mt-5">
+              <div class="col-lg-4 col-sm-6 mt-5">
                 <div class="card border-0 ServiceCard card-lift--hover shadow">
                   <!---->
                   <div class="card-body py-5">
@@ -152,7 +151,7 @@
                 </div>
               </div>
 
-              <div class="col-lg-4 mt-5">
+              <div class="col-lg-4 col-sm-6 mt-5">
                 <div class="card border-0 ServiceCard card-lift--hover shadow">
                   <!---->
                   <div class="card-body py-5">
@@ -171,7 +170,7 @@
                 </div>
               </div>
 
-              <div class="col-lg-4 mt-5">
+              <div class="col-lg-4 col-sm-6 mt-5">
                 <div class="card border-0 ServiceCard card-lift--hover shadow">
                   <!---->
                   <div class="card-body py-5">
@@ -190,7 +189,7 @@
                 </div>
               </div>
 
-              <div class="col-lg-4 mt-5">
+              <div class="col-lg-4 col-sm-6 mt-5">
                 <div class="card border-0 ServiceCard card-lift--hover shadow">
                   <!---->
                   <div class="card-body py-5">
@@ -209,7 +208,7 @@
                 </div>
               </div>
 
-              <div class="col-lg-4 mt-5">
+              <div class="col-lg-4 col-sm-6 mt-5">
                 <div class="card border-0 ServiceCard card-lift--hover shadow">
                   <!---->
                   <div class="card-body py-5">
@@ -232,7 +231,6 @@
         </div>
       </div>
     </section>
-
     <br>
     <br>
     <section>
@@ -244,11 +242,11 @@
             <img src="@/assets/img/ill/ill-2.svg" class="img-center img-fluid">
             <p
               class="mt-4"
-            >Get your task done whether its web development,social media content or design</p>
+            >Get your task done whether its web development, social media content or design</p>
           </div>
           <div class="mb-lg-3 col-md-9 pl-4">
             <div class="row row-grid pl-4">
-              <div class="col-lg-4">
+              <div class="col-lg-4 col-sm-6 mt-5">
                 <card class="border-0 ServiceCard" hover shadow body-classes="py-5">
                   <img class="mb-4" src="../assets/img/services/Service1.svg" alt><br>
                   <h6 class="text-warning">Social Media Audit</h6>
@@ -262,7 +260,7 @@
                 </card>
               </div>
 
-              <div class="col-lg-4">
+              <div class="col-lg-4 col-sm-6 mt-5">
                 <card class="border-0 ServiceCard" hover shadow body-classes="py-5">
                   <img class="mb-4" src="../assets/img/services/Service1.svg" alt><br>
                   <h6 class="text-warning">Web Design</h6>
@@ -277,7 +275,7 @@
                 </card>
               </div>
 
-              <div class="col-lg-4">
+              <div class="col-lg-4 col-sm-6 mt-5">
                 <div class="card border-0 ServiceCard card-lift--hover shadow">
                   <!---->
                   <div class="card-body py-5">
@@ -296,7 +294,7 @@
                 </div>
               </div>
 
-              <div class="col-lg-4 mt-5">
+              <div class="col-lg-4 col-sm-6 mt-5">
                 <card class="border-0 ServiceCard" hover shadow body-classes="py-5">
                   <img class="mb-4" src="../assets/img/services/Service1.svg" alt><br>
                   <h6 class="text-warning">Social Media Strategy</h6><br>
@@ -310,7 +308,7 @@
                 </card>
               </div>
 
-              <div class="col-lg-4 mt-5">
+              <div class="col-lg-4 col-sm-6 mt-5">
                 <card class="border-0 ServiceCard" hover shadow body-classes="py-5">
                   <img class="mb-4" src="../assets/img/services/Service1.svg" alt><br>
                   <h6 class="text-warning">Page Management</h6><br>
@@ -325,7 +323,7 @@
                 </card>
               </div>
 
-              <div class="col-lg-4 mt-5">
+              <div class="col-lg-4 col-sm-6 mt-5">
                 <div class="card border-0 ServiceCard card-lift--hover shadow">
                   <!---->
                   <div class="card-body py-5">
@@ -348,7 +346,8 @@
         </div>
       </div>
     </section>
-
+    <br>
+    <br>
     <section>
       <div class="container">
         <div class="row justify-content-center text-center" id="process">
@@ -356,11 +355,11 @@
             <h2 class="text-warning" style="margin-left: -30px">Digital Design</h2>
             <p class="text-left text-warning">For Digital Media</p>
             <img src="@/assets/img/ill/ill-2.svg" class="img-center img-fluid">
-            <p class="mt-4">Get high quality print-ready designs with delivery options available</p>
+            <p class="mt-4">Get high resolution files for use on your digital platforms</p>
           </div>
-          <div class="mb-lg-3 col-md-9 pl-4 mt-4">
+          <div class="mb-lg-3 col-md-9 pl-4">
             <div class="row row-grid pl-4 mt-5">
-              <div class="col-lg-4">
+              <div class="col-lg-4 col-sm-6 mt-5">
                 <card class="border-0 ServiceCard" hover shadow body-classes="py-5">
                   <icon
                     name="ni ni-bullet-list-67"
@@ -378,7 +377,7 @@
                 </card>
               </div>
 
-              <div class="col-lg-4">
+              <div class="col-lg-4 col-sm-6 mt-5">
                 <card class="border-0 ServiceCard" hover shadow body-classes="py-5">
                   <icon name="ni ni-settings-gear-65" class="mb-4 text-warning"></icon>
                   <h6 class="text-warning">UI Mockups</h6>
@@ -393,7 +392,7 @@
                 </card>
               </div>
 
-              <div class="col-lg-4">
+              <div class="col-lg-4 col-sm-6 mt-5">
                 <div class="card border-0 ServiceCard card-lift--hover shadow">
                   <!---->
                   <div class="card-body py-5">
@@ -419,33 +418,29 @@
 
     <section class="section section-lg mt-100">
       <div class="container">
-      <card gradient="BannerCard" no-body shadow-size="lg" class="border-0">
+      <card gradient="warning BannerCard" no-body shadow-size="lg" class="border-0">
           <div class="p-5">
-            <div class="row ">
-              <div class="col-lg-6 justify-content-left" id="request">
-                <h3 class="mb-1 text-left text-warning">Want to work with us?</h3>
-                <h6 >Get in touch with us today.</h6>
-              </div>
-              <div class="col-lg-6 row text-right justify-content-right enq"><br>
-                  <div class="">
-                      <a
-                          @click="showEnquirySec('quote')"
-                          class="btn btn-default text-white"
-                      >Request A Quote</a>
-                      <a
-                          @click="showEnquirySec('enquire')"
-                          class="btn btn-default text-white"
-                      >Make an Enquiry</a>
-                  </div>
-              </div>
+            <div class="pb-lg-4">
+                <h3 class="mb-1 text-center text-white">Want to work with us?</h3>
+                <h6 class="mb-1 text-center">Let us know what you need</h6>                    
+            </div>
+            <div class="row justify-content-center enq"><br>
+                <a
+                    @click="showEnquirySec('quote')"
+                    class="btn text-white colorSchemeBtn"
+                >Request A Quote</a>
+                <a
+                    @click="showEnquirySec('enquire')"
+                    class="btn text-white colorSchemeBtn"
+                >Make an Enquiry</a>
+            
             </div>
             <div v-if="this.showEnquiry">
-                  <component
-                      :is="component2"
-                      @response="enquiryResponse"
-                      :type="this.enquiry"
-                  ></component>
-              
+                <component
+                    :is="component2"
+                    @response="enquiryResponse"
+                    :type="this.enquiry"
+                ></component>
             </div>
           </div>
       </card>
@@ -453,11 +448,28 @@
     </section>
 
     <!-- <section class="section section-lg pt-lg-2 mt-5 section-contact-us">
-      <div class="container">
+      <div class="container BannerCard">
         <div class="pb-lg-4">
             <h3 class="mb-1 text-center text-warning">Want to work with us?</h3>                    
         </div>
+        <div class="row justify-content-center enq"><br>
+            <a
+                @click="showEnquirySec('quote')"
+                class="btn btn-white text-default"
+            >Request A Quote</a>
+            <a
+                @click="showEnquirySec('enquire')"
+                class="btn btn-white text-default"
+            >Make an Enquiry</a>
         
+        </div>
+        <div v-if="this.showEnquiry">
+            <component
+                :is="component2"
+                @response="enquiryResponse"
+                :type="this.enquiry"
+            ></component>
+        </div>
         
       </div>
     </section> -->
