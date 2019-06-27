@@ -122,7 +122,7 @@ export default new Router({
       name: "register",
       components: {
         header: AppHeader,
-        default: Login,
+        default: Register,
         footer: AppFooter
       }
     },
