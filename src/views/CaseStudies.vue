@@ -84,47 +84,48 @@
                             <p class="description mt-3">Onesha processes your request into a job brief that we present to vetted creatives for quotation.
                                 We give you a professional looking company profile that will enable you get introductions, meetings and close sales even faster. Our quick online service simplifies the process of looking for a place to get your company profile made. Get high quality services from our vetted creatives with quick delivery to fit your schedule. <br><br> Select and approve the quote.</p>
                               <br>
-                            <base-button
-                                  tag="a"
-                                  @click="showMoreSec(wara)"
-                                  data-toggle="scroll"
-                                  type="default"
-                                  class="mt-4 colorSchemeBtn text-white"
-                              >
-                                  Read More
-                              </base-button>
+                            <b-button v-b-toggle.collapse-1 variant="default" class="mt-4 colorSchemeBtn text-white">Read More</b-button>
+                            
                         </div>
-                        <transition
-                            name="component-fade"
-                            mode="out-in"
-                        >
-                            <div class="p-4 justify-content-center text-center"
-                                id="wara" :show.sync="this.showMore">
-                                <h4>What we did</h4>
-                                <p>We give you a professional looking company profile that will enable you get introductions,
-                                    meetings and close sales even faster. Our quick online service simplifies the process of looking for a place to get your company profile made.
-                                    Get high quality services from our vetted creatives with quick delivery to fit your schedule. <br><br>Simply choose a service, fill a simple job form, get your task done!
-                                    </p><br>
-                                <p>We give you a professional looking company profile that will enable you get introductions,
-                                    meetings and close sales even faster. Our quick online service simplifies the process of looking for a place to get your company profile made.
-                                    Get high quality services from our vetted creatives with quick delivery to fit your schedule. <br><br>Simply choose a service, fill a simple job form, get your task done!
-                                    </p>
-                                
-                            </div>
-                        </transition>
-                  </div>
-                    <div>
-                        <b-button v-b-toggle.collapse-1 variant="primary">Toggle Collapse</b-button>
                         <b-collapse id="collapse-1" class="mt-2">
                             <b-card>
-                            <p class="card-text">Collapse contents Here</p>
-                            <b-button v-b-toggle.collapse-1-inner size="sm">Toggle Inner Collapse</b-button>
-                            <b-collapse id="collapse-1-inner" class="mt-2">
-                                <b-card>Hello!</b-card>
-                            </b-collapse>
+                              <div class="card-text p-4 justify-content-center text-center"
+                                  id="wara" :show.sync="this.showMore">
+                                  <h4>What we did</h4>
+                                  <p>We give you a professional looking company profile that will enable you get introductions,
+                                      meetings and close sales even faster. Our quick online service simplifies the process of looking for a place to get your company profile made.
+                                      Get high quality services from our vetted creatives with quick delivery to fit your schedule. <br><br>Simply choose a service, fill a simple job form, get your task done!
+                                      </p><br>
+                                  <p>We give you a professional looking company profile that will enable you get introductions,
+                                      meetings and close sales even faster. Our quick online service simplifies the process of looking for a place to get your company profile made.
+                                      Get high quality services from our vetted creatives with quick delivery to fit your schedule. <br><br>Simply choose a service, fill a simple job form, get your task done!
+                                      </p>
+                                  
+                              </div>
+                              <div class="row justify-content-center text-center mt-sm mb-sm">
+                                  <div class="col-md-8">
+
+                                      <a
+                                          href="https://www.youtube.com/watch?v=XUaA8mQ6528"
+                                          target="_blank"
+                                          data-toggle="popover"
+                                          data-original-title="Google - Be found online"
+                                      >
+                                          <iframe
+                                              class="col-md-12"
+                                              width="580"
+                                              height="350"
+                                              src="https://www.youtube.com/embed/XUaA8mQ6528"
+                                              frameborder="0"
+                                              allow="autoplay; encrypted-media"
+                                              allowfullscreen
+                                          ></iframe> <br><small>Pangea Video</small>
+                                      </a>
+                                  </div>
+                              </div>
                             </b-card>
                         </b-collapse>
-                    </div>
+                  </div>
                   <div class="row row-grid">
                       <div class="col-lg-6">
                           <card
@@ -143,15 +144,7 @@
                               <h6 class="text-primary text-uppercase">Request a Service</h6>
                               <p class="description mt-3">Onesha helps you flesh out your request using easy to use job templates that make filling forms a simple process.</p>
 
-                              <base-button
-                                  tag="a"
-                                  href="#request"
-                                  data-toggle="scroll"
-                                  type="primary"
-                                  class="mt-4"
-                              >
-                                  BEGIN REQUEST
-                              </base-button>
+                              <b-button v-b-toggle.collapse-2 variant="default" class="mt-4 colorSchemeBtn text-white">Read More</b-button>
                           </card>
                       </div>
                       <div class="col-lg-6">
@@ -169,11 +162,45 @@
                               >
                               </icon>
                               <h6 class="text-primary text-uppercase">Brief Processing</h6>
-                              <p class="description mt-3">Onesha processes your request into a job brief that we present to vetted creatives for quotation.<br><br> Select and approve the quote.</p>
-                              <br>
-                              <!-- <base-button tag="a"  href="#request" data-toggle="scroll" type="primary" class="mt-4">-->
+                              <p class="description mt-3">Onesha processes your request into a job brief that we present to vetted creatives for quotation.</p>
+                              
+                              <b-button v-b-toggle.collapse-3 variant="default" class="mt-4 colorSchemeBtn text-white">Read More</b-button>
                           </card>
                       </div>
+                      <b-collapse id="collapse-2" class="mt-2">
+                            <b-card>
+                              <div class="card-text p-4 justify-content-center text-center"
+                                  id="wara" :show.sync="this.showMore">
+                                  <h4>What we did</h4>
+                                  <p>We give you a professional looking company profile that will enable you get introductions,
+                                      meetings and close sales even faster. Our quick online service simplifies the process of looking for a place to get your company profile made.
+                                      Get high quality services from our vetted creatives with quick delivery to fit your schedule. <br><br>Simply choose a service, fill a simple job form, get your task done!
+                                      </p><br>
+                                  <p>We give you a professional looking company profile that will enable you get introductions,
+                                      meetings and close sales even faster. Our quick online service simplifies the process of looking for a place to get your company profile made.
+                                      Get high quality services from our vetted creatives with quick delivery to fit your schedule. <br><br>Simply choose a service, fill a simple job form, get your task done!
+                                      </p>
+                                  
+                              </div>
+                            </b-card>
+                        </b-collapse>
+                      <b-collapse id="collapse-3" class="mt-2">
+                            <b-card>
+                              <div class="card-text p-4 justify-content-center text-center"
+                                  id="wara" :show.sync="this.showMore">
+                                  <h4>What we did</h4>
+                                  <p>We give you a professional looking company profile that will enable you get introductions,
+                                      meetings and close sales even faster. Our quick online service simplifies the process of looking for a place to get your company profile made.
+                                      Get high quality services from our vetted creatives with quick delivery to fit your schedule. <br><br>Simply choose a service, fill a simple job form, get your task done!
+                                      </p><br>
+                                  <p>We give you a professional looking company profile that will enable you get introductions,
+                                      meetings and close sales even faster. Our quick online service simplifies the process of looking for a place to get your company profile made.
+                                      Get high quality services from our vetted creatives with quick delivery to fit your schedule. <br><br>Simply choose a service, fill a simple job form, get your task done!
+                                      </p>
+                                  
+                              </div>
+                            </b-card>
+                        </b-collapse>
                   </div>
               </div>
             </div>
