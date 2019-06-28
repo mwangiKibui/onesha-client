@@ -28,7 +28,7 @@
                                     <a
                                         href="#more"
                                         data-toggle="scroll"
-                                        class="btn btn-info btn-icon mb-3 mb-sm-0"
+                                        class="btn btn-default colorSchemeBtn btn-icon mb-3 mb-sm-0"
                                     >
                                         <span class="btn-inner--icon"><i class="fa fa-code"></i></span>
                                         <span class="btn-inner--text">Read More</span>

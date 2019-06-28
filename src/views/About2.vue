@@ -26,7 +26,7 @@
                 <div class="btn-wrapper">
                   <base-button
                     tag="a"
-                    href="#services"
+                    href="#team"
                     class="mb-3 mb-sm-0 colorSchemeBtn"
                     type="default"
                   >Learn More</base-button>
@@ -46,7 +46,7 @@
         >
       </section>
     </div>
-    <section class="section section-large mb-5">
+    <section class="section section-large mb-5" id="team">
       <div class="row row-grid justify-content-center mb-5 creativesSection">
         <div class=".col-lg-8 text-center">
           <h4 class="display-3 colorSchemeHeading">Meet the team</h4>
@@ -382,7 +382,7 @@
                 <div class="btn-wrapper">
                   <base-button
                     tag="a"
-                    href="#services"
+                    href="services"
                     class="mb-3 mb-sm-0 colorSchemeBtn"
                     type="default"
                   >VIEW OUR SERVICES</base-button>
@@ -399,7 +399,7 @@
 <script>
 export default {
   metaInfo: {
-    title: "About Onesha",
+    title: "About Us - Onesha",
     // override the parent template and just use the above title only
     titleTemplate: null
   }

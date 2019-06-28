@@ -23,12 +23,12 @@
                                 <h1 class="display-3  text-white">TERMS AND CONDITIONS</h1>
                                 <!-- <span class="text-white">Taking you digital</span> -->
 
-                                <p class="lead  text-white">At Onesha, we aim to help businesses and individuals access creative services easily through our network of skilled creatives. Here are our terms of use.</p>
+                                <p class="lead  text-white">At ONESHA, we aim to help businesses and individuals access creative services easily through our network of skilled creatives. Here are our terms of use.</p>
                                 <div class="btn-wrapper">
                                     <a
                                         href="#more"
                                         data-toggle="scroll"
-                                        class="btn btn-info btn-icon mb-3 mb-sm-0"
+                                        class="btn btn-default colorSchemeBtn btn-icon mb-3 mb-sm-0"
                                     >
                                         <span class="btn-inner--icon"><i class="fa fa-code"></i></span>
                                         <span class="btn-inner--text">Read More</span>
@@ -55,18 +55,18 @@
 
                         <p>Effective March 1, 2016</p>
                         <hr><br>
-                        <p>Briglobe Investment Group Ltd. owns “Onesha”, a platform that gives businesses access to top creative services from our wide pool of vetted creatives. Onesha is
+                        <p>Briglobe Investment Group Ltd. owns “ONESHA”, a platform that gives businesses access to top creative services from our wide pool of vetted creatives. ONESHA is
                             hosted exclusively in Kenya and is operated from the Briglobe Investment Group offices in
-                            Nairobi, KE. Onesha may be accessed directly on the web at <b><a href="http://www.onesha.co.ke">onesha.co.ke</a> </b>. <br>
-                            Onesha is a wholly-owned product of Briglobe Investment Group, and any information you provide to
-                            Onesha will be held within Briglobe Investment Group's responsibilty. Hereforth, terms of use
-                            specific to Onesha are provided below.
+                            Nairobi, KE. ONESHA may be accessed directly on the web at <b><a href="http://www.ONESHA.co.ke">ONESHA.co.ke</a> </b>. <br>
+                            ONESHA is a wholly-owned product of Briglobe Investment Group, and any information you provide to
+                            ONESHA will be held within Briglobe Investment Group's responsibilty. Hereforth, terms of use
+                            specific to ONESHA are provided below.
                         </p> <br>
                         <p>
-                            ◾By accessing or using the Onesha website, the Onesha service, or any applications
-                            (including mobile applications) made available by Onesha (together, the "Service"),
+                            ◾By accessing or using the ONESHA website, the ONESHA service, or any applications
+                            (including mobile applications) made available by ONESHA (together, the "Service"),
                             however accessed, you agree to be bound by these terms of use ("Terms of Use"). The
-                            Service is owned or controlled by Briglobe Investment Group, Ltd ("Onesha"). These Terms of Use
+                            Service is owned or controlled by Briglobe Investment Group, Ltd ("ONESHA"). These Terms of Use
                             affect your legal rights and obligations. If you do not agree to be bound by all of
                             these Terms of Use, do not access or use the Service. this Privacy Policy and our
                             Terms of Use.<br>
@@ -85,9 +85,9 @@
                             agree you will not sell, transfer, license or assign your account, followers,
                             username, or any account rights. With the exception of people or businesses that are
                             expressly authorized to create accounts on behalf of their employers or clients,
-                            Onesha prohibits the creation of and you agree that you will not create an account
+                            ONESHA prohibits the creation of and you agree that you will not create an account
                             for anyone other than yourself. You also represent that all information you provide
-                            or provided to Onesha upon registration and at all other times will be true,
+                            or provided to ONESHA upon registration and at all other times will be true,
                             accurate, current and complete and you agree to update your information as necessary
                             to maintain its truth and accuracy. <br>
                             Also you ensure your account is not named in a manner that misleads your readers
@@ -95,9 +95,9 @@
                             URL or name is not the name of a person other than yourself or company other than
                             your own; and you have, in the case of Content that includes computer code,
                             accurately categorized and/or described the type, nature, uses and effects of the
-                            materials, whether requested to do so by Onesha or otherwise. <br>
+                            materials, whether requested to do so by ONESHA or otherwise. <br>
                             4. You agree that you will not solicit, collect or use the login credentials of
-                            other Onesha users. <br>
+                            other ONESHA users. <br>
                             5. You are responsible for keeping your password secret and secure. <br>
                             6. You must not defame, stalk, bully, abuse, harass, threaten, impersonate or
                             intimidate people or entities and you must not post private or confidential
@@ -115,31 +115,31 @@
                             Service. <br>
                             9. You must not change, modify, adapt or alter the Service or change, modify or
                             alter another website so as to falsely imply that it is associated with the Service
-                            or Onesha. <br>
-                            10. You must not access Onesha's private API by means other than those permitted by
-                            Onesha. Use of Onesha's API is subject to a separate set of terms available here: **
+                            or ONESHA. <br>
+                            10. You must not access ONESHA's private API by means other than those permitted by
+                            ONESHA. Use of ONESHA's API is subject to a separate set of terms available here: **
                             <br>
                             11. You must not create or submit unwanted email, comments, likes or other forms of
-                            commercial or harassing communications (a.k.a "spam") to any Onesha users. <br>
+                            commercial or harassing communications (a.k.a "spam") to any ONESHA users. <br>
                             12. You must not use domain names or web URLs in your username without prior written
-                            consent from Onesha. <br>
+                            consent from ONESHA. <br>
                             13. You must not interfere or disrupt the Service or servers or networks connected
                             to the Service, including by transmitting any worms, viruses, spyware, malware or
                             any other code of a destructive or disruptive nature. You may not inject content or
-                            code or otherwise alter or interfere with the way any Onesha page is rendered or
+                            code or otherwise alter or interfere with the way any ONESHA page is rendered or
                             displayed in a user's browser or device. <br>
-                            14. You must comply with Onesha's Community Guidelines, available here: ** <br>
+                            14. You must comply with ONESHA's Community Guidelines, available here: ** <br>
                             15. You must not create accounts with the Service through unauthorized means,
                             including but not limited to, by using an automated device, script, bot, spider,
                             crawler or scraper. <br>
                             16. You must not attempt to restrict another user from using or enjoying the Service
                             and you must not encourage or facilitate violations of these Terms of Use or any
-                            other Onesha terms. <br>
-                            17. Violation of these Terms of Use may, in Onesha's sole discretion, result in
-                            termination of your Onesha account. You understand and agree that Onesha cannot and
+                            other ONESHA terms. <br>
+                            17. Violation of these Terms of Use may, in ONESHA's sole discretion, result in
+                            termination of your ONESHA account. You understand and agree that ONESHA cannot and
                             will not be responsible for the Content posted on the Service and you use the
                             Service at your own risk. If you violate the letter or spirit of these Terms of Use,
-                            or otherwise create risk or possible legal exposure for Onesha, we can stop
+                            or otherwise create risk or possible legal exposure for ONESHA, we can stop
                             providing all or part of the Service to you. <br>
 
                         </p> <br>
@@ -149,17 +149,17 @@
                             <b>License to Your Content. </b><br>
                             Even though we don’t claim ownership of your content, we do need certain licenses to
                             your content in order to operate and enable the Services. When you upload or submit
-                            content to our Services, you grant Onesha (and our parents and affiliates) a
+                            content to our Services, you grant ONESHA (and our parents and affiliates) a
                             worldwide license to communicate, distribute, host, make modifications or derivative
                             works (solely for the purpose of better showcase your work), publicly display,
                             publicly perform, publish, reproduce, store, and use such content. The license
                             granted by you is for the only purpose of operating, marketing, promoting, and
                             improving our Services. We will attribute to you if we incorporate your content into
-                            a Onesha feature or into promotional or marketing materials.<br><br>
+                            a ONESHA feature or into promotional or marketing materials.<br><br>
                             <b>Accessing and Sharing Your Content. </b><br>
-                            By submitting your content to our Services, you also give other Onesha users the
+                            By submitting your content to our Services, you also give other ONESHA users the
                             right to share your content via various social medial platforms integrated with
-                            Onesha. We may offer you ways to access and remove your content. Our Service may
+                            ONESHA. We may offer you ways to access and remove your content. Our Service may
                             also provide ways for you to limit the scope of use and access and other user’s
                             access and use of your content (such as allowing you to make your content available
                             under Creative Commons licenses). You are responsible for determining the
@@ -168,33 +168,33 @@
                             content. It’s your responsibility to let other users know how your content may be
                             shared and adjust the setting related to accessing and sharing your content
                             accordingly.
-                            Onesha reserves the right to remove any screenshot (or content created on Onesha,
+                            ONESHA reserves the right to remove any screenshot (or content created on ONESHA,
                             e.g. comments, messages, avatars, etc.) for any reason whatsoever. Please read the
                             terms for rules and guidelines on what types of content are deemed inappropriate at
-                            Onesha.
+                            ONESHA.
                             <br><br>
-                            Onesha reserves the right to ban any member or website from using the service for
+                            ONESHA reserves the right to ban any member or website from using the service for
                             any reason.
                             <br><br>
-                            By uploading your screenshots to Onesha you give Onesha permission to use or
-                            distribute your screenshots on Onesha.co.ke or affiliated sites.
+                            By uploading your screenshots to ONESHA you give ONESHA permission to use or
+                            distribute your screenshots on ONESHA.co.ke or affiliated sites.
                             All screenshots uploaded are copyright © their respective owners.
                             <br><br>
-                            If you delete Content, Onesha will use reasonable efforts to remove it from the
+                            If you delete Content, ONESHA will use reasonable efforts to remove it from the
                             Website, but you acknowledge that caching or references to the Content may not be
                             made immediately unavailable.
                             <br><br>
-                            Without limiting any of those representations or warranties, Onesha has the right
-                            (though not the obligation) to, in Onesha’s sole discretion (i) refuse or remove any
-                            content that, in Onesha’s reasonable opinion, violates any Onesha policy or is in
+                            Without limiting any of those representations or warranties, ONESHA has the right
+                            (though not the obligation) to, in ONESHA’s sole discretion (i) refuse or remove any
+                            content that, in ONESHA’s reasonable opinion, violates any ONESHA policy or is in
                             any way harmful or objectionable, or (ii) terminate or deny access to and use of the
-                            Website to any individual or entity for any reason, in Onesha’s sole discretion.
-                            Onesha will have no obligation to provide a refund of any amounts previously paid.
+                            Website to any individual or entity for any reason, in ONESHA’s sole discretion.
+                            ONESHA will have no obligation to provide a refund of any amounts previously paid.
                             <br><br>
                             <b>Responsibility of Website Visitors.</b><br>
-                            Onesha has not reviewed, and cannot review, all of the material posted to the
+                            ONESHA has not reviewed, and cannot review, all of the material posted to the
                             Website, and cannot therefore be responsible for that materials content, use or
-                            effects. By operating the Website, Onesha does not represent or imply that it
+                            effects. By operating the Website, ONESHA does not represent or imply that it
                             endorses the material there posted, or that it believes such material to be
                             accurate, useful or non-harmful. You are responsible for taking precautions as
                             necessary to protect yourself and your computer systems from viruses, worms, Trojan
@@ -204,10 +204,10 @@
                             Website may also contain material that violates the privacy or publicity rights, or
                             infringes the intellectual property and other proprietary rights, of third parties,
                             or the downloading, copying or use of which is subject to additional terms and
-                            conditions, stated or unstated. Onesha disclaims any responsibility for any harm
+                            conditions, stated or unstated. ONESHA disclaims any responsibility for any harm
                             resulting from the use by visitors of the Website, or from any downloading by those
                             visitors of content there posted.<br>
-                            For any European &amp; US users, Onesha shall apply GDPR data regulations to be in line with EU policies of user data protection.
+                            For any European &amp; US users, ONESHA shall apply GDPR data regulations to be in line with EU policies of user data protection.
                         </p> <br>
                         <h5>4. OUR SERVICES</h5>
                         <p>
@@ -220,14 +220,14 @@
                             <b>International Users: </b> Pages describing the Services are accessible from
                             around the world but this does not mean all Services or service features are
                             available in your country, or that user-generated content available via the Services
-                            is legal in your country. Onesha may block access to certain Services (or certain
+                            is legal in your country. ONESHA may block access to certain Services (or certain
                             service features or content) in certain countries. It is your responsibility to make
                             sure your use of the Services is legal in the country where you live. Services are
                             not available in all languages.
                             <br>
-                            Certain Services and Onesha Materials may be available only if you have paid a fee
-                            or have provided certain account information. As used in these Terms, “Onesha
-                            Materials” means any materials or software provided by Onesha under these Terms,
+                            Certain Services and ONESHA Materials may be available only if you have paid a fee
+                            or have provided certain account information. As used in these Terms, “ONESHA
+                            Materials” means any materials or software provided by ONESHA under these Terms,
                             which may include materials that you or other users share through the Services.
                             <br><br>
                             You agree that you are responsible for all data charges you incur through use of the
@@ -237,8 +237,8 @@
                             loss, corruption, or damage to your content, (b) the deletion or accuracy of your
                             content, or (c) the security, privacy, or communications related to your content.
                             <br><br>
-                            We may create limits on the use of Services or Onesha Materials, including
-                            limitation on file size and storage space. Onesha may require you to delete your
+                            We may create limits on the use of Services or ONESHA Materials, including
+                            limitation on file size and storage space. ONESHA may require you to delete your
                             content until you are within certain storage space limits.
                             <br><br>
                             For use of the Job Listing Service, don’t post any listings that point to specific
@@ -253,15 +253,15 @@
                         <h5>5. VISUAL CV SECTION</h5>
                         <p>
                             <b>VISUAL CV </b>is an application that allows users to create and publish personal
-                            portfolio sites, leveraging their portfolio of projects published on Onesha. The
-                            VISUAL CV service works in tandem with Onesha and a series of other services to help
+                            portfolio sites, leveraging their portfolio of projects published on ONESHA. The
+                            VISUAL CV service works in tandem with ONESHA and a series of other services to help
                             users create, publish, and host their personal portfolio sites on their own URL or
                             another URL provided by the VISUAL CV Service.
                             <br><br>
                             <b>Cancellation.</b><br> You must cancel your membership before it renews in order
-                            to avoid billing of the subscription fees for the next subscription period. Onesha
+                            to avoid billing of the subscription fees for the next subscription period. ONESHA
                             does not accept cancellation requests via phone, email, or any method other than
-                            logging into your Onesha account to cancel your service. Upon cancellation, all of
+                            logging into your ONESHA account to cancel your service. Upon cancellation, all of
                             your content will be deleted from the primary servers that provide the Service. Your
                             content cannot be recovered once your account is cancelled. <br><br>
 
@@ -272,7 +272,7 @@
                             downgrade. <br><br>
 
                             If your bandwidth usage exceeds either 1 GB/month, or the average bandwidth usage
-                            (as determined solely by Onesha), we reserve the right to immediately disable your
+                            (as determined solely by ONESHA), we reserve the right to immediately disable your
                             account or throttle your file hosting until you can reduce your bandwidth
                             consumption. <br><br>
 
@@ -311,7 +311,7 @@
                         <p>
                             <b>Notification of Copyright Infringement.</b><br>
                             We respect the intellectual property rights of others and we expect our users to do
-                            the same. Onesha will respond to clear notices of copyright infringement consistent
+                            the same. ONESHA will respond to clear notices of copyright infringement consistent
                             with the U.S. Digital Millennium Copyright Act (“DMCA”).
                             <br><br>
                             <b>Notifying Us of Copyright Infringement: </b> <br>
@@ -345,7 +345,7 @@
                             found at the U.S. Copyright website (www.copyright.gov) or at the Chilling Effects
                             website (www.chillingeffects.org).
                             <br><br>
-                            If you believe access to your content was disabled or removed by Onesha as a result
+                            If you believe access to your content was disabled or removed by ONESHA as a result
                             of an improper copyright infringement notice, please send our Copyright Agent
                             (contact information below) a written counter-notice that contains all of the
                             following:
@@ -371,13 +371,13 @@
                             materials such as those found at the U.S. Copyright website (www.copyright.gov) or
                             at the Chilling Effects website (www.chillingeffects.org).
                             <br><br>
-                            The mailing address for the Onesha Copyright Agent is:
+                            The mailing address for the ONESHA Copyright Agent is:
                             <br>
                             Copyright Agent <br>
-                            Onesha, Briglobe Investment Group Ltd. <br>
-                            Valley View Office Park, 4th Floor. <br>
-                            Parklands, Nairobi <br>
-                            Via email: <b>hello@briglobe.com </b>
+                            ONESHA, Briglobe Investment Group Ltd. <br>
+                            Onesha Plaza, Seasons Road. <br>
+                            21933-00100, Nairobi <br>
+                            Via email: <b>hello@onesha.co.ke </b>
 
                         </p> <br>
                         <h5>7. CHANGES</h5>
@@ -397,26 +397,26 @@
                         </p> <br>
                         <h5> Disclaimer of Warranties</h5>
                         <p>
-                            THE SERVICE, INCLUDING, WITHOUT LIMITATION, Onesha CONTENT, IS PROVIDED ON AN "AS
+                            THE SERVICE, INCLUDING, WITHOUT LIMITATION, ONESHA CONTENT, IS PROVIDED ON AN "AS
                             IS", "AS AVAILABLE" AND "WITH ALL FAULTS" BASIS. TO THE FULLEST EXTENT PERMISSIBLE
-                            BY LAW, NEITHER Onesha NOR ITS PARENT COMPANY NOR ANY OF THEIR EMPLOYEES, MANAGERS,
-                            OFFICERS OR AGENTS (COLLECTIVELY, THE "Onesha PARTIES") MAKE ANY REPRESENTATIONS OR
+                            BY LAW, NEITHER ONESHA NOR ITS PARENT COMPANY NOR ANY OF THEIR EMPLOYEES, MANAGERS,
+                            OFFICERS OR AGENTS (COLLECTIVELY, THE "ONESHA PARTIES") MAKE ANY REPRESENTATIONS OR
                             WARRANTIES OR ENDORSEMENTS OF ANY KIND WHATSOEVER, EXPRESS OR IMPLIED, AS TO: (A)
-                            THE SERVICE; (B) THE Onesha CONTENT; (C) USER CONTENT; OR (D) SECURITY ASSOCIATED
-                            WITH THE TRANSMISSION OF INFORMATION TO Onesha OR VIA THE SERVICE. IN ADDITION, THE
-                            Onesha PARTIES HEREBY DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING, BUT
+                            THE SERVICE; (B) THE ONESHA CONTENT; (C) USER CONTENT; OR (D) SECURITY ASSOCIATED
+                            WITH THE TRANSMISSION OF INFORMATION TO ONESHA OR VIA THE SERVICE. IN ADDITION, THE
+                            ONESHA PARTIES HEREBY DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING, BUT
                             NOT LIMITED TO, THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
                             NON-INFRINGEMENT, TITLE, CUSTOM, TRADE, QUIET ENJOYMENT, SYSTEM INTEGRATION AND
                             FREEDOM FROM COMPUTER VIRUS.
                             <br><br>
-                            THE Onesha PARTIES DO NOT REPRESENT OR WARRANT THAT THE SERVICE WILL BE ERROR-FREE
+                            THE ONESHA PARTIES DO NOT REPRESENT OR WARRANT THAT THE SERVICE WILL BE ERROR-FREE
                             OR UNINTERRUPTED; THAT DEFECTS WILL BE CORRECTED; OR THAT THE SERVICE OR THE SERVER
                             THAT MAKES THE SERVICE AVAILABLE IS FREE FROM ANY HARMFUL COMPONENTS, INCLUDING,
-                            WITHOUT LIMITATION, VIRUSES. THE Onesha PARTIES DO NOT MAKE ANY REPRESENTATIONS OR
+                            WITHOUT LIMITATION, VIRUSES. THE ONESHA PARTIES DO NOT MAKE ANY REPRESENTATIONS OR
                             WARRANTIES THAT THE INFORMATION (INCLUDING ANY INSTRUCTIONS) ON THE SERVICE IS
                             ACCURATE, COMPLETE, OR USEFUL. YOU ACKNOWLEDGE THAT YOUR USE OF THE SERVICE IS AT
-                            YOUR SOLE RISK. THE Onesha PARTIES DO NOT WARRANT THAT YOUR USE OF THE SERVICE IS
-                            LAWFUL IN ANY PARTICULAR JURISDICTION, AND THE Onesha PARTIES SPECIFICALLY DISCLAIM
+                            YOUR SOLE RISK. THE ONESHA PARTIES DO NOT WARRANT THAT YOUR USE OF THE SERVICE IS
+                            LAWFUL IN ANY PARTICULAR JURISDICTION, AND THE ONESHA PARTIES SPECIFICALLY DISCLAIM
                             SUCH WARRANTIES. SOME JURISDICTIONS LIMIT OR DO NOT ALLOW THE DISCLAIMER OF IMPLIED
                             OR OTHER WARRANTIES SO THE ABOVE DISCLAIMER MAY NOT APPLY TO YOU TO THE EXTENT SUCH
                             JURISDICTION'S LAW IS APPLICABLE TO YOU AND THESE TERMS OF USE.
@@ -424,7 +424,7 @@
                             BY ACCESSING OR USING THE SERVICE YOU REPRESENT AND WARRANT THAT YOUR ACTIVITIES ARE
                             LAWFUL IN EVERY JURISDICTION WHERE YOU ACCESS OR USE THE SERVICE.
                             <br><br>
-                            THE Onesha PARTIES DO NOT ENDORSE CONTENT AND SPECIFICALLY DISCLAIM ANY
+                            THE ONESHA PARTIES DO NOT ENDORSE CONTENT AND SPECIFICALLY DISCLAIM ANY
                             RESPONSIBILITY OR LIABILITY TO ANY PERSON OR ENTITY FOR ANY LOSS, DAMAGE (WHETHER
                             ACTUAL, CONSEQUENTIAL, PUNITIVE OR OTHERWISE), INJURY, CLAIM, LIABILITY OR OTHER
                             CAUSE OF ANY KIND OR CHARACTER BASED UPON OR RESULTING FROM ANY CONTENT.
@@ -432,12 +432,12 @@
                         </p> <br>
                         <h5> Limitation of Liability; Waiver</h5>
                         <p>
-                            UNDER NO CIRCUMSTANCES WILL THE Onesha PARTIES BE LIABLE TO YOU FOR ANY LOSS OR
+                            UNDER NO CIRCUMSTANCES WILL THE ONESHA PARTIES BE LIABLE TO YOU FOR ANY LOSS OR
                             DAMAGES OF ANY KIND (INCLUDING, WITHOUT LIMITATION, FOR ANY DIRECT, INDIRECT,
                             ECONOMIC, EXEMPLARY, SPECIAL, PUNITIVE, INCIDENTAL OR CONSEQUENTIAL LOSSES OR
-                            DAMAGES) THAT ARE DIRECTLY OR INDIRECTLY RELATED TO: (A) THE SERVICE; (B) THE Onesha
+                            DAMAGES) THAT ARE DIRECTLY OR INDIRECTLY RELATED TO: (A) THE SERVICE; (B) THE ONESHA
                             CONTENT; (C) USER CONTENT; (D) YOUR USE OF, INABILITY TO USE, OR THE PERFORMANCE OF
-                            THE SERVICE; (E) ANY ACTION TAKEN IN CONNECTION WITH AN INVESTIGATION BY THE Onesha
+                            THE SERVICE; (E) ANY ACTION TAKEN IN CONNECTION WITH AN INVESTIGATION BY THE ONESHA
                             PARTIES OR LAW ENFORCEMENT AUTHORITIES REGARDING YOUR OR ANY OTHER PARTY'S USE OF
                             THE SERVICE; (F) ANY ACTION TAKEN IN CONNECTION WITH COPYRIGHT OR OTHER INTELLECTUAL
                             PROPERTY OWNERS; (G) ANY ERRORS OR OMISSIONS IN THE SERVICE'S OPERATION; OR (H) ANY
@@ -447,26 +447,26 @@
                             TRANSMISSION, COMPUTER LINE OR NETWORK FAILURE OR ANY OTHER TECHNICAL OR OTHER
                             MALFUNCTION, INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOST PROFITS, LOSS OF
                             GOODWILL, LOSS OF DATA, WORK STOPPAGE, ACCURACY OF RESULTS, OR COMPUTER FAILURE OR
-                            MALFUNCTION, EVEN IF FORESEEABLE OR EVEN IF THE Onesha PARTIES HAVE BEEN ADVISED OF
+                            MALFUNCTION, EVEN IF FORESEEABLE OR EVEN IF THE ONESHA PARTIES HAVE BEEN ADVISED OF
                             OR SHOULD HAVE KNOWN OF THE POSSIBILITY OF SUCH DAMAGES, WHETHER IN AN ACTION OF
                             CONTRACT, NEGLIGENCE, STRICT LIABILITY OR TORT (INCLUDING, WITHOUT LIMITATION,
                             WHETHER CAUSED IN WHOLE OR IN PART BY NEGLIGENCE, ACTS OF GOD, TELECOMMUNICATIONS
-                            FAILURE, OR THEFT OR DESTRUCTION OF THE SERVICE). IN NO EVENT WILL THE Onesha
+                            FAILURE, OR THEFT OR DESTRUCTION OF THE SERVICE). IN NO EVENT WILL THE ONESHA
                             PARTIES BE LIABLE TO YOU OR ANYONE ELSE FOR LOSS, DAMAGE OR INJURY, INCLUDING,
                             WITHOUT LIMITATION, DEATH OR PERSONAL INJURY. SOME STATES DO NOT ALLOW THE EXCLUSION
                             OR LIMITATION OF INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THE ABOVE LIMITATION OR
-                            EXCLUSION MAY NOT APPLY TO YOU. IN NO EVENT WILL THE Onesha PARTIES TOTAL LIABILITY
+                            EXCLUSION MAY NOT APPLY TO YOU. IN NO EVENT WILL THE ONESHA PARTIES TOTAL LIABILITY
                             TO YOU FOR ALL DAMAGES, LOSSES OR CAUSES OR ACTION EXCEED ONE HUNDRED UNITED STATES
                             DOLLARS ($100.00).
                             <br><br>
                             YOU AGREE THAT IN THE EVENT YOU INCUR ANY DAMAGES, LOSSES OR INJURIES THAT ARISE OUT
-                            OF Onesha'S ACTS OR OMISSIONS, THE DAMAGES, IF ANY, CAUSED TO YOU ARE NOT
+                            OF ONESHA'S ACTS OR OMISSIONS, THE DAMAGES, IF ANY, CAUSED TO YOU ARE NOT
                             IRREPARABLE OR SUFFICIENT TO ENTITLE YOU TO AN INJUNCTION PREVENTING ANY
                             EXPLOITATION OF ANY WEB SITE, SERVICE, PROPERTY, PRODUCT OR OTHER CONTENT OWNED OR
-                            CONTROLLED BY THE Onesha PARTIES, AND YOU WILL HAVE NO RIGHTS TO ENJOIN OR RESTRAIN
+                            CONTROLLED BY THE ONESHA PARTIES, AND YOU WILL HAVE NO RIGHTS TO ENJOIN OR RESTRAIN
                             THE DEVELOPMENT, PRODUCTION, DISTRIBUTION, ADVERTISING, EXHIBITION OR EXPLOITATION
                             OF ANY WEB SITE, PROPERTY, PRODUCT, SERVICE, OR OTHER CONTENT OWNED OR CONTROLLED BY
-                            THE Onesha PARTIES.
+                            THE ONESHA PARTIES.
                             <br><br>
                             BY ACCESSING THE SERVICE, YOU UNDERSTAND THAT YOU MAY BE WAIVING RIGHTS WITH RESPECT
                             TO CLAIMS THAT ARE AT THIS TIME UNKNOWN OR UNSUSPECTED, AND IN ACCORDANCE WITH SUCH
@@ -477,7 +477,7 @@
                             FAVOR AT THE TIME OF EXECUTING THE RELEASE, WHICH IF KNOWN BY HIM MUST HAVE
                             MATERIALLY AFFECTED HIS SETTLEMENT WITH THE DEBTOR."
                             <br><br>
-                            Onesha IS NOT RESPONSIBLE FOR THE ACTIONS, CONTENT, INFORMATION, OR DATA OF THIRD
+                            ONESHA IS NOT RESPONSIBLE FOR THE ACTIONS, CONTENT, INFORMATION, OR DATA OF THIRD
                             PARTIES, AND YOU RELEASE US, OUR DIRECTORS, OFFICERS, EMPLOYEES, AND AGENTS FROM ANY
                             CLAIMS AND DAMAGES, KNOWN AND UNKNOWN, ARISING OUT OF OR IN ANY WAY CONNECTED WITH
                             ANY CLAIM YOU HAVE AGAINST ANY SUCH THIRD PARTIES.
@@ -490,7 +490,6 @@
 
             </div>
         </section>
-        <hr>
     </main>
 </template>
 <script>
@@ -503,7 +502,7 @@ export default {
         BCarouselSlide
     },
     metaInfo: {
-        title: "Onesha - Terms and Conditions",
+        title: "ONESHA - Terms and Conditions",
         // override the parent template and just use the above title only
         titleTemplate: null
     }

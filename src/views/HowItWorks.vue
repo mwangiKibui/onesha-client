@@ -18,8 +18,8 @@
               <div class="my-0 py-1 d-sm-nones"></div>
               <div class="mt--300 d-lg-nones"></div>
               <div class="row">
-                <div class="col-lg-9">
-                  <h1 class="display-1 text-white colorSchemeHeading">
+                <div class="">
+                  <h1 class="display-2 text-white colorSchemeHeading">
                     Its simple!
                     <!-- <span style="font-size: 0.5em">Your creative tasks sorted</span> -->
                   </h1>
@@ -50,7 +50,7 @@
         <div class="container row row-grid align-items-center">
           <div class="col-lg-7">
             <div class="img-bg-holder text-center bg-warning">
-              <img src="@/assets/img/girl.png" alt="customerImage" class="customerImage">
+              <img src="@/assets/img/girl.png" alt="customerImage" class=" img-fluid">
             </div>
           </div>
           <div class="col-lg-5">
@@ -72,56 +72,7 @@
       <div>
         <div class="row justify-content-center text-center" id="process">
           <div class="mb-lg-3 col-md-12">
-            <div class="row row-grid">
-              <div class="col-lg-3 process-card">
-                <card class="border-0" hover shadow body-classes="py-5">
-                  <icon name="ni ni-check-bold" rounded class="mb-4 text-white bg-primary"></icon>
-                  <h6 class="text-primary text-uppercase">Request a Service</h6>
-                  <p
-                    class="description mt-3"
-                  >Onesha helps you flesh out your request using easy to use job templates that make filling forms a simple process.</p>
-                </card>
-              </div>
-              <div class="col-lg-3 process-card">
-                <card class="border-0" hover shadow body-classes="py-5">
-                  <icon name="ni ni-check-bold" rounded class="mb-4 text-white bg-primary"></icon>
-                  <h6 class="text-primary text-uppercase">Brief Processing</h6>
-                  <p
-                    class="description mt-3"
-                  >Onesha helps you flesh out your request using easy to use job templates that make filling forms a simple process.</p>
-                  <br>
-                  <!-- <base-button tag="a"  href="#request" data-toggle="scroll" type="primary" class="mt-4">-->
-                </card>
-              </div>
-              <div class="col-lg-3 process-card">
-                <card class="border-0" hover shadow body-classes="py-5">
-                  <icon name="ni ni-check-bold" rounded class="mb-4 text-white bg-primary"></icon>
-                  <h6 class="text-primary text-uppercase">Job execution</h6>
-                  <p
-                    class="description mt-3"
-                  >Onesha helps you flesh out your request using easy to use job templates that make filling forms a simple process.</p>
-                  <br>
-                  <!-- <base-button tag="a"  href="#request" data-toggle="scroll" type="primary" class="mt-4">-->
-                </card>
-              </div>
-              <div class="col-lg-3 process-card">
-                <card class="border-0" hover shadow body-classes="py-5">
-                  <icon name="ni ni-check-bold" rounded class="mb-4 text-white bg-primary"></icon>
-                  <h6 class="text-primary text-uppercase">Job delivery</h6>
-                  <p
-                    class="description mt-3"
-                  >Onesha helps you flesh out your request using easy to use job templates that make filling forms a simple process.</p>
-
-                  <base-button
-                    tag="a"
-                    href="#request"
-                    data-toggle="scroll"
-                    type="primary"
-                    class="mt-4"
-                  >BEGIN REQUEST</base-button>
-                </card>
-              </div>
-            </div>
+            
           </div>
         </div>
       </div>
@@ -136,10 +87,11 @@
             >Your journey starts here. Revamp your existing company profile, or get a new one.</p>
           </div>
         </div>
-
+      </div>
+      <div class="p-5 mb-lg-3 col-md-12">
         <div class="row row-grid">
-          <div class="col-lg-4 process-card">
-            <card class="border-0 text-center" shadow body-classes="py-5">
+          <div class="col-lg-3 process-card">
+            <card class="border-0" hover shadow body-classes="py-5">
               <icon name="ni ni-check-bold" rounded class="mb-4 text-white bg-primary"></icon>
               <h6 class="text-primary text-uppercase">Request a Service</h6>
               <p
@@ -147,24 +99,43 @@
               >Onesha helps you flesh out your request using easy to use job templates that make filling forms a simple process.</p>
             </card>
           </div>
-
-          <div class="col-lg-4 process-card">
-            <card class="border-0 text-center" shadow body-classes="py-5">
+          <div class="col-lg-3 process-card">
+            <card class="border-0" hover shadow body-classes="py-5">
               <icon name="ni ni-check-bold" rounded class="mb-4 text-white bg-primary"></icon>
-              <h6 class="text-primary text-uppercase">Request a Service</h6>
+              <h6 class="text-primary text-uppercase">Brief Processing</h6>
               <p
                 class="description mt-3"
               >Onesha helps you flesh out your request using easy to use job templates that make filling forms a simple process.</p>
+              <br>
+              <!-- <base-button tag="a"  href="#request" data-toggle="scroll" type="primary" class="mt-4">-->
             </card>
           </div>
-
-          <div class="col-lg-4 process-card">
-            <card class="border-0 text-center" shadow body-classes="py-5">
+          <div class="col-lg-3 process-card">
+            <card class="border-0" hover shadow body-classes="py-5">
               <icon name="ni ni-check-bold" rounded class="mb-4 text-white bg-primary"></icon>
-              <h6 class="text-primary text-uppercase">Request a Service</h6>
+              <h6 class="text-primary text-uppercase">Job execution</h6>
               <p
                 class="description mt-3"
               >Onesha helps you flesh out your request using easy to use job templates that make filling forms a simple process.</p>
+              <br>
+              <!-- <base-button tag="a"  href="#request" data-toggle="scroll" type="primary" class="mt-4">-->
+            </card>
+          </div>
+          <div class="col-lg-3 process-card">
+            <card class="border-0" hover shadow body-classes="py-5">
+              <icon name="ni ni-check-bold" rounded class="mb-4 text-white bg-primary"></icon>
+              <h6 class="text-primary text-uppercase">Job delivery</h6>
+              <p
+                class="description mt-3"
+              >Onesha helps you flesh out your request using easy to use job templates that make filling forms a simple process.</p>
+
+              <base-button
+                tag="a"
+                href="#request"
+                data-toggle="scroll"
+                type="primary"
+                class="mt-4"
+              >BEGIN REQUEST</base-button>
             </card>
           </div>
         </div>
@@ -182,11 +153,11 @@
               <br>
               <a
                 @click="showEnquirySec('quote')"
-                class="btn text-white colorSchemeBtn"
+                class="btn text-white colorSchemeBtn m-2"
               >Request A Quote</a>
               <a
                 @click="showEnquirySec('enquire')"
-                class="btn text-white colorSchemeBtn"
+                class="btn text-white colorSchemeBtn m-2"
               >Make an Enquiry</a>
             </div>
             <div v-if="this.showEnquiry">
@@ -201,41 +172,75 @@
 
 <script>
 import RequestSample from "@/views/components/Partials/SampleRequest.vue";
+import EnquiryForm from "@/views/components/Partials/EnquiryForm.vue";
+import EnquirySuccess from "@/views/components/Partials/EnquirySuccess.vue";
+import EnquiryFailed from "@/views/components/Partials/EnquiryFailed.vue";
+import EnquirySection from "@/views/components/Partials/EnquirySection.vue";
 import Categories from "./components/Landing/AllCategories";
 import Modal from "@/components/Common/Modal.vue";
+import Axios from "axios";
 export default {
   metaInfo: {
-    title: "Learn More - Onesha",
+    title: "How It Works - Onesha",
     // override the parent template and just use the above title only
     titleTemplate: null
   },
   components: {
     Categories,
     Modal,
-    RequestSample
+    EnquiryForm,
+    EnquirySuccess,
+    EnquiryFailed,
+    EnquirySection
   },
   data() {
     return {
       selectedAnimationIn: "",
       selectedAnimationOut: "",
-      showModal: false,
-      component: "request-sample"
+      showMore: false,
+      showEnquiry: false,
+      component: "request-sample",
+      component2: "enquiry-form",
+      component3: "enquiry-section"
     };
   },
   methods: {
-    showSampleModal() {
-      this.showModal = true;
+    hideEnquirySec() {
+      this.$el.querySelector(".enq").innerHTML = "";
     },
-    childComponentResponse(response) {
+    showEnquirySec(val) {
+      this.showEnquiry = false;
+      console.log(val);
+      this.hideEnquirySec();
+      this.showEnquiry = true;
+      this.enquiry = val;
+    },
+    showMoreSec(val) {
+      this.showMore = !this.showMore;
+      this.$el.querySelector("#"+val).hidden = this.showMore;
+    },
+    enquiryResponse(response) {
+      console.log(response);
       if (response == "success") {
-        this.component = "request-success";
+        this.component2 = "enquiry-success";
       }
       if (response == "failed") {
-        this.component = "request-failed";
+        this.component2 = "enquiry-failed";
+        this.component2 = "enquiry-section";
+        this.showEnquiry = true;
       }
       if (response == "closemodal") {
-        this.showModal = false;
-        this.component = "request-sample";
+        this.showEnquiry = false;
+        this.component2 = "enquiry-section";
+        this.showEnquiry = true;
+      } else if (
+        response !== "success" &&
+        response !== "failed" &&
+        response !== "closemodal"
+      ) {
+        this.showEnquiry = false;
+        this.component2 = "enquiry-section";
+        this.showEnquiry = true;
       }
     }
   }

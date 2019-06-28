@@ -27,41 +27,7 @@
         <router-link to="/services" class="nav-link" replace>
             <i class="ni ni-bullet-list-67"></i>
             <span class="nav-link-inner--text">SERVICES</span>
-          </router-link>
-        <!-- <base-dropdown tag="li" class="nav-item">
-          <a slot="title" href="#" class="nav-link" data-toggle="dropdown" role="button">
-            <i class="ni ni-bullet-list-67"></i>
-            <span class="nav-link-inner--text">SERVICES</span>
-          </a>
-          <router-link
-            to="/job/new-design-only"
-            class="dropdown-item"
-            style="cursor:pointer"
-          >New Design Only</router-link>
-          <router-link
-            to="/job/new-design-&-structure"
-            class="dropdown-item"
-            style="cursor:pointer"
-          >New Content plus structure</router-link>
-          <router-link
-            to="/job/content-research-only"
-            class="dropdown-item"
-            tag="a"
-            style="cursor:pointer"
-          >Content research only</router-link>
-          <router-link
-            to="/job/new-creative-service"
-            class="dropdown-item"
-            tag="a"
-            style="cursor:pointer"
-          >Other Creative Services</router-link>
-          </base-dropdown>
-        <li class="nav-item">
-                <router-link to="/projects" class="nav-link" replace>
-                    <i class="ni ni-collection d-lg-none"></i>
-                    <span class="nav-link-inner--text">OUR PORTFOLIO</span>
-                </router-link>
-        </li>-->
+        </router-link>
         <li class="nav-item">
           <a href="/about" class="nav-link" replace>
             <i class="ni ni-single-02"></i>

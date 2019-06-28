@@ -407,7 +407,7 @@ export default {
         EnquirySection
     },
     metaInfo: {
-        title: "Onesha - Home",
+        title: "Onesha - Outsource your design work",
         // override the parent template and just use the above title only
         titleTemplate: null
     },

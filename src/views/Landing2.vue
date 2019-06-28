@@ -37,7 +37,7 @@
       </section>
       <!-- 1st Hero Variation -->
       <section class="section-shaped personImg">
-        <img src="../assets/img/clients/girl-1.png" class="img-fluid text-right" style="filter: brightness(90%);-webkit-filter: grayscale(40%);" alt>
+        <img src="../assets/img/clients/girl-1.png" class="img-fluid text-right" style="filter: brightness(90%);-webkit-filter: grayscale(10%);" alt>
         <p style="margin-top: -110px; margin-left: -80px">
             <strong class="lead">Sally Ngugi</strong> <br> <small><i>Law Society of Kenya</i> <br>Happy Client </small>
         </p>
@@ -69,7 +69,7 @@
                   data-toggle="tooltip"
                   data-original-title="[Coming Soon] Sketch - Digital design toolkit"
                 >
-                  <img src="../assets/img/companies/company2.png" class="img-fluid opacity-5">
+                  <img src="../assets/img/companies/company2.png" class="img-fluid">
                 </a>
               </div>
               <div class="col-lg-1 col-2 mb-3">
@@ -78,7 +78,7 @@
                   data-toggle="tooltip"
                   data-original-title="[Coming Soon] Adobe Photoshop - Software for digital images manipulation"
                 >
-                  <img src="../assets/img/companies/company3.png" class="img-fluid opacity-5">
+                  <img src="../assets/img/companies/company3.png" class="img-fluid ">
                 </a>
               </div>
               <div class="col-lg-1 col-2 mb-3">
@@ -98,7 +98,7 @@
                   data-toggle="tooltip"
                   data-original-title="[Coming Soon] Angular - One framework. Mobile &amp; desktop"
                 >
-                  <img src="../assets/img/companies/company5.png" class="img-fluid opacity-5">
+                  <img src="../assets/img/companies/company5.png" class="img-fluid ">
                 </a>
               </div>
               <div class="col-lg-1 col-2 mb-3">
@@ -108,7 +108,7 @@
                   data-toggle="tooltip"
                   data-original-title="[Coming Soon] React - A JavaScript library for building user interfaces"
                 >
-                  <img src="../assets/img/companies/company1.png" class="img-fluid opacity-5">
+                  <img src="../assets/img/companies/company1.png" class="img-fluid ">
                 </a>
               </div>
               <div class="col-lg-1 col-2 mb-3">
@@ -118,7 +118,7 @@
                   data-toggle="tooltip"
                   data-original-title="[Coming Soon] React - A JavaScript library for building user interfaces"
                 >
-                  <img src="../assets/img/companies/company6.png" class="img-fluid opacity-5">
+                  <img src="../assets/img/companies/company6.png" class="img-fluid ">
                 </a>
               </div>
               <div class="col-lg-1 col-2 mb-3">
@@ -128,7 +128,7 @@
                   data-toggle="tooltip"
                   data-original-title="[Coming Soon] React - A JavaScript library for building user interfaces"
                 >
-                  <img src="../assets/img/companies/company7.png" class="img-fluid opacity-5">
+                  <img src="../assets/img/companies/company7.png" class="img-fluid ">
                 </a>
               </div>
               <div class="col-lg-1 col-2 mb-3">
@@ -138,7 +138,7 @@
                   data-toggle="tooltip"
                   data-original-title="[Coming Soon] React - A JavaScript library for building user interfaces"
                 >
-                  <img src="../assets/img/companies/company8.png" class="img-fluid opacity-5">
+                  <img src="../assets/img/companies/company8.png" class="img-fluid ">
                 </a>
               </div>
               <div class="col-lg-1 col-2 mb-3">
@@ -148,7 +148,7 @@
                   data-toggle="tooltip"
                   data-original-title="[Coming Soon] React - A JavaScript library for building user interfaces"
                 >
-                  <img src="../assets/img/companies/company9.png" class="img-fluid opacity-5">
+                  <img src="../assets/img/companies/company9.png" class="img-fluid ">
                 </a>
               </div>
               <div class="col-lg-1 col-2 mb-3">
@@ -158,7 +158,7 @@
                   data-toggle="tooltip"
                   data-original-title="[Coming Soon] React - A JavaScript library for building user interfaces"
                 >
-                  <img src="../assets/img/companies/company10.png" class="img-fluid opacity-5">
+                  <img src="../assets/img/companies/company10.png" class="img-fluid ">
                 </a>
               </div>
               <div class="col-lg-1 col-2 mb-3">
@@ -168,7 +168,7 @@
                   data-toggle="tooltip"
                   data-original-title="[Coming Soon] React - A JavaScript library for building user interfaces"
                 >
-                  <img src="../assets/img/companies/company6.png" class="img-fluid opacity-5">
+                  <img src="../assets/img/companies/company6.png" class="img-fluid ">
                 </a>
               </div>
             </div>
@@ -384,9 +384,9 @@
         <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
           <div class="px-4">
             <img
-              v-lazy="'../assets/img/theme/team-1-800x800.jpg'"
+              src="@/assets/img/theme/team-1-800x800.jpg"
               class="rounded-circle img-center img-fluid shadow shadow-lg--hover"
-              style="width: 200px;"
+              style="height: 200px;width:200px"
             >
             <div class="pt-4 text-center">
               <h5 class="title">
@@ -399,9 +399,9 @@
         <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
           <div class="px-4">
             <img
-              v-lazy="'../assets/img/theme/team-2-800x800.jpg'"
+              src="@/assets/img/theme/team-1-800x800.jpg"
               class="rounded-circle img-center img-fluid shadow shadow-lg--hover"
-              style="width: 200px;"
+              style="height: 200px;width:200px"
             >
             <div class="pt-4 text-center">
               <h5 class="title">
@@ -414,9 +414,9 @@
         <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
           <div class="px-4">
             <img
-              v-lazy="'../assets/img/theme/team-3-800x800.jpg'"
+              src="@/assets/img/theme/team-1-800x800.jpg"
               class="rounded-circle img-center img-fluid shadow shadow-lg--hover"
-              style="width: 200px;"
+              style="height: 200px;width:200px"
             >
             <div class="pt-4 text-center">
               <h5 class="title">
@@ -429,9 +429,9 @@
         <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
           <div class="px-4">
             <img
-              v-lazy="'../assets/img/theme/team-4-800x800.jpg'"
+              src="@/assets/img/theme/team-1-800x800.jpg"
               class="rounded-circle img-center img-fluid shadow shadow-lg--hover"
-              style="width: 200px;"
+              style="height: 200px;width:200px"
             >
             <div class="pt-4 text-center">
               <h5 class="title">
@@ -478,36 +478,48 @@
         <div class="row justify-content-center">
           <div class="col-lg-12">
             <div class="row row-grid">
-              <div class="col-lg-2">
-                <card class="border-0 PortfolioCard" shadow body-classes="py-5">
-                  <div class="text-center"></div>
-                </card>
+              <div class="col-lg-2 card-lift--hover">
+                  <a href="portfolio">
+                    <img src="@/assets/img/theme/team-1-800x800.jpg" 
+                    alt="Rounded image" class="PortfolioCard1 rounded img-fluid" 
+                    style="">
+                  <small class="d-block text-uppercase font-weight-bold mt-4">Image</small></a>
               </div>
-              <div class="col-lg-2">
-                <card class="border-0 PortfolioCard" shadow body-classes="py-5">
-                  <div class="text-center"></div>
-                </card>
+              <div class="col-lg-2 card-lift--hover">
+                  <a href="portfolio">
+                    <img src="@/assets/img/theme/localbi.jpeg" 
+                    alt="Rounded image" class="PortfolioCard1 rounded img-fluid" 
+                    style="height: 135px">
+                  <small class="d-block text-uppercase font-weight-bold mt-4">Image</small></a>
               </div>
-              <div class="col-lg-2">
-                <card class="border-0 PortfolioCard" shadow body-classes="py-5">
-                  <div class="text-center"></div>
-                </card>
+              <div class="col-lg-2 card-lift--hover">
+                  <a href="portfolio">
+                    <img src="@/assets/img/theme/landing.jpg" 
+                    alt="Rounded image" class="PortfolioCard1 rounded img-fluid" 
+                    style="height: 135px">
+                  <small class="d-block text-uppercase font-weight-bold mt-4">Image</small></a>
               </div>
 
-              <div class="col-lg-2">
-                <card class="border-0 PortfolioCard" shadow body-classes="py-5">
-                  <div class="text-center"></div>
-                </card>
+              <div class="col-lg-2 card-lift--hover">
+                  <a href="portfolio">
+                    <img src="@/assets/img/theme/meetings.jpeg" 
+                    alt="Rounded image" class="PortfolioCard1 rounded img-fluid" 
+                    style="height: 135px">
+                  <small class="d-block text-uppercase font-weight-bold mt-4">Image</small></a>
               </div>
-              <div class="col-lg-2">
-                <card class="border-0 PortfolioCard" shadow body-classes="py-5">
-                  <div class="text-center"></div>
-                </card>
+              <div class="col-lg-2 card-lift--hover">
+                  <a href="portfolio">
+                    <img src="@/assets/img/theme/profile.jpg" 
+                    alt="Rounded image" class="PortfolioCard1 rounded img-fluid" 
+                    style="height: 135px">
+                  <small class="d-block text-uppercase font-weight-bold mt-4">Image</small></a>
               </div>
-              <div class="col-lg-2">
-                <card class="border-0 PortfolioCard" shadow body-classes="py-5">
-                  <div class="text-center"></div>
-                </card>
+              <div class="col-lg-2 card-lift--hover">
+                  <a href="portfolio">
+                    <img src="@/assets/img/theme/credibility.jpeg" 
+                    alt="Rounded image" class="PortfolioCard1 rounded img-fluid" 
+                    style="height: 135px">
+                  <small class="d-block text-uppercase font-weight-bold mt-4">Image</small></a>
               </div>
             </div>
           </div>
@@ -530,7 +542,7 @@
               <div class="col-lg-3 order-lg-2">
                 <div class="card-profile-image">
                   <a href="#">
-                    <img src="../assets/img/brand/me.jpg" class="rounded-circle">
+                    <img src="../assets/img/clients/girl-2.png" class="text-left rounded-circle">
                   </a>
                 </div>
               </div>
@@ -538,12 +550,12 @@
               <div class="col-lg-4 order-lg-1"></div>
             </div>
             <div class="text-center mt-3 mb-3 testimonialCardText">
-              <h3 class="colorSchemeHeading">Levis Njihia</h3>
+              <h3 class="colorSchemeHeading">Sally N.</h3>
               <div class="h6 font-weight-300">
-                <i class="ni business_briefcase-24 mr-2"></i>Briglobe - Production team
+                <i class="ni business_briefcase-24 mr-2"></i>Manager - Sales
               </div>
               <small>
-                <i class="ni education_hat mr-2"></i>University of Computer Science
+                <i class="ni education_hat mr-2"></i>Law Society of Kenya
               </small> &nbsp; - &nbsp;  
               <small>
                 <i class="ni location_pin mr-2"></i>Nairobi Kenya
@@ -578,11 +590,11 @@
               <div class="row justify-content-center enq"><br>
                   <a
                       @click="showEnquirySec('quote')"
-                      class="btn btn-white text-default"
+                      class="btn btn-white text-default m-2"
                   >Request A Quote</a>
                   <a
                       @click="showEnquirySec('enquire')"
-                      class="btn btn-white text-default"
+                      class="btn btn-white text-default m-2"
                   >Make an Enquiry</a>
               
               </div>

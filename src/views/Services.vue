@@ -427,11 +427,11 @@
             <div class="row justify-content-center enq"><br>
                 <a
                     @click="showEnquirySec('quote')"
-                    class="btn text-white colorSchemeBtn"
+                    class="btn text-white colorSchemeBtn m-2"
                 >Request A Quote</a>
                 <a
                     @click="showEnquirySec('enquire')"
-                    class="btn text-white colorSchemeBtn"
+                    class="btn text-white colorSchemeBtn m-2"
                 >Make an Enquiry</a>
             
             </div>

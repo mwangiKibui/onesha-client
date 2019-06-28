@@ -18,18 +18,18 @@
               <div class="my-0 py-1 d-sm-nones"></div>
               <div class="mt--300 d-lg-nones"></div>
               <div class="row">
-                <div class="col-lg-9">
-                  <h1 class="display-1 text-white colorSchemeHeading">Check out some of our work</h1>
+                <div class="">
+                  <h1 class="display-2 text-white colorSchemeHeading">Check out some of our work</h1>
                   <p
                     class="lead text-white col-lg-10 text-left pt-2"
                     style="margin-left: -10px"
                   >Through our network team of creatives, we provide with you the following services.</p>
                   <div class="btn-wrapper justify-content-center">
-                    <a href="#request" data-toggle="scroll">
+                    <a href="#start" data-toggle="scroll">
                       <base-button
                         class="btn btn-md text-white colorSchemeBtn btn-icon mb-3 mb-sm-0"
                         type="default"
-                      >VIEW OUR SERVICES</base-button>
+                      >VIEW OUR PORTFOLIO</base-button>
                     </a>
                     <span stye="color: transparent">.</span>
                   </div>
@@ -49,34 +49,35 @@
         </div>
       </section>
     </section>
-    <section id="who" class="section section-shaped my-4 mb-2 mt-10">
-      <div class="container mt-4">
+    <section id="start" class="section section-shaped mb-2 mt-2">
+      <div class="container">
         <div class="row row-grid align-items-center">
           <div class="col-md-12 col-lg-12">
-            <h1 class="text-warning">Graphics Design</h1>
+            <h3 class="text-warning">Graphic Design</h3>
+            <p class="mt-2">Onesha offers high quality graphic designs</p>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 card-lift--hover">
             <img
               src="@/assets/img/portfolio1.jpg"
               class="img-center portfolioImage"
               alt="portfolioImage"
             >
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 card-lift--hover">
             <img
               src="@/assets/img/portfolio2.jpg"
               class="img-center portfolioImage"
               alt="portfolioImage"
             >
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 card-lift--hover">
             <img
               src="@/assets/img/portfolio3.jpg"
               class="img-center portfolioImage"
               alt="portfolioImage"
             >
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 card-lift--hover">
             <img
               src="@/assets/img/portfolio4.jpg"
               class="img-center portfolioImage"
@@ -90,34 +91,35 @@
 
     <!-- General services -->
 
-    <section id="who" class="section section-shaped my-4 mb-2 mt-10">
+    <section id="who" class="section section-shaped mb-2 mt-2">
       <div class="container mt-4">
         <div class="row row-grid align-items-center">
           <div class="col-md-12 col-lg-12">
-            <h1 class="text-warning">General Services</h1>
+            <h3 class="text-warning">General Services</h3>            
+            <p class="mt-2">Onesha offers high quality creative services</p>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 card-lift--hover">
             <img
               src="@/assets/img/portfolio1.jpg"
               class="img-center portfolioImage"
               alt="portfolioImage"
             >
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 card-lift--hover">
             <img
               src="@/assets/img/portfolio2.jpg"
               class="img-center portfolioImage"
               alt="portfolioImage"
             >
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 card-lift--hover">
             <img
               src="@/assets/img/portfolio3.jpg"
               class="img-center portfolioImage"
               alt="portfolioImage"
             >
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 card-lift--hover">
             <img
               src="@/assets/img/portfolio4.jpg"
               class="img-center portfolioImage"
@@ -132,34 +134,35 @@
     <!-- end of general services -->
 
     <!-- start of digital design -->
-    <section id="who" class="section section-shaped my-4 mb-2 mt-10">
+    <section id="who" class="section section-shaped mb-2 mt-2">
       <div class="container mt-4">
         <div class="row row-grid align-items-center">
           <div class="col-md-12 col-lg-12">
-            <h1 class="text-warning">Digital Design</h1>
+            <h3 class="text-warning">Digital Design</h3>            
+            <p class="mt-2">Onesha offers high quality digital designs</p>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 card-lift--hover">
             <img
               src="@/assets/img/portfolio1.jpg"
               class="img-center portfolioImage"
               alt="portfolioImage"
             >
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 card-lift--hover">
             <img
               src="@/assets/img/portfolio2.jpg"
               class="img-center portfolioImage"
               alt="portfolioImage"
             >
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 card-lift--hover">
             <img
               src="@/assets/img/portfolio3.jpg"
               class="img-center portfolioImage"
               alt="portfolioImage"
             >
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 card-lift--hover">
             <img
               src="@/assets/img/portfolio4.jpg"
               class="img-center portfolioImage"
@@ -185,11 +188,11 @@
               <br>
               <a
                 @click="showEnquirySec('quote')"
-                class="btn text-white colorSchemeBtn"
+                class="btn text-white colorSchemeBtn m-2"
               >Request A Quote</a>
               <a
                 @click="showEnquirySec('enquire')"
-                class="btn text-white colorSchemeBtn"
+                class="btn text-white colorSchemeBtn m-2"
               >Make an Enquiry</a>
             </div>
             <div v-if="this.showEnquiry">
@@ -204,41 +207,77 @@
 
 <script>
 import RequestSample from "@/views/components/Partials/SampleRequest.vue";
+import EnquiryForm from "@/views/components/Partials/EnquiryForm.vue";
+import EnquirySuccess from "@/views/components/Partials/EnquirySuccess.vue";
+import EnquiryFailed from "@/views/components/Partials/EnquiryFailed.vue";
+import EnquirySection from "@/views/components/Partials/EnquirySection.vue";
 import Categories from "./components/Landing/AllCategories";
 import Modal from "@/components/Common/Modal.vue";
+import Axios from "axios";
+
 export default {
-  metaInfo: {
-    title: "Learn More - Onesha",
-    // override the parent template and just use the above title only
-    titleTemplate: null
-  },
   components: {
     Categories,
     Modal,
-    RequestSample
+    RequestSample,
+    EnquiryForm,
+    EnquirySuccess,
+    EnquiryFailed,
+    EnquirySection
+  },
+  metaInfo: {
+    title: "Our Portfolio - Onesha",
+    // override the parent template and just use the above title only
+    titleTemplate: null
   },
   data() {
     return {
       selectedAnimationIn: "",
       selectedAnimationOut: "",
       showModal: false,
-      component: "request-sample"
+      showEnquiry: false,
+      component: "request-sample",
+      component2: "enquiry-form",
+      component3: "enquiry-section"
     };
   },
   methods: {
-    showSampleModal() {
-      this.showModal = true;
+    hideEnquirySec() {
+      this.$el.querySelector(".enq").innerHTML = "";
     },
-    childComponentResponse(response) {
+    showEnquirySec(val) {
+      this.showEnquiry = false;
+      console.log(val);
+      this.hideEnquirySec();
+      this.showEnquiry = true;
+      this.enquiry = val;
+    },
+    showMoreSec(val) {
+      this.showMore = !this.showMore;
+      this.$el.querySelector("#"+val).hidden = this.showMore;
+    },
+    enquiryResponse(response) {
+      console.log(response);
       if (response == "success") {
-        this.component = "request-success";
+        this.component2 = "enquiry-success";
       }
       if (response == "failed") {
-        this.component = "request-failed";
+        this.component2 = "enquiry-failed";
+        this.component2 = "enquiry-section";
+        this.showEnquiry = true;
       }
       if (response == "closemodal") {
-        this.showModal = false;
-        this.component = "request-sample";
+        this.showEnquiry = false;
+        this.component2 = "enquiry-section";
+        this.showEnquiry = true;
+      } else if (
+        response !== "success" &&
+        response !== "failed" &&
+        response !== "closemodal"
+      ) {
+        this.showEnquiry = false;
+        this.component2 = "enquiry-section";
+        this.showEnquiry = true;
       }
     }
   }
@@ -273,7 +312,7 @@ export default {
   border-radius: 10px;
 }
 .portfolioImage {
-  width: 90%;
+  width: 100%;
   height: 200px;
   border-radius: 10px;
 }

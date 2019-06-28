@@ -10,7 +10,6 @@
   </div>
 </template>
 <script>
-document.title = 'Onesha - Connecting businesses to top creative services';
 
 import { SlideYDownTransition } from "vue2-transitions";
 
@@ -19,21 +18,6 @@ export default {
     SlideYDownTransition
   },
   metaInfo: {
-      title: 'Onesha', // set a title
-      titleTemplate: '%s  - Connecting businesses to top creative services', // title is now "My Example App - Yay!"
-      htmlAttrs: {
-        lang: 'en',
-        amp: undefined // "amp" has no value
-      },
-      meta: [
-        { charset: 'utf-8' },
-        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { name:"keywords", content:"Briglobe, Onesha, Showcase, Digital, Online, Creative, Africa, Community, Visual, Portfolio, Professional" },
-        { name:"author", content:"onesha.co.ke"},
-        { name:"description", content:"Onesha enables businesses access top creative services from our wide pool of vetted creatives. Hire from top talent and get high quality company profiles."},
-        { name:"http-equiv=X-UA-Compatible", content:"IE=edge"},
-        { name:"viewport", content:"width=device-width,initial-scale=1"}
-      ],
       link: [
         { rel: 'base', href: 'https://onesha.co.ke/' },
         { rel: 'favicon', href: '/assets/img/brand/favicon.png' }

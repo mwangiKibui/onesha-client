@@ -85,6 +85,15 @@ export default new Router({
     },
     {
       path: "/case-studies",
+      name: "case-studies",
+      components: {
+        header: AppHeader,
+        default: LearnMore,
+        footer: AppFooter
+      }
+    },
+    {
+      path: "/learn-more",
       name: "learn-more",
       components: {
         header: AppHeader,
@@ -95,6 +104,15 @@ export default new Router({
     {
       path: "/support",
       name: "Support",
+      components: {
+        header: AppHeader,
+        default: Guidelines,
+        footer: AppFooter
+      }
+    },
+    {
+      path: "/guidelines",
+      name: "Guidelines",
       components: {
         header: AppHeader,
         default: Guidelines,

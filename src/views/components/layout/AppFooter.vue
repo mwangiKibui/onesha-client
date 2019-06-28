@@ -1,82 +1,75 @@
 <template>
   <footer class="footer bg-gradient-warning">
-    <!-- <h3 class="text-white text-center font-weight-light mt-0 pt-2">
-      Call our sales team today!
-      <br>
-      <br>
-      <a class="btn btn-default btn-md" href="tel://+254712983630">+254 712 983630</a>
-      <a class="btn btn-default btn-lg" href="tel://+254750737413">+254 750 737413</a>
-    </h3><br> -->
     <div class="container">
       <div class="row row-grid align-items-center ">
         
-        <div class="col-lg-2">
+        <div class="col-lg-2 col-sm-5 col-xs-4">
           <div class="text-lg-left">
             <h4 class="text-default font-weight-light mt-2">Links</h4>
-            <strong>
-              <a href="/about" class="text-default">About Us</a></strong>
+            <small>
+              <a href="/about" class="text-white">About Us</a></small>
             <br>
-            <strong>
-              <a href="/about" class="text-default">Guidelines</a></strong>
+            <small>
+              <a href="/guidelines" class="text-white">Guidelines</a></small>
             <br>
-            <strong>
-              <a href="/about" class="text-default">Case Studies</a></strong>
+            <small>
+              <a href="/case-studies" class="text-white">Case Studies</a></small>
             <br>
-            <strong>
-              <a href="/about" class="text-default">Portfolio</a></strong>
+            <small>
+              <a href="/portfolio" class="text-white">Portfolio</a></small>
             <br>
-            <strong>
-              <a href="/about" class="text-default">Terms</a></strong>
+            <small>
+              <a href="/terms" class="text-white">Terms</a></small>
             <br>
-            <strong>
-              <a href="/about" class="text-default">Privacy</a></strong>
+            <small>
+              <a href="/privacy" class="text-white">Privacy</a></small>
             <br>            
           </div>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-3 col-sm-7 col-xs-8">
           <h4 class="text-default font-weight-light mt-2">Address</h4>
-          <p class="text-lg-left text-default">
-            <strong>
-            Briglobe Investment Group Limited</strong>
+          <small class="text-lg-left text-white">
+            <span>
+            Briglobe Investment Group Limited</span>
             <br>
-            <strong>
+            <span>
               P.O.Box 21933-00100,
-            </strong> 
+            </span> 
             <br>
-            <strong>
+            <span>
               Seasons Road, Kasarani
-            </strong>
+            </span>
             <br>
-            <strong>
+            <span>
               Nairobi, Kenya
-            </strong> 
-            .
-          </p>
+            </span> 
+            .<br><br><span style="color: transparent">.</span>
+          </small>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-3 col-sm-5">
           <h4 class="text-default font-weight-light mt-2">Reach us through</h4>
-          <p class="text-lg-left text-default">
+          <small class="text-lg-left text-white">
             <strong>
               <i class="fa fa-phone"></i>
             </strong> &nbsp; +254 712 983630
             <br>
-            <strong>
+            <span>
               <i class="fa fa-phone"></i>
-            </strong> &nbsp; +254 750 737413
+            </span> &nbsp; +254 750 737413
             <br>
-            <strong>
+            <span>
               <i class="fa fa-phone"></i>
-            </strong> &nbsp; +254 798 206888
+            </span> &nbsp; +254 798 206888
             <br>
-            <strong>
+            <span>
               <i class="fa fa-envelope"></i>
-            </strong> &nbsp; hello@onesha.co.ke
-            <br><span style="color: transparent">.</span>
-          </p>
+            </span> &nbsp; hello@onesha.co.ke
+            <br><br><span style="color: transparent">.</span>
+          </small>
         </div>
-        <div class="col-lg-4">
-          <h4 class="text-default font-weight-light mb-2">We are here for you!</h4>
-          <h5 class="mb-0 font-weight-light">Let's get in touch on any of these platforms.</h5>
+        <div class="col-lg-4 col-sm-7">
+          <h4 class="text-default font-weight-light mt-2">We are here for you!</h4>
+          <p class="mb-0 font-weight-light text-white">Let's get in touch on any of these platforms.</p>
           <br>
           <a
             target="_blank"
