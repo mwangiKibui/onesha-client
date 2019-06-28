@@ -1,12 +1,12 @@
 <template>
   <footer class="footer bg-gradient-warning">
-    <h3 class="text-white text-center font-weight-light mt-0 pt-2">
+    <!-- <h3 class="text-white text-center font-weight-light mt-0 pt-2">
       Call our sales team today!
       <br>
       <br>
-      <a class="btn btn-default btn-lg" href="tel://+254712983630">+254 712 983630</a>
+      <a class="btn btn-default btn-md" href="tel://+254712983630">+254 712 983630</a>
       <a class="btn btn-default btn-lg" href="tel://+254750737413">+254 750 737413</a>
-    </h3><br>
+    </h3><br> -->
     <div class="container">
       <div class="row row-grid align-items-center ">
         
@@ -62,12 +62,16 @@
             <br>
             <strong>
               <i class="fa fa-phone"></i>
+            </strong> &nbsp; +254 750 737413
+            <br>
+            <strong>
+              <i class="fa fa-phone"></i>
             </strong> &nbsp; +254 798 206888
             <br>
             <strong>
               <i class="fa fa-envelope"></i>
             </strong> &nbsp; hello@onesha.co.ke
-            <br><br><span style="color: transparent">.</span>
+            <br><span style="color: transparent">.</span>
           </p>
         </div>
         <div class="col-lg-4">

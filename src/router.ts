@@ -4,7 +4,7 @@ import Meta from "vue-meta";
 import AppFooter from "@/views/components/layout/AppFooter.vue";
 import AppHeader from "@/views/components/layout/AppHeader.vue";
 import About from "@/views/About.vue";
-import LearnMore from "@/views/LearnMore.vue";
+import LearnMore from "@/views/CaseStudies.vue";
 import JobCategory from "@/views/components/Categories/JobCategory.vue";
 import CategoryPage from "@/views/components/Categories/CategoryPage.vue";
 import JobPage from "@/views/components/JobTemplates/JobPage.vue";
@@ -74,7 +74,7 @@ export default new Router({
       }
     },
     {
-      path: "/learn-more",
+      path: "/case-studies",
       name: "learn-more",
       components: {
         header: AppHeader,
@@ -132,7 +132,7 @@ export default new Router({
       name: "register",
       components: {
         header: AppHeader,
-        default: Login,
+        default: Register,
         footer: AppFooter
       }
     },

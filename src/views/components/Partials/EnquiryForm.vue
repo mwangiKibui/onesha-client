@@ -2,16 +2,16 @@
   <div class="row justify-content-center mt-2 pb-lg-2">
     <div class="col-lg-8" id="carddetails2">
       <form>
-        <card gradient="warning" shadow body-classes="p-lg-5">
+        <card gradient="secondary" shadow body-classes="p-lg-5">
           <button type="button" class="close" @click="closeModal" aria-label="Close">
             <span aria-hidden="true">×</span>
           </button>
           <p
-            class="mt-0 text-white"
+            class="mt-0 text-default"
             v-if="this.enquiryType == 'quote'"
           >Get a quote for the service you need done.</p>
           <p
-            class="mt-0 text-white"
+            class="mt-0 text-default"
             v-if="this.enquiryType == 'enquire'"
           >Your project is very important to us. Describe what you want done.</p>
           <base-input
@@ -56,6 +56,7 @@
               round
               block
               size="lg"
+              class="colorSchemeBtn"
               @click="submitClientRequest()"
             >Send Request</base-button>
           </span>
