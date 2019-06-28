@@ -1,7 +1,7 @@
 <template>
   <div>
     <section class="section section-shaped section-lg my-0">
-            <div class="shape shape-style-1 default-style-1">
+            <div class="shape shape-style-1 shape-default">
             <span></span>
             <span></span>
             <span></span>
@@ -13,49 +13,15 @@
             </div>
             <section>
              <div class="container pt-lg-md">
-                    <div class="col px-0">
-                        <div class="my-0 py-1 d-sm-nones"></div>
-                        <div class="mt--300 d-lg-nones"></div>
-                        <div class="row btn-wrapper justify-content-center">
-                            <div class="col-lg-10 text-center">
-                                <h2 class="display-3 text-white">Build Your Sales Pipeline Faster</h2>
-                                <p class="lead  text-white">According to the experts, a company profile can shape the decision of a potential client. Here is what a proper company profile can do for you.</p>
-                            </div>
-                        </div>
-                        <div id="benefits">
-                          <div class="row row-grid mt-5">
-                              <div class="col-lg-4">
-                                  <div class="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
-                                      <i class="ni ni-satisfied text-primary"></i>
-                                  </div>
-                                  <h5 class="text-white mt-3">Secure More Meetings</h5>
-                                  <p class=" text-white mt-3">Highlight your services and client testimonials on your profile to convince potential clients looking for your services and lead to more referrals.</p>
-                              </div>
-                              <div class="col-lg-4">
-                                  <div class="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
-                                      <i class="ni ni-ruler-pencil text-primary"></i>
-                                  </div>
-                                  <h5 class="text-white mt-3">Establish Credibility</h5>
-                                  <p class=" text-white mt-3">Let your portfolio of previous work give you an edge over competitors to close that deal and build a credible background for your business.</p>
-                              </div>
-                              <div class="col-lg-4">
-                                  <div class="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
-                                      <i class="ni ni-book-bookmark text-primary"></i>
-                                  </div>
-                                  <h5 class="text-white mt-3">Use Local Business Intelligence</h5>
-                                  <p class=" text-white mt-3">Grow your market share with our local business intelligence. We use research reports and analysis to give you an in-depth knowledge about your industry.</p>
-                              </div>
-                          </div>
-                      </div>
-                    </div>
-              </div>
-              <div class="row btn-wrapper justify-content-center floating">
-                    <a
-                        href="#who"
-                        data-toggle="scroll"
-                        class="btn-inner--icon text-white"><i class="ni ni-bold-down"></i>
-                    </a>
+            <div class="row btn-wrapper justify-content-center">
+                <div class="col-lg-8">
+                    <p>section A</p>
                 </div>
+                <div class="col-lg-4">
+                <p>section B</p>
+                </div>
+            </div>
+            </div>
             </section>
     </section>
     <section id="who" class="section section-shaped my-4 mb-2  bg-secondary mt-lg-auto ">

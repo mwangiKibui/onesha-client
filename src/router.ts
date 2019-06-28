@@ -19,6 +19,7 @@ import Portfolio from "@/views/components/Landing/Portfolio.vue";
 import Privacy from "@/views/components/Landing/Privacy.vue";
 import Terms from "@/views/components/Landing/Terms.vue";
 import Services from "@/views/Services.vue";
+import HowItWorks from '@/views/HowItWorks.vue'
 Vue.use(Meta);
 Vue.use(Router);
 
@@ -53,6 +54,15 @@ export default new Router({
         default: Services,
         footer: AppFooter
       }
+    },
+    {
+        path:"/how-it-works",
+        name:"how-it-works",
+        components:{
+          header:AppHeader,
+          default:HowItWorks,
+          footer:AppFooter
+        }
     },
     {
       path: "/allservices",
