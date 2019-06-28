@@ -3,7 +3,7 @@ import Router from "vue-router";
 import Meta from "vue-meta";
 import AppFooter from "@/views/components/layout/AppFooter.vue";
 import AppHeader from "@/views/components/layout/AppHeader.vue";
-import About from "@/views/About.vue";
+import About from "@/views/About2.vue";
 import LearnMore from "@/views/CaseStudies.vue";
 import JobCategory from "@/views/components/Categories/JobCategory.vue";
 import CategoryPage from "@/views/components/Categories/CategoryPage.vue";
