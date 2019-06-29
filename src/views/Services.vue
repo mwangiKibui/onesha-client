@@ -36,7 +36,7 @@
                         type="default"
                       >VIEW OUR SERVICES</base-button>
                     </a>
-                    <span stye="color: transparent">.</span>
+                    <span stye="color: transparent"></span>
                   </div>
                 </div>
               </div>
@@ -297,7 +297,7 @@
               <div class="col-lg-4 col-sm-6 mt-5">
                 <card class="border-0 ServiceCard" hover shadow body-classes="py-5">
                   <img class="mb-4" src="../assets/img/services/Service1.svg" alt><br>
-                  <h6 class="text-warning">Social Media Strategy</h6><br>
+                  <h6 class="text-warning">Social Media Strategy</h6>
                   <base-button
                     tag="a"
                     href="#request"

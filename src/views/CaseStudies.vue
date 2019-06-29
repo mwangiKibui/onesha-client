@@ -62,8 +62,8 @@
         <div class="container">
             <div class="row justify-content-center text-center" id="process">
               <div class="mt-4 mb-lg-3 col-md-12">
-                        <h2 class="text-primary">Client 1</h2>
-                        <p class="lead mt-4">We follow this process to ensure you quality.</p>
+                        <h2 class="text-default">Case 1</h2>
+                        <p class="lead mt-4">We helped this client achieve the following.</p>
                 </div>
                 <div class="mb-lg-3 row row-grid">
                 
@@ -80,7 +80,7 @@
                           ></card> -->
                         </div>
                         <div class="col-lg-6">                          
-                            <h3 class="mt-5 text-primary text-uppercase">Brief Processing</h3>
+                            <h3 class="mt-5 text-default text-uppercase">Client 1</h3>
                             <p class="description mt-3">Onesha processes your request into a job brief that we present to vetted creatives for quotation.
                                 We give you a professional looking company profile that will enable you get introductions, meetings and close sales even faster. Our quick online service simplifies the process of looking for a place to get your company profile made. Get high quality services from our vetted creatives with quick delivery to fit your schedule. <br><br> Select and approve the quote.</p>
                               <br>
@@ -134,14 +134,7 @@
                               shadow
                               body-classes="py-5"
                           >
-                              <icon
-                                  name="ni ni-bullet-list-67"
-                                  type="primary"
-                                  rounded
-                                  class="mb-4"
-                              >
-                              </icon>
-                              <h6 class="text-primary text-uppercase">Request a Service</h6>
+                              <h5 class="text-default text-uppercase">Client 2</h5>
                               <p class="description mt-3">Onesha helps you flesh out your request using easy to use job templates that make filling forms a simple process.</p>
 
                               <b-button v-b-toggle.collapse-2 variant="default" class="mt-4 colorSchemeBtn text-white">Read More</b-button>
@@ -154,14 +147,8 @@
                               shadow
                               body-classes="py-5"
                           >
-                              <icon
-                                  name="ni ni-settings-gear-65"
-                                  text="warning"
-                                  rounded
-                                  class="mb-4"
-                              >
-                              </icon>
-                              <h6 class="text-primary text-uppercase">Brief Processing</h6>
+                              
+                              <h5 class="text-default text-uppercase">Client 3</h5>
                               <p class="description mt-3">Onesha processes your request into a job brief that we present to vetted creatives for quotation.</p>
                               
                               <b-button v-b-toggle.collapse-3 variant="default" class="mt-4 colorSchemeBtn text-white">Read More</b-button>

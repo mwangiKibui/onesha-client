@@ -24,11 +24,19 @@
                     <!-- <span style="font-size: 0.5em">Your creative tasks sorted</span> -->
                   </h1>
                   <p class="lead text-white col-lg-10 text-left pt-2" style="margin-left: -10px">
-                    We give you a professional creative work that will enable you get introductions,meetings and close sales even faster.Our
-                    quick online service simplifies the process of looking for a place to get your company profile made.
-                    Get high quality services from our vetted creatives with quick delivery to fit your schedule.
+                    We give you professional creative services that will enable you grow your business even faster. Our
+                    quick online platform simplifies the process of looking for a place to get your design tasks done.
                   </p>
                 </div>
+                <div class="btn-wrapper justify-content-center">
+                    <a href="#process" data-toggle="scroll">
+                      <base-button
+                        class="btn btn-md text-white colorSchemeBtn btn-icon mb-3 mb-sm-0"
+                        type="default"
+                      >VIEW OUR PROCESS</base-button>
+                    </a>
+                    <span stye="color: transparent"></span>
+                  </div>
               </div>
             </div>
             <div class="col-lg-3 d-sm-nones order-lg-2" id="expect" style="margin-left:-70px">
@@ -57,10 +65,12 @@
             <h4 class="text-warning">Our customers</h4>
             <p
               class="lead text-gray text-left"
-            >Dont let our promises scare you,get the information right from our customers.</p>
+            >Simply choose a service, fill a simple job form, get your task done!</p>
             <p class="lead text-gray text-left">
               We have worked with both large and small businesses to provide the skills they need to make digital content.
-              we also offer valuable advice that helps them carry on the tasks on their own
+              We also offer valuable advice that helps them carry on the tasks on their own. </p>
+            <p class="lead text-gray text-left">
+              We help you with design, digital and social media through our network of skilled creatives.
             </p>
           </div>
         </div>
@@ -68,23 +78,23 @@
       <br>
     </section>
 
-    <section class="section section-sm bg-secondary mt--100 bg-secondary" id="process">
+    <section class="section section-sm bg-secondary mt--100 bg-secondary">
       <div>
-        <div class="row justify-content-center text-center" id="process">
+        <div class="row justify-content-center text-center" >
           <div class="mb-lg-3 col-md-12">
             
           </div>
         </div>
       </div>
     </section>
-    <section class="section mt-10">
+    <section class="section mt-10" id="process">
       <div class="container">
         <div class="row text-center justify-content-center">
           <div class="col-lg-10">
             <h2 class="display-3 text-warning">Begin your request</h2>
             <p
-              class="lead text-primary"
-            >Your journey starts here. Revamp your existing company profile, or get a new one.</p>
+              class="lead text-default"
+            >Your journey starts here. We follow this process to assure you quality.</p>
           </div>
         </div>
       </div>
@@ -92,8 +102,8 @@
         <div class="row row-grid">
           <div class="col-lg-3 process-card">
             <card class="border-0" hover shadow body-classes="py-5">
-              <icon name="ni ni-check-bold" rounded class="mb-4 text-white bg-primary"></icon>
-              <h6 class="text-primary text-uppercase">Request a Service</h6>
+              <icon name="ni ni-bullet-list-67" rounded class="mb-4 text-white bg-default"></icon>
+              <h6 class="text-default text-uppercase">Request a Service</h6>
               <p
                 class="description mt-3"
               >Onesha helps you flesh out your request using easy to use job templates that make filling forms a simple process.</p>
@@ -101,43 +111,45 @@
           </div>
           <div class="col-lg-3 process-card">
             <card class="border-0" hover shadow body-classes="py-5">
-              <icon name="ni ni-check-bold" rounded class="mb-4 text-white bg-primary"></icon>
-              <h6 class="text-primary text-uppercase">Brief Processing</h6>
+              <icon name="ni ni-settings-gear-65" rounded class="mb-4 text-white bg-default"></icon>
+              <h6 class="text-default text-uppercase">Brief Processing</h6>
               <p
                 class="description mt-3"
-              >Onesha helps you flesh out your request using easy to use job templates that make filling forms a simple process.</p>
-              <br>
-              <!-- <base-button tag="a"  href="#request" data-toggle="scroll" type="primary" class="mt-4">-->
+              >Onesha processes your request into a job brief that we present to vetted creatives for quotation. Select and approve the quote.</p>
+              
+              <!-- <base-button tag="a"  href="#request" data-toggle="scroll" type="default" class="mt-4">-->
             </card>
           </div>
           <div class="col-lg-3 process-card">
             <card class="border-0" hover shadow body-classes="py-5">
-              <icon name="ni ni-check-bold" rounded class="mb-4 text-white bg-primary"></icon>
-              <h6 class="text-primary text-uppercase">Job execution</h6>
+              <icon name="ni ni-settings" rounded class="mb-4 text-white bg-default"></icon>
+              <h6 class="text-default text-uppercase">Job execution</h6>
               <p
                 class="description mt-3"
-              >Onesha helps you flesh out your request using easy to use job templates that make filling forms a simple process.</p>
-              <br>
-              <!-- <base-button tag="a"  href="#request" data-toggle="scroll" type="primary" class="mt-4">-->
+              >We start working on your job according to the brief. We send you samples for your approval. Make a deposit to continue.</p>
+              
+              <!-- <base-button tag="a"  href="#request" data-toggle="scroll" type="default" class="mt-4">-->
             </card>
           </div>
           <div class="col-lg-3 process-card">
             <card class="border-0" hover shadow body-classes="py-5">
-              <icon name="ni ni-check-bold" rounded class="mb-4 text-white bg-primary"></icon>
-              <h6 class="text-primary text-uppercase">Job delivery</h6>
+              <icon name="ni ni-check-bold" rounded class="mb-4 text-white bg-default"></icon>
+              <h6 class="text-default text-uppercase">Job delivery</h6>
               <p
                 class="description mt-3"
-              >Onesha helps you flesh out your request using easy to use job templates that make filling forms a simple process.</p>
-
+              >You receive the final samples and complete the payment upon being satisfied with the result. Choose your mode of delivery.</p>
+            </card>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+            <div>
               <base-button
                 tag="a"
-                href="#request"
-                data-toggle="scroll"
-                type="primary"
-                class="mt-4"
+                href="services"
+                type="default"
+                class="colorSchemeBtn"
               >BEGIN REQUEST</base-button>
-            </card>
-          </div>
+            </div>
         </div>
       </div>
     </section>

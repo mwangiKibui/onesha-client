@@ -604,17 +604,17 @@ window.onload = function() {
     }
     .position-relative {
         position: relative;
-        /* background-image: none; */
-        /* background-image: url("../assets/img/social-bg.jpg") !important; */
-        /* background-size: cover; */
-        /* background-position: right; */
-        /* background-repeat: no-repeat; */
+        background-image: none;
+        background-image: url("../assets/img/social-bg.jpg") !important;
+        background-size: cover;
+        background-position: right;
+        background-repeat: no-repeat;
         background: linear-gradient(114.59deg, #FF5E62 38.33%, #FF9966 91.76%) !important;
-        /* height: 100vh !important; */
+        height: 100vh !important;
         min-height: 80vh !important;
     }
     .home-content {
-        /* background-color: rgba(0, 0, 34, 0.7); */
+        background-color: rgba(0, 0, 34, 0.7);
         z-index: 9;
         position: absolute;
         top: 0;

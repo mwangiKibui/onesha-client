@@ -4,8 +4,8 @@
             <!-- Hero for FREE version -->
             <div class="blurred-image"></div>
             <!-- shape Hero -->
-            <section class="section  home-content  text-center section-lg section-hero pb-250">
-                <div class="shape shape-style-1 shape-default">
+            <section class="section  home-content2  text-center section-lg section-hero pb-250">
+                <div class="shape shape-style-1 shape-default bg-white">
                     <span></span>
                     <span></span>
                     <span></span>

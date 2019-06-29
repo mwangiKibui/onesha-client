@@ -237,7 +237,7 @@
                 </div>
                 <div class="pl-4 textSmall">
                   <h5 class="title text-warning">Request changes before accepting</h5>
-                  <p>With our wide pool of high quality, experienced creatives, we assure you of a quick turn around time that will meet your requirements.</p>
+                  <p>Receive first draft of work, review upto 3 times. We ensure you get the quality you are looking for.</p>
                 </div>
               </div>
             </card>
@@ -248,7 +248,7 @@
                 </div>
                 <div class="pl-4 textSmall">
                   <h5 class="title text-warning">Project Management</h5>
-                  <p>With our wide pool of high quality, experienced creatives, we assure you of a quick turn around time that will meet your requirements.</p>
+                  <p>Save time taken to compare creative professionals as we choose the right one for the job and keep track of progress.</p>
                 </div>
               </div>
             </card>
@@ -258,8 +258,8 @@
                   <icon name="ni ni-active-40" gradient="warning" color="white" shadow rounded></icon>
                 </div>
                 <div class="pl-4 textSmall">
-                  <h5 class="title text-warning">Vetted Creatives</h5>
-                  <p>With our wide pool of high quality, experienced creatives, we assure you of a quick turn around time that will meet your requirements..</p>
+                  <h5 class="title text-warning">Reduced Costs</h5>
+                  <p>We offer you services according to your budget and amount of work to be done so that we don't deplete your wallet.</p>
                 </div>
               </div>
             </card>

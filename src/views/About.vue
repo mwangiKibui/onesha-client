@@ -637,30 +637,12 @@
 <script>
 export default {
     metaInfo: {
-      title: 'About Onesha',
-      // override the parent template and just use the above title only
-      titleTemplate: null
+        title: "About Onesha",
+        // override the parent template and just use the above title only
+        titleTemplate: null
     }
-}
+};
 </script>
 
 <style>
-.position-relative2 {
-    position: relative;
-    background-image: none;
-    background-image: url("/assets/img/social-audit.png");
-    background-size: cover;
-    background-position: right;
-    background-repeat: no-repeat;
-    height: 100vh !important;
-}
-.home-content {
-    background-color: rgba(0, 0, 34, 0.7);
-    z-index: 9;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-}
 </style>

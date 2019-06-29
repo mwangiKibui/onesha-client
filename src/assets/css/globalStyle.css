@@ -1,11 +1,21 @@
-
-body {
-  min-height: 768px;
-  /* min-width: 450px; */
-}
 @import url("https://fonts.googleapis.com/css?family=Offside&display=swap");
 .section-shaped .shape-style-1.shape-default {
   background: url("../img/ill/Vectorbg.svg") no-repeat;
+}
+.position-relative2 .blurred-image {
+  position: relative;
+  background-color: white;
+  height: 100vh !important;
+}
+.home-content2 {
+  background: url("../img/ill/Vectorbg2.svg") no-repeat;
+  background-color: white;
+  z-index: 9;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
 }
 .personImg {
   margin-top: -90vh;
@@ -198,5 +208,3 @@ body {
     margin-left: 26%;
   }
 }
-
-
