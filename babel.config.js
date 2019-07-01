@@ -1,3 +1,4 @@
 module.exports = {
-    presets: ['@vue/app'],
+  entry: "server.js",
+  presets: ["@vue/app"]
 };
