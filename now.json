@@ -1,0 +1,15 @@
+{
+  "name": "onesha-kenya",
+  "type": "static",
+  "static": {
+    "public": "public",
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  },
+  "alias": "onesha-kenya",
+  "files": ["public"]
+}
