@@ -20,7 +20,7 @@
     "bootstrap-vue": "^2.0.0-rc.24",
     "express": "^4.17.1",
     "flatpickr": "^4.5.2",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "material-design-icons-iconfont": "^4.0.3",
     "morgan": "^1.9.1",
     "nouislider": "^11.1.0",
