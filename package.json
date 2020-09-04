@@ -32,7 +32,7 @@
     "vue-lazyload": "^1.2.6",
     "vue-loading-spinner": "^1.0.11",
     "vue-meta": "^1.5.8",
-    "vue-moment": "^4.0.0",
+    "vue-moment": "^4.1.0",
     "vue-property-decorator": "^7.3.0",
     "vue-router": "^3.0.1",
     "vue2-transitions": "^0.2.3",
