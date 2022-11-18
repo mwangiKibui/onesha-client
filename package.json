@@ -45,7 +45,7 @@
     "@types/nprogress": "0.0.29",
     "@vue/cli-plugin-babel": "^3.8.0",
     "@vue/cli-plugin-typescript": "^3.8.1",
-    "@vue/cli-service": "^3.8.4",
+    "@vue/cli-service": "^5.0.8",
     "@vue/eslint-config-prettier": "^3.0.0-rc.10",
     "node-sass": "^4.12.0",
     "sass-loader": "^7.1.0",
